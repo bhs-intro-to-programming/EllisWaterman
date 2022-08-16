@@ -17,8 +17,10 @@ let ballSize = 15;
 // May also need to define a variable to keep track of when each bounce starts
 // as the time value that is passed in is just the current time, i.e. the same
 // thing we would get from calling now().
-const drawFrame = (time) => {};
-  drawBall(15, 15)
+const drawFrame = (time) => {
+    drawBall(time, 15)
+};
+  
 // Compute the height in pixels at time t after the ball hit the ground
 const height = (t) => 0;
 
