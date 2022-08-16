@@ -17,7 +17,6 @@ const MAX_FIB_N = 1476;
 
 const MAX_FIB = fib2(MAX_FIB_N);
 
-const (E
-)
+
 
 
