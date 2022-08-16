@@ -24,3 +24,7 @@ for (let i = 1; i < n ; i++) {
 }
 
 }
+
+function ellis(1) {
+console.log("code")
+}
