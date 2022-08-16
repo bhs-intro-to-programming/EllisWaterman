@@ -19,5 +19,6 @@ const MAX_FIB = fib2(MAX_FIB_N);
 
 function ellis(n) {
 for (let i = 1; i < n ; i++) {
-  text += e[i];
+  text <= e[i];
+}
 }
