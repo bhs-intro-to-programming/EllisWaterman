@@ -18,5 +18,6 @@ const MAX_FIB_N = 1476;
 const MAX_FIB = fib2(MAX_FIB_N);
 
 
-function ellis(n) {
-   ("ellis")}
+const ellis(n) { 
+let n =   console.log("code")
+}
