@@ -10,7 +10,7 @@ let ballSize = 15;
 // the ball at the given size and darkness.
 //
 // drawBall(height, size) - draws the ball at the given height and size.
-drawBall(15, 15)
+drawBall(time, 15)
 // now() - returns the number of milliseconds since the program started.
 
 // Implement this in terms of drawShadow(), drawBall() and the functions below.
