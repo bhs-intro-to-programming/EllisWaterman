@@ -1,5 +1,5 @@
 // Change these to change the physics of our world.
-let bounce = 0.7;
+let bounce = 1;
 let gravity = 1;
 let ballSize = 15;
 
