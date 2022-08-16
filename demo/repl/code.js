@@ -17,7 +17,7 @@ const MAX_FIB_N = 1476;
 
 const MAX_FIB = fib2(MAX_FIB_N);
 
-const ellis = (i) => {
+function ellis(i) {
     for (let i = 0; i<10; i=i+1) {
         console.log("Ellis Is Great", i);
     }
