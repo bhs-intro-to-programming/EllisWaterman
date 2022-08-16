@@ -18,5 +18,5 @@ const MAX_FIB_N = 1476;
 const MAX_FIB = fib2(MAX_FIB_N);
 
 
-function ellis(1) {
+function ellis(n) {
    ("ellis")}
