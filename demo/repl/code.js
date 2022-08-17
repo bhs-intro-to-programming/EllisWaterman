@@ -20,7 +20,7 @@ const MAX_FIB = fib2(MAX_FIB_N);
 
 
 function code(i) {
-    let n = 1
+    let n = i+
     console.log("Number");
     return n
 }   
