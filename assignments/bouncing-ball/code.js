@@ -18,7 +18,7 @@ let ballSize = 15;
 // as the time value that is passed in is just the current time, i.e. the same
 // thing we would get from calling now().
 const drawFrame = (time) => {
-    drawBall(1, 30)
+    drawBall(sin(time), 30)
 };
   
 // Compute the height in pixels at time t after the ball hit the ground
