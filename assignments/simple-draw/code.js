@@ -45,4 +45,3 @@ drawFilledRect(100, height - 100, 300, 15, 'purple');
 drawFilledRect(100, height - 100, 10, -100, 'purple');
 drawFilledRect(390, height - 100, 10, -100, 'purple');
 drawLine(drawLine(100, 100, 100, 100,'red', 100)
-drawLine(x1, y1, x2, y2, color, lineWidth)
