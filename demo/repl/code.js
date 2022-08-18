@@ -22,5 +22,5 @@ const MAX_FIB = fib2(MAX_FIB_N);
 function code(i) {
     let i = Math.PI
     console.log("Number");
-    return i+1
+    return i
 }   
