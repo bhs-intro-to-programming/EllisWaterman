@@ -40,6 +40,6 @@ drawLine(6000, 0, width, height, 'red')
 
 
 drawFilledCircle(width - 400, height - 500, 50, 'green');
-drawFilledCircle(width - 50, height - 500, 50, 'green');
+drawFilledCircle(width - 50, height - 500, 60, 'green');
 
 drawFilledRect(5, height - 20, 45, 15, 'purple');
