@@ -35,7 +35,7 @@
  *
  */
 
-drawLine(6, 100, width, height, 'red')
+drawLine(6, 400, width, height, 'red')
 
 
 
