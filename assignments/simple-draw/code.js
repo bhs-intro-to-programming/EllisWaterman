@@ -44,4 +44,4 @@ drawFilledCircle(width - 100, height - 500, 50, 'green');
 drawFilledRect(100, height - 100, 300, 15, 'purple');
 drawFilledRect(100, height - 100, 10, -100, 'purple');
 drawFilledRect(390, height - 100, 10, -100, 'purple');
-drawLine(300, 500, 100, 100, 100, 'red');
+drawLine(50, 500, 100, 100, 100, 'red');
