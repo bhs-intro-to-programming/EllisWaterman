@@ -48,4 +48,4 @@ drawLine( 200, 250, 150, 200, 'red');
 drawLine( 100, 250, 150, 200, 'red');
 drawLine( 100, 250, 5000, 200, 'red');
 drawFilledCircle(width - 250, height - 200, 75, 'white');
-drawFilledCircle(width - 250, height - 220, 50, 'white');
+drawFilledCircle(width - 250, height - 250, 50, 'white');
