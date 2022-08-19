@@ -50,4 +50,4 @@ drawLine( 100, 250, 5000, 200, 'red');
 drawFilledCircle(width - 250, height - 200, 75, 'white');
 drawFilledCircle(width - 250, height - 300, 50, 'white');
 drawFilledCircle(width - 250, height - 375, 40, 'white');
-drawFilledCircle(width - 120, height - 375, 20, 'black');
+drawFilledCircle(width - 100, height - 375, 20, 'black');
