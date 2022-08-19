@@ -53,5 +53,4 @@ drawFilledCircle(width - 250, height - 375, 40, 'white');
 drawFilledCircle(width - 270, height - 375, 5, 'black');
 drawFilledCircle(width - 220, height - 375, 5, 'black');
 drawLine( 210, 300, 150, 200, 'brown');
-drawLine( 300, 250, 150, 100, 'brown');
-drawLine( 300+150, 250+170, 150+150, 100+170, 'brown');
+drawLine( 300+150, 250+170, 150+150, 100+150, 'brown');
