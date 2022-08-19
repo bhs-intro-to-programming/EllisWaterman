@@ -34,7 +34,7 @@
  *  height - the height of the drawing area.
  *
  */
-
+drawFilledRect(0, height - 0, 10000, -10000, 'red');
 
 
 
@@ -54,4 +54,4 @@ drawFilledCircle(width - 270, height - 375, 5, 'black');
 drawFilledCircle(width - 220, height - 375, 5, 'black');
 drawLine( 210, 300, 150, 200, 'brown');
 drawLine( 300+100, 250+130, 150+120, 100+140, 'brown');
-drawFilledRect(0, height - 0, 10000, -10000, 'red');
+
