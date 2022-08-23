@@ -53,5 +53,10 @@
     "name": "Wait for a sale?",
     "answer": "StoreOpen && isASale",
     "correct": false
+  },
+  {
+    "name": "Wait for a sale?",
+    "answer": "storeOpen && isASale",
+    "correct": false
   }
 ]
