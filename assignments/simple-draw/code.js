@@ -34,7 +34,7 @@
  *  height - the height of the drawing area.
  *
  */
-drawFilledRect(0, height - 0, 10000, -10000, '1000');
+drawFilledRect(0, height - 0, 10000, -10000, '1');
 
 
 
