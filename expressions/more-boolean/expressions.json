@@ -3,5 +3,10 @@
     "name": "Will we skip our trip to the store?",
     "answer": "StoreOpen &&! linesTooLong",
     "correct": false
+  },
+  {
+    "name": "Wait for a sale?",
+    "answer": "storeOpen",
+    "correct": false
   }
 ]
