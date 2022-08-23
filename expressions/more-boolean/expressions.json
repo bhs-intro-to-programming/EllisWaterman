@@ -8,5 +8,10 @@
     "name": "Wait for a sale?",
     "answer": "storeOpen",
     "correct": false
+  },
+  {
+    "name": "Will we skip our trip to the store?",
+    "answer": "linesTooLong &&! storeOpen",
+    "correct": false
   }
 ]
