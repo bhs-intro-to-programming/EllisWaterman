@@ -142,5 +142,11 @@
     "answer": "\"foo\"",
     "correct": true,
     "timestamp": 1661377183746
+  },
+  {
+    "name": "First character",
+    "answer": "s/nbar",
+    "correct": false,
+    "timestamp": 1661377356924
   }
 ]
