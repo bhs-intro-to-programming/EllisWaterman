@@ -166,5 +166,11 @@
     "answer": "'s'.length",
     "correct": false,
     "timestamp": 1661378095996
+  },
+  {
+    "name": "First character",
+    "answer": "s = 'foobar'",
+    "correct": false,
+    "timestamp": 1661378188183
   }
 ]
