@@ -112,5 +112,11 @@
     "answer": "1",
     "correct": false,
     "timestamp": 1661377051735
+  },
+  {
+    "name": "First character",
+    "answer": "foo",
+    "correct": false,
+    "timestamp": 1661377065666
   }
 ]
