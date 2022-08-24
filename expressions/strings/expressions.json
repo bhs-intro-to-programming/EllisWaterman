@@ -250,5 +250,11 @@
     "answer": "s.substring(1)",
     "correct": false,
     "timestamp": 1661378530793
+  },
+  {
+    "name": "All but first and last",
+    "answer": "s.substring(0)",
+    "correct": false,
+    "timestamp": 1661378563578
   }
 ]
