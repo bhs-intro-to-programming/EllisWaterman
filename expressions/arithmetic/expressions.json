@@ -40,5 +40,11 @@
     "answer": "a%b",
     "correct": true,
     "timestamp": 1661379561779
+  },
+  {
+    "name": "Average",
+    "answer": "a+b/2",
+    "correct": false,
+    "timestamp": 1661379565522
   }
 ]
