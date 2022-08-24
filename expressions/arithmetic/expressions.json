@@ -1,0 +1,8 @@
+[
+  {
+    "name": "Manhattan distance",
+    "answer": "Math.abs(x1-x2)+Math.abs(y1-y2)",
+    "correct": true,
+    "timestamp": 1661379441566
+  }
+]
