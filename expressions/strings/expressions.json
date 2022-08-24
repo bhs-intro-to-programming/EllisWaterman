@@ -466,5 +466,11 @@
     "answer": "s[s.length+4].toUpperCase(0)+s.substring(1)",
     "correct": false,
     "timestamp": 1661379066380
+  },
+  {
+    "name": "Capitalize first three",
+    "answer": "s[s.length+5].toUpperCase(0)+s.substring(1)",
+    "correct": false,
+    "timestamp": 1661379067219
   }
 ]
