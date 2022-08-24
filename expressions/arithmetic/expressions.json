@@ -58,5 +58,11 @@
     "answer": "(a+b+c)/3",
     "correct": true,
     "timestamp": 1661379581602
+  },
+  {
+    "name": "General average",
+    "answer": "(total)/count",
+    "correct": true,
+    "timestamp": 1661379593082
   }
 ]
