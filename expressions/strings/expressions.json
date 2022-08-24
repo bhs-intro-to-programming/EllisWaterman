@@ -130,5 +130,11 @@
     "answer": "b",
     "correct": false,
     "timestamp": 1661377073579
+  },
+  {
+    "name": "First character",
+    "answer": "bar",
+    "correct": false,
+    "timestamp": 1661377082373
   }
 ]
