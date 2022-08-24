@@ -46,5 +46,11 @@
     "answer": "a+b/2",
     "correct": false,
     "timestamp": 1661379565522
+  },
+  {
+    "name": "Average",
+    "answer": "(a+b)/2",
+    "correct": true,
+    "timestamp": 1661379574203
   }
 ]
