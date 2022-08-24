@@ -208,5 +208,11 @@
     "answer": "s[1]",
     "correct": false,
     "timestamp": 1661378288530
+  },
+  {
+    "name": "All but first",
+    "answer": "s.substring[1]",
+    "correct": false,
+    "timestamp": 1661378334348
   }
 ]
