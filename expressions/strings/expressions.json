@@ -178,5 +178,11 @@
     "answer": "s = 'g'",
     "correct": false,
     "timestamp": 1661378196175
+  },
+  {
+    "name": "First character",
+    "answer": "s = 'o'",
+    "correct": false,
+    "timestamp": 1661378199312
   }
 ]
