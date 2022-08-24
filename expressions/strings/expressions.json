@@ -184,5 +184,11 @@
     "answer": "s = 'o'",
     "correct": false,
     "timestamp": 1661378199312
+  },
+  {
+    "name": "First character",
+    "answer": "s = ''",
+    "correct": false,
+    "timestamp": 1661378203680
   }
 ]
