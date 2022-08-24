@@ -172,5 +172,11 @@
     "answer": "s = 'foobar'",
     "correct": false,
     "timestamp": 1661378188183
+  },
+  {
+    "name": "First character",
+    "answer": "s = 'g'",
+    "correct": false,
+    "timestamp": 1661378196175
   }
 ]
