@@ -292,5 +292,11 @@
     "answer": "!hungry && interested",
     "correct": true,
     "timestamp": 1661466168570
+  },
+  {
+    "name": "In the room where it happens?",
+    "answer": "inTheClass || isProctor",
+    "correct": true,
+    "timestamp": 1661466187426
   }
 ]
