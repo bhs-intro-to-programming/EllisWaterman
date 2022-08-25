@@ -28,5 +28,11 @@
     "answer": "!enoughSleep &&! eatenEnough",
     "correct": true,
     "timestamp": 1661466473019
+  },
+  {
+    "name": "Can go to prom?",
+    "answer": "isSenoir || invitedBySenoir",
+    "correct": false,
+    "timestamp": 1661466486035
   }
 ]
