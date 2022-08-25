@@ -202,5 +202,11 @@
     "answer": "HELP",
     "correct": false,
     "timestamp": 1661465760685
+  },
+  {
+    "name": "Wait for a sale?",
+    "answer": "ivetriedeverything",
+    "correct": false,
+    "timestamp": 1661465779606
   }
 ]
