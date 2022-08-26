@@ -46,5 +46,11 @@
     "answer": "!storeOpen ||! isASale",
     "correct": true,
     "timestamp": 1661551089376
+  },
+  {
+    "name": "Coming to bookclub?",
+    "answer": "member &&! outSick",
+    "correct": true,
+    "timestamp": 1661551096816
   }
 ]
