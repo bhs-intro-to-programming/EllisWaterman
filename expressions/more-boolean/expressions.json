@@ -4,5 +4,11 @@
     "answer": "!storeOpen || linesTooLong",
     "correct": true,
     "timestamp": 1661550822803
+  },
+  {
+    "name": "Wait for a sale?",
+    "answer": "!storeOpen ||! isASale",
+    "correct": true,
+    "timestamp": 1661550832755
   }
 ]
