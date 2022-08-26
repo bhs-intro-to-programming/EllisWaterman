@@ -4,5 +4,11 @@
     "answer": "!afraidOfTheDark &&! afraidOfSpiders",
     "correct": true,
     "timestamp": 1661551263851
+  },
+  {
+    "name": "Will we skip our trip to the store?",
+    "answer": "!storeOpen || linesTooLong",
+    "correct": true,
+    "timestamp": 1661551272875
   }
 ]
