@@ -1,1 +1,9 @@
-[]
+[
+  {
+    "name": "Sum",
+    "canonical": "a + b",
+    "answer": "a+b",
+    "correct": true,
+    "timestamp": 1661814322716
+  }
+]
