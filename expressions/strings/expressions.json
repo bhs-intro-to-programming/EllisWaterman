@@ -243,5 +243,12 @@
     "answer": "s.substring(0,1).toUpperCase()+s.substring(1)",
     "correct": true,
     "timestamp": 1661815624892
+  },
+  {
+    "name": "Capitalize first three",
+    "canonical": "s.substring(0,3).toUpperCase() + s.substring(3)",
+    "answer": "s.substring(0,3).toUpperCase()+s.substring(3)",
+    "correct": true,
+    "timestamp": 1661815775500
   }
 ]
