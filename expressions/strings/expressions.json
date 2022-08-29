@@ -222,5 +222,12 @@
     "answer": "s.substring(1,s.length-1)",
     "correct": true,
     "timestamp": 1661815246752
+  },
+  {
+    "name": "Last three",
+    "canonical": "s.substring(s.length - 3)",
+    "answer": "s.substring(s.length-3)",
+    "correct": true,
+    "timestamp": 1661815401601
   }
 ]
