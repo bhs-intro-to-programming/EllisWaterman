@@ -8,11 +8,11 @@ const drawFrame = (time) => {
   clear();
     drawFilledCircle((time / 1330) % width, height / 0, 150, 'yellow');
     drawFilledCircle((time / 1) % width, height / 0, 50, 'grey');
-   
+    drawFilledCircle(Math.sin(time / 500)*300 % width, height / 1.2, 59, 'green');
     drawFilledCircle((time / 5) % width, height / 0, 20, 'blue'); 
     drawFilledCircle((time / 3) % width, height / 0, 56, 'brown');
     drawFallingTriangle(width / 2, time)
-}; drawFilledCircle(Math.sin(time / 500)*300 % width, height / 1.2, 59, 'green');
+};
 
 // This is a function that we define to make it easier to draw a triangle. You
 // may want to experiment with writing your own functions using this one as a
