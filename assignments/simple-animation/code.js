@@ -46,4 +46,4 @@ const drawFallingTriangle = (x, time) => {
 // the same way in both places.)
 animate(drawFrame);
 
-drawLine( 100, 250, 5000, 200, 'red');
+drawLine( 100, 250, 500, 200, 'red');
