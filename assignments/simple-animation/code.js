@@ -12,6 +12,7 @@ const drawFrame = (time) => {
     drawFilledCircle((time / 5) % width, height / 0, 20, 'blue'); 
     drawFilledCircle((time / 3) % width, height / 0, 56, 'brown');
     drawFallingTriangle(width / 2, time)
+drawLine( 100, 250, 500, 200, 'red');
 
 };
 
@@ -46,4 +47,3 @@ const drawFallingTriangle = (x, time) => {
 // the same way in both places.)
 animate(drawFrame);
 
-drawLine( 100, 250, 500, 200, 'red');
