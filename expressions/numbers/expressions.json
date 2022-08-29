@@ -26,5 +26,12 @@
     "answer": "10**6",
     "correct": true,
     "timestamp": 1661814136589
+  },
+  {
+    "name": "Sally's apples",
+    "canonical": "6 - 4",
+    "answer": "6-4",
+    "correct": true,
+    "timestamp": 1661814144418
   }
 ]
