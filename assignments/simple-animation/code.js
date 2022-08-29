@@ -15,7 +15,7 @@ const drawFrame = (time) => {
 
 };
 
-drawLine(100, 100, 100, 100, black, 1);
+
 // This is a function that we define to make it easier to draw a triangle. You
 // may want to experiment with writing your own functions using this one as a
 // model to draw other shapes.
@@ -45,3 +45,5 @@ const drawFallingTriangle = (x, time) => {
 // of drawFrame either here or where it is defined. (Or, if you must, change it
 // the same way in both places.)
 animate(drawFrame);
+
+drawLine(100, 100, 100, 100, black, 1);
