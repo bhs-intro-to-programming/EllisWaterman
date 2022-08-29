@@ -1,1 +1,9 @@
-[]
+[
+  {
+    "name": "Ten",
+    "canonical": "10",
+    "answer": "5+5",
+    "correct": true,
+    "timestamp": 1661814093476
+  }
+]
