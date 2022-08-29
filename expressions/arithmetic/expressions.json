@@ -68,5 +68,12 @@
     "answer": "Math.abs(x1-x2)+Math.abs(y1-y2)",
     "correct": true,
     "timestamp": 1661814424232
+  },
+  {
+    "name": "2D distance",
+    "canonical": "Math.sqrt((x1 - x2) ** 2 + (y1 - y2) ** 2)",
+    "answer": "Math.sqrt(Math.abs(x1-x2)**2+Math.abs(y1-y2)**2)",
+    "correct": true,
+    "timestamp": 1661814692057
   }
 ]
