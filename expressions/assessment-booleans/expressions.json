@@ -110,5 +110,12 @@
     "answer": "enoughSleep && keepingUp",
     "correct": true,
     "timestamp": 1661896170938
+  },
+  {
+    "name": "Coming to bookclub?",
+    "canonical": "member && !outSick",
+    "answer": "member &&! outSick",
+    "correct": true,
+    "timestamp": 1661896176050
   }
 ]
