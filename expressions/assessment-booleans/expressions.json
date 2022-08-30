@@ -103,5 +103,12 @@
     "answer": "!haveMatches || fireLit",
     "correct": true,
     "timestamp": 1661896163026
+  },
+  {
+    "name": "Doing well?",
+    "canonical": "enoughSleep && keepingUp",
+    "answer": "enoughSleep && keepingUp",
+    "correct": true,
+    "timestamp": 1661896170938
   }
 ]
