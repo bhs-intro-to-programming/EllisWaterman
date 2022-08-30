@@ -124,5 +124,12 @@
     "answer": "s.substring(s.length-1)",
     "correct": true,
     "timestamp": 1661897278109
+  },
+  {
+    "name": "Length",
+    "canonical": "s.length",
+    "answer": "s.length",
+    "correct": true,
+    "timestamp": 1661897282501
   }
 ]
