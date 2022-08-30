@@ -89,5 +89,12 @@
     "answer": "isSenior || invitedBySenior",
     "correct": true,
     "timestamp": 1661896150962
+  },
+  {
+    "name": "In the room where it happens?",
+    "canonical": "inTheClass || isProctor",
+    "answer": "inTheClass || isProctor",
+    "correct": true,
+    "timestamp": 1661896156346
   }
 ]
