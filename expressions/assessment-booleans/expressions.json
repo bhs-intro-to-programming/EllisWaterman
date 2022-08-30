@@ -75,5 +75,12 @@
     "answer": "!afraidOfTheDark &&! afraidOfSpiders",
     "correct": true,
     "timestamp": 1661896117233
+  },
+  {
+    "name": "Energetic?",
+    "canonical": "enoughSleep && !justWorkedOut",
+    "answer": "enoughSleep &&! justWorkedOut",
+    "correct": true,
+    "timestamp": 1661896140794
   }
 ]
