@@ -103,5 +103,12 @@
     "answer": "s.toUpperCase()",
     "correct": true,
     "timestamp": 1661897067888
+  },
+  {
+    "name": "Capitalize",
+    "canonical": "s[0].toUpperCase() + s.substring(1).toLowerCase()",
+    "answer": "s.substring(0,1).toUpperCase()+s.substring(1)",
+    "correct": false,
+    "timestamp": 1661897135425
   }
 ]
