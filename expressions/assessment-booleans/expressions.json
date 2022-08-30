@@ -40,5 +40,12 @@
     "answer": "!(sleepy && dark)",
     "correct": true,
     "timestamp": 1661895970422
+  },
+  {
+    "name": "Not feeling it?",
+    "canonical": "!fun || tired",
+    "answer": "!fun || tired",
+    "correct": true,
+    "timestamp": 1661896019831
   }
 ]
