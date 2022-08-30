@@ -117,5 +117,12 @@
     "answer": "s.substring(0,1).toUpperCase()+s.substring(1).toLowerCase()",
     "correct": true,
     "timestamp": 1661897157218
+  },
+  {
+    "name": "Last character",
+    "canonical": "s[s.length - 1]",
+    "answer": "s.substring(s.length-1)",
+    "correct": true,
+    "timestamp": 1661897278109
   }
 ]
