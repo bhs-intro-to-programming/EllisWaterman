@@ -19,5 +19,12 @@
     "answer": "Math.abs(x1-x2)+Math.abs(y1-y2)",
     "correct": true,
     "timestamp": 1661895775107
+  },
+  {
+    "name": "Average",
+    "canonical": "(a + b) / 2",
+    "answer": "(a+b)/2",
+    "correct": true,
+    "timestamp": 1661895783138
   }
 ]
