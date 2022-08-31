@@ -82,5 +82,12 @@
     "answer": "s.substring(0,1)",
     "correct": true,
     "timestamp": 1661984159183
+  },
+  {
+    "name": "Indexing",
+    "canonical": "'f'",
+    "answer": "'f'",
+    "correct": true,
+    "timestamp": 1661984177607
   }
 ]
