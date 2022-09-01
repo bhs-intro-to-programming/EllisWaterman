@@ -19,5 +19,12 @@
     "answer": "s.substring(0,1).toUpperCase()+s.substring(1).toLowerCase()",
     "correct": true,
     "timestamp": 1662069487269
+  },
+  {
+    "name": "Concatenate (smoosh) strings",
+    "canonical": "s1 + s2",
+    "answer": "s1+s2",
+    "correct": true,
+    "timestamp": 1662069492350
   }
 ]
