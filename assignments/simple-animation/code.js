@@ -4,7 +4,7 @@
 // change the code in here using the same functions you had in the simple
 // drawing exercise to draw shapes. The argument to this function, time, is the
 // number of milliseconds (one millionth of a second) since the program started.
-const drawFrame = (y*time) => {
+const drawFrame = (time) => {
   clear();
     drawFilledCircle((time / 1330) % width, height / 0, 150, 'yellow');
     drawFilledCircle((time / 1) % width, height / 0, 50, 'grey');
