@@ -11,7 +11,7 @@ const drawFrame = (time) => {
     drawFilledCircle(Math.sin(time / 800)*500 % width, height / 3, 10, 'green');
         drawFilledCircle(Math.sin(time / 790)*500 % width, height / 3.3, 10, 'green');
         drawFilledCircle(Math.sin(time / 810)*500 % width, height / 2.7, 10, 'green');
-        drawFilledCircle(Math.sin(time / 810)*500 % width, height / 2.3, 10, 'green');
+        drawFilledCircle(Math.sin(time / 820)*500 % width, height / 2.5, 10, 'green');
 
     drawFilledCircle((time / 0) % width, height / 0, 20, 'blue'); 
     drawFilledCircle((time / 3) % width, height / 0, 56, 'brown');
