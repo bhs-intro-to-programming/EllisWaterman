@@ -12,7 +12,7 @@ const drawFrame = (time) => {
         drawFilledCircle(Math.sin(time / 790)*500 % width, height / 3.3, 10, 'green');
         drawFilledCircle(Math.sin(time / 810)*500 % width, height / 2.7, 10, 'green');
         drawFilledCircle(Math.sin(time / 820)*500 % width, height / 2.5, 10, 'green');
-    drawFallingTriangle(width / 1000, 1000000);
+    drawFallingTriangle(width / 1000, 1000);
 
     drawFilledCircle((time / 0) % width, height / 0, 20, 'blue'); 
     drawFilledCircle((time / 3) % width, height / 0, 56, 'brown');
@@ -38,7 +38,7 @@ const drawTriangle = (x1, y1, x2, y2, x3, y3, color, width = 0) => {
 // positioned at x and whose y is a function of time.
 const drawFallingTriangle = (y, time) => {
   // Figure out the x values relative to the passed in x
-  let x1 = y - 50;
+  let x1 = y - 5;
   let x2 = y;
   let x3 = y + 50;
 
