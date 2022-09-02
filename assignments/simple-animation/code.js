@@ -9,10 +9,10 @@ const drawFrame = (time) => {
     drawFilledCircle((time / 1330) % width, height / 0, 150, 'yellow');
     drawFilledCircle((time / 1) % width, height / 0, 50, 'grey');
     drawFilledCircle(Math.sin(time / 800)*500 % width, height / 3, 10, 'green');
-        drawFilledCircle(Math.sin(time / 790)*500 % width, height / 3.3, 10, 'green');
-        drawFilledCircle(Math.sin(time / 810)*500 % width, height / 2.7, 10, 'green');
-        drawFilledCircle(Math.sin(time / 820)*500 % width, height / 2.5, 10, 'green');
-                drawFilledCircle(Math.sin(time / 830)*500 % width, height / 2.3, 10, 'green');
+        drawFilledCircle(Math.sin(time / 800)*500 % width, height / 3.3, 10, 'green');
+        drawFilledCircle(Math.sin(time / 800)*500 % width, height / 2.7, 10, 'green');
+        drawFilledCircle(Math.sin(time / 800)*500 % width, height / 2.5, 10, 'green');
+                drawFilledCircle(Math.sin(time / 800)*500 % width, height / 2.3, 10, 'green');
 
     drawFallingTriangle(width /  10);
 
