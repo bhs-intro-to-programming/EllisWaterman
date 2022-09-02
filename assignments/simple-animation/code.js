@@ -13,6 +13,7 @@ const drawFrame = (time) => {
     drawFilledCircle((time / 3) % width, height / 0, 56, 'brown');
     drawFallingTriangle(width / 2, time)
 drawLine( 0, 134, 4000, 134, 'black');
+drawLine( 0, 120, 4000, 120, 'black');
 
 };
 
