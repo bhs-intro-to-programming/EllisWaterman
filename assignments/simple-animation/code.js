@@ -15,7 +15,7 @@ const drawFrame = (time) => {
     drawFallingTriangle(width / 2, time)
 drawLine( 0, 134, 4000, 134, 'black');
 drawLine( 0, 120, 4000, 120, 'black');
-drawLine( 0, 150, 4000, 150, 'black');
+drawLine( 0, 145, 4000, 145, 'black');
 
 };
 
