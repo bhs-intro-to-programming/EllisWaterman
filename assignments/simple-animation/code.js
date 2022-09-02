@@ -22,7 +22,7 @@ drawLine( 0, 134, 4000, 134, 'black');
 drawLine( 0, 120, 4000, 120, 'black');
 drawLine( 0, 148, 4000, 148, 'black');
 drawLine( 0, 160, 4000, 160, 'black');
-drawLine( 0, 178, 4000, 178, 'black');
+drawLine( 0, 175, 4000, 175, 'black');
 };
 
 
