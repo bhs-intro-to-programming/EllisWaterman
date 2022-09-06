@@ -1,4 +1,4 @@
-const {
-add
+const add={
+ab
 
 }
