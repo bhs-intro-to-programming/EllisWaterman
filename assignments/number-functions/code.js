@@ -1,1 +1,4 @@
-add=a+b
+const {
+add
+
+}
