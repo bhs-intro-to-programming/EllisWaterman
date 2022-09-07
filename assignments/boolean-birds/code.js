@@ -26,5 +26,5 @@ const isGlobbyBird=(red, spotted) => !red &&! spotted
 const eatsWorms=(red, spotted) => red || spotted
 const eatsNuts= (red, spotted) => red ||! spotted
 const eatsFish=(red,spotted) =>  !red || spotted
-const eatsMice=(red, spotted) => !red || !spotted
+const eatsMice=(red, Spotted) => !red || !Spotted
 const isRed=(Flobby, Bloggy, Flibble, Globby) => Bloggy && Flobby &&! Flibble &&! Globby
