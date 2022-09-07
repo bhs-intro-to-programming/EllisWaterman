@@ -30,3 +30,6 @@ const eatsMice=(red, spotted) => !red || !spotted
 const isRed=(s1) => {
 return s1 === 'Flobby' || s1 === 'Bloggy'
 }
+const isSpotted=(s1) => {
+return s1 ==='Flobby' || s1 === 'Flibble'
+}
