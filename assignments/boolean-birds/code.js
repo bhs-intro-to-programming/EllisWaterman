@@ -34,5 +34,5 @@ const isSpotted=(s1) => {
 return s1 ==='Flobby' || s1 === 'Flibble'
 }
 const isNotRed(s1) => {
-return s1 === 'Flibble' || s1 === 'isGlobby'
+return s1 === 'Flibble' || s1 === 'Globby'
 }
