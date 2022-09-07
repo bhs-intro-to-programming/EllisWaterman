@@ -11,9 +11,12 @@
  * Diet:
  *
  *   - Flobby Birds eat fish, nuts, and worms.
- *   - Bloggy Birds eat mice, nuts, and worms.
- *   - Flibble Birds eat fish, mice, and worms.
+ *  *   - Flibble Birds eat fish, mice, and worms.
  *   - Globby Birds eat fish, mice, and nuts.
+ * 
+ *   - Bloggy Birds eat mice, nuts, and worms.
+ * 
+
  *
  */
 const isFlobbyBird=(red, spotted) => red && spotted
@@ -23,3 +26,4 @@ const isGlobbyBird=(red, spotted) => !red &&! spotted
 
 const eatsWorms=(red, spotted) => red || spotted
 const eatsNuts= (red, spotted) => red ||! spotted
+const eatsFish=(red,spotted) =>  !red || spotted
