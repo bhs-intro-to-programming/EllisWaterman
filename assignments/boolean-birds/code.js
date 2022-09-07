@@ -20,4 +20,5 @@ const isFlobbyBird=(red, spotted) => red && spotted
 const isBloggyBird=(red, spotted) => red &&! spotted
 const isFlibbleBird=(red, spotted) => !red && spotted
 const isGlobbyBird=(red, spotted) => !red &&! spotted
-const eatsWorms=(isFlibbleBird, isBloggyBird, isFlobbyBird) => isFlobbyBird && isFlibbleBird && isBloggyBird
+
+const eatsWorms=(red, spotted) => red || spottted
