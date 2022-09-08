@@ -59,3 +59,4 @@
 
 
 drawTriangle(200, 200, 200, 200, 200, 200, 'red', 1)
+drawTriangle  = (200, 200, 200, 200, 200, 200, 'red', lineWidth = 1)
