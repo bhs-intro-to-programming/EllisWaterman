@@ -56,5 +56,5 @@
 //drawLine( 210+90, 300, 150+90, 200, 'brown');
 
 drawLine( 200, 250, 150, 200, 'red');
-drawLine( 100, 250, 250, 200, 'red');
+drawLine( 100, 250, 270, 200, 'red');
 drawLine( 100, 250, 150, 200, 'red');
