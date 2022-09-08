@@ -55,4 +55,6 @@
 //drawLine( 210, 300, 150, 200, 'brown');
 //drawLine( 210+90, 300, 150+90, 200, 'brown');
 
-drawTriangle(x1, y1, x2, y2, x3, y3, color, lineWidth = 1)
+drawLine( 200, 250, 150, 200, 'red');
+drawLine( 100, 250, 5000, 200, 'red');
+drawLine( 200, 250, 150, 200, 'red');
