@@ -58,3 +58,4 @@
 drawLine( 200, 250, 150, 200, 'red');
 drawLine( 100, 250, 270, 200, 'red');
 drawLine( 100, 250, 150, 200, 'red');
+drawTriangle(200, 200, 200, 200, 200, 200, 'red', 1)
