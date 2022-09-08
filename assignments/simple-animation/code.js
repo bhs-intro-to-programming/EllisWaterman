@@ -6,26 +6,28 @@
 // number of milliseconds (one millionth of a second) since the program started.
 const drawFrame = (time) => {
   clear();
-    drawFilledCircle((time / 1330) % width, height / 0, 150, 'yellow');
-    drawFilledCircle((time / 1) % width, height / 0, 50, 'grey');
-    drawFilledCircle(Math.sin(time / 800)*500 % width, height / 3, 10, 'green');
-        drawFilledCircle(Math.sin(time / 800)*500 % width, height / 3.3, 10, 'green');
-        drawFilledCircle(Math.sin(time / 800)*500 % width, height / 2.7, 10, 'green');
-        drawFilledCircle(Math.sin(time / 800)*500 % width, height / 2.5, 10, 'green');
-                drawFilledCircle(Math.sin(time / 800)*500 % width, height / 2.3, 10, 'green');
+//    drawFilledCircle((time / 1330) % width, height / 0, 150, 'yellow');
+//    drawFilledCircle((time / 1) % width, height / 0, 50, 'grey');
+ //   drawFilledCircle(Math.sin(time / 800)*500 % width, height / 3, 10, 'green');
+   //     drawFilledCircle(Math.sin(time / 800)*500 % width, height / 3.3, 10, 'green');
+    //    drawFilledCircle(Math.sin(time / 800)*500 % width, height / 2.7, 10, 'green');
+      //  drawFilledCircle(Math.sin(time / 800)*500 % width, height / 2.5, 10, 'green');
+            //    drawFilledCircle(Math.sin(time / 800)*500 % width, height / 2.3, 10, 'green');
 
-    drawFallingTriangle(width /  10);
+    //drawFallingTriangle(width /  10);
 
-    drawFilledCircle((time / 0) % width, height / 0, 20, 'blue'); 
-    drawFilledCircle((time / 3) % width, height / 0, 56, 'brown');
-drawFallingTriangle(width / 2, time)
+    //drawFilledCircle((time / 0) % width, height / 0, 20, 'blue'); 
+   // drawFilledCircle((time / 3) % width, height / 0, 56, 'brown');
+//drawFallingTriangle(width / 2, time)
 
-drawLine( 0, 134, 4000, 134, 'black');
-drawLine( 0, 120, 4000, 120, 'black');
-drawLine( 0, 148, 4000, 148, 'black');
-drawLine( 0, 160, 4000, 160, 'black');
-drawLine( 0, 174, 4000, 174, 'black');
+////drawLine( 0, 134, 4000, 134, 'black');
+//drawLine( 0, 120, 4000, 120, 'black');
+//drawLine( 0, 148, 4000, 148, 'black');
+//drawLine( 0, 160, 4000, 160, 'black');
+//drawLine( 0, 174, 4000, 174, 'black');
+(x1, y1, x2, y2, x3, y3, color, lineWidth = 1)
 };
+
 
 
 // This is a function that we define to make it easier to draw a triangle. You
