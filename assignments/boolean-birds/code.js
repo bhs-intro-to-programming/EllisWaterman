@@ -18,10 +18,10 @@
 
  *
  */
-const isFlobbyBird=(red, spotted) => red && spotted;
-const isBloggyBird=(red, spotted) => red &&! spotted;
-const isFlibbleBird=(red, spotted) => !red && spotted;
-const isGlobbyBird=(red, spotted) => !red &&! spotted;
+const isFlobbyBird = (red, spotted) => red && spotted;
+const isBloggyBird = (red, spotted) => red &&! spotted;
+const isFlibbleBird = (red, spotted) => !red && spotted;
+const isGlobbyBird = (red, spotted) => !red &&! spotted;
 
 const eatsWorms = (red, spotted) => red || spotted;
 const eatsNuts = (red, spotted) => red ||! spotted;
