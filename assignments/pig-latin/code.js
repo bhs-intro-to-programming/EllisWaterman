@@ -32,7 +32,4 @@
 // Feel free to play around in the REPL to make sure you understand how this
 // operator works.
 
-const idk = (s) {
-  return s = 'foobar'
-}
-const piLatin = (s='foobar')
+const piLatin = () =>  s.substring(s.search('aeiou'))
