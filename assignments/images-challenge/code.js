@@ -40,3 +40,5 @@ drawFilledCircle(250,300, 30, 'blue')
 
 const concentricCircles =(drawFilledCircle(x++, y++, r++, 'red'))
 let x=1
+let r=1
+let y=1
