@@ -24,7 +24,7 @@
  *  clear()
  */
 
-drawFilledCircle(250,300, 250, 'red')
+/*drawFilledCircle(250,300, 250, 'red')
 drawFilledCircle(250,300, 230, 'blue')
 drawFilledCircle(250,300, 210, 'red')
 drawFilledCircle(250,300, 190, 'blue')
@@ -36,3 +36,6 @@ drawFilledCircle(250,300, 90, 'red')
 drawFilledCircle(250,300, 70, 'blue')
 drawFilledCircle(250,300, 50, 'red')
 drawFilledCircle(250,300, 30, 'blue')
+*/
+
+const draw
