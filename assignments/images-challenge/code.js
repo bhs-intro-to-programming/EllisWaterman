@@ -42,5 +42,6 @@ drawFilledCircle(250,300, 30, 'blue')
 
 for (let x=1; x<100; x++)  {
   for (let y=1; y<100; y++)
+  for (let r=1; y<100; r++)
 function concentricCircle(x, y, r); drawFilledCircle( x++ , y++, r++, 'red')
 }
