@@ -38,8 +38,8 @@ drawFilledCircle(250,300, 50, 'red')
 drawFilledCircle(250,300, 30, 'blue')
 */
 
-const concentricCircle = (x, y, r) =>drawFilledCircle( x++ , y++, r++, 'red') 
+//const concentricCircle = (x, y, r) =>drawFilledCircle( x++ , y++, r++, 'red') 
 
 for (let x=1; x<100; x++) {
-const = (x, y, r) =>drawFilledCircle( x++ , y++, r++, 'red')
+concentricCircle = (x, y, r) =>drawFilledCircle( x++ , y++, r++, 'red')
 }
