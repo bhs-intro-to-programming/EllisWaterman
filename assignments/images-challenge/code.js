@@ -25,7 +25,7 @@
  */
 
 drawFilledCircle(250,300, 250, 'red')
-drawFilledCircle(250,300, 200, 'blue')
-drawFilledCircle(250,300, 150, 'red')
-drawFilledCircle(250,300, 100, 'blue')
-drawFilledCircle(250,300, 50, 'red')
+drawFilledCircle(250,300, 230, 'blue')
+drawFilledCircle(250,300, 210, 'red')
+drawFilledCircle(250,300, 190, 'blue')
+drawFilledCircle(250,300, 160, 'red')
