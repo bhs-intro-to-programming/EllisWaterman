@@ -41,13 +41,12 @@ drawFilledCircle(250,300, 30, 'blue')
 
 const concentricCircle = () => {
  for (let i = 0; i < 1000; i++) 
-  // Do something with s[i], e.g.
-  console.log(s[i])
-  let x = 250;
-  let y = 300;
-  let r = 100;
   drawFilledCircle(x, y, r, 'red')
- 
 }
 
 concentricCircle();
+
+/*let x = 250;
+  let y = 300;
+  let r = 100;
+*/
