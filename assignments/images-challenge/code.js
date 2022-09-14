@@ -41,7 +41,7 @@ drawFilledCircle(250,300, 30, 'blue')
 
 const concentricCircle = () => {
  for (let i = 0; i < 1000; i++) 
-  drawFilledCircle(x, y, r, 'red')
+  drawFilledCircle(i, y, r, 'red')
 }
 
 concentricCircle();
