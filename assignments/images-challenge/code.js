@@ -46,5 +46,3 @@ const concentricCircle = () => {
   return drawFilledCircle(x, y, r, 'red')
 
 }
-
-drawFilledCircle(250++,300++, 30++, 'blue')
