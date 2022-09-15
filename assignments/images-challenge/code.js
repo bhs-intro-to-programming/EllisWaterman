@@ -40,9 +40,9 @@ drawFilledCircle(250,300, 30, 'blue')
 
 
 const concentricCircle = (_x, _y, _r) => {
-  for (let x = 1; x < 1000; x++)
-    for (let y = 1; i < 1000; y++)
-      for (let r = 1; i < 1000; r++)
+  let x = 1; x < 1000; x++
+  let y = 1; i < 1000; y++
+  let r = 1; i < 1000; r++
         drawFilledCircle(x, y, r, 'red')
 }
 
