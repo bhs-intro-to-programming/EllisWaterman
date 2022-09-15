@@ -39,11 +39,11 @@ drawFilledCircle(250,300, 30, 'blue')
 */
 
 
-const concentricCircle = (_x, _y, _r) => {
-  let _x = 1; x < 1000; x++
-  let _y = 1; i < 1000; y++
-  let _r = 1; i < 1000; r++
-        drawFilledCircle(_x, _y, _r, 'red')
+const concentricCircle = (i) => {
+  for (let x = 1; x < 1000; x++)
+    for (let y = 1; i < 1000; y++)
+      for (let r = 1; i < 1000; r++)
+        drawFilledCircle(x, y, r, 'red')
 }
 
 concentricCircle();
