@@ -43,7 +43,7 @@ const concentricCircle = (_x, _y, _r) => {
   let x = 1; x < 1000; x++
   let y = 1; i < 1000; y++
   let r = 1; i < 1000; r++
-        drawFilledCircle(x + r, y, r, 'red')
+        drawFilledCircle(x + r, y + r, r + r, 'red')
 }
 
 concentricCircle();
