@@ -51,3 +51,11 @@ const lineOfCircles = () => {
 //lineOfCircles();
 
 
+const lineOfCirclesAlternatingColors = () => {
+
+  for (let x = 0; x < 49.5; x++)
+  if (x > length)
+    drawFilledCircle(x*10, height/2,  5, 'red')
+}
+
+lineOfCirclesAlternatingColors()
