@@ -39,7 +39,7 @@ const concentricCircle = (x) => {
   }
 }
 
-//concentricCircle();
+concentricCircle();
 
 const lineOfCircles = () => {
 
@@ -65,4 +65,4 @@ const lineOfCirclesAlternatingColors = (x) => {
   
 }
 
-lineOfCirclesAlternatingColors()
+//lineOfCirclesAlternatingColors()
