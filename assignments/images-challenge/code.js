@@ -45,7 +45,7 @@ const concentricCircle = () => {
       drawCircle(width / 2, height / 2, x * 5.5, 'red', 10)
     }
     else {
-      drawCircle(width / 2, height / 2, x * 5.5, 'blue', 6)
+      drawCircle(width / 2, height / 2, x * 5.5, 'blue', 1)
     }
   if (width > x * 10) {
     drawCircle(width / 2, height / 2, x * 5.5, 'red', 6)
