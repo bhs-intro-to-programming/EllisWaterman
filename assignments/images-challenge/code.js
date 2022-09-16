@@ -44,8 +44,8 @@ const concentricCircle = (x) => {
 const lineOfCircles = () => {
 
   for (let x = 0; x < 49.5; x++)
-  if (x > length)
-    drawFilledCircle(x*10, height/2,  5, 'red')
+    if (x > length)
+      drawFilledCircle(x * 10, height / 2, 5, 'red')
 }
 
 //lineOfCircles();
@@ -54,8 +54,14 @@ const lineOfCircles = () => {
 const lineOfCirclesAlternatingColors = () => {
 
   for (let x = 0; x < 49.5; x++)
+    if (x * 10 % 2 === 0) {
+      drawFilledCircle(x * 10, height / 2, 5, 'blue')
+    }
+    else {
+      drawFilledCircle(x * 10, height / 2, 5, 'red')
+    }
   if (x > length)
-    drawFilledCircle(x*10, height/2,  5, 'red')
+    drawFilledCircle(x * 10, height / 2, 5, 'red')
 }
 
 lineOfCirclesAlternatingColors()
