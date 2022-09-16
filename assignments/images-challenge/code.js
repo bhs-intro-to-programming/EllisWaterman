@@ -40,7 +40,7 @@ drawFilledCircle(250,300, 30, 'blue')
 
 
 const concentricCircle = () => {
-  for (let x = 10; x < 20; x++)
+  for (let x = 10; x < 45; x++)
     if (width > x * 10) {
       drawCircle(width/2, height/2, x * 5, 'red', 1)
     }
