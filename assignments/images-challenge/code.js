@@ -51,7 +51,7 @@ const lineOfCircles = () => {
 //lineOfCircles();
 
 
-const lineOfCirclesAlternatingColors = () => {
+const lineOfCirclesAlternatingColors = (x) => {
 
   for (let x = 0; x < 49.5; x++)
     if (x += 2) {
