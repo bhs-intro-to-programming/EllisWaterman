@@ -48,4 +48,4 @@ for (let x = 0; x < 45; x++)
 }
 
 //lineOfCircles();
-drawFilledCircle(width/2, height/2, 10, 'blue')
+drawFilledCircle(250, 300, 10, 'blue')
