@@ -54,7 +54,7 @@ const lineOfCircles = () => {
 const lineOfCirclesAlternatingColors = () => {
 
   for (let x = 0; x < 49.5; x++)
-    if (x * 10 % 1 === 0) {
+    if (x * 10 > 2) {
       if (x > length)
       drawFilledCircle(x * 10, height / 2, 5, 'blue')
     }
