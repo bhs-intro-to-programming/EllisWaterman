@@ -24,19 +24,6 @@
  *  clear()
  */
 
-/*drawFilledCircle(250,300, 250, 'red')
-drawFilledCircle(250,300, 230, 'blue')
-drawFilledCircle(250,300, 210, 'red')
-drawFilledCircle(250,300, 190, 'blue')
-drawFilledCircle(250,300, 170, 'red')
-drawFilledCircle(250,300, 150, 'blue')
-drawFilledCircle(250,300, 130, 'red')
-drawFilledCircle(250,300, 110, 'blue')
-drawFilledCircle(250,300, 90, 'red')
-drawFilledCircle(250,300, 70, 'blue')
-drawFilledCircle(250,300, 50, 'red')
-drawFilledCircle(250,300, 30, 'blue')
-*/
 
 
 const concentricCircle = () => {
@@ -54,6 +41,10 @@ const concentricCircle = () => {
 
 //concentricCircle();
 
+const lineOfCircles = () => {
 
+for (let x = 0; x < 45; x++)
+ drawFilledCircle(0, height / 2, x*1, 'red')
+}
 
-
+lineOfCircles();
