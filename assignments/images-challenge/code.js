@@ -48,7 +48,7 @@ const lineOfCircles = () => {
       drawFilledCircle(x * 10, height / 2, 5, 'red')
 }
 
-lineOfCircles();
+//lineOfCircles();
 
 
 const lineOfCirclesAlternatingColors = (x) => {
@@ -65,4 +65,4 @@ const lineOfCirclesAlternatingColors = (x) => {
   
 }
 
-//lineOfCirclesAlternatingColors()
+lineOfCirclesAlternatingColors()
