@@ -49,7 +49,7 @@ const lineOfCircles = () => {
 }
 
 const lineOfCirclesAlternatingColors = () => {
-let colour = 'red';
+let colour = 'blue';
   for (let x = 0; x < 49.5; x++)
 
     if (x > length)
