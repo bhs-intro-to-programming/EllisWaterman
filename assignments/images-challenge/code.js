@@ -48,21 +48,28 @@ const lineOfCircles = () => {
       drawFilledCircle(x * 10, height / 2, 5, 'red')
 }
 
+const lineOfCirclesAlternatingColors = () => {
+
+  for (let x = 0; x < 49.5; x++)
+    if (x > length)
+      drawFilledCircle(x * 10, height / 2, 5, 'red')
+}
+
 //lineOfCircles();
 
 
-const lineOfCirclesAlternatingColors = (x) => {
+// const lineOfCirclesAlternatingColors = (x) => {
 
-  for (let x = 0; x < 49.5; x++)
-    if (x += 1) {
-      if (x > length)
-      drawFilledCircle(x * 10, height / 2, 5, 'blue')
-    }
-    else {
-      if (x > length)
-      drawFilledCircle(x * 10, height / 2, 5, 'red')
-    }
+//   for (let x = 0; x < 49.5; x++)
+//     if (x += 1) {
+//       if (x > length)
+//       drawFilledCircle(x * 10, height / 2, 5, 'blue')
+//     }
+//     else {
+//       if (x > length)
+//       drawFilledCircle(x * 10, height / 2, 5, 'red')
+//     }
   
-}
+// }
 
 lineOfCirclesAlternatingColors()
