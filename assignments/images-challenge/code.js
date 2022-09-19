@@ -31,7 +31,7 @@ const concentricCircle = () => {
     let colour = (x % 2 === 1) ? 'blue' : 'red';  
       drawCircle(width / 2, height / 2, x, colour, 1)
     if (x > length)
-      drawCircle(width / 2, height / 2, x, colour, 10)
+      drawCircle(width / 2, height / 2, x +100, colour, 10)
     }
   
   
