@@ -69,4 +69,4 @@ const fillWithCircles = () => {
         drawCircle(x * 10, height / 2 - b, 5, 'blue', 1)
 
 }
-fillWithCircles(4343);
+fillWithCircles(yay);
