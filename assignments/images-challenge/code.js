@@ -29,9 +29,9 @@
 const concentricCircle = () => {
   for (let x = 0; x < 45; x++) {
     let colour = (x % 2 === 1) ? 'blue' : 'red';
-    drawFilledCircle(width / 2, height / 2, x, colour)
+    drawFilledCircle(width / 2, height / 2, x*5.5, colour)
     if (x > length)
-      drawFilledCircle(width / 2, height / 2, x, colour)
+      drawFilledCircle(width / 2, height / 2, x*5.5, colour)
   }
 
 
