@@ -60,15 +60,14 @@ const lineOfCirclesAlternatingColors = () => {
 
 
 
-//lineOfCirclesAlternatingColors()
+lineOfCirclesAlternatingColors()
 
-/*const fillWithCircles = () => {
+const fillWithCircles = () => {
   for (let x = 0; x < 49.5; x++)
-    let yay = (x % 2 === 0) {
+    let position = (x % 2 === 1)
       if (x > length)
-        drawCircle(x * 10, height - yay, 5, 'blue', 1)
+        drawCircle(x * 10, height - position, 5, 'blue', 1)
     }
 
 fillWithCircles();
-*/
-//dosent work
+
