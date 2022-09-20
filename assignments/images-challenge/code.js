@@ -55,7 +55,7 @@ const lineOfCirclesAlternatingColors = () => {
   }
 }
 
-//lineOfCircles();
+lineOfCircles();
 
 
 
