@@ -66,7 +66,7 @@ const fillWithCircles = () => {
     for (let p = 10; p < 590; p++) {
       let y = (p % 2 === 1)
       if (x > length)
-        drawCircle(y+100*100, height - p, 5, 'blue', 1)
+        drawCircle(y+100, height - p, 5, 'blue', 1)
     }
   }
 }
