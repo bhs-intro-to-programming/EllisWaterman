@@ -73,15 +73,15 @@ const fillWithCircles = () => {
 
 
 const fillWithRandomFilledCircles = () => {
-  if (p = Math.random) {
-     for(let x = 0; x< 49.5; x++) {
+
+  for (let x = 0; x < 49.5; x++) {
     for (let p = 1; p < 50; p++) {
+      if (p = Math.random) {
       if (x > length)
         drawCircle(x * 10, height - p * 12, 5, 'blue', 1)
     }
-      
-    }
   }
+}
 }
 fillWithRandomFilledCircles();
 
