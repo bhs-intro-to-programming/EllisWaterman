@@ -70,5 +70,5 @@ const fillWithCircles = () => {
         drawCircle(x * 10, height - p, 5, 'blue', 1)
     }
 }
-fillWithCircles();
+//fillWithCircles();
 
