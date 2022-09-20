@@ -73,7 +73,7 @@ const fillWithCircles = () => {
 
 
 const fillWithRandomFilledCircles = () => {
-  if (x*10 = Math.random) {
+  if (p = Math.random) {
      for(let x = 0; x< 49.5; x++) {
     for (let p = 1; p < 50; p++) {
       if (x > length)
