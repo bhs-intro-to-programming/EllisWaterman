@@ -81,5 +81,5 @@ const fillWithRandomFilledCircles = () => {
   }
 }
 
-fillWithRandomFilledCircles(5);
+fillWithRandomFilledCircles(500);
 
