@@ -69,7 +69,7 @@ const fillWithCircles = () => {
     }
   }
 }
-//fillWithCircles();
+fillWithCircles();
 
 
 const fillWithRandomFilledCircles = () => {
@@ -90,5 +90,5 @@ const fillWithRandomFilledCircles = () => {
     }
   }
 }
-fillWithRandomFilledCircles();
+//fillWithRandomFilledCircles();
 
