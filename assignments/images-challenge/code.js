@@ -63,13 +63,11 @@ const lineOfCirclesAlternatingColors = () => {
 
 const fillWithCircles = () => {
   let radius = 25;
-  let xsize = width/(radius*2)
-  let ysize = height/(radius*2)
- 
-  let xoffset = 10;
+  let xsize = width / (radius * 2)
+  let ysize = height / (radius * 2)
   for (let rows = 0; rows < xsize; rows++) {
     for (let cols = 1; cols < ysize; cols++) {
-      drawCircle(rows * (radius*2) + radius, cols * (radius*2), radius, 'blue', 1)
+      drawCircle(rows * (radius * 2) + radius, cols * (radius * 2), radius, 'blue', 1)
     }
   }
 }
@@ -80,7 +78,7 @@ const fillWithRandomFilledCircles = () => {
 
   for (let x = 0; x < 50; x++) {
     for (let p = 1; p < 50; p++) {
-      if (p < Math.random()*100) {
+      if (p < Math.random() * 100) {
         if (x > length)
           drawFilledCircle(x * 10, height - p * 12, 5, 'blue')
         else
