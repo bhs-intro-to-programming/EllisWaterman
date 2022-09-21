@@ -66,6 +66,7 @@ const fillWithCircles = () => {
   for (let rows = 0; x < size; rows++) {
     for (let cols = 1; p < size; cols++) {
       drawCircle(rows * 10, height - cols * 12, 5, 'blue', 1)
+    }
   }
 }
 fillWithCircles();
