@@ -69,8 +69,8 @@ const fillWithCircles = () => {
  
   let xoffset = 10;
   let spacing = 10;
-  for (let rows = 0; rows < xcount; rows++) {
-    for (let cols = 1; cols < ycount; cols++) {
+  for (let rows = 0; rows < xsize; rows++) {
+    for (let cols = 1; cols < ysize; cols++) {
       drawCircle((rows * spacing) + xoffset, cols * spacing, 5, 'blue', 1)
     }
   }
