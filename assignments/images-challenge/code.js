@@ -80,7 +80,7 @@ const fillWithRandomFilledCircles = () => {
       if (x > length)
         drawFilledCircle(x * 10, height - p * 12, 5, 'blue')
         else 
-        drawCircle(x * 10, height - p * 12, 5, 'blue', 1)
+        drawCircle(p * 10, height - p * 12, 5, 'blue', 1)
     }
   }
 }
