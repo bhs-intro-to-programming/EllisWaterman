@@ -62,7 +62,7 @@ const lineOfCirclesAlternatingColors = () => {
 //lineOfCirclesAlternatingColors()
 
 const fillWithCircles = () => {
-  let radius = 100;
+  let radius = 50;
   let xsize = width / (radius * 2)
   let ysize = height / (radius * 2)
   for (let rows = 0; rows < xsize; rows++) {
