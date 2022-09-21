@@ -63,7 +63,7 @@ const lineOfCirclesAlternatingColors = () => {
 
 const fillWithCircles = () => {
   let size = 5;
-  let xoffset = size/2;
+  let xoffset = size;
   for (let rows = 0; rows < size; rows++) {
     for (let cols = 1; cols < size; cols++) {
       drawCircle((rows * 20) + xoffset, height - cols * 12, 5, 'blue', 1)
