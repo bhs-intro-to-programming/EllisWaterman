@@ -79,9 +79,9 @@ const fillWithRandomlyFilledCircles = () => {
   for (let rows = 0; rows < xsize; rows++) {
     for (let cols = 0; cols < ysize; cols++) {
       if (Math.random() > (1 - 0.23))
-        drawCircle(rows * (radius * 2) + radius, cols * radius * 2 + radius, radius, 'blue', 1)
-      else
         drawFilledCircle(rows * (radius * 2) + radius, cols * radius * 2 + radius, radius, 'blue', 1)
+      else
+        drawCircle(rows * (radius * 2) + radius, cols * radius * 2 + radius, radius, 'blue', 1)
     }
   }
 }
