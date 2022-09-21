@@ -67,7 +67,7 @@ const fillWithCircles = () => {
   let ysize = height / (radius * 2)
   for (let rows = 0; rows < xsize; rows++) {
     for (let cols = 0; cols < ysize; cols++) {
-      drawCircle(rows * (radius * 2) + radius, cols * radius * 2, radius, 'blue', 1)
+      drawCircle(rows * (radius * 2) + radius, cols * radius * 2 + radius, radius, 'blue', 1)
     }
   }
 }
