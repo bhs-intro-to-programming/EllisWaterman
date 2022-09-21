@@ -87,5 +87,6 @@ const fillWithRandomFilledCircles = () => {
   }
 }
 }
+  }
 fillWithRandomFilledCircles();
 
