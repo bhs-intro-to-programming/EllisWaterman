@@ -71,26 +71,19 @@ const fillWithCircles = () => {
     }
   }
 }
-fillWithCircles();
-
-
-const fillWithRandomFilledCircles = () => {
-
-  for (let x = 0; x < 50; x++) {
-    for (let p = 1; p < 50; p++) {
-      if (p < Math.random() * 100) {
-        if (x > length)
-          drawFilledCircle(x * 10, height - p * 12, 5, 'blue')
-        else
-          for (let x = 0; x < 50; x++) {
-            for (let p = 1; p < 50; p++) {
-              if (x > length)
-                drawCircle(x * 10, height - p * 12, 5, 'blue', 1)
-            }
-          }
-      }
+//fillWithCircles();
+const fillWithRandomlyFilledCircles = () => {
+ let radius = 25;
+  let xsize = width / (radius * 2)
+  let ysize = height / (radius * 2)
+  for (let rows = 0; rows < xsize; rows++) {
+    for (let cols = 0; cols < ysize; cols++) {
+      drawCircle(rows * (radius * 2) + radius, cols * radius * 2 + radius, radius, 'blue', 1)
     }
   }
 }
-//fillWithRandomFilledCircles();
+
+
+
+fillWithRandomlyFilledCircles();
 
