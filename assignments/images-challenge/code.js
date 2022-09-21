@@ -70,7 +70,7 @@ const fillWithCircles = () => {
   let spacing = 10;
   for (let rows = 0; rows < xsize; rows++) {
     for (let cols = 1; cols < ysize; cols++) {
-      drawCircle((rows * spacing) + xoffset, cols * spacing, radius, 'blue', 1)
+      drawCircle((rows * (radius*2)) + xoffset, cols * spacing, radius, 'blue', 1)
     }
   }
 }
