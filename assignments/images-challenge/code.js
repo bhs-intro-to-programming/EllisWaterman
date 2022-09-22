@@ -95,7 +95,7 @@ const squareOfCircles = () => {
   let xsize = width / (r * 2)
   let ysize = height / (r * 2)
   for (let rows = 1; rows < xsize; rows++) {
-    for (let cols = 0; cols < ysize; cols++) {
+    for (let cols = 1; cols < ysize; cols++) {
       drawCircle(rows * (r * 2) + r, cols * r * 2 + r, r, 'blue', 1)
     }
    }
