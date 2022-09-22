@@ -91,12 +91,12 @@ const fillWithRandomlyFilledCircles = () => {
 //fillWithRandomlyFilledCircles();
 
 const squareOfCircles = () =>
-let radius = 25;
+let r = 25;
   let xsize = width / (radius * 2)
   let ysize = height / (radius * 2)
   for (let rows = 0; rows < xsize; rows++) {
     let (cols = 0)
-      drawCircle(rows * (radius * 2) + radius, cols * radius * 2 + radius, radius, 'blue', 1)
+      drawCircle(rows * (r * 2) + r, cols * r * 2 + r, r, 'blue', 1)
     }
   
 
