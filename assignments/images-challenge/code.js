@@ -73,7 +73,7 @@ const fillWithCircles = () => {
 }
 //fillWithCircles();
 const fillWithRandomlyFilledCircles = () => {
-  let radius = 17;
+  let radius = 14;
   let xsize = width / (radius * 2)
   let ysize = height / (radius * 2)
   for (let rows = 0; rows < xsize; rows++) {
