@@ -90,7 +90,7 @@ const fillWithRandomlyFilledCircles = () => {
 
 //fillWithRandomlyFilledCircles();
 
-const squareOfCircles
+const squareOfCircles = () =>
 let radius = 25;
   let xsize = width / (radius * 2)
   let ysize = height / (radius * 2)
