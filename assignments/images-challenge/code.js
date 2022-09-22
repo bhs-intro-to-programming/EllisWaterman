@@ -88,5 +88,19 @@ const fillWithRandomlyFilledCircles = () => {
 
 
 
-fillWithRandomlyFilledCircles();
+//fillWithRandomlyFilledCircles();
+
+const squareOfCircles
+let radius = 25;
+  let xsize = width / (radius * 2)
+  let ysize = height / (radius * 2)
+  for (let rows = 0; rows < xsize; rows++) {
+    for (let cols = 0; cols < ysize; cols) {
+      drawCircle(rows * (radius * 2) + radius, cols * radius * 2 + radius, radius, 'blue', 1)
+    }
+  }
+
+squareOfCircles();
+
+
 
