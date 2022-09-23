@@ -96,14 +96,14 @@ const squareOfCircles = () => {
   let ysize = height / (r * 2)
   for (let rows = 0; rows < xsize; rows++) {
     for (let cols = 0; cols < ysize; cols++) {
-      if (cols -1 > 9)
+      if (cols - 1 > 9)
         drawCircle(rows * (r * 2) + r, cols * r * 2 + r, r, 'blue', 1)
       if (cols < 1)
-      drawCircle(rows * (r * 2) + r, cols * r * 2 + r, r, 'blue', 1)
-      if (rows -1 > 7)
-      drawCircle(rows * (r * 2) + r, cols * r * 2 + r, r, 'blue', 1)
+        drawCircle(rows * (r * 2) + r, cols * r * 2 + r, r, 'blue', 1)
+      if (rows - 1 > 7)
+        drawCircle(rows * (r * 2) + r, cols * r * 2 + r, r, 'blue', 1)
       if (rows < 1)
-      drawCircle(rows * (r * 2) + r, cols * r * 2 + r, r, 'blue', 1)
+        drawCircle(rows * (r * 2) + r, cols * r * 2 + r, r, 'blue', 1)
     }
   }
 }
@@ -111,10 +111,10 @@ const squareOfCircles = () => {
 
 
 const checkerboard = () => {
-let s = 25
-let color = (p % 2 === 1) ? 'blue' : 'red';
-for (let p = 0; p < 300; p++)
-drawFilledRect(p, p, s, s, color)
+  let s = 25
+  for (let p = 0; p < 300; p++)
+    let color = (p % 2 === 1) ? 'blue' : 'red';
+  drawFilledRect(p, p, s, s, color)
 }
 
 
