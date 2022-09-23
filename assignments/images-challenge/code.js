@@ -112,14 +112,13 @@ const squareOfCircles = () => {
 
 const checkerboard = () => {
   let s = 25
-  let e = 25
   for (let p = 0; p < 300; p++) {
     for (let rows = 0; rows < s; rows++) {
-      for (let cols = 0; cols < e; cols++) {
+      //for (let cols = 0; cols < s; cols++) {
         let color = (p % 2 === 1) ? 'blue' : 'red';
         drawFilledRect(rows, cols, s, s, color)
       }
     }
   }
-}
+//}
 checkerboard();
