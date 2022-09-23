@@ -113,7 +113,7 @@ const squareOfCircles = () => {
 const checkerboard = () => {
 let s = 10
 let color = (x % 2 === 1) ? 'blue' : 'red';
-for (let p = 0; p < 300; p++)
+for (let p = 1; p < 300; p++)
 drawFilledRect(p, p, s, s, color)
 }
 
