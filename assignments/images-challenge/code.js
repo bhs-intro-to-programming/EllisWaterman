@@ -112,7 +112,7 @@ const squareOfCircles = () => {
 
 const checkerboard = () => {
 let s = 25
-let color = (p % 2 === 1) ? 'blue' : 'red';
+let color = (s % 2 === 1) ? 'blue' : 'red';
 for (let p = 0; p < width; p++)
 drawFilledRect(p, p, s, s, color)
 }
