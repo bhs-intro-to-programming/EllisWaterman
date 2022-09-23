@@ -107,7 +107,14 @@ const squareOfCircles = () => {
     }
   }
 }
-squareOfCircles();
+//squareOfCircles();
 
 
-//cols1, cols-1, rows1, rows -1)
+const checkerboard
+let s = 25
+let color = (x % 2 === 1) ? 'blue' : 'red';
+for (let p = 0; p < 300; p++)
+drawFilledRect(p, p, s, s, color)
+
+
+
