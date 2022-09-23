@@ -114,7 +114,7 @@ const checkerboard = () => {
   let s = 25
     for (let rows = 0; rows < s; rows++) {
       for (let cols = 0; cols <  100; cols++) {
-        let color = (s % 2 === 1) ? 'blue' : 'red';
+        let color = (rows % 2 === 1) ? 'blue' : 'red';
         drawFilledRect(rows, cols, s, s, color)
       }
     }
