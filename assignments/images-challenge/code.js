@@ -91,7 +91,7 @@ const fillWithRandomlyFilledCircles = () => {
 //fillWithRandomlyFilledCircles();
 
 const squareOfCircles = () => {
-  let r = 100;
+  let r = 200;
   let xsize = width / (r * 2)
   let ysize = height / (r * 2)
   for (let rows = 0; rows < xsize; rows++) {
