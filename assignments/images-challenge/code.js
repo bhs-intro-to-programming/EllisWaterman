@@ -118,3 +118,4 @@ drawFilledRect(p, p, s, s, color)
 }
 
 
+checkerboard();
