@@ -114,11 +114,11 @@ const checkerboard = () => {
   let s = 25
   for (let p = 0; p < 300; p++) {
     for (let rows = 0; rows < s; rows++) {
-      //for (let cols = 0; cols < s; cols++) {
+      for (let cols = 0; cols < s; cols++) {
         let color = (p % 2 === 1) ? 'blue' : 'red';
-        drawFilledRect(rows, p*500, s, s, color)
+        drawFilledRect(rows, cols, s, s, color)
       }
     }
   }
-//}
+}
 checkerboard();
