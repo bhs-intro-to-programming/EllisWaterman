@@ -88,7 +88,7 @@ const fillWithRandomlyFilledCircles = () => {
 
 
 
-//fillWithRandomlyFilledCircles();
+fillWithRandomlyFilledCircles();
 
 const squareOfCircles = () => {
   let r = 25;
@@ -107,7 +107,7 @@ const squareOfCircles = () => {
     }
   }
 }
-squareOfCircles();
+//squareOfCircles();
 
 
 const checkerboard = () => {
