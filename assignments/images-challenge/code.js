@@ -113,7 +113,7 @@ const squareOfCircles = () => {
 
 
 const checkerboard = () => {
-  let s = Math.floor(length)
+  let s = Math.floor(25)
     for (let rows = 0; rows < s; rows++) {
       for (let cols = 0; cols < s; cols++) {
         let color = (cols % 2 === 0) ? 'blue' : 'red';
