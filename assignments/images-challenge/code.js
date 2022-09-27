@@ -71,7 +71,7 @@ const fillWithCircles = () => {
     }
   }
 }
-fillWithCircles();
+//fillWithCircles();
 const fillWithRandomlyFilledCircles = () => {
   let radius = 22;
   let xsize = Math.floor(width / (radius * 2))
@@ -122,4 +122,4 @@ const checkerboard = () => {
     }
   }
 
-//checkerboard();
+checkerboard();
