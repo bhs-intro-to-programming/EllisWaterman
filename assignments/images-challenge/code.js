@@ -135,4 +135,6 @@ const notReallyCurved = () => {
     drawLine(a, length - 1, a + x, height - 1, 'black', 1/100)
 }
 }
-notReallyCurved()
+//notReallyCurved()
+
+drawLine(2**2, 9, 20, 83, 'black' 1)
