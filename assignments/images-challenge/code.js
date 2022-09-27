@@ -122,7 +122,7 @@ const checkerboard = () => {
       if (rows % 2 === 0)
       drawFilledRect(rows*s, cols*s, s, s, color)
       else
-      drawFilledRect(rows*s, cols*s+s, s, s, color)
+      drawFilledRect(rows*s, cols*s-s, s, s, color)
     }
   }
 }
