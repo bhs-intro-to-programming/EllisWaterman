@@ -130,7 +130,7 @@ const checkerboard = () => {
 //checkerboard();
 
 const notReallyCurved = () => {
-  let a = 3**2
+  let a =
   for (let x = 0; x < width; x++) {
     drawLine(a, length - 1, a + x, height - 1, 'black', 1)
 }
