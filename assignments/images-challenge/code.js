@@ -37,7 +37,7 @@ const concentricCircle = () => {
 
 }
 
-//concentricCircle();
+concentricCircle();
 
 const lineOfCircles = () => {
 
@@ -135,4 +135,4 @@ const notReallyCurved = () => {
     drawLine(a, length - 1, a + x, height - 1, 'black', 1)
 }
 }
-notReallyCurved()
+//notReallyCurved()
