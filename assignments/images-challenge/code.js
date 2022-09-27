@@ -109,7 +109,7 @@ const squareOfCircles = () => {
     }
   }
 }
-squareOfCircles();
+//squareOfCircles();
 
 
 const checkerboard = () => {
@@ -122,4 +122,4 @@ const checkerboard = () => {
     }
   }
 
-//checkerboard();
+checkerboard();
