@@ -127,4 +127,9 @@ const checkerboard = () => {
   }
 }
 
-checkerboard();
+//checkerboard();
+
+const notReallyCurved
+
+let a = 0
+drawFilledRect(a,a, 20, 20)
