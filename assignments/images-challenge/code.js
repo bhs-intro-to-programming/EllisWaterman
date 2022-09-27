@@ -93,7 +93,7 @@ const myDrawCircle = (r, rows, cols) => {
   drawCircle(rows * (r * 2) + r, cols * r * 2 + r, r, 'blue', 1)
 }
 const squareOfCircles = () => {
-  let r = 25;
+  let r = 20;
   let xsize = Math.floor(width / (r * 2))
   let ysize = Math.floor(height / (r * 2))
   for (let rows = 0; rows < xsize; rows++) {
