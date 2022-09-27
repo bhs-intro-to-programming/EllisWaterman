@@ -120,9 +120,9 @@ const checkerboard = () => {
     for (let cols = 0; cols < colsize; cols++) {
       let color = (cols % 2 === 0) ? 'blue' : 'red';
       if (rows % 2 === 0)
-      drawFilledRect(rows*s, cols*s, s, s, color)
+        drawFilledRect(rows * s, cols * s, s, s, color)
       else
-      drawFilledRect(rows*s, cols*s-s, s, s, color)
+        drawFilledRect(rows * s, cols * s - s, s, s, color)
     }
   }
 }
@@ -130,6 +130,6 @@ const checkerboard = () => {
 //checkerboard();
 
 const notReallyCurved = () => {
-let a = 1000
-drawFilledRect(a,a, 20, 20)
+  let a = 0
+    drawFilledRect(0, 0, 20, 20)
 }
