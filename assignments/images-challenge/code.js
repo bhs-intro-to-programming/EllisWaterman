@@ -133,4 +133,4 @@ const notReallyCurved = () => {
   let a = 0
     drawFilledRect(a, a, 20, 20, 'black')
 }
- notReallyCurved
+ notReallyCurved()
