@@ -89,7 +89,7 @@ const fillWithRandomlyFilledCircles = () => {
 
 
 //fillWithRandomlyFilledCircles();
-const myDrawCircle = (r, rows, cols) => {
+const drawCircle = (r, rows, cols) => {
   drawCircle(rows * (r * 2) + r, cols * r * 2 + r, r, 'blue', 1)
 }
 const squareOfCircles = () => {
@@ -99,13 +99,13 @@ const squareOfCircles = () => {
   for (let rows = 0; rows < xsize; rows++) {
     for (let cols = 0; cols < ysize; cols++) {
       if (cols - 1 > 9)
-        myDrawCircle(r, rows, cols)
+        drawCircle(r, rows, cols)
       if (cols < 1)
-        myDrawCircle(r, rows, cols)
-      if (rows - 1 > 7)
-        myDrawCircle(r, rows, cols)
+        drawCircle(r, rows, cols)
+      if (rows - 1 > 6)
+        drawCircle(r, rows, cols)
       if (rows < 1)
-       myDrawCircle(r, rows, cols)
+       drawCircle(r, rows, cols)
     }
   }
 }
