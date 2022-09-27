@@ -114,12 +114,12 @@ const squareOfCircles = () => {
 
 const checkerboard = () => {
   let s = 25
-  let colsize = Math.floor(width / (s * 2))
-  let rowsize = Math.floor(length / (s * 2))
+  let colsize = Math.floor(width)
+  let rowsize = Math.floor(length)
   for (let rows = 0; rows < rowsize; rows++) {
     for (let cols = 0; cols < colsize; cols++) {
       let color = (cols % 2 === 0) ? 'blue' : 'red';
-      drawFilledRect(rows*s, cols*s, s, s, color)
+      drawFilledRect(rows, cols, s, s, color)
     }
   }
 }
