@@ -102,7 +102,7 @@ const squareOfCircles = () => {
         myDrawCircle(r, rows, cols)
       if (cols < 1)
         myDrawCircle(r, rows, cols)
-      if (rows > 8)
+      if (rows > xsize-1)
         myDrawCircle(r, rows, cols)
       if (rows < 1)
        myDrawCircle(r, rows, cols)
