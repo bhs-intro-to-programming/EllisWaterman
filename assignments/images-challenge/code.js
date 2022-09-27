@@ -131,7 +131,8 @@ const checkerboard = () => {
 
 const notReallyCurved = () => {
   let a = 0
-  for (let x = 0; x < length; x++)
+  for (let x = 0; x < length; x++) {
     drawLine(a, length - 1, a + 20, height - 1, 'black', 1)
+}
 }
 notReallyCurved()
