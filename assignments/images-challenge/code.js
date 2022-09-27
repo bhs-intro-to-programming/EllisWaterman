@@ -122,4 +122,4 @@ const checkerboard = () => {
     }
   }
 
-checkerboard();
+//checkerboard();
