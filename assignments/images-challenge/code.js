@@ -37,7 +37,7 @@ const concentricCircle = () => {
 
 }
 
-concentricCircle();
+//concentricCircle();
 
 const lineOfCircles = () => {
 
