@@ -131,5 +131,6 @@ const checkerboard = () => {
 
 const notReallyCurved = () => {
   let a = 0
-    drawFilledRect(20, 60, 20, 20, 'black')
+    drawFilledRect(a, a, 20, 20, 'black')
 }
+ notReallyCurved
