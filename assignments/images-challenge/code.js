@@ -36,7 +36,7 @@
 // }
 const concentricCircle = () => {
 let x = 10
-while x > 20 
+while x < 20 
 drawFilledCircle(width/2, height/2, x)
 x= x-1
 }
