@@ -53,7 +53,7 @@ const lineOfCircles = () => {
 
 const lineOfCirclesAlternatingColors = () => {
 
-  for (let x = 0; x < Math.floor(width/x); x++) {
+  for (let x = 0; x < Math.floor(width-x; x++) {
     let colour = (x % 2 === 1) ? 'blue' : 'red';
     if (x > length)
       drawFilledCircle(x * 10, height / 2, 5, colour)
