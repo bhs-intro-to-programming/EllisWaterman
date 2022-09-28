@@ -28,7 +28,7 @@
 
 const concentricCircle = () => {
   for (let x = 0; x < height; x++) {
-    let colour = (x % 2 === 1 ? 'blue' : 'red')
+    let colour = (x % 2 === 0 ? 'blue' : 'red')
     drawFilledCircle(width / 2, height / 2, x, colour)
   }
 
