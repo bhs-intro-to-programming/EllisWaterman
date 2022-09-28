@@ -133,7 +133,7 @@ const notReallyCurved = () => {
   let a = 5
   let spacing = 10
   for (let x = 0; x < a; x++) {
-    drawLine(0,0, a * spacing, height - 1, 'black', 1)
+    drawLine(0,0, x * spacing, height - 1, 'black', 1)
   }
 }
 notReallyCurved()
