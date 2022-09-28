@@ -114,8 +114,8 @@ const squareOfCircles = () => {
 
 const checkerboard = () => {
   let s = 25
-  let colsize = Math.floor(width/s)
-  let rowsize = Math.floor(height/s)
+  let colsize = Math.floor(width / s)
+  let rowsize = Math.floor(height / s)
   for (let rows = 0; rows < rowsize; rows++) {
     for (let cols = 0; cols < colsize; cols++) {
       let color = (cols % 2 === 0) ? 'blue' : 'red';
@@ -132,8 +132,10 @@ const checkerboard = () => {
 const notReallyCurved = () => {
   let a = 5
   let spacing = 100
-  for (let x = 0; x < a; x++) {
-    drawLine(0,0, x * spacing, height - 1, 'black', 1)
+  for (let y = 0; y < a; y++) {
+    for (let x = 0; x < a; x++) {
+      drawLine(0, y*spacing, x * spacing, height - 1, 'black', 1)
+    }
   }
 }
 notReallyCurved()
