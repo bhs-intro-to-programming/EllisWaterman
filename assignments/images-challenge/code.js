@@ -130,7 +130,7 @@ const checkerboard = () => {
 //checkerboard();
 
 const notReallyCurved = () => {
-  let a = 5
+  let a = 20
   let spacing = 10
   for (let y = 0; y < a; y++) {
     for (let x = 0; x < a; x++) {
