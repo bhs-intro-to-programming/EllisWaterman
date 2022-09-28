@@ -63,8 +63,8 @@ const lineOfCirclesAlternatingColors = () => {
 
 const fillWithCircles = () => {
   let radius = 25;
-  let xsize = Math.floor(width / (radius * 2))
-  let ysize = Math.floor(height / (radius * 2))
+  let xsize = width / (radius * 2)
+  let ysize = height / (radius * 2)
   for (let rows = 0; rows < xsize; rows++) {
     for (let cols = 0; cols < ysize; cols++) {
       drawCircle(rows * (radius * 2) + radius, cols * radius * 2 + radius, radius, 'blue', 1)
@@ -98,14 +98,14 @@ const squareOfCircles = () => {
   let ysize = Math.floor(height / (r * 2))
   for (let rows = 0; rows < xsize; rows++) {
     for (let cols = 0; cols < ysize; cols++) {
-      if (cols == ysize - 1)
+      if (cols == ysize-1)
         myDrawCircle(r, rows, cols)
       if (cols < 1)
         myDrawCircle(r, rows, cols)
-      if (rows == xsize - 1)
+      if (rows == xsize-1)
         myDrawCircle(r, rows, cols)
       if (rows < 1)
-        myDrawCircle(r, rows, cols)
+       myDrawCircle(r, rows, cols)
     }
   }
 }
@@ -114,25 +114,12 @@ const squareOfCircles = () => {
 
 const checkerboard = () => {
   let s = 25
-  let colsize = Math.floor(width)
-  let rowsize = Math.floor(height)
-  for (let rows = 0; rows < rowsize; rows++) {
-    for (let cols = 0; cols < colsize; cols++) {
-      let color = (cols % 2 === 0) ? 'blue' : 'red';
-      if (rows % 2 === 0)
-        drawFilledRect(rows * s, cols * s, s, s, color)
-      else
-        drawFilledRect(rows * s, cols * s - s, s, s, color)
+    for (let rows = 0; rows < s; rows++) {
+      for (let cols = 0; cols < s; cols++) {
+        let color = (cols % 2 === 0) ? 'blue' : 'red';
+        drawFilledRect(rows*s, cols*s, s, s, color)
+      }
     }
   }
-}
 
-//checkerboard();
-
-const notReallyCurved = () => {
-  let a = 0
-  for (let x = 0; x < width; x++) {
-    drawLine(a, length - 1, a + x, height - 1, 'black', 1)
-}
-}
-notReallyCurved()
+checkerboard();
