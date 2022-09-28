@@ -37,7 +37,7 @@ const concentricCircle = () => {
 
 }
 
-//concentricCircle();
+concentricCircle();
 
 const lineOfCircles = () => {
 
@@ -138,4 +138,4 @@ const notReallyCurved = () => {
     }
   }
 }
-notReallyCurved()
+//notReallyCurved()
