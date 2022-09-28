@@ -80,7 +80,7 @@ const fillWithRandomlyFilledCircles = () => {
   let ysize = Math.floor(height / (radius * 2))
   for (let rows = 0; rows < xsize; rows++) {
     for (let cols = 0; cols < ysize; cols++) {
-      if (Math.random() > (1 - .99))
+      if (Math.random() > (1 - 1.1))
         drawFilledCircle(rows * (radius * 2) + radius, cols * radius * 2 + radius, radius, 'blue', 1)
       else
         drawCircle(rows * (radius * 2) + radius, cols * radius * 2 + radius, radius, 'blue', 1)
