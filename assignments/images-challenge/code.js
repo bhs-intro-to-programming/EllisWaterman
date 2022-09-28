@@ -143,7 +143,7 @@ const notReallyCurved = () => {
 //notReallyCurved()
 
 const goatMaker = () => {
-drawFilledRect(0,10, 25, 25, 'grey')
+drawFilledRect(300,100, 25, 25, 'grey')
 
 }
 goatMaker()
