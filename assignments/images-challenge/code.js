@@ -61,7 +61,7 @@ const lineOfCirclesAlternatingColors = () => {
 }
 
 
-//lineOfCirclesAlternatingColors()
+lineOfCirclesAlternatingColors()
 
 const fillWithCircles = () => {
   let radius = 25;
