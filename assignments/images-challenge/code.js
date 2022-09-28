@@ -61,7 +61,7 @@ const lineOfCirclesAlternatingColors = () => {
 }
 
 
-lineOfCirclesAlternatingColors()
+//lineOfCirclesAlternatingColors()
 
 const fillWithCircles = () => {
   let radius = 25;
@@ -141,3 +141,8 @@ const notReallyCurved = () => {
   }
 }
 //notReallyCurved()
+
+const goatMaker = () => {
+drawFilledRect(0,0, 25, 25, 'grey')
+
+}
