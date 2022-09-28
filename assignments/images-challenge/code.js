@@ -30,7 +30,7 @@ const concentricCircle = () => {
   let c = 10
   for (let x = 0; x < height/2; x++) {
     let colour = (x % 2 === 0 ? 'blue' : 'red')
-    drawCircle(width / 2, height / 2, x, colour, 2)
+    drawCircle(width / 2, height / 2, x, colour, 50)
   }
 
 }
