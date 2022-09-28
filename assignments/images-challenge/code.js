@@ -27,8 +27,7 @@
 
 
 const concentricCircle = () => {
-  let c = 10
-  for (let x = 0; x < height/20; x++) {
+  for (let x = 1; x < height/20; x++) {
     let colour = (x % 2 === 0 ? 'blue' : 'red')
     drawCircle(width / 2, height / 2, x*10, colour, 10)
   }
