@@ -26,14 +26,21 @@
 
 
 
+
+//   for (let x = 0; x < height / 20; x++) {
+//     for (let c = 0; c < x; c++) {
+//       let colour = (x % 2 === 1 ? 'blue' : 'red')
+//       drawCircle(width / 2, height / 2, x * 10, colour, c)
+//     }
+//   }
+// }
 const concentricCircle = () => {
-  for (let x = 0; x < height / 20; x++) {
-    for (let c = 0; c < x; c++) {
-      let colour = (x % 2 === 1 ? 'blue' : 'red')
-      drawCircle(width / 2, height / 2, x * 10, colour, c)
-    }
-  }
+let x = 10
+while x > 20 
+drawFilledCircle(width/2, height/2, x)
+x= x-1
 }
+
 concentricCircle();
 
 const lineOfCircles = () => {
