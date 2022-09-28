@@ -90,7 +90,7 @@ const fillWithRandomlyFilledCircles = () => {
 
 
 
-//fillWithRandomlyFilledCircles();
+fillWithRandomlyFilledCircles();
 const myDrawCircle = (r, rows, cols) => {
   drawCircle(rows * (r * 2) + r, cols * r * 2 + r, r, 'blue', 1)
 }
@@ -129,7 +129,7 @@ const checkerboard = () => {
   }
 }
 
-checkerboard();
+//checkerboard();
 
 const notReallyCurved = () => {
   let a = 25
