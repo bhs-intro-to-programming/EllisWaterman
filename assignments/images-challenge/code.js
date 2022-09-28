@@ -129,7 +129,7 @@ const checkerboard = () => {
   }
 }
 
-//checkerboard();
+checkerboard();
 
 const notReallyCurved = () => {
   let a = 25
@@ -140,4 +140,4 @@ const notReallyCurved = () => {
     }
   }
 }
-notReallyCurved()
+//notReallyCurved()
