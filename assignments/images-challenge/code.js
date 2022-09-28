@@ -39,7 +39,7 @@ const concentricCircle = () => {
 //   if (x > length)
 //     drawCircle(width / 2, height / 2, x * 5.5, colour, 6)
 // }
-concentricCircle();
+//concentricCircle();
 
 const lineOfCircles = () => {
 
