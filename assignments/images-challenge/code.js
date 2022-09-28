@@ -146,3 +146,4 @@ const goatMaker = () => {
 drawFilledRect(0,0, 25, 25, 'grey')
 
 }
+goatMaker()
