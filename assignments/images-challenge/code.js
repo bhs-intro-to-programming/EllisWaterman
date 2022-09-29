@@ -55,7 +55,7 @@ const lineOfCirclesAlternatingColors = () => {
   let radius = width / numberOfCircles / 2
   for (let x = 0; x < numberOfCircles; x++) {
     let colour = (x % 2 === 1) ? 'blue' : 'red';
-      drawFilledCircle(x*radius*2, height / 2, radius, colour)
+      drawFilledCircle(x*radius*2+radius, height / 2, radius, colour)
   }
 }
 
