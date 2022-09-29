@@ -37,9 +37,9 @@
 const concentricCircle = () => {
   let x = 0
   let colour = 'red'
-  while (x < height/2) {
-    drawFilledCircle(width / 2, height / 2,height/2-x, colour)  
-   colour = (colour == 'red' ? 'blue' : 'red')
+  while (x < height / 2) {
+    drawFilledCircle(width / 2, height / 2, height / 2 - x, colour)
+    colour = (colour == 'red' ? 'blue' : 'red')
     x = x + 15
   }
 }
@@ -47,12 +47,12 @@ const concentricCircle = () => {
 //concentricCircle();
 
 const lineOfCircles = () => {
- 
+
   for (let x = 0; x < width; x++)
-  while (x < length) {
-    if (x > length)
-      drawFilledCircle(x*10, height / 2, 5, 'red')
-}
+    while (x < length) {
+      if (x > length)
+        drawFilledCircle(x * 10, height / 2, 5, 'red')
+    }
 }
 lineOfCircles();
 
