@@ -39,7 +39,7 @@ const concentricCircle = () => {
   let colour = (x % 2 == 0 ? 'blue' : 'red')
   while (x < height/2) {
     console.log(x, height/2-x)
-    drawFilledCircle(width / 2, height / 2, x, colour)
+    drawFilledCircle(width / 2, height / 2, 200-x, colour)
     x++
   }
 }
