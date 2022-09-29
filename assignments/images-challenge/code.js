@@ -207,3 +207,4 @@ const fillWithRandomlyColoredFilledCircles = () => {
   //      : (y % 7 == 6)
   //      ? 'indigo'
   //      : 'violet';
+}
