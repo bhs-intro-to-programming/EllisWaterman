@@ -53,10 +53,17 @@ const lineOfCircles = () => {
       drawFilledCircle(x*10, height / 2, 5, 'red')
 }
 }
-lineOfCircles();
+//lineOfCircles();
 
+const foobar = () => {
+  let foo = 0
+  while(foo < 10) {
+    console.log(foo + 1)
+    foo++
+  }
+}
 
-
+foobar();
 const lineOfCirclesAlternatingColors = () => {
 
   for (let x = 0; x < Math.floor(width); x++) {
