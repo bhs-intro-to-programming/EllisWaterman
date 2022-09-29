@@ -149,7 +149,7 @@ const notReallyColorful = () => {
         let color = (y % 3 === 1)
        ? 'blue'
        : (y % 3 == 2)
-       ? 'red'
+       ? 'pink'
        : (y % 3 == 3)
        ? 'green'
        : 'purple';
