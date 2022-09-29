@@ -140,7 +140,7 @@ const notReallyCurved = () => {
   }
 }
 //notReallyCurved()
-const rainbowify
+const rainbowify = () => {
        let color = (y % 7 === 1)
        ? 'red'
        : (y % 7 == 2)
@@ -154,6 +154,7 @@ const rainbowify
        : (y % 7 == 6)
        ? 'indigo'
        : 'violet';
+}
 const colorfulCurve = () => {
   let a = 25
   let s = 15
