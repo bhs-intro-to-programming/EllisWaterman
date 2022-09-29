@@ -140,3 +140,14 @@ const notReallyCurved = () => {
   }
 }
 //notReallyCurved()
+
+const notReallyCurved = () => {
+  let a = 25
+  let s = 15
+  for (let y = 0; y < a; y++) {
+    for (let x = 0; x < a; x++) {
+      let color = (x % 2 === 0) ? 'blue' : 'red';
+      drawLine(0, y * s, y * s, height - 1, colour, 1)
+    }
+  }
+}
