@@ -47,13 +47,11 @@ const concentricCircle = () => {
 //concentricCircle();
 
 const lineOfCircles = () => {
-
   for (let x = 0; x < width; x++)
-    while (x < length) {
       if (x > length)
         drawFilledCircle(x * 10, height / 2, 5, 'red')
     }
-}
+
 lineOfCircles();
 
 
