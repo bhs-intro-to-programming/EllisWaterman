@@ -113,7 +113,7 @@ const fillWithRandomlyColoredFilledCircles = () => {
       if (Math.random() > (1 - .23))
         drawFilledCircle(rows * (radius * 2) + radius, cols * radius * 2 + radius, radius, color, 1)
       else
-        drawCircle(rows * (radius * 2) + radius, cols * radius * 2 + radius, radius, color, 1)
+        drawCircle(rows * (radius * 2) + radius, cols * radius * 2 + radius, radius, 'blue', 1)
     }
   }
 }
