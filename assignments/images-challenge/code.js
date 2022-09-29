@@ -97,17 +97,17 @@ const fillWithRandomlyColoredFilledCircles = () => {
   let ysize = Math.floor(height / (radius * 2))
   for (let rows = 0; rows < xsize; rows++) {
     for (let cols = 0; cols < ysize; cols++) {
-      let color = (radius % 7 === 1)
+      let color = (rows % 7 === 1)
         ? 'red'
-        : (radius % 7 == 2)
+        : (rows % 7 == 2)
           ? 'orange'
-          : (radius % 7 == 3)
+          : (rows % 7 == 3)
             ? 'yellow'
-            : (radius % 7 == 4)
+            : (rows % 7 == 4)
               ? 'green'
-              : (radius % 7 == 5)
+              : (rows % 7 == 5)
                 ? 'blue'
-                : (radius % 7 == 6)
+                : (rows % 7 == 6)
                   ? 'indigo'
                   : 'violet';
       if (Math.random() > (1 - .23))
