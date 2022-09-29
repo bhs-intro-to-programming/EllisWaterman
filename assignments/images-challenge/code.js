@@ -27,13 +27,6 @@
 
 
 
-//   for (let x = 0; x < height / 20; x++) {
-//     for (let c = 0; c < x; c++) {
-//       let colour = (x % 2 === 1 ? 'blue' : 'red')
-//       drawCircle(width / 2, height / 2, x * 10, colour, c)
-//     }
-//   }
-// }
 const concentricCircle = () => {
   let x = 0
   let colour = 'red'
@@ -54,20 +47,20 @@ const lineOfCircles = () => {
   }
 }
 
-lineOfCircles();
+//lineOfCircles();
 
 
 const lineOfCirclesAlternatingColors = () => {
-
-  for (let x = 0; x < Math.floor(width); x++) {
+  let numberOfCircles = 20
+  let radius = width / numberOfCircles / 2
+  for (let x = 0; x < numberOfCircles; x++) {
     let colour = (x % 2 === 1) ? 'blue' : 'red';
-    if (x > length)
-      drawFilledCircle(x * 10, height / 2, 5, colour)
+      drawFilledCircle(x*radius*2, height / 2, radius, colour)
   }
 }
 
 
-//lineOfCirclesAlternatingColors()
+lineOfCirclesAlternatingColors()
 
 const fillWithCircles = () => {
   let radius = 25;
