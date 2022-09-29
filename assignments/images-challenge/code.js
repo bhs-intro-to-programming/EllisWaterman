@@ -50,7 +50,7 @@ const lineOfCircles = () => {
   for (let x = 0; x < width; x++)
       if (x < width)
 
-        drawFilledCircle(x, height / 2, 5, 'red')
+        drawFilledCircle(x*6, height / 2, 5, 'red')
     }
 
 lineOfCircles();
