@@ -148,15 +148,15 @@ const notReallyColorful = () => {
     for (let x = 0; x < a; x++) {
         let color = (y % 7 === 1)
        ? 'red'
-       : (y % 3 == 2)
+       : (y % 7 == 2)
        ? 'orange'
-       : (y % 3 == 3)
+       : (y % 7 == 3)
        ? 'yellow'
-       : (y % 3 == 4)
+       : (y % 7 == 4)
        ? 'green'
-       : (y % 3 == 5)
+       : (y % 7 == 5)
        ? 'blue'
-       : (y % 3 == 6)
+       : (y % 7 == 6)
        ? 'indigo'
        : 'violet';
         drawLine(0, y * s, y * s, height - 1, color, 1)
