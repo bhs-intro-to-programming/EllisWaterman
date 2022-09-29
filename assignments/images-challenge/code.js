@@ -41,7 +41,7 @@ const concentricCircle = () => {
     console.log(x, x, colour)
     drawFilledCircle(width / 2, height / 2,height/2-x, colour)  
    colour = (colour == 'red' ? 'blue' : 'red')
-    x = x + 2
+    x = x + 3.5
   }
 }
 
