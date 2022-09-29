@@ -47,7 +47,7 @@ const concentricCircle = () => {
 //concentricCircle();
 
 const lineOfCircles = () => {
-  let c = 100
+  let c =  3
   let r = width / c / 2
   for (let x = 0; x < c; x++)
     drawFilledCircle(x * r * 2+r, height / 2, r, 'red')
