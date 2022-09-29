@@ -170,6 +170,8 @@ const fillWithRandomlyColoredFilledCircles = () => {
   }
   //notReallyCurved()
   const colorfulCurve = () => {
+            debugger;
+
     let a = 25
     let s = 15
     for (let y = 0; y < a; y++) {
@@ -190,7 +192,6 @@ const fillWithRandomlyColoredFilledCircles = () => {
         drawLine(0, y * s, y * s, height - 1, color, 1)
       }
     }
-        debugger;
 
   }
 
