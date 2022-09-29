@@ -140,7 +140,6 @@ const notReallyCurved = () => {
   }
 }
 //notReallyCurved()
-const rainbowify
 const colorfulCurve = () => {
   let a = 25
   let s = 15
