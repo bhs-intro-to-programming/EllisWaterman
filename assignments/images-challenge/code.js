@@ -110,7 +110,7 @@ const fillWithRandomlyColoredFilledCircles = () => {
                 : (rows*cols % 7 == 6)
                   ? 'indigo'
                   : 'violet';
-      if (Math.random() > (1 - .23))
+      if (Math.random() > (1 - 1))
         drawFilledCircle(rows * (radius * 2) + radius, cols * radius * 2 + radius, radius, color, 1)
       else
         drawCircle(rows * (radius * 2) + radius, cols * radius * 2 + radius, radius, 'blue', 1)
