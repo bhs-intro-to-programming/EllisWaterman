@@ -90,80 +90,108 @@ const fillWithRandomlyFilledCircles = () => {
 
 
 //fillWithRandomlyFilledCircles();
-const myDrawCircle = (r, rows, cols) => {
-  drawCircle(rows * (r * 2) + r, cols * r * 2 + r, r, 'blue', 1)
-}
-const squareOfCircles = () => {
-  let r = 20;
-  let xsize = Math.floor(width / (r * 2))
-  let ysize = Math.floor(height / (r * 2))
+
+const fillWithRandomlyColoredFilledCircles = () => {
+  let radius = 22;
+  let xsize = Math.floor(width / (radius * 2))
+  let ysize = Math.floor(height / (radius * 2))
   for (let rows = 0; rows < xsize; rows++) {
     for (let cols = 0; cols < ysize; cols++) {
-      if (cols == ysize - 1)
-        myDrawCircle(r, rows, cols)
-      if (cols < 1)
-        myDrawCircle(r, rows, cols)
-      if (rows == xsize - 1)
-        myDrawCircle(r, rows, cols)
-      if (rows < 1)
-        myDrawCircle(r, rows, cols)
-    }
-  }
-}
-//squareOfCircles();
-
-
-const checkerboard = () => {
-  let s = 25
-  let colsize = Math.floor(width / s)
-  let rowsize = Math.floor(height / s)
-  for (let rows = 0; rows < rowsize; rows++) {
-    for (let cols = 0; cols < colsize; cols++) {
-      let color = (cols % 2 === 0) ? 'blue' : 'red';
-      if (rows % 2 === 0)
-        drawFilledRect(rows * s, cols * s, s, s, color)
+      let radius = (y % 7 === 1)
+        ? 'red'
+        : (radius % 7 == 2)
+          ? 'orange'
+          : (radius % 7 == 3)
+            ? 'yellow'
+            : (radius % 7 == 4)
+              ? 'green'
+              : (radius % 7 == 5)
+                ? 'blue'
+                : (radius % 7 == 6)
+                  ? 'indigo'
+                  : 'violet';
+      if (Math.random() > (1 - .23))
+        drawFilledCircle(rows * (radius * 2) + radius, cols * radius * 2 + radius, radius, color, 1)
       else
-        drawFilledRect(rows * s, cols * s - s, s, s, color)
+        drawCircle(rows * (radius * 2) + radius, cols * radius * 2 + radius, radius, color, 1)
     }
   }
-}
+  fillWithRandomlyColoredFilledCircles()
 
-//checkerboard();
-
-const notReallyCurved = () => {
-  let a = 25
-  let s = 15
-  for (let y = 0; y < a; y++) {
-    for (let x = 0; x < a; x++) {
-      drawLine(0, y * s, y * s, height - 1, 'black', 1)
+  const myDrawCircle = (r, rows, cols) => {
+    drawCircle(rows * (r * 2) + r, cols * r * 2 + r, r, 'blue', 1)
+  }
+  const squareOfCircles = () => {
+    let r = 20;
+    let xsize = Math.floor(width / (r * 2))
+    let ysize = Math.floor(height / (r * 2))
+    for (let rows = 0; rows < xsize; rows++) {
+      for (let cols = 0; cols < ysize; cols++) {
+        if (cols == ysize - 1)
+          myDrawCircle(r, rows, cols)
+        if (cols < 1)
+          myDrawCircle(r, rows, cols)
+        if (rows == xsize - 1)
+          myDrawCircle(r, rows, cols)
+        if (rows < 1)
+          myDrawCircle(r, rows, cols)
+      }
     }
   }
-}
-//notReallyCurved()
-const colorfulCurve = () => {
-  let a = 25
-  let s = 15
-  for (let y = 0; y < a; y++) {
-    for (let x = 0; x < a; x++) {
+  //squareOfCircles();
+
+
+  const checkerboard = () => {
+    let s = 25
+    let colsize = Math.floor(width / s)
+    let rowsize = Math.floor(height / s)
+    for (let rows = 0; rows < rowsize; rows++) {
+      for (let cols = 0; cols < colsize; cols++) {
+        let color = (cols % 2 === 0) ? 'blue' : 'red';
+        if (rows % 2 === 0)
+          drawFilledRect(rows * s, cols * s, s, s, color)
+        else
+          drawFilledRect(rows * s, cols * s - s, s, s, color)
+      }
+    }
+  }
+
+  //checkerboard();
+
+  const notReallyCurved = () => {
+    let a = 25
+    let s = 15
+    for (let y = 0; y < a; y++) {
+      for (let x = 0; x < a; x++) {
+        drawLine(0, y * s, y * s, height - 1, 'black', 1)
+      }
+    }
+  }
+  //notReallyCurved()
+  const colorfulCurve = () => {
+    let a = 25
+    let s = 15
+    for (let y = 0; y < a; y++) {
+      for (let x = 0; x < a; x++) {
         let color = (y % 7 === 1)
-       ? 'red'
-       : (y % 7 == 2)
-       ? 'orange'
-       : (y % 7 == 3)
-       ? 'yellow'
-       : (y % 7 == 4)
-       ? 'green'
-       : (y % 7 == 5)
-       ? 'blue'
-       : (y % 7 == 6)
-       ? 'indigo'
-       : 'violet';
+          ? 'red'
+          : (y % 7 == 2)
+            ? 'orange'
+            : (y % 7 == 3)
+              ? 'yellow'
+              : (y % 7 == 4)
+                ? 'green'
+                : (y % 7 == 5)
+                  ? 'blue'
+                  : (y % 7 == 6)
+                    ? 'indigo'
+                    : 'violet';
         drawLine(0, y * s, y * s, height - 1, color, 1)
       }
     }
   }
 
-  colorfulCurve()
+  //colorfulCurve()
 
 // raindbow function
   // let color = (y % 7 === 1)
