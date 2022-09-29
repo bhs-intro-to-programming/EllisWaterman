@@ -140,7 +140,7 @@ const notReallyCurved = () => {
   }
 }
 //notReallyCurved()
-const rainbowify = () => {
+const rainbowify = (y) => {
        let color = (y % 7 === 1)
        ? 'red'
        : (y % 7 == 2)
