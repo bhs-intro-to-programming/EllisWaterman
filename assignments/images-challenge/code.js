@@ -37,7 +37,7 @@ const concentricCircle = () => {
   }
 }
 
-//concentricCircle();
+concentricCircle();
 
 const lineOfCircles = () => {
   let numberOfCircles = 20
@@ -164,4 +164,19 @@ const colorfulCurve = () => {
     }
   }
 
-  colorfulCurve()
+  //colorfulCurve()
+
+// raindbow function
+  // let color = (y % 7 === 1)
+  //      ? 'red'
+  //      : (y % 7 == 2)
+  //      ? 'orange'
+  //      : (y % 7 == 3)
+  //      ? 'yellow'
+  //      : (y % 7 == 4)
+  //      ? 'green'
+  //      : (y % 7 == 5)
+  //      ? 'blue'
+  //      : (y % 7 == 6)
+  //      ? 'indigo'
+  //      : 'violet';
