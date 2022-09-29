@@ -29,21 +29,10 @@
 
 const concentricCircle = () => {
   let x = 0
+  let colour = 'red'
   while (x < height / 2) {
-        let color = (x % 7 === 1)
-       ? 'red'
-       : (x % 7 == 2)
-       ? 'orange'
-       : (x % 7 == 3)
-       ? 'yellow'
-       : (x % 7 == 4)
-       ? 'green'
-       : (x % 7 == 5)
-       ? 'blue'
-       : (x % 7 == 6)
-       ? 'indigo'
-       : 'violet';
-    drawFilledCircle(width / 2, height / 2, height / 2 - x, color)
+    drawFilledCircle(width / 2, height / 2, height / 2 - x, colour)
+    colour = (colour == 'red' ? 'blue' : 'red')
     x = x + 15
   }
 }
@@ -175,7 +164,7 @@ const colorfulCurve = () => {
     }
   }
 
-  //colorfulCurve()
+  colorfulCurve()
 
 // raindbow function
   // let color = (y % 7 === 1)
