@@ -146,7 +146,7 @@ const notReallyColorful = () => {
   let s = 15
   for (let y = 0; y < a; y++) {
     for (let x = 0; x < a; x++) {
-        let color = (y % 3 === 1)
+        let color = (y % 7 === 1)
        ? 'red'
        : (y % 3 == 2)
        ? 'orange'
