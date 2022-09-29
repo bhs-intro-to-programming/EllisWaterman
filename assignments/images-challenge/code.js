@@ -146,14 +146,17 @@ const notReallyColorful = () => {
   let s = 15
   for (let y = 0; y < a; y++) {
     for (let x = 0; x < a; x++) {
-      let color = (y % 3 === 1)
-      ? 'blue'
-      : (y % 3 == 2)
-      ? 'red' 
-      : 'green';
-      drawLine(0, y * s, y * s, height - 1, color, 1)
+      let colorValue = Math.floor(Math.random() * 2)
+      while (colorValue = 2) {
+        let color = 'red';
+        drawLine(0, y * s, y * s, height - 1, color, 1)
+      }
     }
   }
-}
 
-notReallyColorful()
+  notReallyColorful()
+ // let color = (y % 3 === 1)
+      // ? 'blue'
+      // : (y % 3 == 2)
+      // ? 'red'
+      // : 'green';
