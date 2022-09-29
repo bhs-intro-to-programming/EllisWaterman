@@ -29,10 +29,21 @@
 
 const concentricCircle = () => {
   let x = 0
-  let colour = 'red'
   while (x < height / 2) {
-    drawFilledCircle(width / 2, height / 2, height / 2 - x, colour)
-    colour = (colour == 'red' ? 'blue' : 'red')
+    drawFilledCircle(width / 2, height / 2, height / 2 - x, color)
+    let color = (y % 7 === 1)
+       ? 'red'
+       : (y % 7 == 2)
+       ? 'orange'
+       : (y % 7 == 3)
+       ? 'yellow'
+       : (y % 7 == 4)
+       ? 'green'
+       : (y % 7 == 5)
+       ? 'blue'
+       : (y % 7 == 6)
+       ? 'indigo'
+       : 'violet';
     x = x + 15
   }
 }
