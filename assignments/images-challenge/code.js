@@ -38,7 +38,7 @@ const concentricCircle = () => {
   let x = 0
   let colour = (x % 2 == 0 ? 'blue' : 'red')
   while (x < height/2) {
-    console.log(x, height/2-x), colour
+    console.log(x, height/2-x, colour)
     drawFilledCircle(width / 2, height / 2, height/2 - x, colour)
     x++
   }
@@ -57,7 +57,6 @@ const lineOfCircles = () => {
 //lineOfCircles();
 
 
-foobar();
 const lineOfCirclesAlternatingColors = () => {
 
   for (let x = 0; x < Math.floor(width); x++) {
