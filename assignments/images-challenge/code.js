@@ -141,7 +141,7 @@ const notReallyCurved = () => {
 }
 //notReallyCurved()
 const rainbowify = (y, color) => {
-       let color = (y % 7 === 1)
+       color = (y % 7 === 1)
        ? 'red'
        : (y % 7 == 2)
        ? 'orange'
