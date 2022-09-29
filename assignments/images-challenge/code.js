@@ -152,11 +152,11 @@ const notReallyColorful = () => {
        ? 'orange'
        : (y % 3 == 3)
        ? 'yellow'
-       : (y % 3 == 3)
+       : (y % 3 == 4)
        ? 'green'
-       : (y % 3 == 3)
+       : (y % 3 == 5)
        ? 'blue'
-       : (y % 3 == 3)
+       : (y % 3 == 6)
        ? 'indigo'
        : 'violet';
         drawLine(0, y * s, y * s, height - 1, color, 1)
