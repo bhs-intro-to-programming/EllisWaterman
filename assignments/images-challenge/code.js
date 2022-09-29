@@ -116,6 +116,7 @@ const fillWithRandomlyColoredFilledCircles = () => {
         drawCircle(rows * (radius * 2) + radius, cols * radius * 2 + radius, radius, color, 1)
     }
   }
+}
   fillWithRandomlyColoredFilledCircles()
 
   const myDrawCircle = (r, rows, cols) => {
@@ -207,4 +208,3 @@ const fillWithRandomlyColoredFilledCircles = () => {
   //      : (y % 7 == 6)
   //      ? 'indigo'
   //      : 'violet';
-}
