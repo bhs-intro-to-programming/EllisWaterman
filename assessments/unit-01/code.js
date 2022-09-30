@@ -58,6 +58,7 @@ let a = s.substring(x)
 let b = s.substring(y)
 if (2*a > b)
 return true
-else false
+else
+false
 }
 
