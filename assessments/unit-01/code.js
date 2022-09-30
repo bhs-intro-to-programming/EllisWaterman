@@ -41,12 +41,14 @@ const canGoToProm = (isSenior, invitedBySenior, promExclusionList) => {
 
 const getsSpeedingTicket = (mph, grouchyCop) => {
   if (grouchyCop == true)
+    if (mph > 65)
+    return true
+    else
+    return false
+  if (grouchyCop == false)
     if (mph > 70)
     return true
     else
     return false
-  else
-  return false
-    
 }
 
