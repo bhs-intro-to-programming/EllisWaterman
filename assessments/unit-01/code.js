@@ -66,6 +66,6 @@ const aFartherThanB = (a, b, c) => {
 }
 
 const firstHalf = (s) => {
-  s.substring(0, s.length)
+ return s.substring(0, s.length)
 }
 
