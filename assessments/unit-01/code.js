@@ -6,7 +6,7 @@ const emit = (a, b, product) => {
 
 // Write your code here ...
 const avarageWeight = () => {
-  let totalWeight = 20
+  let totalWeight = 5000
   let numberOfItems = 10
   return totalWeight/numberOfItems
 }
