@@ -27,7 +27,6 @@ const numCircles = (radius, width) => {
 }
 
 const offset = (widthOfArea, widthOfFigure) => {
-  let numFigures = widthOfArea/widthOfFigure
   if (widthOfFigure < widthOfArea)
-  return numFigures
+  return widthOfArea-widthOfFigure
 }
