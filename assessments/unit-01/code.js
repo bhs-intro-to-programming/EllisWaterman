@@ -52,3 +52,7 @@ const getsSpeedingTicket = (mph, grouchyCop) => {
     return false
 }
 
+const moreThanTwiceAsLong = (s) => {
+  s.substring('foobar')
+}
+
