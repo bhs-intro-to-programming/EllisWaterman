@@ -32,6 +32,6 @@ const offset = (widthOfArea, widthOfFigure) => {
 }
 
 const canSleepIn = (weekday, vacation) => {
-  !weekday || vacation
+  return !weekday || vacation
 }
 
