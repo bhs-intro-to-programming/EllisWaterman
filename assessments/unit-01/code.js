@@ -17,7 +17,7 @@ const hypotenuse = (a, b) => {
 
 const maxRadius = (heightOfDrawingArea, width) => {
   if (width > heightOfDrawingArea)
-  return heightOfDrawingArea/2
-  else
   return width/2
+  else
+  return heightOfDrawingArea/2
 }
