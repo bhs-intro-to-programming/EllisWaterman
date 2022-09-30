@@ -16,7 +16,7 @@ const hypotenuse = (a, b) => {
 // ex. hypotenuse(3,4) will return 5
 
 const maxRadius = (heightOfDrawingArea, width) => {
-  if (width < heightOfDrawingArea)
+  if (width > heightOfDrawingArea)
   return heightOfDrawingArea/2
   else
   return width/2
