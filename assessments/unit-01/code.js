@@ -14,5 +14,5 @@ const avarageWeight = () => {
 const hypotenuse = () => {
   let a = 5
   let b = 10
-  return a**2+b**2
+  return Math.sqrt(a**2+b**2)
 }
