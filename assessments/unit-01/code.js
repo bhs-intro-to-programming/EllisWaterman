@@ -5,18 +5,16 @@ const emit = (a, b, product) => {
 };
 
 // Write your code here ...
-const avarageWeight = () => {
-  let totalWeight = 5000
-  let numberOfItems = 47
+const avarageWeight = (totalWeight, numberOfItems) => {
   return totalWeight/numberOfItems
 }
-
+// put values in ()
 const hypotenuse = (a, b) => {
   return Math.sqrt(a**2+b**2)
 }
+//plug in a and b value in ()
+// ex. hypotenuse(3,4) will return 5
 
-const maxRadius = () => {
-  let heightOfDrawingArea = 500
-  let width = 500
-  return 
+const maxRadius = (heightOfDrawingArea, width) => {
+  return heightOfDrawingArea/2*width
 }
