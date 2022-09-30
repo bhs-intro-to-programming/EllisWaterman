@@ -53,7 +53,7 @@ const getsSpeedingTicket = (mph, grouchyCop) => {
 }
 
 const moreThanTwiceAsLong = (x, y) => {
-let  s = 'foobar'
+let  s = 10
 let a = s.substring(x)
 let b = s.substring(y)
 if (2*a > b)
