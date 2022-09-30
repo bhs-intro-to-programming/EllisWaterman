@@ -23,5 +23,5 @@ const maxRadius = (heightOfDrawingArea, width) => {
 }
 
 const numCircles = (radius, width) => {
-   return radius*2/width
+   return (radius*2)/width
 }
