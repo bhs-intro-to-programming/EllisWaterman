@@ -62,7 +62,7 @@ return false
 }
 
 const aFartherThanB = (a, b, c) => {
-
+//noTime = true
 }
 
 const firstHalf = (s) => {
