@@ -25,3 +25,7 @@ const maxRadius = (heightOfDrawingArea, width) => {
 const numCircles = (radius, width) => {
    return width/(radius*2)
 }
+
+const offset = (widthOfArea, widthOfFigure) => {
+  return widthOfArea/widthOfFigure+widthOfFigure
+}
