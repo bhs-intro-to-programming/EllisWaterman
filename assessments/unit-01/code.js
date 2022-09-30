@@ -16,3 +16,7 @@ const hypotenuse = () => {
   let b = 4
   return Math.sqrt(a**2+b**2)
 }
+
+const maxRadius = () => {
+  let
+}
