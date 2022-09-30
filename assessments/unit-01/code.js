@@ -35,3 +35,7 @@ const canSleepIn = (weekday, vacation) => {
   return !weekday || vacation
 }
 
+const canGoToProm = (isSenior, invitedBySenior, promExclusionList) => {
+ return isSenior || invitedBySenior && !promExclusionList
+}
+
