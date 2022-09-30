@@ -54,6 +54,6 @@ const getsSpeedingTicket = (mph, grouchyCop) => {
 
 const moreThanTwiceAsLong = (x) => {
   s = 'foobar'
-let x = s.substring(x)
+let a = s.substring(x)
 }
 
