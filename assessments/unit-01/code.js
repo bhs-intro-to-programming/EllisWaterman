@@ -10,3 +10,9 @@ const avarageWeight = () => {
   let numberOfItems = 47
   return totalWeight/numberOfItems
 }
+
+const hypotenuse = () => {
+  let a = 5
+  let b = 10
+  return c = a**2+b**2
+}
