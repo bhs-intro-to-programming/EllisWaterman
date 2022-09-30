@@ -19,5 +19,6 @@ const hypotenuse = () => {
 
 const maxRadius = () => {
   let heightOfDrawingArea = 500
-  let width = 
+  let width = 500
+  return 
 }
