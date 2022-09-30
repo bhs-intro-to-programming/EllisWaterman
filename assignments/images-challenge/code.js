@@ -24,7 +24,15 @@
  *  clear()
  */
 
-
+// colorfulCurve();
+// concentricCircle();
+// lineOfCirclesAlternatingColors();
+// fillWithCircles();
+// fillWithRandomlyFilledCircles();
+// squareOfCircles();
+// checkerboard();
+// notReallyCurved();
+// notReallyCurved();
 
 
 const concentricCircle = () => {
@@ -37,7 +45,7 @@ const concentricCircle = () => {
   }
 }
 
-//concentricCircle();
+
 
 const lineOfCircles = () => {
   let numberOfCircles = 20
@@ -47,7 +55,7 @@ const lineOfCircles = () => {
   }
 }
 
-//lineOfCircles();
+
 
 
 const lineOfCirclesAlternatingColors = () => {
@@ -60,7 +68,7 @@ const lineOfCirclesAlternatingColors = () => {
 }
 
 
-//lineOfCirclesAlternatingColors()
+
 
 const fillWithCircles = () => {
   let radius = 25;
@@ -72,7 +80,7 @@ const fillWithCircles = () => {
     }
   }
 }
-//fillWithCircles();
+
 const fillWithRandomlyFilledCircles = () => {
   let radius = 22;
   let xsize = Math.floor(width / (radius * 2))
@@ -89,7 +97,7 @@ const fillWithRandomlyFilledCircles = () => {
 
 
 
-//fillWithRandomlyFilledCircles();
+
 
 const fillWithRandomlyColoredFilledCircles = () => {
   let radius = 22;
@@ -117,7 +125,8 @@ const fillWithRandomlyColoredFilledCircles = () => {
     }
   }
 }
- // fillWithRandomlyColoredFilledCircles()
+ //fillWithRandomlyColoredFilledCircles()
+ //WIP
 
   const myDrawCircle = (r, rows, cols) => {
     drawCircle(rows * (r * 2) + r, cols * r * 2 + r, r, 'blue', 1)
@@ -139,7 +148,7 @@ const fillWithRandomlyColoredFilledCircles = () => {
       }
     }
   }
-  //squareOfCircles();
+ 
 
 
   const checkerboard = () => {
@@ -157,7 +166,7 @@ const fillWithRandomlyColoredFilledCircles = () => {
     }
   }
 
-  //checkerboard();
+
 
   const notReallyCurved = () => {
     let a = 25
@@ -168,10 +177,8 @@ const fillWithRandomlyColoredFilledCircles = () => {
       }
     }
   }
-  //notReallyCurved()
-  const colorfulCurve = () => {
-            debugger;
 
+  const colorfulCurve = () => {
     let a = 25
     let s = 15
     for (let y = 0; y < a; y++) {
@@ -195,19 +202,5 @@ const fillWithRandomlyColoredFilledCircles = () => {
 
   }
 
-colorfulCurve()
 
-// raindbow function
-  // let color = (y % 7 === 1)
-  //      ? 'red'
-  //      : (y % 7 == 2)
-  //      ? 'orange'
-  //      : (y % 7 == 3)
-  //      ? 'yellow'
-  //      : (y % 7 == 4)
-  //      ? 'green'
-  //      : (y % 7 == 5)
-  //      ? 'blue'
-  //      : (y % 7 == 6)
-  //      ? 'indigo'
-  //      : 'violet';
+
