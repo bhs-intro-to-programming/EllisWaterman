@@ -68,5 +68,5 @@ const upDown = (s) => {
 }
 
 const everyOther = (s) => {
- return s.substring(2 % 2)
+ return s.substring(1,3,5,7)
 }
