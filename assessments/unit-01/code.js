@@ -64,5 +64,5 @@ const secondHalf = (s) => {
 }
 
 const upDown = (s) => {
- return s.substring(toUpperCase)+s.substring(0)
+ return s.substring(s.toUpperCase())+s.substring()
 }
