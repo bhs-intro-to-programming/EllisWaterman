@@ -68,5 +68,7 @@ const upDown = (s) => {
 }
 
 const everyOther = (s) => {
- return s.substring(1,3,5,7)
+  if (s = 2 % 1 === 0) {
+ return s.substring()
+}
 }
