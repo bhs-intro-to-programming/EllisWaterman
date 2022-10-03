@@ -67,6 +67,6 @@ const upDown = (s) => {
  return s.toUpperCase(0)+s.substring()
 }
 
-const everyOther = () => {
+const everyOther = (s) => {
  return s.substring(2 % 1 === 0)
 }
