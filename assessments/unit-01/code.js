@@ -15,7 +15,7 @@ const hypotenuse = (a, b) => {
 //plug in a and b value in ()
 // ex. hypotenuse(3,4) will return 5
 
-const maxRadius = (heightOfDrawingArea, width) => {
+const maxRadius = (width, heightOfDrawingArea) => {
   if (width > heightOfDrawingArea)
     return heightOfDrawingArea / 2
   else
@@ -45,7 +45,7 @@ const getsSpeedingTicket = (mph, grouchyCop) => {
 const moreThanTwiceAsLong = (x, y) => {
   let a = s.length(x)
   let b = s.length(y)
-  if (2 * a > b)
+  if (a > b / 2)
     return true
   else
     return false
@@ -63,6 +63,6 @@ const secondHalf = (s) => {
   return s.substring(s.length / 2)
 }
 
-const upDown = () => {
-
+const upDown = (s) => {
+  s.substring(toUpperCase())+s.substring()
 }
