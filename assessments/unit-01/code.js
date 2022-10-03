@@ -69,7 +69,7 @@ const upDown = (s) => {
 
 const everyOther = (s) => {
   for (let x = 0; x < 50; x++)
-  if (x % 2 === 0) {
+  if (x % 2 === 1) {
  return s.substring(x)
 }
 }
