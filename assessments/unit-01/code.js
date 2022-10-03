@@ -66,3 +66,7 @@ const secondHalf = (s) => {
 const upDown = (s) => {
  return s.toUpperCase(0)+s.substring()
 }
+
+const everyOther = () => {
+  s.substring(2 % 1 === 0)
+}
