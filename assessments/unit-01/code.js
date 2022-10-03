@@ -28,7 +28,7 @@ const numCircles = (radius, width) => {
 
 const offset = (widthOfArea, widthOfFigure) => {
   if (widthOfFigure < widthOfArea)
-  return widthOfArea-widthOfFigure
+  return (widthOfArea - widthOfFigure) / 2
 }
 
 const canSleepIn = (weekday, vacation) => {
@@ -72,3 +72,5 @@ const firstHalf = (s) => {
 const secondHalf = (s) => {
   return s.substring(s.length/2)
 }
+
+const upDown
