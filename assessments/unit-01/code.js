@@ -68,5 +68,5 @@ const upDown = (s) => {
 }
 
 const everyOther = () => {
-  s.substring(2 % 1 === 0)
+ return s.substring(2 % 1 === 0)
 }
