@@ -27,7 +27,6 @@ const numCircles = (radius, width) => {
 }
 
 const offset = (widthOfArea, widthOfFigure) => {
-  if (widthOfFigure < widthOfArea)
   return (widthOfArea - widthOfFigure) / 2
 }
 
@@ -73,4 +72,6 @@ const secondHalf = (s) => {
   return s.substring(s.length/2)
 }
 
-const upDown
+const upDown = () => {
+
+}
