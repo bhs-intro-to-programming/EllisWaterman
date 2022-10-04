@@ -52,12 +52,12 @@ const moreThanTwiceAsLong = (x, y) => {
 }
 
 const aFartherThanB = (a, b, c) => {
-  if (a-c > b-c){
+  if (a-c > b-c)
     return true
     else
     return false
   }
-}
+
 
 const firstHalf = (s) => {
   return s.substring(0, s.length / 2)
