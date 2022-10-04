@@ -96,5 +96,5 @@ const countXs = (s) => {
 }
 
 const timeTable = (a,b,c) => {
-  return emit(a, b, c)
+  return emit(a, b, c), emit(b, a, c)
 }
