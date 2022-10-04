@@ -94,3 +94,7 @@ const countXs = (s) => {
  return xstring
 
 }
+
+const timeTable = (a) => {
+  return emit()
+}
