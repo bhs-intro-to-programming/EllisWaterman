@@ -95,6 +95,6 @@ const countXs = (s) => {
 
 }
 
-const timeTable = (a) => {
-  return emit()
+const timeTable = (a,b,c) => {
+  return emit(a, b, c)
 }
