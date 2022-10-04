@@ -52,11 +52,11 @@ const moreThanTwiceAsLong = (x, y) => {
 }
 
 const aFartherThanB = (a, b, c) => {
-  if (a-c > b-c)
+  if (a - c > b - c)
     return true
-    else
+  else
     return false
-  }
+}
 
 
 const firstHalf = (s) => {
@@ -68,11 +68,15 @@ const secondHalf = (s) => {
 }
 
 const upDown = (s) => {
- return s.toUpperCase(0)+s.substring()
+  return s.toUpperCase(0) + s.substring()
 }
 
 const everyOther = (s) => {
   for (let x = 0; x < 50; x++) {
- return s.substring(2 % x === 1)
+    return s.substring(2 % x === 1)
+  }
 }
+
+const upDownlastCharacter = (s) => {
+  return s.substring(s.length+1)
 }
