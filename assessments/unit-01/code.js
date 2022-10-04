@@ -52,7 +52,9 @@ const moreThanTwiceAsLong = (x, y) => {
 }
 
 const aFartherThanB = (a, b, c) => {
-  //noTime = true
+  if (a-c < b-c){
+    return true
+  }
 }
 
 const firstHalf = (s) => {
