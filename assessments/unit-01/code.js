@@ -98,3 +98,10 @@ const countXs = (s) => {
 const timeTable = (a,b,c) => {
   return emit(a, b, c), emit(b, a, c)
 }
+
+const containsX = (s) => {
+ if (s.search(/[x]/) > 0)
+ return true
+ else
+ return false
+}
