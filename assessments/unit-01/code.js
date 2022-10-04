@@ -106,7 +106,7 @@ const containsX = (s) => {
     return false
 }
 
-const sumSquares (x) => {
+const sumSquares = (x) => {
   for (let y = 0; y < x; y++) {
     return y^^2
   }
