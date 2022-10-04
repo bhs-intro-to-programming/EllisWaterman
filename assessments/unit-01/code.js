@@ -78,30 +78,36 @@ const everyOther = (s) => {
 }
 
 const upDownlastCharacter = (s) => {
-  return s.substring(s.length-1).toUpperCase()+s.substring(s.length-1)
+  return s.substring(s.length - 1).toUpperCase() + s.substring(s.length - 1)
 }
 
-const yesIfEven =(x) => {
+const yesIfEven = (x) => {
   if (x % 2 === 0)
-  return 'yes'
+    return 'yes'
   else
-  return 'no'
+    return 'no'
 }
 
 const countXs = (s) => {
-  let xstring = s.substring(s.search(/[abcddefghijklmnopqrstuvwyz]/),s.search(/[abcddefghijklmnopqrstuvwyz]/))
+  let xstring = s.substring(s.search(/[abcddefghijklmnopqrstuvwyz]/), s.search(/[abcddefghijklmnopqrstuvwyz]/))
   //s.substring(s.search(/[x]/))+s.substring(
- return xstring
+  return xstring
 
 }
 
-const timeTable = (a,b,c) => {
+const timeTable = (a, b, c) => {
   return emit(a, b, c), emit(b, a, c)
 }
 
 const containsX = (s) => {
- if (s.search(/[x]/) >= 0)
- return true
- else
- return false
+  if (s.search(/[x]/) >= 0)
+    return true
+  else
+    return false
+}
+
+const sumSquares (x) => {
+  for (let y = 0; y < x; y++) {
+    return y^^2
+  }
 }
