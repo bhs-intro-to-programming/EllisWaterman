@@ -87,3 +87,7 @@ const yesIfEven =(x) => {
   else
   return 'no'
 }
+
+const countXs = (s) => {
+  s.search[/x/]
+}
