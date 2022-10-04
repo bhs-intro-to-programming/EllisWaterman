@@ -80,3 +80,8 @@ const everyOther = (s) => {
 const upDownlastCharacter = (s) => {
   return s.substring(s.length-1).toUpperCase()+s.substring(s.length-1)
 }
+
+const yesIfEven =(x) => {
+  if (x % 2 === 0)
+  return 'yes'
+}
