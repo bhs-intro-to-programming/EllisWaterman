@@ -89,5 +89,6 @@ const yesIfEven =(x) => {
 }
 
 const countXs = (s) => {
-  return s.search(/[x]/)
+ return s.search(/[x]/) + 1 , s.search(/[x]/)
+
 }
