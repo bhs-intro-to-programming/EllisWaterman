@@ -89,7 +89,8 @@ const yesIfEven =(x) => {
 }
 
 const countXs = (s) => {
-  let xstring = s.substring(s.search(/[x]/))+s.substring(s.search(/[abcddefghijklmnopqrstuvwyz]/))
+  let xstring = s.search(/[abcddefghijklmnopqrstuvwyz]/)
+  //s.substring(s.search(/[x]/))+s.substring(
  return xstring
 
 }
