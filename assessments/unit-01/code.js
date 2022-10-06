@@ -40,7 +40,7 @@ const getsSpeedingTicket = (mph, grouchyCop) => {
   return mph > 70 || grouchyCop && mph > 65;
 }
 
-const moreThanTwiceAsLong = (x, y) => {
+const moreThanTwiceAsLong = (s) => {
   let a = s.length(x)
   let b = s.length(y)
   if (a > b / 2)
