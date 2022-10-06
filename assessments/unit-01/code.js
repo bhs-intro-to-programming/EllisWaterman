@@ -8,12 +8,10 @@ const emit = (a, b, product) => {
 const avarageWeight = (totalWeight, numberOfItems) => {
   return totalWeight / numberOfItems
 }
-// put values in ()
+
 const hypotenuse = (a, b) => {
   return Math.sqrt(a ** 2 + b ** 2)
 }
-//plug in a and b value in ()
-// ex. hypotenuse(3,4) will return 5
 
 const maxRadius = (width, heightOfDrawingArea) => {
   if (width > heightOfDrawingArea)
