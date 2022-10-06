@@ -107,15 +107,15 @@ const fillWithRandomlyColoredFilledCircles = () => {
     for (let cols = 0; cols < ysize; cols++) {
       let color = (rows*cols % Math.floor(Math.random()*7) === 1)
         ? 'red'
-        : (rows*cols %  Math.floor(Math.random()*7) == 2)
+        : (rows*cols %  7 == Math.floor(Math.random()*7))
           ? 'orange'
-          : (rows*cols %  Math.floor(Math.random()*7) == 3)
+          : (rows*cols %  7 == Math.floor(Math.random()*7))
             ? 'yellow'
-            : (rows*cols %  Math.floor(Math.random()*7) == 4)
+            : (rows*cols %  7) == Math.floor(Math.random()*7))
               ? 'green'
-              : (rows*cols %  Math.floor(Math.random()*7) == 5)
+              : (rows*cols %  7 == Math.floor(Math.random()*7))
                 ? 'blue'
-                : (rows*cols %  Math.floor(Math.random()*7) == 6)
+                : (rows*cols %  7 == Math.floor(Math.random()*7))
                   ? 'indigo'
                   : 'violet';
       if (Math.random() > (1 - 1))
