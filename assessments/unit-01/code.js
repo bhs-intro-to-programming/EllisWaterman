@@ -91,7 +91,7 @@ const yesIfEven = (x) => {
 const countXs = (s) => {
  let numbOfXs = 0
  while (true) {
-  let loc = s.search(/[xX]/)
+  let loc = s.search(/[x]/i)
   if (loc == -1)
     return numbOfXs
   numbOfXs++
