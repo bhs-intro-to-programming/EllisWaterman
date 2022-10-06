@@ -127,7 +127,7 @@ const fillWithRandomlyColoredFilledCircles = () => {
     }
   }
 }
- fillWithRandomlyColoredFilledCircles()
+ //fillWithRandomlyColoredFilledCircles()
 
 
   const myDrawCircle = (r, rows, cols) => {
