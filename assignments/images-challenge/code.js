@@ -30,7 +30,7 @@
 // fillWithCircles();
 // fillWithRandomlyFilledCircles();
 // squareOfCircles();
-// checkerboard();
+ checkerboard();
 // notReallyCurved();
 //fillWithRandomlyColoredFilledCircles()
 
