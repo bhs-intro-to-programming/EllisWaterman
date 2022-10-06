@@ -24,15 +24,7 @@
  *  clear()
  */
 
-// colorfulCurve();
-// concentricCircle();
-// lineOfCirclesAlternatingColors();
-// fillWithCircles();
-// fillWithRandomlyFilledCircles();
-// squareOfCircles();
-// checkerboard();
-// notReallyCurved();
-//fillWithRandomlyColoredFilledCircles()
+
 
 
 const concentricCircle = () => {
@@ -206,3 +198,12 @@ const fillWithRandomlyColoredFilledCircles = () => {
 
 
 
+ colorfulCurve();
+// concentricCircle();
+// lineOfCirclesAlternatingColors();
+// fillWithCircles();
+// fillWithRandomlyFilledCircles();
+// squareOfCircles();
+// checkerboard();
+// notReallyCurved();
+//fillWithRandomlyColoredFilledCircles()
