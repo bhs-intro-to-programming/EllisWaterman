@@ -89,9 +89,10 @@ const yesIfEven = (x) => {
 }
 
 const countXs = (s) => {
-  let xstring = s.substring(s.search(/[abcddefghijklmnopqrstuvwyz]/), s.search(/[abcddefghijklmnopqrstuvwyz]/))
-  //s.substring(s.search(/[x]/))+s.substring(
-  return xstring
+ let numbOfXs = 0
+ while (true) {
+   s.search(/[x]/) = null
+ }
 
 }
 
@@ -109,8 +110,7 @@ const containsX = (s) => {
 const sumSquares = (max) => {
   let sum = 0
   for (let i = 1; i < max; i++) {
-     sum = sum + i**2
-     
+     sum = sum + i**2 
   }
   return sum
 }
