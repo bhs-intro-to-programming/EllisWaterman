@@ -94,13 +94,9 @@ const countXs = (s) => {
   let loc = s.search(/[x]/)
   if (loc == -1)
     return numbOfXs
-    else
-    numbOfXs++
-    s = s.substring(loc+1)
-
-   
+  numbOfXs++
+  s = s.substring(loc+1)
  }
-
 }
 
 const timeTable = (a, b, c) => {
