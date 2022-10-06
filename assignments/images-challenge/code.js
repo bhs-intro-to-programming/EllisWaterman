@@ -32,7 +32,7 @@
 // squareOfCircles();
 // checkerboard();
 // notReallyCurved();
-// notReallyCurved();
+
 
 
 const concentricCircle = () => {
@@ -125,8 +125,8 @@ const fillWithRandomlyColoredFilledCircles = () => {
     }
   }
 }
- //fillWithRandomlyColoredFilledCircles()
- //WIP
+ fillWithRandomlyColoredFilledCircles()
+
 
   const myDrawCircle = (r, rows, cols) => {
     drawCircle(rows * (r * 2) + r, cols * r * 2 + r, r, 'blue', 1)
