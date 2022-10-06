@@ -203,7 +203,7 @@ const fillWithRandomlyColoredFilledCircles = () => {
 // lineOfCirclesAlternatingColors();
 // fillWithCircles();
 // fillWithRandomlyFilledCircles();
- squareOfCircles();
-// checkerboard();
+// squareOfCircles();
+ checkerboard();
 // notReallyCurved();
 //fillWithRandomlyColoredFilledCircles()
