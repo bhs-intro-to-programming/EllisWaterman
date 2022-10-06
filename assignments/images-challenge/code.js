@@ -205,5 +205,5 @@ const fillWithRandomlyColoredFilledCircles = () => {
 // fillWithRandomlyFilledCircles();
 // squareOfCircles();
 // checkerboard();
- notReallyCurved();
-//fillWithRandomlyColoredFilledCircles()
+// notReallyCurved();
+fillWithRandomlyColoredFilledCircles()
