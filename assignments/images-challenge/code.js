@@ -198,7 +198,7 @@ const fillWithRandomlyColoredFilledCircles = () => {
 
 
 
- colorfulCurve();
+// colorfulCurve();
 // concentricCircle();
 // lineOfCirclesAlternatingColors();
 // fillWithCircles();
