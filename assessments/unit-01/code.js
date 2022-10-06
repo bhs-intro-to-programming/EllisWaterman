@@ -104,7 +104,7 @@ const timeTable = (a, b, c) => {
 }
 
 const containsX = (s) => {
-  if (s.search(/[x]/i) >= 0)
+  if (s.search(/[xX]/) >= 0)
     return true
   else
     return false
