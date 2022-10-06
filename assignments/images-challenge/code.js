@@ -111,7 +111,7 @@ const fillWithRandomlyColoredFilledCircles = () => {
           ? 'orange'
           : (rows*cols %  7 == Math.floor(Math.random()*7))
             ? 'yellow'
-            : (rows*cols %  7) == Math.floor(Math.random()*7))
+            : (rows*cols %  7) == Math.floor(Math.random()*7)
               ? 'green'
               : (rows*cols %  7 == Math.floor(Math.random()*7))
                 ? 'blue'
