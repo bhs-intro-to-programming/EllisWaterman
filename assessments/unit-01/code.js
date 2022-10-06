@@ -106,8 +106,11 @@ const containsX = (s) => {
     return false
 }
 
-const sumSquares = (x) => {
-  for (let y = x; y > x-1; y--) {
-    return y**2-2
+const sumSquares = (max) => {
+  let sum = 0
+  for (let i = 1; i < max; i++) {
+     sum = sum + i**2
+     
   }
+  return sum
 }
