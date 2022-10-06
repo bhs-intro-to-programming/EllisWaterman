@@ -91,7 +91,14 @@ const yesIfEven = (x) => {
 const countXs = (s) => {
  let numbOfXs = 0
  while (true) {
-   s.search(/[x]/) = null
+  let loc = s.search(/[x]/)
+  if (loc == -1)
+    return numbOfXs
+    else
+    numbOfXs++
+    s = s.substring(loc+1)
+
+   
  }
 
 }
