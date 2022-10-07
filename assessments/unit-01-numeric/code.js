@@ -50,6 +50,6 @@ const firstClassPostage = (weightOfLetter) => {
   return 60+(Math.ceil(weightOfLetter)*24)-24
 }
 
-const weightOfJupiter = (weightOfPersonOnEarth) => {
+const weightOnJupiter = (weightOfPersonOnEarth) => {
   return JUPITER_GRAVITY/EARTH_GRAVITY
 }
