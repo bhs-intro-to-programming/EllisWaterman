@@ -201,7 +201,7 @@ const notQuiteCircle = () => {
     let s = 15
     for (let y = 0; y < a; y++) {
       for (let x = 0; x < a; x++) {
-        drawLine(width, y * s, y * s, height, 'black', 1)
+        drawLine(0, y * s, y * s, height - 1, 'black', 1)
       }
     }
   }
