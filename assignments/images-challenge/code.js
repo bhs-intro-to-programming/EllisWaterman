@@ -199,8 +199,8 @@ const fillWithRandomlyColoredFilledCircles = () => {
 const notQuiteCircle = () => {
       let a = 25
     let s = 15
-    for (let y = width; y < a; y++) {
-      for (let x = width; x < a; x++) {
+    for (let y = 0; y < a; y++) {
+      for (let x = 0; x < a; x++) {
         drawLine(0, y * s, y * s, height - 1, 'black', 1)
       }
     }
