@@ -37,4 +37,5 @@ const  payWithOvertime = (numberOfHoursWorked, hourlyRate, overtimeRate) => {
   return numberOfHoursWorked*hourlyRate
   
 }
+return numberOfHoursWorked*overtimeRate
 }
