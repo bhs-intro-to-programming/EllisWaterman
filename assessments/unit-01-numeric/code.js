@@ -33,14 +33,15 @@ const valueOfJewels = (numbDiamonds, numbEmeralds, valueOfDiamondInGold, valueOf
 }
 
 const payWithOvertime = (numberOfHoursWorked, hourlyRate, overtimeRate) => {
-  while (numberOfHoursWorked <= 8) {
+    if (numberOfHoursWorked <= 8)
     return numberOfHoursWorked * hourlyRate
+    else
+    return numberOfHoursWorked*overtimeRate+(8*hourlyRate)
       
   }
-  while (numberOfHoursWorked > 8) {
-    return numberOfHoursWorked*overtimeRate
-}
-}
+
+
+
 
 const firstClassPostage = (weightOfLetter) => {
 
