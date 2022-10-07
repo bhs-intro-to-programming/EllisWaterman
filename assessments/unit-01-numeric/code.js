@@ -13,29 +13,35 @@ const itemsLeftOver = (numberOfPeople, numberOfItems) => {
 }
 
 const areaOfCircle = (radius) => {
-  return Math.PI*(radius**2)
+  return Math.PI * (radius ** 2)
 }
 
 const volumeOfCube = (lengthOfEdge) => {
-  return lengthOfEdge**3
+  return lengthOfEdge ** 3
 }
 
 const populationGrowth = (currentSize, growthRate) => {
-  return (growthRate*currentSize)+currentSize
+  return (growthRate * currentSize) + currentSize
 }
 
 const earnedRunAvarage = (earnedRuns, inningsPitched) => {
-  return (earnedRuns/inningsPitched)*9
+  return (earnedRuns / inningsPitched) * 9
 }
 
 const valueOfJewels = (numbDiamonds, numbEmeralds, valueOfDiamondInGold, valueOfEmeraldInGold) => {
-  return (numbDiamonds*valueOfDiamondInGold)+(numbEmeralds*valueOfEmeraldInGold)
+  return (numbDiamonds * valueOfDiamondInGold) + (numbEmeralds * valueOfEmeraldInGold)
 }
 
-const  payWithOvertime = (numberOfHoursWorked, hourlyRate, overtimeRate) => {
- while (numberOfHoursWorked <= 8) {
-  return numberOfHoursWorked*hourlyRate
-  
+const payWithOvertime = (numberOfHoursWorked, hourlyRate, overtimeRate) => {
+  while (numberOfHoursWorked <= 8) {
+    return numberOfHoursWorked * hourlyRate
+      
+  }
+  while (numberOfHoursWorked > 8) {
+    return numberOfHoursWorked*overtimeRate
 }
-return numberOfHoursWorked*overtimeRate
+}
+
+const firstClassPostage = (weightOfLetter) => {
+
 }
