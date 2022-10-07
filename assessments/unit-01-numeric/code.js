@@ -55,5 +55,5 @@ const weightOnJupiter = (weightOfPersonOnEarth) => {
 }
 
 const gravity = (massOfBody1, massOfBody2, distanceBetweenBodies) => {
-  ((massOfBody1*massOfBody2)/distanceBetweenBodies**2)*G
+ return ((massOfBody1*massOfBody2)/distanceBetweenBodies**2)*G
 }
