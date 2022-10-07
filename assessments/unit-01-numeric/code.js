@@ -33,23 +33,27 @@ const valueOfJewels = (numbDiamonds, numbEmeralds, valueOfDiamondInGold, valueOf
 }
 
 const payWithOvertime = (numberOfHoursWorked, hourlyRate, overtimeRate) => {
-    if (numberOfHoursWorked <= 8)
+  if (numberOfHoursWorked <= 8)
     return numberOfHoursWorked * hourlyRate
-    else
-    return (numberOfHoursWorked-8)*overtimeRate+(8*hourlyRate)
-      
-  }
+  else
+    return (numberOfHoursWorked - 8) * overtimeRate + (8 * hourlyRate)
+
+}
 
 
 
 
 const firstClassPostage = (weightOfLetter) => {
   if (Math.ceil(weightOfLetter) == 1)
-  return 60
+    return 60
   else
-  return 60+(Math.ceil(weightOfLetter)*24)-24
+    return 60 + (Math.ceil(weightOfLetter) * 24) - 24
 }
 
 const weightOnJupiter = (weightOfPersonOnEarth) => {
-  return (JUPITER_GRAVITY/EARTH_GRAVITY)*weightOfPersonOnEarth 
+  return (JUPITER_GRAVITY / EARTH_GRAVITY) * weightOfPersonOnEarth
+}
+
+const gravity = (massOfBody1, massOfBody2, distanceBetweenBodies) => {
+  ((massOfBody1*massOfBody2)/distanceBetweenBodies**2)*G
 }
