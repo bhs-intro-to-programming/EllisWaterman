@@ -206,7 +206,7 @@ const notQuiteCircle = () => {
     }
   }
 
- notQuiteCircle
+ notQuiteCircle();
 // colorfulCurve();
 // concentricCircle();
 // lineOfCirclesAlternatingColors();
