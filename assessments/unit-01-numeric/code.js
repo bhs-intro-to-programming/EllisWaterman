@@ -36,7 +36,7 @@ const payWithOvertime = (numberOfHoursWorked, hourlyRate, overtimeRate) => {
     if (numberOfHoursWorked <= 8)
     return numberOfHoursWorked * hourlyRate
     else
-    return numberOfHoursWorked*overtimeRate+(8*hourlyRate)
+    return numberOfHoursWorked-8*overtimeRate+(8*hourlyRate)
       
   }
 
