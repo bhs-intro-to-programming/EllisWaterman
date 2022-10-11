@@ -203,9 +203,9 @@ const drawPlatformerGame = () => {
   for (let rows = 0; rows < xsize; rows++) {
     for (let cols = 0; cols < ysize; cols++) {
       if (Math.random() > (1 - .23))
-        drawFilledRect(rows * (radius * 2) + radius, cols * radius * 2 + radius, radius, 'blue', 1)
+        drawFilledRect(rows, cols , 25, 25, 'blue', 1)
       else
-        drawRect(rows * (radius * 2) + radius, cols * radius * 2 + radius, radius, 'blue', 1)
+        drawRect(rows, cols , 25, 25, 'blue', 1)
     }
   }
 }
