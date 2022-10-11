@@ -196,7 +196,7 @@ const fillWithRandomlyColoredFilledCircles = () => {
 
   }
 
-const drawPlatformerGame
+const drawPlatformerGame = () => {
   let radius = 22;
   let xsize = Math.floor(width / (radius * 2))
   let ysize = Math.floor(height / (radius * 2))
@@ -208,7 +208,7 @@ const drawPlatformerGame
         drawRect(rows * (radius * 2) + radius, cols * radius * 2 + radius, radius, 'blue', 1)
     }
   }
-
+}
 drawPlatformerGame();
 
 // colorfulCurve();
