@@ -205,7 +205,7 @@ const drawPlatformerGame = () => {
       if (Math.random() > (1 - .23))
         drawFilledRect(rows, cols , 25, 25, 'blue', 1)
       else
-        drawRect(rows, cols , 25, 25, 'blue', 1)
+        drawRect(rows + radius, cols+radius , 25, 25, 'blue', 1)
     }
   }
 }
