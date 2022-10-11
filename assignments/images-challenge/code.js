@@ -196,6 +196,21 @@ const fillWithRandomlyColoredFilledCircles = () => {
 
   }
 
+const drawPlatformerGame
+  let radius = 22;
+  let xsize = Math.floor(width / (radius * 2))
+  let ysize = Math.floor(height / (radius * 2))
+  for (let rows = 0; rows < xsize; rows++) {
+    for (let cols = 0; cols < ysize; cols++) {
+      if (Math.random() > (1 - .23))
+        drawFilledRect(rows * (radius * 2) + radius, cols * radius * 2 + radius, radius, 'blue', 1)
+      else
+        drawRect(rows * (radius * 2) + radius, cols * radius * 2 + radius, radius, 'blue', 1)
+    }
+  }
+
+drawPlatformerGame();
+
 // colorfulCurve();
 // concentricCircle();
 // lineOfCirclesAlternatingColors();
