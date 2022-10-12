@@ -204,7 +204,7 @@ const drawPlatformerGameRandomGenLevel = () => {
     }
   }
 }
-drawPlatformerGameRandomGenLevel();
+//drawPlatformerGameRandomGenLevel();
 
 // colorfulCurve();
 // concentricCircle();
