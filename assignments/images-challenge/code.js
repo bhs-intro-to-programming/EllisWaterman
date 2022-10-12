@@ -198,8 +198,8 @@ const fillWithRandomlyColoredFilledCircles = () => {
 
 const drawPlatformerGameRandomGenLevel = () => {
   let blockSize = 22;
-  for (let yposition = 0; yposition < length; yposition++) {
-    for (let xposition = 0; xposition < height; xposition++) {
+  for (let yposition = 0; yposition < height; yposition++) {
+    for (let xposition = 0; xposition < width; xposition++) {
       drawFilledRect(yposition, xposition, blockSize, 'black')
     }
   }
