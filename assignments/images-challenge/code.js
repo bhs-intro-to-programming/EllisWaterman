@@ -203,6 +203,7 @@ const drawPlatformerGameRandomGenLevel = () => {
       drawFilledRect(yposition, xposition, blockSize, 'black')
     }
   }
+}.
 drawPlatformerGameRandomGenLevel();
 
 // colorfulCurve();
