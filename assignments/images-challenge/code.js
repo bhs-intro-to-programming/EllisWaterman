@@ -198,8 +198,8 @@ const fillWithRandomlyColoredFilledCircles = () => {
 
 const drawPlatformerGame = () => {
   let blockSize = 22;
-  let xsize = Math.floor(width / (radius * 2))
-  let ysize = Math.floor(height / (radius * 2))
+  let xsize = Math.floor(width / (blockSize * 2))
+  let ysize = Math.floor(height / (blockSize * 2))
   for (let rows = 0; rows < xsize; rows++) {
     for (let cols = 0; cols < ysize; cols++) {
       if (Math.random() > (1 - 1))
