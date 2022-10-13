@@ -7,5 +7,5 @@ function countTens(x) {
   
 
   }
-
+return totalTens
 }
