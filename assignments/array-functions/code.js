@@ -6,4 +6,4 @@ function countTens (x) {
     else
     return totalTens
   }
-}.
+}
