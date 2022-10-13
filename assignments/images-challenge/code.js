@@ -202,7 +202,7 @@ const drawPlatformerGameRandomGenLevel = () => {
   let ysize = Math.floor(height/blockSize)
   for (let yposition = 0; yposition < ysize; yposition++) {
     for (let xposition = 0; xposition < xsize; xposition++) {
-      drawFilledRect(yposition, xposition, blockSize, 'black')
+      drawFilledRect(xposition, yposition, blockSize, 'black')
     }
   }
 }
