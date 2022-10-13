@@ -4,4 +4,4 @@ const countTens = () => {
     xs.pop
     totalTens++
   }
-}.
+}
