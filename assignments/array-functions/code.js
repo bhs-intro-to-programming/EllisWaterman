@@ -1,7 +1,8 @@
-function countTens () {
-  while (countTens = true) {
-    let totalTens = 0
-    countTens.pop(10)
+function countTens (x) {
+      let totalTens = 0
+  while (countTens) {
+    if (x.pop() === 10)
     totalTens++
+    return totalTens
   }
-}
+}.
