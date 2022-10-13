@@ -1,7 +1,7 @@
-const countTens = (xs) => {
+const countTens = () => {
   while (xs = true) {
     let totalTens = 0
-    xs.pop(10)
+    countTens.pop(10)
     totalTens++
   }
-}
+}.
