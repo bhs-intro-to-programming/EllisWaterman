@@ -3,7 +3,7 @@ function countTens (x) {
   while (countTens) {
     if (x.pop() === 10)
     totalTens++
-    else
-    return totalTens
+   
   }
+  return totalTens.
 }
