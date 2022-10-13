@@ -1,6 +1,6 @@
 const countTens = (xs) => {
-  let totalTens = 0
   while (xs = true) {
+    let totalTens = 0
     xs.pop(10)
     totalTens++
   }
