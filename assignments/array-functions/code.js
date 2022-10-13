@@ -4,4 +4,4 @@ const countTens = (xs) => {
     xs.pop[10]
     totalTens++
   }
-}.
+}
