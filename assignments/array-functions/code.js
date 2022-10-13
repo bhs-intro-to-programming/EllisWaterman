@@ -4,6 +4,6 @@ function countTens(x) {
     if (x.pop() === 10)
       totalTens++
     return totalTens
-,
+
   }
 }
