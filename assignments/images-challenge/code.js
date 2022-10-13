@@ -197,7 +197,7 @@ const fillWithRandomlyColoredFilledCircles = () => {
   }
 
 const drawPlatformerGameRandomGenLevel = () => {
-  let blockSize = 22;
+  let blockSize = 2555;
   let xsize = Math.floor(width/blockSize)
   let ysize = Math.floor(height/blockSize)
   for (let yposition = 0; yposition < ysize; yposition++) {
