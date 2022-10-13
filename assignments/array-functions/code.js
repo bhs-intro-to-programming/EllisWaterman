@@ -3,5 +3,5 @@ function countTens () {
     let totalTens = 0
     countTens.pop(10)
     totalTens++
-  }.
+  }
 }
