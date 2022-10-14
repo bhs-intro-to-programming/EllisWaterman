@@ -13,4 +13,4 @@ function sum(x) {
    x[pos]
   }
   return total
-}.
+}
