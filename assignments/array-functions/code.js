@@ -21,7 +21,6 @@ function evens(x) {
   for (let position = 0; position < x.length; position++) {
     if (xs[y] % 2 === 0) {
     xs.push[y]
-    y++
     }
   }
   return xs
