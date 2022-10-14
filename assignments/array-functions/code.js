@@ -21,5 +21,5 @@ function evens(x) {
     if (i % 2 === 1)
     xs.pop[i]
   }
-  return xs.
+  return xs
 }
