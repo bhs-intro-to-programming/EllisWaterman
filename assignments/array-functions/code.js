@@ -12,5 +12,5 @@ function sum(x) {
   for (let pos = 0; pos < x.length; pos++) {
   total = total+x[pos]
   }
-  return total.
+  return total
 }
