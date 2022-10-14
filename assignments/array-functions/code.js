@@ -18,7 +18,7 @@ function sum(x) {
 function evens(x) {
   const xs = []
   for (let position = 1; position < x.length; position++) {
-    if (x[position] % 2 === 1) {
+    if (x[position] % 2 === 0) {
     xs.push(position);
     }
   }
