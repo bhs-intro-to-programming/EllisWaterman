@@ -19,10 +19,10 @@ function evens(x) {
   const xs = x
   let y = 0
   for (let position = 0; position < x.length; position++) {
-    if (xs[y] % 2 === 0)
+    if (xs[y] % 2 === 0) {
     xs.pop[y]
     y++
-
+    }
   }
   return xs
 }
