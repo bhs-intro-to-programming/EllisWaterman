@@ -16,6 +16,6 @@ function sum(x) {
 }
 
 function evens(x) {
-  let e = x.pop[2 % 0 === 1]
-  return e
+  for (let i = 0; )
+  return x
 }
