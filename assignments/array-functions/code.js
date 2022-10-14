@@ -23,6 +23,6 @@ function evens(x) {
     xs.pop[y]
     y++
 
-  }.
+  }
   return xs
 }
