@@ -16,13 +16,13 @@ function sum(x) {
 }
 
 function evens(x) {
-  let xs = x
+  const xs = x
   let y = 0
   for (let position = 0; position < x.length; position++) {
-    if (y % 2 === 0)
+    if ([y] % 2 === 0)
     xs.pop[y]
     y++
 
   }
   return xs
-}
+}.
