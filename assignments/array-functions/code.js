@@ -17,9 +17,9 @@ function sum(x) {
 
 function evens(x) {
   let xs = x
-  for (let i = 0; i < x.length; i++) {
-    if (i % 2)
-    xs.pop[i]
+  for (let position = 0; position < x.length; position++) {
+    if (position % 2)
+    xs.pop[position]
   }
   return xs
 }
