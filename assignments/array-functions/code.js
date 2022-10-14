@@ -20,7 +20,7 @@ function evens(x) {
   let y = 0
   for (let position = 0; position < x.length; position++) {
     if (xs[y] % 2 === 0) {
-    xs.pop[y]
+    xs.push[y]
     y++
     }
   }
