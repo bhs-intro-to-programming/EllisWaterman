@@ -18,6 +18,6 @@ function sum(x) {
 function evens(x) {
   let xs = x
   for (let i = 0; i < x.length; i++)
-    xs.pop[i % 2]
+    xs.pop[i % 2===1]
   return xs
 }
