@@ -13,5 +13,5 @@ function sum(x) {
     x.pop[pos]
     total++
   }
-  return total.
+  return total
 }
