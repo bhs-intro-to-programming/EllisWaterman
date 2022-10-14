@@ -10,8 +10,8 @@ function countTens(x) {
 function sum(x) {
   let total = 0
   for (let pos = 0; pos < x.length; pos++) {
-    x.pop[pos]
+    x[pos]
     total++
   }
   return total
-}
+}.
