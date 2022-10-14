@@ -14,3 +14,8 @@ function sum(x) {
   }
   return total
 }
+
+function evens(x) {
+  let e = x.pop[2 % 0 === 1]
+  return e
+}
