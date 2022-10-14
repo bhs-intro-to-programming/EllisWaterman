@@ -10,5 +10,5 @@ function countTens(x) {
 function sum(x) {
   for (let pos = 0; pos < x.length; pos++) {
  return  x[pos]
-  }.
+  }
 }
