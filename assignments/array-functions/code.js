@@ -16,7 +16,7 @@ function sum(x) {
 }
 
 function evens(x) {
-  let x = xs
+  let xs = x
   for (let i = 0; i < x.length; i++)
     xs.pop[i % 2 === 0]
   return xs
