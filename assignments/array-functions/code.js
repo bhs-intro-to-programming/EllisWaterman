@@ -16,6 +16,5 @@ function sum(x) {
 }
 
 function evens(x) {
-  for (let i = 0; )
   return x
 }
