@@ -19,7 +19,7 @@ function evens(x) {
   const xs = []
   for (let position = 0; position < x.length; position++) {
     if (x[position] % 2 === 0) {
-    xs.push[position]
+    xs.push[x[position]]
     }
   }
   return xs
