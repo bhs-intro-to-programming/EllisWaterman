@@ -10,13 +10,14 @@ function countTens(x) {
 function sum(x) {
   let total = 0
   for (let pos = 0; pos < x.length; pos++) {
-  total = total+x[pos]
+    total = total + x[pos]
   }
   return total
 }
 
 function evens(x) {
-  for(let i = 0; i < x.length; i++)
-    x.pop[i % 2 === 0]
-  return x
+  let x = xs
+  for (let i = 0; i < x.length; i++)
+    xs.pop[i % 2 === 0]
+  return xs
 }
