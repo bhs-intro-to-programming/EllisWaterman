@@ -74,3 +74,6 @@ const isAllUpperCase = (s) => {
   else
   return false
 }
+
+const sameIgnoringCase = (s1,s2) => {
+}
