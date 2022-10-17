@@ -17,3 +17,7 @@ const fireAlarm = (fireAlarmPulled, smokeDetected,plannedDrill) => {
 const canBePresident = (is35, naturalBornCitizen, livedInUsFor14Years) => {
   return is35 && naturalBornCitizen && livedInUsFor14Years
 }
+
+const willSeeTweet = (followTweeter, followedSomoneWhoReTweeted, blockedOGTweeter) => {
+  return followTweeter || followedSomoneWhoReTweeted && !blockedOGTweeter
+}
