@@ -27,6 +27,7 @@ const evenGreaterThanZero = (x) => {
     if (x % 2 === 0)
     return true
     else 
+    if (x = undifined)
     return false
 }
 
