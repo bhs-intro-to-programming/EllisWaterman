@@ -41,3 +41,8 @@ const isLeapYear = (year) => {
   else
     return false
 }
+
+const firstAndLast = (s) => {
+    if (s.length > 1) 
+  return s.substring(0,1)+ s.substring(s.length-1)
+}
