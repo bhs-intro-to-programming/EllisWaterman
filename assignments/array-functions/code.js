@@ -26,5 +26,8 @@ function evens(x) {
 }
 
 function anyOverOneHundred(x) {
-
+  if (x < 100)
+  return true 
+  else
+  return false
 }
