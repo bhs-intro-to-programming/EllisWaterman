@@ -22,4 +22,11 @@ const willSeeTweet = (followTweeter, followedSomoneWhoReTweeted, blockedOGTweete
   return !blockedOGTweeter || followTweeter || followedSomoneWhoReTweeted 
 }
 
+const evenGreaterThanZero = (x) => {
+  if (x > 0)
+    if (x % 2 === 0)
+    return true
+    else 
+    return false
+}
 
