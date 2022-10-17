@@ -31,3 +31,12 @@ const evenGreaterThanZero = (x) => {
     return false
 }
 
+const isLeapYear = (year) => {
+  if (year % 4 === 0)
+    if(year % 400 === 0)
+    return true
+    else
+    if (year % 100)
+    return false
+}
+
