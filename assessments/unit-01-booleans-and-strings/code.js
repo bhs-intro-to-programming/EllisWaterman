@@ -50,3 +50,7 @@ const firstAndLast = (s) => {
 const swapFrontAndBack = (s) => {
   return s.substring(s.length/2)+s.substring(0,s.length/2)
 }
+
+const simplePigLatin = (s, posOfFirstVowel) => {
+  return s.substring(posOfFirstVowel)+s.substring(0, posOfFirstVowel)+'ay'
+}
