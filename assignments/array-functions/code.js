@@ -26,6 +26,8 @@ function evens(x) {
 }
 
 function anyOverOneHundred(x) {
+  for(let position= 0; position <= x.length; position++)
+  let biggestNumber = x[position]
   for (let numbOver100 = 101; numbOver100 < 10000; numbOver100++) {
     if (x.indexOf(numbOver100) >= 0)
       return true
