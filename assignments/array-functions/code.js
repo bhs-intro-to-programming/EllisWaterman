@@ -26,7 +26,7 @@ function evens(x) {
 }
 
 function anyOverOneHundred(x) {
-  for (let numbOver100 = 101; numbOver100 < 100000; numbOver100++) {
+  for (let numbOver100 = 101; numbOver100 < x.length; numbOver100++) {
     if (x.indexOf(numbOver100) >= 0)
       return true
     else
@@ -40,4 +40,4 @@ function pyramid(x) {
     for (let j = 0; j < i; j++)
       xs.push(i)
   return xs
-'hehe'}
+}
