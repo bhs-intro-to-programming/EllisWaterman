@@ -40,4 +40,4 @@ function pyramid(x) {
     for (let j = 0; j < i; j++)
       xs.push(i)
   return xs
-}
+'hehe'}
