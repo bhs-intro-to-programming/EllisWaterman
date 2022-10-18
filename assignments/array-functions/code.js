@@ -26,14 +26,15 @@ function evens(x) {
 }
 
 function anyOverOneHundred(x) {
-  for(let position= 0; position <= x.length; position++)
-  let biggestNumber = 1000
+  for(let position= 0; position <= x.length; position++) {
+  let biggestNumber = 0
   for (let numbOver100 = 101; numbOver100 < biggestNumber; numbOver100++) {
     if (x.indexOf(numbOver100) >= 0)
       return true
     else
       return false
   }
+}
 }
 
 function pyramid(x) {
