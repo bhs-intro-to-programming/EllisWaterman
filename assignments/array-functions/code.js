@@ -38,7 +38,7 @@ function pyramid(x) {
   const xs = []
     for (let i = 0; i < xs; i++) {
       for (let j = 0; j < i; j++)
-      xs.push[i]
+      xs.push(i)
     }
     return xs
 }
