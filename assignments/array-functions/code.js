@@ -33,3 +33,8 @@ function anyOverOneHundred(x) {
     return false
   }
 }
+
+function pyramid(x) {
+  const xs = []
+    
+}
