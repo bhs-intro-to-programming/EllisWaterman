@@ -19,7 +19,7 @@ function evens(x) {
   const xs = []
   for (let position = 0; position <= x.length; position++) {
     if (x[position] % 2 === 0) {
-    xs.push(x[position]);
+      xs.push(x[position]);
     }
   }
   return xs
@@ -27,17 +27,17 @@ function evens(x) {
 
 function anyOverOneHundred(x) {
   for (let numbOver100 = 101; numbOver100 < 100000; numbOver100++) {
-   if (x.indexOf(numbOver100) >= 0)
-    return true
+    if (x.indexOf(numbOver100) >= 0)
+      return true
     else
-    return false
+      return false
   }
 }
 
 function pyramid(x) {
   const xs = []
-    for (let i = 0; i <= x; i++)
-      for (let j = 0; j < i; j++)
+  for (let i = 0; i <= x; i++)
+    for (let j = 0; j < i; j++)
       xs.push(i)
-    return xs
+  return xs
 }
