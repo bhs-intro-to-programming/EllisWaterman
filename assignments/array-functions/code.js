@@ -35,9 +35,9 @@ function anyOverOneHundred(x) {
 }
 
 function pyramid(x) {
-  const ret = []
+  const xs = []
     for (let i = 0; i <= x; i++)
       for (let j = 0; j < i; j++)
-      ret.push(i)
-    return ret
+      xs.push(i)
+    return xs
 }
