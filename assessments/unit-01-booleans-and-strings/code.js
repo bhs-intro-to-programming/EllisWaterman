@@ -54,8 +54,8 @@ const randomCharacter = (s) => {
 }
 
 const randomCharacterUpDown = (s) => {
-  let randomCharacter = randomCharacter(s)
-  return randomCharacter+randomCharacter.toUpperCase()
+  let randCharacter = randomCharacter(s)
+  return randCharacter+randCharacter.toUpperCase()
 }
 
 const isAllUpperCase = (s) => {
