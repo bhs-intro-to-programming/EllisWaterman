@@ -1,5 +1,5 @@
 function countTens(x) {
-  const x = arrayOfTens
+  let arrayOfTens = x
   let totalTens = 0
   while (arrayOfTens.length > 0) {
     if (arrayOfTens.pop() === 10)
