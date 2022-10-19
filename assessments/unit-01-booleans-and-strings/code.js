@@ -50,7 +50,7 @@ const simplePigLatin = (s, posOfFirstVowel) => {
 
 const randomCharacter = (s) => {
   let i = rand(s.length)
-  return s.substring(0, rand)
+  return s.substring(rand, 1)
 }
 
 const randomCharacterUpDown = (s) => {
