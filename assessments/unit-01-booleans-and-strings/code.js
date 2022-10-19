@@ -25,7 +25,7 @@ const willSeeTweet = (blockedOGTweeter, followTweeter, followedSomoneWhoReTweete
 }
 
 const evenGreaterThanZero = (x) => {
-  if (x > 0 && x % 2 == 0)
+  if (x > 0 && x % 2 === 0)
     return true
   return false
 }
