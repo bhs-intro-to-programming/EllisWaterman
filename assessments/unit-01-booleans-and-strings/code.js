@@ -37,7 +37,7 @@ const isLeapYear = (year) => {
 }
 
 const firstAndLast = (s) => {
-    return s.substring(0, 1) + s.substring(s.length - 1)
+  return s.substring(0, 1) + s.substring(s.length - 1)
 }
 
 const swapFrontAndBack = (s) => {
@@ -50,19 +50,16 @@ const simplePigLatin = (s, posOfFirstVowel) => {
 
 const randomCharacter = (s) => {
   let i = rand(s.length);
-  return s.substring(i, i+1);
+  return s.substring(i, i + 1);
 }
 
 const randomCharacterUpDown = (s) => {
   let randCharacter = randomCharacter(s)
-  return randCharacter+randCharacter.toUpperCase()
+  return randCharacter + randCharacter.toUpperCase()
 }
 
 const isAllUpperCase = (s) => {
-  if (s.substring(0) == s.substring(0).toUpperCase())
-    return true
-  else
-    return false
+  return s == s.toUpperCase()
 }
 
 const sameIgnoringCase = (s1, s2) => {
