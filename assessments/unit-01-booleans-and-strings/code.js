@@ -21,7 +21,7 @@ const canBePresident = (age, naturalBornCitizen, yearsInUS) => {
 }
 
 const willSeeTweet = (followTweeter, followedSomoneWhoReTweeted, blockedOGTweeter) => {
-  return !blockedOGTweeter || followTweeter || followedSomoneWhoReTweeted
+  return !blockedOGTweeter && (followTweeter || followedSomoneWhoReTweeted)
 }
 
 const evenGreaterThanZero = (x) => {
