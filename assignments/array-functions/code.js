@@ -27,8 +27,8 @@ function evens(x) {
 }
 
 function anyOverOneHundred(x) {
-  for (let numbOver100 = 0; numbOver100 < 100; numbOver100++) {
-   if (x[numbOver100] >= 1)
+  for (element of x) {
+   if (x > 100)
       return true
   }
   return false
