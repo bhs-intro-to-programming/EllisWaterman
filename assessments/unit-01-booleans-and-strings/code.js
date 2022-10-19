@@ -14,7 +14,9 @@ const fireAlarm = (fireAlarmPulled, smokeDetected, plannedDrill) => {
   return fireAlarmPulled || smokeDetected || plannedDrill
 }
 
-const canBePresident = (is35, naturalBornCitizen, livedInUsFor14Years) => {
+const canBePresident = (age, naturalBornCitizen, yearsInUS) => {
+  let is35 = age >= 35;
+  let livedInUsFor14Years = yearsInUS >= 14;
   return is35 && naturalBornCitizen && livedInUsFor14Years
 }
 
