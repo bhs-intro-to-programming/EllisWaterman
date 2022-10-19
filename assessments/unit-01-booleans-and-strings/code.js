@@ -20,7 +20,7 @@ const canBePresident = (age, naturalBornCitizen, yearsInUS) => {
   return is35 && naturalBornCitizen && livedInUsFor14Years
 }
 
-const willSeeTweet = (followTweeter, followedSomoneWhoReTweeted, blockedOGTweeter) => {
+const willSeeTweet = (blockedOGTweeter, followTweeter, followedSomoneWhoReTweeted) => {
   return !blockedOGTweeter && (followTweeter || followedSomoneWhoReTweeted)
 }
 
