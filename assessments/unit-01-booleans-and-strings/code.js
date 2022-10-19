@@ -25,12 +25,9 @@ const willSeeTweet = (blockedOGTweeter, followTweeter, followedSomoneWhoReTweete
 }
 
 const evenGreaterThanZero = (x) => {
-  if (x > 0)
-    if (x % 2 === 0)
-      return true
-    else
-      if (x < 0)
-        return false
+  if (x > 0 && x % 2 === 0)
+    return true
+  return false
 }
 
 const isLeapYear = (year) => {
@@ -58,24 +55,24 @@ const simplePigLatin = (s, posOfFirstVowel) => {
 }
 
 const randomCharacter = (s) => {
-  return s.substring(rand(s.length), rand(s.length+1))
+  return s.substring(rand(s.length), rand(s.length + 1))
   //unfinished
 }
 
 const randomCharacterUpDown = (s) => {
   if (rand())
-  return s.substring(rand(s.length), rand(s.length+1)).toUpperCase()
+    return s.substring(rand(s.length), rand(s.length + 1)).toUpperCase()
   else
-  return s.substring(rand(s.length), rand(s.length+1)).toLowerCase()
+    return s.substring(rand(s.length), rand(s.length + 1)).toLowerCase()
   //unfinished
 }
 
 const isAllUpperCase = (s) => {
   if (s.substring(0) == s.substring(0).toUpperCase())
-  return true
+    return true
   else
-  return false
+    return false
 }
 
-const sameIgnoringCase = (s1,s2) => {
+const sameIgnoringCase = (s1, s2) => {
 }
