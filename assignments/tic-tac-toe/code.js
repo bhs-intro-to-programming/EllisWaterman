@@ -9,6 +9,6 @@ registerOnclick((x, y) => {
   drawText('X', x, y, 'black', Math.min(width, height) * 0.3);
 });
 
-registerOnclick((x, y) => {
+registerOnRightclick((x, y) => {
   drawText('O', x, y, 'black', Math.min(width, height) * 0.3);
 });
