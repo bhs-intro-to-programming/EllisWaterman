@@ -15,5 +15,5 @@
   "3",
   "0",
   "xs[2][1]",
-  "10"
+  "Nothing, this code won’t run because xs was declared with const."
 ]
