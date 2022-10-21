@@ -16,5 +16,6 @@
   "0",
   "xs[2][1]",
   "Nothing, this code won’t run because xs was declared with const.",
-  "false"
+  "false",
+  "The sum of the numbers from 0 to numbers.length - 1."
 ]
