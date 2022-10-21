@@ -14,7 +14,7 @@ let everyOtherClick = 0
 registerOnclick((x, y) => {
   drawText('X', x, y, 'black', Math.min(width, height) * 0.3);
   if (clickCount < 10)
-  clickCount++.
+  clickCount++
   console.log(clickCount)
 });
 
