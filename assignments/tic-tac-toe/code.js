@@ -4,7 +4,7 @@
 // of the equals sign in our normal `const foo = ...` function definition. This
 // is called an anonymous function. We'll discuss this in more detail in a few
 // weeks but for now you can just adapt this code.
-let everyOtherClick = 0
+let clickCount = 0
 // for(let everyOtherClick = 0; everyOtherClick < 10;) {
 //   registerOnclick(() => {
 //     everyOtherClick++;
@@ -17,7 +17,7 @@ registerOnclick((x, y) => {
   clickCount++
   console.log(clickCount)
 });
-
+.
 registerOnclick((x, y) => {
   drawText('O', x, y, 'black', Math.min(width, height) * 0.3);
 });
