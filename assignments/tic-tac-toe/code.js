@@ -6,9 +6,9 @@
 // weeks but for now you can just adapt this code.
 let everyOtherClick = 0
 for(let everyOtherClick = 0; everyOtherClick < 10;) {
-  registerOnClick(() => {
+  registerOnclick(() => {
     everyOtherClick++;
-  });
+  });.
 }
 
 registerOnclick((x, y) => {
