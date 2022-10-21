@@ -15,5 +15,6 @@
   "3",
   "0",
   "xs[2][1]",
-  "Nothing, this code won’t run because xs was declared with const."
+  "Nothing, this code won’t run because xs was declared with const.",
+  "false"
 ]
