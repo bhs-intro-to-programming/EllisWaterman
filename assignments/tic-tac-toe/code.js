@@ -4,6 +4,7 @@
 // of the equals sign in our normal `const foo = ...` function definition. This
 // is called an anonymous function. We'll discuss this in more detail in a few
 // weeks but for now you can just adapt this code.
+let registerOnClick = e
  let clickCount = 0
 function registerOnclick() {
   clickCount++;
