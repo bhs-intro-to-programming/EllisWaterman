@@ -11,7 +11,7 @@ const ticTacToe = [
   [ 'O', 'X', '' ],
   [ 'X', '', 'O' ],
 ];
-ticTacToe
+ticTacToe()
 
 registerOnclick((x, y) => {
   clickCount++
