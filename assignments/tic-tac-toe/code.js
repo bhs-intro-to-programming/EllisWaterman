@@ -8,6 +8,13 @@
 
 //drawText('#', width/3, height, 'black', Math.min(width, height) * 1.5)
 let clickCount = -1
+registerOnclick((x, y) => {
+  clickCount++
+   if (clickCount % 2 === 0)
+  drawText('X', x-25, y+25, 'black', Math.min(width, height) * 0.3);
+  else
+  drawText('O', x-25, y+25, 'black', Math.min(width, height) * 0.3);
+});
 const drawFrame = () => {
 drawLine(width/3, height, width/3, 0, 'black', 10)
 drawLine(width/3*2, height, width/3*2, 0, 'black', 10)
@@ -25,13 +32,7 @@ let quad6
 let quad7
 let quad8
 let quad9
-registerOnclick((x, y) => {
-  clickCount++
-   if (clickCount % 2 === 0)
-  drawText('X', x-25, y+25, 'black', Math.min(width, height) * 0.3);
-  else
-  drawText('O', x-25, y+25, 'black', Math.min(width, height) * 0.3);
-});
+
 
 
 
