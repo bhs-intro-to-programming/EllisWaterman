@@ -16,8 +16,8 @@ drawLine(width, height/3*2, 0, height/3*2, 'black', 10)
 drawFilledRect(0, 0, width/3, width/3/3, 'black')
 }
 drawFrame()
-let quad1
-let quad2
+let quad1 = width/3, width/3/3
+let quad2 = 
 let quad3
 let quad4
 let quad5
