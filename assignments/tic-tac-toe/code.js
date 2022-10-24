@@ -7,7 +7,7 @@
 drawText('#', width/3, height, 'black', Math.min(width, height) * 1.5)
 let clickCount = -1
 const ticTacToe = [
-  [ drawRect(0,0), 'O', 'O' ],
+  [ drawRect(0,0, 'black', 1), 'O', 'O' ],
   [ 'O', 'X', '' ],
   [ 'X', '', 'O' ],
 ];
