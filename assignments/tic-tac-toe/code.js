@@ -8,6 +8,7 @@ let clickCount = 0
 const drawFrame = () => {
   drawText('#', x, y, 'black', Math.min(width, height) * 1)
 }
+drawFrame()
 
 registerOnclick((x, y) => {
   clickCount++
