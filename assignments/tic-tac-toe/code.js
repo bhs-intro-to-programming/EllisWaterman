@@ -27,9 +27,9 @@ let quad9
 registerOnclick((x, y) => {
   clickCount++
    if (clickCount % 2 === 0)
-  drawText('X', x, y+50, 'black', Math.min(width, height) * 0.3);
+  drawText('X', x+25, y+25, 'black', Math.min(width, height) * 0.3);
   else
-  drawText('O', x, y+50, 'black', Math.min(width, height) * 0.3);
+  drawText('O', x+25, y+25, 'black', Math.min(width, height) * 0.3);
 });
 
 
