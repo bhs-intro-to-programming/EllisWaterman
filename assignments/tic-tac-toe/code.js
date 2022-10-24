@@ -5,8 +5,9 @@
 // is called an anonymous function. We'll discuss this in more detail in a few
 // weeks but for now you can just adapt this code.
 let clickCount = 0
+drawText('#', x, y, 'black', Math.min(width, height) * 1)
 const drawFrame = (x, y) => {
-  drawText('#', x, y, 'black', Math.min(width, height) * 1)
+  
 }
 drawFrame()
 
