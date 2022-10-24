@@ -11,9 +11,9 @@ let clickCount = -1
 registerOnclick((x, y) => {
   clickCount++
    if (clickCount % 2 === 0)
-  drawText('X', x-25, y+25, Math.min(width, height) * 0.3);
+  drawText('X', x-25, y+25, 'red', Math.min(width, height) * 0.3);
   else
-  drawText('O', x-25, y+25, Math.min(width, height) * 0.3);
+  drawText('O', x-25, y+25, 'black', Math.min(width, height) * 0.3);
 });
 const drawFrame = () => {
 drawLine(width/3, height, width/3, 0, 'black', 10)
@@ -23,7 +23,7 @@ drawLine(width, height/3*2, 0, height/3*2, 'black', 10)
 drawFilledRect(0, 0, width/3, width/9, 'black')
 }
 drawFrame()
-let quad1 = drawFilledRect(0, 0, width/3, width/9, 'red')
+let quad1 = drawFilledRect(0, 0, width/3, width/9, 'black')
 let quad2
 let quad3
 let quad4
