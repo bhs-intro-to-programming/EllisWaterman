@@ -8,7 +8,7 @@
 
 //drawText('#', width/3, height, 'black', Math.min(width, height) * 1.5)
 let clickCount = -1
-drawLine(width/3, height, 0, 0, 'black', 5)
+drawLine(width/3, height, width/3, 0, 'black', 5)
 registerOnclick((x, y) => {
   clickCount++
    if (clickCount % 2 === 0)
