@@ -10,6 +10,7 @@
 let clickCount = -1
 drawLine(width/3, height, width/3, 0, 'black', 10)
 drawLine(width/3*2, height, width/3*2, 0, 'black', 10)
+drawLine(width, height/3, 0, height, 'black', 10)
 registerOnclick((x, y) => {
   clickCount++
    if (clickCount % 2 === 0)
