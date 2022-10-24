@@ -15,7 +15,7 @@ drawLine(width, height/3, 0, height/3, 'black', 10)
 drawLine(width, height/3*2, 0, height/3*2, 'black', 10)
 }
 drawFrame()
-let quad1 = 
+let quad1
 let quad2
 let quad3
 let quad4
