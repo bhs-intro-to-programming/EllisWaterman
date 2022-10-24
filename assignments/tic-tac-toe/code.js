@@ -6,7 +6,7 @@
 // weeks but for now you can just adapt this code.
 //drawLine(x1, y1, x2, y2, color, lineWidth)
 
-drawText('#', width/3, height, 'black', Math.min(width, height) * 1.5)
+//drawText('#', width/3, height, 'black', Math.min(width, height) * 1.5)
 let clickCount = -1
 drawLine(0, height/2, width/2, height/2, 'black', 5)
 registerOnclick((x, y) => {
