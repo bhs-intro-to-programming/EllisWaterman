@@ -6,13 +6,7 @@
 // weeks but for now you can just adapt this code.
 drawText('#', width/3, height, 'black', Math.min(width, height) * 1.5)
 let clickCount = -1
-const ticTacToe = [
-  [ drawRect(0,0, 'black', 1), 'O', 'O' ],
-  [ 'O', 'X', '' ],
-  [ 'X', '', 'O' ],
-];
-ticTacToe()
-
+drawLine(100, 100, 100, 100, 'black', 5)
 registerOnclick((x, y) => {
   clickCount++
    if (clickCount % 2 === 0)
