@@ -4,8 +4,14 @@
 // of the equals sign in our normal `const foo = ...` function definition. This
 // is called an anonymous function. We'll discuss this in more detail in a few
 // weeks but for now you can just adapt this code.
+drawText('#', width/3, height, 'black', Math.min(width, height) * 1.5)
 let clickCount = -1
-   drawText('#', width/3, height, 'black', Math.min(width, height) * 1.5)
+const ticTacToe = [
+  [ drawRect(0,0), 'O', 'O' ],
+  [ 'O', 'X', '' ],
+  [ 'X', '', 'O' ],
+];
+
 registerOnclick((x, y) => {
   clickCount++
    if (clickCount % 2 === 0)
@@ -13,4 +19,6 @@ registerOnclick((x, y) => {
   else
   drawText('O', x, y, 'black', Math.min(width, height) * 0.3);
 });
+
+
 
