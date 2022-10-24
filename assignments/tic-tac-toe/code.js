@@ -11,9 +11,9 @@ let clickCount = -1
 registerOnclick((x, y) => {
   clickCount++
    if (clickCount % 2 === 0)
-  drawText('X', x-25, y+25, Math.min(width, height) * 0.3);
+  drawText('X', x-25, y+25, 'black', Math.min(width, height) * 0.3);
   else
-  drawText('O', x-25, y+25, Math.min(width, height) * 0.3);
+  drawText('O', x-25, y+25, 'black', Math.min(width, height) * 0.3);
 });
 const drawFrame = () => {
 drawLine(width/3, height, width/3, 0, 'black', 10)
