@@ -5,12 +5,10 @@
 // is called an anonymous function. We'll discuss this in more detail in a few
 // weeks but for now you can just adapt this code.
 let clickCount = -1
-
+   drawText('#', width/2, height/2, 'black', Math.min(width, height) * 2)
 registerOnclick((x, y) => {
   clickCount++
-  if (clickCount == 0)
-   drawText('#', x, y, 'black', Math.min(width, height) * 2)
-  else if (clickCount % 2 === 0)
+   if (clickCount % 2 === 0)
   drawText('X', x, y, 'black', Math.min(width, height) * 0.3);
   else
   drawText('O', x, y, 'black', Math.min(width, height) * 0.3);
