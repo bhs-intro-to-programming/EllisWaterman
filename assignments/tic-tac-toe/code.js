@@ -9,7 +9,7 @@ let clickCount = -1
 registerOnclick((x, y) => {
   clickCount++
   if (clickCount == 0)
-   drawText('#', x, y, 'black', Math.min(width, height) * 1)
+   drawText('#', x, y, 'black', Math.min(width, height) * 2)
   else if (clickCount % 2 === 0)
   drawText('X', x, y, 'black', Math.min(width, height) * 0.3);
   else
