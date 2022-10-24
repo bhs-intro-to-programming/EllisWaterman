@@ -13,9 +13,10 @@ drawLine(width/3, height, width/3, 0, 'black', 10)
 drawLine(width/3*2, height, width/3*2, 0, 'black', 10)
 drawLine(width, height/3, 0, height/3, 'black', 10)
 drawLine(width, height/3*2, 0, height/3*2, 'black', 10)
+drawFilledRect(width/3, width/3, 'black')
 }
 drawFrame()
-let quad1
+let quad1 = 
 let quad2
 let quad3
 let quad4
