@@ -7,7 +7,6 @@
 let clickCount = 0
  registerOnclick(() => {
   clickCount++;
-  console.log(clickCount)
 });
 
 registerOnclick((x, y) => {
