@@ -8,10 +8,22 @@
 
 //drawText('#', width/3, height, 'black', Math.min(width, height) * 1.5)
 let clickCount = -1
+const drawFrame = () => {
 drawLine(width/3, height, width/3, 0, 'black', 10)
 drawLine(width/3*2, height, width/3*2, 0, 'black', 10)
 drawLine(width, height/3, 0, height/3, 'black', 10)
 drawLine(width, height/3*2, 0, height/3*2, 'black', 10)
+}
+drawFrame()
+let quad1
+let quad2
+let quad3
+let quad4
+let quad5
+let quad6
+let quad7
+let quad8
+let quad9
 registerOnclick((x, y) => {
   clickCount++
    if (clickCount % 2 === 0)
