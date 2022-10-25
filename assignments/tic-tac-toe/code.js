@@ -14,7 +14,7 @@ registerOnclick((x, y) => {
    if (clickCount % 2 === 0)
   drawText('X', height*1/6 , width*1/6, 'red', Math.min(width, height) * 0.3);
   else
-  drawText('O', 75, 70, 'blue', Math.min(width, height) * 0.3);
+  drawText('O', height*1/6, width*1/6, 'blue', Math.min(width, height) * 0.3);
   //  if (y < height/3 && x < width/3)
   //  if (clickCount % 2 === 0)
   // drawText('X', 75 , 70, 'red', Math.min(width, height) * 0.3);
