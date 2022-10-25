@@ -15,6 +15,7 @@ registerOnclick((x, y) => {
   drawText('X', 75 , 70, 'red', Math.min(width, height) * 0.3);
   else
   drawText('O', 75, 70, 'blue', Math.min(width, height) * 0.3);
+  
 });
 const drawFrame = () => {
 drawLine(width/3, height, width/3, 0, 'black', 10)
