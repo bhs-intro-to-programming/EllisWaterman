@@ -13,7 +13,7 @@ registerOnclick((x, y) => {
    if (clickCount % 2 === 0)
   drawText('X', x-25, y+25, 'red', Math.min(width, height) * 0.3);
   else
-  drawText('O', x-25, y+25, 'black', Math.min(width, height) * 0.3);
+  drawText('O', x-25, y+25, 'blue', Math.min(width, height) * 0.3);
 });
 const drawFrame = () => {
 drawLine(width/3, height, width/3, 0, 'black', 10)
