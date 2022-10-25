@@ -12,7 +12,7 @@ registerOnclick((x, y) => {
   clickCount++
   if (y > 0 && x > 0)
    if (clickCount % 2 === 0)
-  drawText('X', 0, 0, 'red', Math.min(width, height) * 0.3);
+  drawText('X', x, y, 'red', Math.min(width, height) * 0.3);
   else
   drawText('O', x-25, y+25, 'blue', Math.min(width, height) * 0.3);
 });
