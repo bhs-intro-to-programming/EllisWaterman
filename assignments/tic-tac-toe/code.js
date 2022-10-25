@@ -24,9 +24,9 @@ registerOnclick((x, y) => {
    else
    if (y < height && x < width/3)
    if (clickCount % 2 === 0)
-  drawText('X', width*1/6-50 , height+25 , 'red', Math.min(width, height) * 0.3);
+  drawText('X', width*1/6-50 , height , 'red', Math.min(width, height) * 0.3);
   else
-  drawText('O', width*1/6-50, height+25, 'blue', Math.min(width, height) * 0.3);
+  drawText('O', width*1/6-50, height, 'blue', Math.min(width, height) * 0.3);
 });
 const drawFrame = () => {
 drawLine(width/3, height, width/3, 0, 'black', 10)
