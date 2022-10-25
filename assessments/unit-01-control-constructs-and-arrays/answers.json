@@ -16,7 +16,7 @@
   "0",
   "xs[2][1]",
   "300",
-  "false",
+  "true",
   "The sum of the numbers from 0 to numbers.length - 1.",
   "Produces a new array containing all the words in words in uppercase.",
   "It first creates a new array. It then runs a for loop that increases i while it is less that xs.length. In that for loop it adds every word from xs backwards to result. It then returns result."
