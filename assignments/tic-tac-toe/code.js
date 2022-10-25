@@ -22,7 +22,7 @@ drawLine(width, height/3, 0, height/3, 'black', 10)
 drawLine(width, height/3*2, 0, height/3*2, 'black', 10)
 }
 drawFrame()
-let quad1 = drawFilledRect(0, 0, width/3, width/9, 'black')
+let quad1 = drawFilledRect(0, 0, width/3, width/9, 'white')
 let quad2
 let quad3
 let quad4
