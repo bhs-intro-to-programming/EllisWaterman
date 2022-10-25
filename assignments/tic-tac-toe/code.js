@@ -10,7 +10,7 @@
 let clickCount = -1
 registerOnclick((x, y) => {
   clickCount++
-  if (y > 
+  if (y > )
    if (clickCount % 2 === 0)
   drawText('X', x-25, y+25, 'red', Math.min(width, height) * 0.3);
   else
@@ -23,7 +23,7 @@ drawLine(width, height/3, 0, height/3, 'black', 10)
 drawLine(width, height/3*2, 0, height/3*2, 'black', 10)
 }
 drawFrame()
-let quad1 = drawFilledRect(0, 0, width/3, width/9, 'black')
+let quad1 = drawFilledRect(0, 0, width/3, width/9, 'grey')
 let quad2 = drawFilledRect(height/3, 0, width/9, 'black')
 let quad3
 let quad4
