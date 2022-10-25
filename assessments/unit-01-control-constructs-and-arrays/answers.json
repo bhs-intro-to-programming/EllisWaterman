@@ -15,7 +15,7 @@
   "3",
   "0",
   "xs[2][1]",
-  "Nothing, this code won’t run because xs was declared with const.",
+  "300",
   "false",
   "The sum of the numbers from 0 to numbers.length - 1.",
   "Produces a new array containing all the words in words in uppercase.",
