@@ -8,7 +8,7 @@
   "20",
   "10",
   "The sum of the numbers from 0 to 9",
-  "Never, it’s an infinite loop",
+  "When Math.random() returns a number less that 0.01",
   "It tests whether there are more than limit prime numbers below max.",
   "10",
   "xs[xs.length - 1]",
