@@ -32,7 +32,8 @@ registerOnclick((x, y) => {
  if (shape == 'O')
  xs[0][0] = 'O'
  else
- xs[0][0] = 'X'
+ xs[0][0] = 'X' 
+ console.log(xs)
  }
  //middle left
   else
