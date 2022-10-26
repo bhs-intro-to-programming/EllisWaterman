@@ -37,6 +37,7 @@ registerOnclick((x, y) => {
   if (y < height/3*2 && x < width/3) {
  drawText(shape, width*1/6-50 , height*3/6+25 , colour, Math.min(width, height) * 0.3);
  xs[1][0] = shape
+ console.log(xs)
   }
  //bottom left
     else
