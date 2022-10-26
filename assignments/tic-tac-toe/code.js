@@ -56,6 +56,10 @@ registerOnclick((x, y) => {
  else
   if (y < height/3*2 && x < width)
  drawText(shape, width-150 , height*3/6+25 , colour, Math.min(width, height) * 0.3);
+
+ else
+  if (y < height && x < width)
+ drawText(shape, width-150 , height+25 , colour, Math.min(width, height) * 0.3);
 });
  
  
