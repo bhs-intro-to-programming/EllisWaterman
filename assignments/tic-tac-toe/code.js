@@ -30,9 +30,9 @@ registerOnclick((x, y) => {
  if (y < height/3 && x < width/3) {
  drawText(shape, width*1/6-50 , height*1/6+25, colour, Math.min(width, height) * 0.3);
  if (shape == 'O')
- xs.shift('O')
+ xs[0][0] = 'O'
  else
- xs.shift('X')
+ xs[0][0] = 'X'
  }
  //middle left
   else
