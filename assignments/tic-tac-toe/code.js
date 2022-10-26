@@ -20,10 +20,20 @@ registerOnclick((x, y) => {
   colour = 'blue'
   else
   colour = 'red'
- 
+ const xs = [
+   [0,0,0],
+   [0,0,0],
+   [0,0,0]
+ ]
+
  //top left
- if (y < height/3 && x < width/3)
+ if (y < height/3 && x < width/3) {
  drawText(shape, width*1/6-50 , height*1/6+25, colour, Math.min(width, height) * 0.3);
+ if (shape == 'O')
+ xs.shift('O')
+ else
+ xs.shift('X')
+ }
  //middle left
   else
   if (y < height/3*2 && x < width/3)
@@ -39,7 +49,7 @@ registerOnclick((x, y) => {
  
      else
   if (y < height/3 && x < width/3*2)
- drawText(shape, width*3/6-0 , height*3/6+25 , colour, Math.min(width, height) * 0.3);
+ drawText(shape, width*3/6-50 , height*3/6+25 , colour, Math.min(width, height) * 0.3);
 
   else
   if (y < height/3*2 && x < width/3*2)
