@@ -9,12 +9,17 @@
 //drawText('#', width/3, height, 'black', Math.min(width, height) * 1.5)
 let clickCount = -1
 let shape = 'X'
+let colour = 'red'
 registerOnclick((x, y) => {
   clickCount++
   if (clickCount % 2 === 0)
    shape = 'O'
    else
    shape = 'X'
+   if (clickCount % 2 === 0)
+   colour = 'blue'
+   else
+   colour = 'red'
   if (y < height/3 && x < width/3)
   drawText(shape, width*1/6-50 , height*1/6+25, 'red', Math.min(width, height) * 0.3);
   
