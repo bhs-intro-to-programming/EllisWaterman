@@ -59,7 +59,7 @@ registerOnclick((x, y) => {
 
  else
   if (y < height && x < width)
- drawText(shape, width-150 , height+25 , colour, Math.min(width, height) * 0.3);
+ drawText(shape, width-150 , height-10 , colour, Math.min(width, height) * 0.3);
 });
  
  
