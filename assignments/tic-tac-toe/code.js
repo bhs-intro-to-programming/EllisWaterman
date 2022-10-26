@@ -8,13 +8,16 @@
 
 //drawText('#', width/3, height, 'black', Math.min(width, height) * 1.5)
 let clickCount = -1
+let shape = 'X'
 registerOnclick((x, y) => {
   clickCount++
+  if (clickCount % 2 === 0)
+   shape = 'O'
   if (y < height/3 && x < width/3)
    if (clickCount % 2 === 0)
-  drawText('X', width*1/6-50 , height*1/6+25, 'red', Math.min(width, height) * 0.3);
+  drawText(shape, width*1/6-50 , height*1/6+25, 'red', Math.min(width, height) * 0.3);
   else
-  drawText('O', width*1/6-50, height*1/6+25, 'blue', Math.min(width, height) * 0.3);
+  drawText(shape, width*1/6-50, height*1/6+25, 'blue', Math.min(width, height) * 0.3);
   
   else
    if (y < height/3*2 && x < width/3)
