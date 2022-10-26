@@ -27,7 +27,7 @@ registerOnclick((x, y) => {
  //middle left
   else
   if (y < height/3*2 && x < width/3)
- drawText(shape, width*1/6-50 , height*3/6+25 , colour, Math.min(width, height) * 0.3);
+ drawText(shape, width*1/6- , height*3/6+25 , colour, Math.min(width, height) * 0.3);
  //bottom left
     else
   if (y < height && x < width/3)
