@@ -62,13 +62,15 @@ registerOnclick((x, y) => {
     drawText(shape, width -150, height * 1 / 6 + 25, colour, Math.min(width, height) * 0.3);
     xs[2][0] = shape
   }
-
+//middle right
   else if (y < height / 3 * 2 && x < width) {
     drawText(shape, width - 150, height * 3 / 6 + 25, colour, Math.min(width, height) * 0.3);
+      xs[1][2] = shape
   }
-
+//bottom right
   else if (y < height && x < width) {
     drawText(shape, width - 150, height - 10, colour, Math.min(width, height) * 0.3);
+    xs[2][2] = shape
   }
   console.log(xs)
 });
