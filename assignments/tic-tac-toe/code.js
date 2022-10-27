@@ -33,44 +33,44 @@ registerOnclick((x, y) => {
     console.log(xs)
   }
   //middle left
-  
-    if (y < height / 3 * 2 && x < width / 3) {
-      drawText(shape, width * 1 / 6 - 50, height * 3 / 6 + 25, colour, Math.min(width, height) * 0.3);
-      xs[1][0] = shape
-      console.log(xs)
-    }
-    //bottom left
-  
-      if (y < height && x < width / 3)
-        drawText(shape, width * 1 / 6 - 50, height - 10, colour, Math.min(width, height) * 0.3);
-      //top middle
-      
-        if (y < height / 3 && x < width / 3 * 2)
-          drawText(shape, width * 3 / 6 - 50, height * 1 / 6 + 25, colour, Math.min(width, height) * 0.3);
-        
 
-          if (y < height / 3 && x < width / 3 * 2)
-            drawText(shape, width * 3 / 6 - 50, height * 3 / 6 + 25, colour, Math.min(width, height) * 0.3);
-         
+  if (y < (height / 3) * 2 && x < width / 3) {
+    drawText(shape, width * 1 / 6 - 50, height * 3 / 6 + 25, colour, Math.min(width, height) * 0.3);
+    xs[1][0] = shape
+    console.log(xs)
+  }
+  //bottom left
 
-            if (y < height / 3 * 2 && x < width / 3 * 2)
-              drawText(shape, width * 3 / 6 - 50, height * 3 / 6 + 25, colour, Math.min(width, height) * 0.3);
-            
+  if (y < height && x < width / 3)
+    drawText(shape, width * 1 / 6 - 50, height - 10, colour, Math.min(width, height) * 0.3);
+  //top middle
 
-              if (y < height && x < width / 3 * 2)
-                drawText(shape, width * 3 / 6 - 50, height - 10, colour, Math.min(width, height) * 0.3);
-              
+  if (y < height / 3 && x < width / 3 * 2)
+    drawText(shape, width * 3 / 6 - 50, height * 1 / 6 + 25, colour, Math.min(width, height) * 0.3);
 
-                if (y < height / 3 && x < width)
-                  drawText(shape, width - 150, height * 1 / 6 + 25, colour, Math.min(width, height) * 0.3);
-                
 
-                  if (y < height / 3 * 2 && x < width)
-                    drawText(shape, width - 150, height * 3 / 6 + 25, colour, Math.min(width, height) * 0.3);
-                  
+  if (y < height / 3 && x < width / 3 * 2)
+    drawText(shape, width * 3 / 6 - 50, height * 3 / 6 + 25, colour, Math.min(width, height) * 0.3);
 
-                    if (y < height && x < width)
-                      drawText(shape, width - 150, height - 10, colour, Math.min(width, height) * 0.3);
+
+  if (y < height / 3 * 2 && x < width / 3 * 2)
+    drawText(shape, width * 3 / 6 - 50, height * 3 / 6 + 25, colour, Math.min(width, height) * 0.3);
+
+
+  if (y < height && x < width / 3 * 2)
+    drawText(shape, width * 3 / 6 - 50, height - 10, colour, Math.min(width, height) * 0.3);
+
+
+  if (y < height / 3 && x < width)
+    drawText(shape, width - 150, height * 1 / 6 + 25, colour, Math.min(width, height) * 0.3);
+
+
+  if (y < height / 3 * 2 && x < width)
+    drawText(shape, width - 150, height * 3 / 6 + 25, colour, Math.min(width, height) * 0.3);
+
+
+  if (y < height && x < width)
+    drawText(shape, width - 150, height - 10, colour, Math.min(width, height) * 0.3);
 });
 
 
