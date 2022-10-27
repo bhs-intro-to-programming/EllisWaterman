@@ -42,7 +42,7 @@ registerOnclick((x, y) => {
 
   else if (y < height && x < width / 3) {
     drawText(shape, width * 1 / 6-50 , height - 10, colour, Math.min(width, height) * 0.3); 
-    xs[2][0]
+    xs[2][0] = shape
     console.log(xs)
   //top middle
   }
