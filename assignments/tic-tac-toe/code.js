@@ -33,7 +33,7 @@ function foo()  {
  //top left
  if (y < height/3 && x < width/3) {
  drawText(shape, width*1/6-50 , height*1/6+25, colour, Math.min(width, height) * 0.3);
-  foo()
+  foo(shape)
  }
  //middle left
   else
