@@ -65,7 +65,7 @@ registerOnclick((x, y) => {
   }
   //top right
   else if (y < height / 3 && x < width) {
-    drawText(shape, width -140, height * 1 / 6 + 25, colour, Math.min(width, height) * 0.3);
+    drawText(shape, width -150, height * 1 / 6 + 25, colour, Math.min(width, height) * 0.3);
     xs[2][0] = shape
     console.log(xs) 
   }
