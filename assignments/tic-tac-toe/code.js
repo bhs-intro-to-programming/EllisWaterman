@@ -51,10 +51,11 @@ registerOnclick((x, y) => {
     xs[1][1] = shape
     console.log(xs)
   }
-
-
+  //middle middle
   else if (y < height / 3 * 2 && x < width / 3 * 2) {
     drawText(shape, width * 3 / 6 - 50, height * 3 / 6 + 25, colour, Math.min(width, height) * 0.3);
+  xs[1][2] = shape
+    console.log(xs)
   }
 
   else if (y < height && x < width / 3 * 2) {
