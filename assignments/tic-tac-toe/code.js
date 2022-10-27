@@ -10,6 +10,11 @@
 let clickCount = -1
 let shape = 'O'
 let colour = 'red'
+let xs = [
+    [0, 0, 0],
+    [0, 0, 0],
+    [0, 0, 0]
+  ]
 registerOnclick((x, y) => {
   clickCount++
   if (clickCount % 2 === 0)
@@ -20,11 +25,7 @@ registerOnclick((x, y) => {
     colour = 'blue'
   else
     colour = 'red'
-  let xs = [
-    [0, 0, 0],
-    [0, 0, 0],
-    [0, 0, 0]
-  ]
+  
 
   //top left
   if (y < height / 3 && x < width / 3) {
