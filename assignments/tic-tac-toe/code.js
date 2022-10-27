@@ -7,6 +7,9 @@
 //drawLine(x1, y1, x2, y2, color, lineWidth)
  
 //drawText('#', width/3, height, 'black', Math.min(width, height) * 1.5)
+function foo(shape)  {
+  let xs[0][0] = shape
+}
 let clickCount = -1
 let shape = 'O'
 let colour = 'red'
@@ -25,9 +28,7 @@ registerOnclick((x, y) => {
    [0,0,0],
    [0,0,0]
  ]
-const foo = (shape) => {
-  
-}
+
  //top left
  if (y < height/3 && x < width/3) {
  drawText(shape, width*1/6-50 , height*1/6+25, colour, Math.min(width, height) * 0.3);
