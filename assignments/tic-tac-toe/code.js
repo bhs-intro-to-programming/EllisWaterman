@@ -40,36 +40,43 @@ registerOnclick((x, y) => {
   }
   //bottom left
 
-  else if (y < height && x < width / 3)
-    drawText(shape, width * 1 / 6 - 50, height - 10, colour, Math.min(width, height) * 0.3);
+  else if (y < height && x < width / 3) {
+    drawText(shape, width * 1 / 6 - 50, height - 10, colour, Math.min(width, height) * 0.3); 
+    xs[2][0]
+    console.log(xs)
   //top middle
-
-  else if (y < height / 3 && x < width / 3 * 2)
+  }
+  else if (y < height / 3 && x < width / 3 * 2) {
     drawText(shape, width * 3 / 6 - 50, height * 1 / 6 + 25, colour, Math.min(width, height) * 0.3);
+    xs[1][1] = shape
+    console.log(xs)
+  }
 
+  else if (y < height / 3 && x < width / 3 * 2) {
+    drawText(shape, width * 3 / 6 , height * 3 / 6 + 25, colour, Math.min(width, height) * 0.3);
+    xs[1][0] = shape
+    console.log(xs)
+  }
 
-  else if (y < height / 3 && x < width / 3 * 2)
+  else if (y < height / 3 * 2 && x < width / 3 * 2) {
     drawText(shape, width * 3 / 6 - 50, height * 3 / 6 + 25, colour, Math.min(width, height) * 0.3);
+  }
 
-
-  else if (y < height / 3 * 2 && x < width / 3 * 2)
-    drawText(shape, width * 3 / 6 - 50, height * 3 / 6 + 25, colour, Math.min(width, height) * 0.3);
-
-
-  else if (y < height && x < width / 3 * 2)
+  else if (y < height && x < width / 3 * 2) {
     drawText(shape, width * 3 / 6 - 50, height - 10, colour, Math.min(width, height) * 0.3);
+  }
 
-
-  else if (y < height / 3 && x < width)
+  else if (y < height / 3 && x < width) {
     drawText(shape, width - 150, height * 1 / 6 + 25, colour, Math.min(width, height) * 0.3);
+  }
 
-
-  else if (y < height / 3 * 2 && x < width)
+  else if (y < height / 3 * 2 && x < width) {
     drawText(shape, width - 150, height * 3 / 6 + 25, colour, Math.min(width, height) * 0.3);
+  }
 
-
-  else if (y < height && x < width)
+  else if (y < height && x < width) {
     drawText(shape, width - 150, height - 10, colour, Math.min(width, height) * 0.3);
+  }
 });
 
 
