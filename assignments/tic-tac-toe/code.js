@@ -7,8 +7,6 @@
 //drawLine(x1, y1, x2, y2, color, lineWidth)
  
 //drawText('#', width/3, height, 'black', Math.min(width, height) * 1.5)
-function foo()  {
-  let xs[0][0] == shape
 
 
 let clickCount = -1
@@ -29,7 +27,9 @@ registerOnclick((x, y) => {
    [0,0,0],
    [0,0,0]
  ]
-
+function foo()  {
+  xs[0][0] == shape
+}
  //top left
  if (y < height/3 && x < width/3) {
  drawText(shape, width*1/6-50 , height*1/6+25, colour, Math.min(width, height) * 0.3);
@@ -75,7 +75,7 @@ else
   if (y < height && x < width)
  drawText(shape, width-150 , height-10 , colour, Math.min(width, height) * 0.3);
 });
-}
+
  
 const drawFrame = () => {
 drawLine(width/3, height, width/3, 0, 'black', 10)
