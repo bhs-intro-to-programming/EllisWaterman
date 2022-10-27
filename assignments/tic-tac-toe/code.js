@@ -9,7 +9,8 @@
 //drawText('#', width/3, height, 'black', Math.min(width, height) * 1.5)
 function foo(shape)  {
   let xs[0][0] = shape
-}
+
+
 let clickCount = -1
 let shape = 'O'
 let colour = 'red'
@@ -74,7 +75,7 @@ else
   if (y < height && x < width)
  drawText(shape, width-150 , height-10 , colour, Math.min(width, height) * 0.3);
 });
- 
+}
  
 const drawFrame = () => {
 drawLine(width/3, height, width/3, 0, 'black', 10)
@@ -83,7 +84,7 @@ drawLine(width, height/3, 0, height/3, 'black', 10)
 drawLine(width, height/3*2, 0, height/3*2, 'black', 10)
 }
 drawFrame()
- 
+
  
  
  
