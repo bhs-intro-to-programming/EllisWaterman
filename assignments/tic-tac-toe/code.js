@@ -7,8 +7,6 @@
 //drawLine(x1, y1, x2, y2, color, lineWidth)
  
 //drawText('#', width/3, height, 'black', Math.min(width, height) * 1.5)
-
-
 let clickCount = -1
 let shape = 'O'
 let colour = 'red'
@@ -27,19 +25,19 @@ registerOnclick((x, y) => {
    [0,0,0],
    [0,0,0]
  ]
-function foo()  {
-  xs[0][0] == shape
-}
+
  //top left
  if (y < height/3 && x < width/3) {
  drawText(shape, width*1/6-50 , height*1/6+25, colour, Math.min(width, height) * 0.3);
-  foo(shape)
+ xs[0][0] = shape
+ console.log(xs)
  }
  //middle left
   else
   if (y < height/3*2 && x < width/3) {
  drawText(shape, width*1/6-50 , height*3/6+25 , colour, Math.min(width, height) * 0.3);
- foo()
+ xs[1][0] = shape
+ console.log(xs)
   }
  //bottom left
     else
@@ -74,7 +72,7 @@ else
   if (y < height && x < width)
  drawText(shape, width-150 , height-10 , colour, Math.min(width, height) * 0.3);
 });
-
+ 
  
 const drawFrame = () => {
 drawLine(width/3, height, width/3, 0, 'black', 10)
@@ -83,7 +81,7 @@ drawLine(width, height/3, 0, height/3, 'black', 10)
 drawLine(width, height/3*2, 0, height/3*2, 'black', 10)
 }
 drawFrame()
-
+ 
  
  
  
