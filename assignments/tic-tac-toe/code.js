@@ -84,6 +84,11 @@ const drawFrame = () => {
 }
 drawFrame()
 
-
+let wee = [
+    [win, win, win],
+    [0, 0, 0],
+    [0, 0, 0]
+  ]
+  console.log(wee)
 
 
