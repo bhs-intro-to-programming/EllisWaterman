@@ -20,7 +20,13 @@ let xs = [
 ]
 
 registerOnclick((x, y) => {
-  clickCount++
+  let col = Math.floor(x / width * 3);
+  let row = Math.floor(y / height * 3);
+
+  if (xs[row][col] != 0)
+    return;
+  clickCount++;
+
   if (clickCount % 2 === 0) {
     shape = 'O'
     colour = 'blue'
@@ -28,11 +34,9 @@ registerOnclick((x, y) => {
     shape = 'X'
     colour = 'red'
   }
-  let col = Math.floor(x / width * 3);
-  let row = Math.floor(y / height * 3);
   console.log("row " + row + ", col: " + col);
   drawText(shape,
-    col * (width / 3) + xoffset, 
+    col * (width / 3) + xoffset,
     (row + 1) * (height / 3) - yoffset,
     colour,
     size);
