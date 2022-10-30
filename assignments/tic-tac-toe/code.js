@@ -34,9 +34,20 @@ const verticalWinner = () => {
     }
   }
 }
+const diagonalWinner = () => {
+  for (let i = 0; i < 2; i++) {
+    if (xs[i][i] != null) {
+      if (xs[i][i] == xs[i][i] && xs[i][i] == xs[i][i])
+        return xs[i][i];
+
+        // xs[0][0] xs[1][1] xs [2][2]
+        // xs [0][2] xs [1][1] xs [2][0]
+    }
+  }
+}
 const winner = () => {
   let winnersSymbol;
-  if ((winnersSymbol = horizontalWinner()) || (winnersSymbol = verticalWinner()))
+  if ((winnersSymbol = horizontalWinner()) || (winnersSymbol = verticalWinner()) || (winnersSymbol = diagonalWinner))
     return winnersSymbol;
 }
 registerOnclick((x, y) => {
