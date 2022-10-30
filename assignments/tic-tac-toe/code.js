@@ -19,10 +19,9 @@ let xs = [
   [null, null, null]
 ]
 const winner = () => {
-  //X,X,X,O,O,,,,
+  console.log(xs[0][0] == xs[0][1] == xs[0][2]);
   if (xs[0][0] == xs[0][1] == xs[0][2])
     return xs[0][0];
-  console.log(xs[0][0],xs[0][1], xs[0][2]);
 }
 registerOnclick((x, y) => {
   let col = Math.floor(x / width * 3);
