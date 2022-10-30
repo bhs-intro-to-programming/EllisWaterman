@@ -21,7 +21,7 @@ let xs = [
 const winner = () => {
   //X,X,X,O,O,,,,
   if (xs[0][0] == xs[0][1] == xs[0][2])
-    return xs[0];
+    return xs[0][0];
   console.log(xs);
 }
 registerOnclick((x, y) => {
