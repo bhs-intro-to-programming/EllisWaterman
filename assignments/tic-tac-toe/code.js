@@ -11,7 +11,7 @@ let clickCount = 0;
 let shape;
 let colour;
 let size = Math.min(width, height) * 0.3;
-let xoffset = width / 3 / 2;
+let xoffset = width / 3 / 2 - (size / 2);
 let yoffset = height / 3 / 2;
 let xs = [
   [0, 0, 0],
