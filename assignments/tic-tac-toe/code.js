@@ -19,7 +19,7 @@ let xs = [
   [0, 0, 0]
 ]
 const winner = () => {
-  return null;
+  console.log(xs);
 }
 registerOnclick((x, y) => {
   let col = Math.floor(x / width * 3);
