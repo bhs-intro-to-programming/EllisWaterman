@@ -23,7 +23,7 @@ const horizontalWinner = () => {
   for (let i = 0; i < 3; i++) {
     if (xs[i][0] != null) {
       if (xs[i][0] == xs[i][1] && xs[i][0] == xs[i][2]) {
-        drawLine(height/i, 0, width, height, 'black', 10)
+        drawLine(0, height/i, width, height/i, 'black', 10);
         return xs[i][0];
       }
     }
