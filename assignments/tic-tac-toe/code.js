@@ -52,7 +52,7 @@ registerOnclick((x, y) => {
     size);
   xs[row][col] = shape;
   if (winner() != null)
-    console.log("WINNER");
+    console.log(shape + " is WINNER");
 });
 
 
