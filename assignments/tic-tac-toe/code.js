@@ -33,11 +33,11 @@ registerOnclick((x, y) => {
   console.log("row " + row + ", col: " + col);
   drawText(shape,
     col * (width / 3) + xoffset, 
-    row * (height / 3),
+    (row + 1) * (height / 3),
     colour,
     size);
   xs[row][col] = shape
-  console.log(row * (height / 3) );
+  console.log((row + 1) * (height / 3) );
 });
 
 
