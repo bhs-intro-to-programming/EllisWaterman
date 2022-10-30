@@ -25,14 +25,14 @@ const drawWinnerLine = (lineType, pos) => {
     drawLine(0, linePosition, width, linePosition, colour, 10);
   }
   else if (lineType == 'v') {
-      let linePosition = width / 3 * pos + (width / 6);
+    let linePosition = width / 3 * pos + (width / 6);
     drawLine(linePosition, 0, linePosition, height, colour, 10);
   }
   else
     if (pos == 0)
       drawLine(0, 0, width, height, colour, 10);
     else
-      drawLine(width, 0, 0, height, colour,10);
+      drawLine(width, 0, 0, height, colour, 10);
 }
 const horizontalWinner = () => {
   for (let i = 0; i < 3; i++) {
