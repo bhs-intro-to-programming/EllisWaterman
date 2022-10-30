@@ -40,6 +40,7 @@ const diagonalWinner = () => {
     if (xs[i][i] != null) {
       if (xs[0][0] == xs[1][1] && xs[0][0] == xs[2][2])
         return xs[i][i];
+      if (xs[0][2] == xs[1][1] && xs[0][2] == xs[2][0])
       // xs[0][0] xs[1][1] xs [2][2]
       // xs [0][2] xs [1][1] xs [2][0]
     }
