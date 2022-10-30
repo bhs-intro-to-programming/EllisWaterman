@@ -18,9 +18,16 @@ let xs = [
   [null, null, null],
   [null, null, null]
 ]
+const horizontalWinner = () => {
+  for (let i = 0; i < 3; i++) {
+    if (xs[i][0] == xs[i][1] && xs[i][0] == xs[i][2])
+      return xs[i][0];
+  }
+}
 const winner = () => {
-  if (xs[0][0] == xs[0][1] && xs[0][0] == xs[0][2])
-    return xs[0][0];
+  let winnersSymbol;
+  if (winnersSymbol = horizontalWinner())
+    return (winnersSymbol);
   return ("fick");
 }
 registerOnclick((x, y) => {
