@@ -11,6 +11,8 @@ let clickCount = 0;
 let shape;
 let colour;
 let size = Math.min(width, height) * 0.3;
+let xoffset = width / 3 / 2;
+let yoffset = height / 3 / 2;
 let xs = [
   [0, 0, 0],
   [0, 0, 0],
@@ -29,7 +31,7 @@ registerOnclick((x, y) => {
   let col = Math.floor(x / width * 3);
   let row = Math.floor(y / height * 3);
   console.log("row " + row + ", col: " + col);
-  drawText(shape, col * (width/3), (row + 1) * (height/3), colour, size);
+  drawText(shape, col * (width/3), (row + 1) * (height/3) + yoffset, colour, size);
   xs[row][col] = shape
   console.log(xs)
 });
