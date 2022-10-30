@@ -24,7 +24,7 @@ const horizontalWinner = () => {
     if (xs[i][0] != null) {
       if (xs[i][0] == xs[i][1] && xs[i][0] == xs[i][2])
         return xs[i][0];
-        drawLine(0,0, 100, 1000, 'black', 1)
+        drawLine(0,0, 100, width, 'black', 1)
     }
   }
 }
