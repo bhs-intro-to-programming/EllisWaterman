@@ -29,7 +29,7 @@ registerOnclick((x, y) => {
   let col = Math.floor(x / width * 3);
   let row = Math.floor(y / height * 3);
   console.log("row " + row + ", col: " + col);
-  drawText(shape, col, row, colour, size);
+  drawText(shape, col * (width/3), row * (height/3), colour, size);
   xs[row][col] = shape
   console.log(xs)
 });
