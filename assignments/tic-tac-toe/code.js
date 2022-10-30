@@ -51,7 +51,8 @@ registerOnclick((x, y) => {
     colour,
     size);
   xs[row][col] = shape;
-  console.log(winner());
+  if (winner() != null)
+    console.log("WINNER");
 });
 
 
