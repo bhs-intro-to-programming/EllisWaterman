@@ -14,17 +14,20 @@ let size = Math.min(width, height) * 0.3;
 let xoffset = width / 3 / 2 - (size / 2);
 let yoffset = (height / 3 - 50) / 2;
 let xs = [
-  [0, 0, 0],
-  [0, 0, 0],
-  [0, 0, 0]
+  [null, null, null],
+  [null, null, null],
+  [null, null, null]
 ]
 const winner = () => {
+  //X,X,X,0,O,O,0,0,0
+
+  if (xs[rows])
   console.log(xs);
 }
 registerOnclick((x, y) => {
   let col = Math.floor(x / width * 3);
   let row = Math.floor(y / height * 3);
-  if (xs[row][col] != 0)
+  if (xs[row][col] != null)
     return;
   clickCount++;
 
