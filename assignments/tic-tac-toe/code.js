@@ -70,6 +70,8 @@ registerOnclick((x, y) => {
   xs[row][col] = shape;
   if (winner() != null)
     drawText(shape + ' WINS', width / 4, height / 2, colour, size);
+  if (clickCount == 9) 
+    drawText('DRAW', width / 4, height / 2, colour, size);
 });
 
 
