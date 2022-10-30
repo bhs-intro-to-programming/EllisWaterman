@@ -8,6 +8,7 @@
 
 //drawText('#', width/3, height, 'black', Math.min(width, height) * 1.5)
 let clickCount = 0;
+let isGameOver = false;
 let shape;
 let colour;
 let size = Math.min(width, height) * 0.3;
@@ -48,6 +49,7 @@ const winner = () => {
   if ((winnersSymbol = horizontalWinner()) || (winnersSymbol = verticalWinner()) || (winnersSymbol = diagonalWinner()))
     return winnersSymbol;
 }
+
 registerOnclick((x, y) => {
   let col = Math.floor(x / width * 3);
   let row = Math.floor(y / height * 3);
@@ -78,6 +80,7 @@ registerOnclick((x, y) => {
 const endGame = (message) => {
   drawFilledRect(0,0,width, height, 'white')
   drawText(message, width / 4, height / 2, colour, size);
+  
 }
 
 const drawFrame = () => {
