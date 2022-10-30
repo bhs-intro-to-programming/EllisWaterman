@@ -80,10 +80,9 @@ registerOnclick((x, y) => {
 });
 
 const endGame = (message) => {
+  drawLine(rows,cols, width, height, 'black', 10)
   drawFilledRect(0, 0, width, height, '#000000aa');
   drawText(message, width / 4, height / 2, colour, size);
-      drawLine(0,0, width, height, 'black', 10)
-
   isGameOver = true;
 
 }
