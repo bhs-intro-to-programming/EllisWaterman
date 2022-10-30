@@ -31,44 +31,45 @@ const verticalWinner = () => {
     if (xs[0][i] != null) {
       if (xs[0][i] == xs[1][i] && xs[0][i] == xs[2][i])
         return xs[0][i];
-}
-const winner = () => {
-  let winnersSymbol;
-  if (winnersSymbol = horizontalWinner())
-    return winnersSymbol;
-  if (winnersSymbol = verticalWinner())
-    return winnersSymbol;
-}
-registerOnclick((x, y) => {
-  let col = Math.floor(x / width * 3);
-  let row = Math.floor(y / height * 3);
-  if (xs[row][col] != null)
-    return;
-  clickCount++;
-
-  if (clickCount % 2 === 0) {
-    shape = 'O'
-    colour = 'blue'
-  } else {
-    shape = 'X'
-    colour = 'red'
+    }
   }
-  drawText(shape,
-    col * (width / 3) + xoffset,
-    (row + 1) * (height / 3) - yoffset,
-    colour,
-    size);
-  xs[row][col] = shape;
-  if (winner() != null)
-    drawText(shape + ' WINS', width / 4, height / 2, colour, size);
-});
+    const winner = () => {
+      let winnersSymbol;
+      if (winnersSymbol = horizontalWinner())
+        return winnersSymbol;
+      if (winnersSymbol = verticalWinner())
+        return winnersSymbol;
+    }
+    registerOnclick((x, y) => {
+      let col = Math.floor(x / width * 3);
+      let row = Math.floor(y / height * 3);
+      if (xs[row][col] != null)
+        return;
+      clickCount++;
+
+      if (clickCount % 2 === 0) {
+        shape = 'O'
+        colour = 'blue'
+      } else {
+        shape = 'X'
+        colour = 'red'
+      }
+      drawText(shape,
+        col * (width / 3) + xoffset,
+        (row + 1) * (height / 3) - yoffset,
+        colour,
+        size);
+      xs[row][col] = shape;
+      if (winner() != null)
+        drawText(shape + ' WINS', width / 4, height / 2, colour, size);
+    });
 
 
-const drawFrame = () => {
-  drawLine(width / 3, height, width / 3, 0, 'black', 10)
-  drawLine(width / 3 * 2, height, width / 3 * 2, 0, 'black', 10)
-  drawLine(width, height / 3, 0, height / 3, 'black', 10)
-  drawLine(width, height / 3 * 2, 0, height / 3 * 2, 'black', 10)
-}
-drawFrame();
+    const drawFrame = () => {
+      drawLine(width / 3, height, width / 3, 0, 'black', 10)
+      drawLine(width / 3 * 2, height, width / 3 * 2, 0, 'black', 10)
+      drawLine(width, height / 3, 0, height / 3, 'black', 10)
+      drawLine(width, height / 3 * 2, 0, height / 3 * 2, 'black', 10)
+    }
+    drawFrame();
 
