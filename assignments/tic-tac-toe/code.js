@@ -18,11 +18,12 @@ let xs = [
   [0, 0, 0],
   [0, 0, 0]
 ]
-
+const winner = () => {
+  return null;
+}
 registerOnclick((x, y) => {
   let col = Math.floor(x / width * 3);
   let row = Math.floor(y / height * 3);
-
   if (xs[row][col] != 0)
     return;
   clickCount++;
@@ -39,7 +40,8 @@ registerOnclick((x, y) => {
     (row + 1) * (height / 3) - yoffset,
     colour,
     size);
-  xs[row][col] = shape
+  xs[row][col] = shape;
+  console.log(winner());
 });
 
 
