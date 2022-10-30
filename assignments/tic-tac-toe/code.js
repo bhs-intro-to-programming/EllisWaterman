@@ -19,8 +19,8 @@ let xs = [
   [null, null, null],
   [null, null, null]
 ]
-const drawWinnerLine = (from, to) => {
-  let linePosition = height / 3 * i + (height / 6)
+const drawWinnerLine = (x1, x2) => {
+  let linePosition = height / 3 * x1 + (height / 6)
   drawLine(0, linePosition, width, linePosition, colour, 10);
 
 }
