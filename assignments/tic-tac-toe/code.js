@@ -38,7 +38,7 @@ const diagonalWinner = () => {
   console.log(xs);
   for (let i = 0; i < 2; i++) {
     if (xs[i][i] != null) {
-      if (xs[i][i] == xs[i][i] && xs[i][i] == xs[i][i])
+      if (xs[0][0] == xs[1][1] && xs[0][0] == xs[2][2])
         return xs[i][i];
       // xs[0][0] xs[1][1] xs [2][2]
       // xs [0][2] xs [1][1] xs [2][0]
