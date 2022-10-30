@@ -37,7 +37,7 @@ registerOnclick((x, y) => {
     colour,
     size);
   xs[row][col] = shape
-  console.log(xs)
+  console.log(row * (height / 3) - yoffset)
 });
 
 
