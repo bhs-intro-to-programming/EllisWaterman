@@ -26,6 +26,9 @@ const drawWinnerLine = (lineType, pos) => {
     drawLine(0, linePositionX, width, linePositionX, colour, 10);
   else if (lineType == 'v')
     drawLine(linePositionY, 0, linePositionY, height, colour, 10);
+  else
+    drawLine(linePositionY, 0, linePositionX, height, colour, 10);
+
 }
 const horizontalWinner = () => {
   for (let i = 0; i < 3; i++) {
@@ -49,10 +52,15 @@ const verticalWinner = () => {
 }
 const diagonalWinner = () => {
   console.log(xs);
-  if (xs[0][0] == xs[1][1] && xs[0][0] == xs[2][2])
+  if (xs[0][0] == xs[1][1] && xs[0][0] == xs[2][2]) {
+    drawWinnerLine('d', 1);
     return xs[0][0];
-  if (xs[0][2] == xs[1][1] && xs[0][2] == xs[2][0])
-    return xs[0][2]
+  }
+  if (xs[0][2] == xs[1][1] && xs[0][2] == xs[2][0]) {
+    drawWinnerLine('d', 1);
+    return xs[0][2];
+  }
+
 }
 
 
