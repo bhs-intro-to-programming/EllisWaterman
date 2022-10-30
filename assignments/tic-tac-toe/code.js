@@ -22,8 +22,10 @@ let xs = [
 const horizontalWinner = () => {
   for (let i = 0; i < 3; i++) {
     if (xs[i][0] != null) {
-      if (xs[i][0] == xs[i][1] && xs[i][0] == xs[i][2])
+      if (xs[i][0] == xs[i][1] && xs[i][0] == xs[i][2]) {
+        drawLine(0, 0, width, height, 'black', 10)
         return xs[i][0];
+      }
     }
   }
 }
@@ -77,8 +79,6 @@ registerOnclick((x, y) => {
   else
     if (clickCount == 9)
       endGame('DRAW');
-        drawLine(row,col, width, height, 'black', 10)
-
 });
 
 const endGame = (message) => {
