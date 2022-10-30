@@ -19,7 +19,8 @@ let xs = [
   [null, null, null]
 ]
 const horizontalWinner = () => {
-  for (let i = 0; i < 3; i++) {
+  console.log(xs);
+  for (let i = 0; i < 3; i++) {  
     if (xs[i][0] == xs[i][1] && xs[i][0] == xs[i][2])
       return xs[i][0];
   }
