@@ -48,6 +48,8 @@ const winner = () => {
   let winnersSymbol;
   if ((winnersSymbol = horizontalWinner()) || (winnersSymbol = verticalWinner()) || (winnersSymbol = diagonalWinner()))
     return winnersSymbol;
+    drawLine(0,0, width, height, 'black', 10)
+
 }
 
 registerOnclick((x, y) => {
