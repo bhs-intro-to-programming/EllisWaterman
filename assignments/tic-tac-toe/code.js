@@ -26,10 +26,18 @@ const horizontalWinner = () => {
     }
   }
 }
+const verticalWinner = () => {
+  for (let i = 0; i < 3; i++) {
+    if (xs[0][i] != null) {
+      if (xs[0][i] == xs[1][i] && xs[0][i] == xs[2][i])
+        return xs[0][i];
+}
 const winner = () => {
   let winnersSymbol;
   if (winnersSymbol = horizontalWinner())
-    return (winnersSymbol);
+    return winnersSymbol;
+  if (winnersSymbol = verticalWinner())
+    return winnersSymbol;
 }
 registerOnclick((x, y) => {
   let col = Math.floor(x / width * 3);
