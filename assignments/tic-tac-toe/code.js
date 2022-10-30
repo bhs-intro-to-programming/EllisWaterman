@@ -7,14 +7,16 @@
 //drawLine(x1, y1, x2, y2, color, lineWidth)
 
 //drawText('#', width/3, height, 'black', Math.min(width, height) * 1.5)
-let clickCount = -1
-let shape = 'O'
-let colour = 'red'
+let clickCount = 0;
+let shape;
+let colour;
+let size = Math.min(width, height) * 0.3;
 let xs = [
   [0, 0, 0],
   [0, 0, 0],
   [0, 0, 0]
 ]
+
 registerOnclick((x, y) => {
   clickCount++
   if (clickCount % 2 === 0) {
@@ -24,56 +26,11 @@ registerOnclick((x, y) => {
     shape = 'X'
     colour = 'red'
   }
-  let row = Math.floor(x / width * 3);
-  let col = Math.floor(y / height * 3);
-  console.log("row " + row + ", col: "+ col);
-  //top left
-  if (y < height / 3 && x < width / 3) {
-    drawText(shape, width * 1 / 6 - 50, height * 1 / 6 + 25, colour, Math.min(width, height) * 0.3);
-    xs[0][0] = shape
-  }
-  //middle left
-
-  else if (y < (height / 3) * 2 && x < width / 3) {
-    drawText(shape, width * 1 / 6 - 50, height * 3 / 6 + 25, colour, Math.min(width, height) * 0.3);
-    xs[1][0] = shape
-  }
-  //bottom left
-
-  else if (y < height && x < width / 3) {
-    drawText(shape, width * 1 / 6 - 50, height - 10, colour, Math.min(width, height) * 0.3);
-    xs[2][0] = shape
-    //top middle
-  }
-  else if (y < height / 3 && x < width / 3 * 2) {
-    drawText(shape, width * 3 / 6 - 50, height * 1 / 6 + 25, colour, Math.min(width, height) * 0.3);
-    xs[0][1] = shape
-  }
-  //middle middle
-  else if (y < height / 3 * 2 && x < width / 3 * 2) {
-    drawText(shape, width * 3 / 6 - 50, height * 3 / 6 + 25, colour, Math.min(width, height) * 0.3);
-    xs[1][1] = shape
-  }
-  //bottom middle
-  else if (y < height && x < width / 3 * 2) {
-    drawText(shape, width * 3 / 6 - 50, height - 10, colour, Math.min(width, height) * 0.3);
-    xs[2][1] = shape
-  }
-  //top right
-  else if (y < height / 3 && x < width) {
-    drawText(shape, width - 150, height * 1 / 6 + 25, colour, Math.min(width, height) * 0.3);
-    xs[0][2] = shape
-  }
-  //middle right
-  else if (y < height / 3 * 2 && x < width) {
-    drawText(shape, width - 150, height * 3 / 6 + 25, colour, Math.min(width, height) * 0.3);
-    xs[1][2] = shape
-  }
-  //bottom right
-  else if (y < height && x < width) {
-    drawText(shape, width - 150, height - 10, colour, Math.min(width, height) * 0.3);
-    xs[2][2] = shape
-  }
+  let col = Math.floor(x / width * 3);
+  let row = Math.floor(y / height * 3);
+  console.log("row " + row + ", col: " + col);
+  drawText(shape, col, row, colour, size);
+  xs[row][col] = shape
   console.log(xs)
 });
 
