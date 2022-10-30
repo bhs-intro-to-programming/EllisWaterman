@@ -48,7 +48,7 @@ const diagonalWinner = () => {
 }
 const winner = () => {
   let winnersSymbol;
-  if ((winnersSymbol = horizontalWinner()) || (winnersSymbol = verticalWinner()) || (winnersSymbol = diagonalWinner))
+  if ((winnersSymbol = horizontalWinner()) || (winnersSymbol = verticalWinner()) || (winnersSymbol = diagonalWinner()))
     return winnersSymbol;
 }
 registerOnclick((x, y) => {
