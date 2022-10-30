@@ -51,6 +51,8 @@ const winner = () => {
 }
 
 registerOnclick((x, y) => {
+  if (isGameOver)
+    return;
   let col = Math.floor(x / width * 3);
   let row = Math.floor(y / height * 3);
   if (xs[row][col] != null)
@@ -72,15 +74,16 @@ registerOnclick((x, y) => {
   xs[row][col] = shape;
   if (winner() != null)
     endGame(shape + 'WINS');
-    else
-  if (clickCount == 9) 
-   endGame('DRAW');
+  else
+    if (clickCount == 9)
+      endGame('DRAW');
 });
 
 const endGame = (message) => {
-  drawFilledRect(0,0,width, height, 'white')
+  drawFilledRect(0, 0, width, height, 'white')
   drawText(message, width / 4, height / 2, colour, size);
-  
+  isGameOver = true;
+
 }
 
 const drawFrame = () => {
