@@ -47,13 +47,5 @@ const drawFrame = () => {
   drawLine(width, height / 3, 0, height / 3, 'black', 10)
   drawLine(width, height / 3 * 2, 0, height / 3 * 2, 'black', 10)
 }
-drawFrame()
-
-let wee = [
-  [4, 4, 4],
-  [0, 0, 0],
-  [0, 0, 0]
-]
-console.log(wee)
-
+drawFrame();
 
