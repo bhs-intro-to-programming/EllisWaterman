@@ -19,7 +19,9 @@ let xs = [
   [null, null, null]
 ]
 const winner = () => {
-  //X,X,X,0,O,O,0,0,0
+  //X,X,X,O,O,,,,
+if (xs[0] == xs[1] == xs[2])
+  return xs[0];
   console.log(xs);
 }
 registerOnclick((x, y) => {
