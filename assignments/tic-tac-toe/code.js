@@ -22,7 +22,7 @@ const winner = () => {
   //X,X,X,O,O,,,,
   if (xs[0][0] == xs[0][1] == xs[0][2])
     return xs[0][0];
-  console.log(xs);
+  console.log(xs[0][0],xs[0][1], xs[0][2]);
 }
 registerOnclick((x, y) => {
   let col = Math.floor(x / width * 3);
