@@ -20,6 +20,7 @@ let xs = [
 ]
 const winner = () => {
   console.log(xs[0][0] === xs[0][1] === xs[0][2]);
+  console.log(xs[0][0], xs[0][1], xs[0][2]);
   if (xs[0][0] == xs[0][1] == xs[0][2])
     return xs[0][0];
 }
