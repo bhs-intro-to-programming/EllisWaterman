@@ -27,7 +27,7 @@ const drawWinnerLine = (lineType, pos) => {
   else if (lineType == 'v')
     drawLine(linePositionY, 0, linePositionY, height, colour, 10);
   else
-    drawLine(linePositionY, 0, linePositionX, height, colour, 10);
+    drawLine(0, 0, width, height, colour, 10);
 
 }
 const horizontalWinner = () => {
