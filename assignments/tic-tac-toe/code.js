@@ -36,6 +36,7 @@ const verticalWinner = () => {
 }
 const diagonalWinner = () => {
   console.log("xs[i][i]");
+  return false
   for (let i = 0; i < 2; i++) {
     if (xs[i][i] != null) {
       if (xs[i][i] == xs[i][i] && xs[i][i] == xs[i][i])
