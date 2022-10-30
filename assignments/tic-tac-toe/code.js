@@ -19,8 +19,8 @@ let xs = [
   [null, null, null]
 ]
 const winner = () => {
-  console.log(xs[0][0] == xs[0][1] === xs[0][2]);
-  console.log(xs[0][0], xs[0][1], xs[0][2]);
+  console.log(xs[0][0] == xs[0][1]);
+  console.log(xs[0][0], xs[0][1]);
   if (xs[0][0] == xs[0][1] == xs[0][2])
     return xs[0][0];
   return ("fick");
