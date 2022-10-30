@@ -20,8 +20,6 @@ let xs = [
 ]
 const winner = () => {
   //X,X,X,0,O,O,0,0,0
-
-  if (xs[rows])
   console.log(xs);
 }
 registerOnclick((x, y) => {
