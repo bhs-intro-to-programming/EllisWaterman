@@ -36,9 +36,7 @@ const verticalWinner = () => {
 }
 const winner = () => {
   let winnersSymbol;
-  if (winnersSymbol = horizontalWinner())
-    return winnersSymbol;
-  if (winnersSymbol = verticalWinner())
+  if ((winnersSymbol = horizontalWinner()) || (winnersSymbol = verticalWinner()))
     return winnersSymbol;
 }
 registerOnclick((x, y) => {
