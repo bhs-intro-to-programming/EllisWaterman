@@ -69,12 +69,15 @@ registerOnclick((x, y) => {
     size);
   xs[row][col] = shape;
   if (winner() != null)
-    drawText(shape + ' WINS', width / 4, height / 2, colour, size);
+    endGame(shape + 'WINS');
     else
   if (clickCount == 9) 
-    drawText('DRAW', width / 4, height / 2, colour, size);
+   endGame('DRAW');
 });
 
+const endGame = (message) => {
+  drawText(message, width / 4, height / 2, colour, size);
+}
 
 const drawFrame = () => {
   drawLine(width / 3, height, width / 3, 0, 'black', 10)
