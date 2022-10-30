@@ -76,6 +76,7 @@ registerOnclick((x, y) => {
 });
 
 const endGame = (message) => {
+  drawFilledRect(0,0,width, height, 'white')
   drawText(message, width / 4, height / 2, colour, size);
 }
 
