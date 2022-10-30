@@ -52,7 +52,7 @@ registerOnclick((x, y) => {
     size);
   xs[row][col] = shape;
   if (winner() != null)
-  drawText(shape + 'WINS', height/2, width/2, 'black', size);
+    drawText(shape + 'WINS', width / 2, height / 2, 'black', size);
 });
 
 
