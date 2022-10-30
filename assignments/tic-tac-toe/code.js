@@ -48,8 +48,6 @@ const winner = () => {
   let winnersSymbol;
   if ((winnersSymbol = horizontalWinner()) || (winnersSymbol = verticalWinner()) || (winnersSymbol = diagonalWinner()))
     return winnersSymbol;
-    drawLine(0,0, width, height, 'black', 10)
-
 }
 
 registerOnclick((x, y) => {
@@ -84,6 +82,8 @@ registerOnclick((x, y) => {
 const endGame = (message) => {
   drawFilledRect(0, 0, width, height, '#000000aa');
   drawText(message, width / 4, height / 2, colour, size);
+      drawLine(0,0, width, height, 'black', 10)
+
   isGameOver = true;
 
 }
