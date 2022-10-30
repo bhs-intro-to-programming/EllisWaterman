@@ -19,17 +19,19 @@ let xs = [
   [null, null, null],
   [null, null, null]
 ]
-const drawWinnerLine = (x1, x2) => {
-  let linePositionX = height / 3 * x1 + (height / 6);
-  let linePositionY = width / 3 * x2 + (width / 6);
-  drawLine(0, linePositionX, width, linePositionX, colour, 10);
-  drawLine(linePositionY, 0, linePositionY, height, colour, 10);
+const drawWinnerLine = (lineType, pos) => {
+  let linePositionX = height / 3 * pos + (height / 6);
+  let linePositionY = width / 3 * pos + (width / 6);
+  if (lineType == 'h')
+    drawLine(0, linePositionX, width, linePositionX, colour, 10);
+  else if (lineType == 'v')
+    drawLine(linePositionY, 0, linePositionY, height, colour, 10);
 }
 const horizontalWinner = () => {
   for (let i = 0; i < 3; i++) {
     if (xs[i][0] != null) {
       if (xs[i][0] == xs[i][1] && xs[i][0] == xs[i][2]) {
-        drawWinnerLine(i);
+        drawWinnerLine('h', i);
         return xs[i][0];
       }
     }
@@ -39,7 +41,7 @@ const verticalWinner = () => {
   for (let i = 0; i < 3; i++) {
     if (xs[0][i] != null) {
       if (xs[0][i] == xs[1][i] && xs[0][i] == xs[2][i]) {
-        drawWinnerLine(0, i);
+        drawWinnerLine('v', i);
         return xs[0][i];
       }
     }
