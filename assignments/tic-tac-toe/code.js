@@ -51,11 +51,11 @@ const verticalWinner = () => {
   }
 }
 const diagonalWinner = () => {
-  if (xs[0][0] == xs[1][1] && xs[0][0] == xs[2][2]) {
+  if (xs[0][0] == xs[1][1] && xs[0][0] == xs[2][2] && xs[0][0] != null) {
     drawWinnerLine('d', 1);
     return xs[0][0];
   }
-  if (xs[0][2] == xs[1][1] && xs[0][2] == xs[2][0]) {
+  if (xs[0][2] == xs[1][1] && xs[0][2] == xs[2][0] && xs[0][2] != null) {
     console.log("here");
     drawWinnerLine('d', 1);
     return xs[0][2];
