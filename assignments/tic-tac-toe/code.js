@@ -19,11 +19,16 @@ let xs = [
   [null, null, null],
   [null, null, null]
 ]
+const drawWinnerLine = (from, to) => {
+  let linePosition = height / 3 * i + (height / 6)
+  drawLine(0, linePosition, width, linePosition, colour, 10);
+
+}
 const horizontalWinner = () => {
   for (let i = 0; i < 3; i++) {
     if (xs[i][0] != null) {
       if (xs[i][0] == xs[i][1] && xs[i][0] == xs[i][2]) {
-        drawLine(0, height/3*i+(height/6), width, height/3*i+(height/6), colour, 10);
+        drawWinnerLine(i)
         return xs[i][0];
       }
     }
