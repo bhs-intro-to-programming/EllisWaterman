@@ -20,12 +20,14 @@ let xs = [
   [null, null, null]
 ]
 const drawWinnerLine = (lineType, pos) => {
-  let linePositionX = height / 3 * pos + (height / 6);
-  let linePositionY = width / 3 * pos + (width / 6);
-  if (lineType == 'h')
-    drawLine(0, linePositionX, width, linePositionX, colour, 10);
-  else if (lineType == 'v')
-    drawLine(linePositionY, 0, linePositionY, height, colour, 10);
+  if (lineType == 'h') {
+    let linePosition = height / 3 * pos + (height / 6);
+    drawLine(0, linePosition, width, linePosition, colour, 10);
+  }
+  else if (lineType == 'v') {
+      let linePosition = width / 3 * pos + (width / 6);
+    drawLine(linePosition, 0, linePosition, height, colour, 10);
+  }
   else
     if (pos == 0)
       drawLine(0, 0, width, height, colour, 10);
