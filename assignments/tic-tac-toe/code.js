@@ -33,6 +33,7 @@ const verticalWinner = () => {
         return xs[0][i];
     }
   }
+}
   const winner = () => {
     let winnersSymbol;
     if (winnersSymbol = horizontalWinner())
