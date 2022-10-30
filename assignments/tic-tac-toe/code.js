@@ -12,7 +12,7 @@ let shape;
 let colour;
 let size = Math.min(width, height) * 0.3;
 let xoffset = width / 3 / 2 - (size / 2);
-let yoffset = height / 3;
+let yoffset = height / 3 - size;
 let xs = [
   [0, 0, 0],
   [0, 0, 0],
@@ -33,7 +33,7 @@ registerOnclick((x, y) => {
   console.log("row " + row + ", col: " + col);
   drawText(shape,
     col * (width / 3) + xoffset, 
-    (row + 1) * (height / 3) - yoffset,
+    row * (height / 3) - yoffset,
     colour,
     size);
   xs[row][col] = shape
