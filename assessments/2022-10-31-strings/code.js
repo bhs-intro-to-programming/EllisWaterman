@@ -31,3 +31,7 @@ const firstFewEveryOther = (s) => {
 const upDownLastCharacter = (s) => {
   return s.substring(s.length-1).toUpperCase()+s.substring(s.length-1)
 }
+
+const firstAndLast = (s) => {
+  return s.substring(0,1)+s.substring(s.length-1)
+}
