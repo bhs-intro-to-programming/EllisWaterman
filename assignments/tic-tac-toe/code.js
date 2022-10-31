@@ -60,7 +60,6 @@ const diagonalWinner = () => {
     return xs[0][0];
   }
   if (xs[0][2] == xs[1][1] && xs[0][2] == xs[2][0] && xs[0][2] != null) {
-    console.log("here");
     drawWinnerLine('d', 1);
     return xs[0][2];
   }
@@ -90,10 +89,7 @@ registerOnclick((x, y) => {
     colour = 'red'
   }
   drawText(shape,
-    col * (width / 3) + xoffset,
-    (row + 1) * (height / 3) - yoffset,
-    colour,
-    size);
+    col * (width / 3) + xoffset,(row + 1) * (height / 3) - yoffset,colour,size);
   xs[row][col] = shape;
   if (winner() != null)
     endGame(shape + ' WINS');
