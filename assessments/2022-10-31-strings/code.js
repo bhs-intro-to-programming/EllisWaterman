@@ -41,5 +41,5 @@ const swapFrontAndBack =(s) => {
 }
 
 const simplePigLatin = (s) => {
-  return s.substring(s.search(/[aeiou]/))
+  return s.substring(s.search(/[aeiou]/))+s.substiring(0,1)+'ay'
 }
