@@ -15,3 +15,7 @@ const rand = (n) => Math.floor(Math.random() * n);
 const firstHalf = (s) => {
   return s.substring(0,s.length/2)
 }
+
+const secondHalf = (s) => {
+  return s.substring(s.length/2)
+}
