@@ -69,6 +69,6 @@ const sameIgnoringCase = (s1,s2) => {
 }
 
 const firstName = (s) => {
-  return s.indexOf(' ')
+  return s.substring(0,s.indexOf(' ')
 }
 
