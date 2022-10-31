@@ -49,3 +49,7 @@ const randomCharacter = (s) => {
   return s.substring(random, random+1)
 }
 
+const randomCharacterUpDown = (s) => {
+  let random = rand(s.length)
+  return s.substring(random, random+1).toUpperCase+ s.substring(random, random+1)
+}
