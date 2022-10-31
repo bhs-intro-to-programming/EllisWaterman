@@ -61,8 +61,8 @@ const isAllUpperCase = (s) => {
   return false
 }
 
-const sameIgnoringCase = (s) => {
-  if (s == s.toLowerCase())
+const sameIgnoringCase = (s1,s2) => {
+  if (s1.toLowerCase() == s2.toLowerCase())
   return true
   else
   return false
