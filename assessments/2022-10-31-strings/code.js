@@ -25,6 +25,5 @@ const upDown = (s) => {
 }
 
 const firstFewEveryOther = (s) => {
-  if (s.length % 2 === 1)
- return s.substring()
+ return s.substring(0,1,3,5)
 }
