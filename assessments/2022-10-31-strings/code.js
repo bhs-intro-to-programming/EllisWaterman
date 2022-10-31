@@ -73,6 +73,6 @@ const firstName = (s) => {
 }
 
 const lastName = (s) => {
-  return s.substring(s.indexOf(' '))- ' '
+  return s.substring(s.indexOf(' ')-1)
 }
 
