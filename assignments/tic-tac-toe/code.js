@@ -6,7 +6,6 @@
 // weeks but for now you can just adapt this code.
 //drawLine(x1, y1, x2, y2, color, lineWidth)
 
-//drawText('#', width/3, height, 'black', Math.min(width, height) * 1.5)
 let clickCount = 0;
 let isGameOver = false;
 let shape;
