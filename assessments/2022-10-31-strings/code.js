@@ -23,3 +23,7 @@ const secondHalf = (s) => {
 const upDown = (s) => {
  return s.substring().toUpperCase()+s
 }
+
+firstFewEveryOther = (s) => {
+ return s.substring(0,s % 2 === 1)
+}
