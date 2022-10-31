@@ -67,3 +67,8 @@ const sameIgnoringCase = (s1,s2) => {
   else
   return false
 }
+
+const firstName = (s) => {
+  return s.indexOf(' ')
+}
+
