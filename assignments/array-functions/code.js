@@ -11,7 +11,7 @@ const evens =(xs) => {
 }
 
 function anyOverOneHundred(n) {
-  return Array(n).fill().flatMap((x) > 100)
+  return Array(n).fill().flatMap(x > 100)
 }
 
 
