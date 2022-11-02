@@ -17,7 +17,7 @@ function sum(x) {
 }
 
 function evens(x) {
-  return x.map(x % 2 === 0)
+  return x.filter(x % 2 === 0)
 }
 function anyOverOneHundred(x) {
   for (let element of x) {
