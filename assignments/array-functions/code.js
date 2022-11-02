@@ -1,11 +1,5 @@
-function countTens(x) {
-  let arrayOfTens = x
-  let totalTens = 0
-  while (arrayOfTens.length > 0) {
-    if (arrayOfTens.pop() === 10)
-      totalTens++
-  }
-  return totalTens
+const countTens = (x) => {
+  return xs.filter((x) => x == 10).length
 }
 
 function sum(x) {
