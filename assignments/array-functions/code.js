@@ -17,5 +17,5 @@ function anyOverOneHundred(x) {
 
 
 const pyramid = (xs) => {
-  return xs.filter((x) => x+x)
+  return xs.map((x) => x+x)
 }
