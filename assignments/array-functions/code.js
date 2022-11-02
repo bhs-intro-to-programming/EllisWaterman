@@ -3,7 +3,7 @@ const countTens = (xs) => {
 }
 
 const sum = (xs) => {
-  return xs.reduce((x) => xs++)
+  return xs.reduce((x) => x++)
 }
 
 const evens =(xs) => {
