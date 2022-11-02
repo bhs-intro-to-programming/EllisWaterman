@@ -10,8 +10,8 @@ const evens =(xs) => {
   return xs.filter((x) => x % 2 === 0)
 }
 
-function anyOverOneHundred(x) {
-  return x.flatMap((x) > 100)
+function anyOverOneHundred(n) {
+  return Array(n).fill().flatMap((x) > 100)
 }
 
 
