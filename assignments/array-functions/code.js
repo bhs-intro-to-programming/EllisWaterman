@@ -11,11 +11,11 @@ const evens =(xs) => {
 }
 
 function anyOverOneHundred(x) {
-  return x.map( x > 100)
+  return x.map((x) > 100)
 }
 
 
 
 const pyramid = (n) => {
-  return Array(n).fill().flatMap((_, i) => [i,i]).pop(1)
+  return Array(n).fill().flatMap((_, i) => [i,i])
 }
