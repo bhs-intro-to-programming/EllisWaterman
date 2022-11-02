@@ -10,11 +10,7 @@ const evens =(xs) => {
   return xs.filter((x) => x % 2 === 0)
 }
 function anyOverOneHundred(x) {
-  for (let element of x) {
-   if (element > 100)
-      return true
-  }
-  return false
+  return xs.filter(x > 100)
 }
 
 
