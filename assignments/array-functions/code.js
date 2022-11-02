@@ -1,4 +1,4 @@
-const countTens = (x) => {
+const countTens = (xs) => {
   return xs.filter((x) => x == 10).length
 }
 
