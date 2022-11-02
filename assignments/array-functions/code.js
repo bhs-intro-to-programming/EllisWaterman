@@ -2,12 +2,8 @@ const countTens = (xs) => {
   return xs.filter((x) => x == 10).length
 }
 
-function sum(x) {
-  let total = 0
-  for (let pos = 0; pos < x.length; pos++) {
-    total = total + x[pos]
-  }
-  return total
+const sum = (xs) => {
+  return xs.reduce((x) => x++)
 }
 
 const evens =(xs) => {
