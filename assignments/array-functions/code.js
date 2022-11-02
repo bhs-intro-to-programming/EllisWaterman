@@ -15,6 +15,6 @@ function anyOverOneHundred(x) {
 
 
 
-function pyramid(xs) {
+const pyramid = (xs) = {
   return xs.map((x) => x+x)
 }
