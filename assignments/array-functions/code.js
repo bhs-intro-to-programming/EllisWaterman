@@ -17,15 +17,8 @@ function sum(x) {
 }
 
 function evens(x) {
-  const xs = []
-  for (let position = 0; position <= x.length; position++) {
-    if (x[position] % 2 === 0) {
-      xs.push(x[position]);
-    }
-  }
-  return xs
+  return x.map(x % 2 === 0)
 }
-
 function anyOverOneHundred(x) {
   for (let element of x) {
    if (element > 100)
