@@ -35,8 +35,8 @@ const drawWinnerLine = (lineType, pos) => {
 }
 const horizontalWinner = () => {
   for (let i = 0; i < 3; i++) {
-    if (xs[i][0] != null) {
-      if (xs[i][0] == xs[i][1] && xs[i][0] == xs[i][2]) {
+    if (xs[i][0] !== null) {
+      if (xs[i][0] === xs[i][1] && xs[i][0] == xs[i][2]) {
         drawWinnerLine('h', i);
         return xs[i][0];
       }
@@ -45,8 +45,8 @@ const horizontalWinner = () => {
 }
 const verticalWinner = () => {
   for (let i = 0; i < 3; i++) {
-    if (xs[0][i] != null) {
-      if (xs[0][i] == xs[1][i] && xs[0][i] == xs[2][i]) {
+    if (xs[0][i] !== null) {
+      if (xs[0][i] === xs[1][i] && xs[0][i] == xs[2][i]) {
         drawWinnerLine('v', i);
         return xs[0][i];
       }
@@ -54,11 +54,11 @@ const verticalWinner = () => {
   }
 }
 const diagonalWinner = () => {
-  if (xs[0][0] == xs[1][1] && xs[0][0] == xs[2][2] && xs[0][0] != null) {
+  if (xs[0][0] === xs[1][1] && xs[0][0] === xs[2][2] && xs[0][0] !== null) {
     drawWinnerLine('d', 0);
     return xs[0][0];
   }
-  if (xs[0][2] == xs[1][1] && xs[0][2] == xs[2][0] && xs[0][2] != null) {
+  if (xs[0][2] === xs[1][1] && xs[0][2] === xs[2][0] && xs[0][2] !== null) {
     drawWinnerLine('d', 1);
     return xs[0][2];
   }
