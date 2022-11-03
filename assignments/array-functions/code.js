@@ -17,5 +17,5 @@ function anyOverOneHundred(xs) {
 
 
 const pyramid = (n) => {
-  return Array(n).fill().flatMap((_, i) => [i+1,i+1])
+  return Array(n).fill().flatMap((_, i) => [i+1])
 }
