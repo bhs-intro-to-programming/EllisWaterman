@@ -82,7 +82,7 @@ registerOnclick((x, y) => {
 
   if (clickCount % 2 === 0) {
     shape = 'O'
-    colour = 'blue'
+    colour = 'rainbow'
   } else {
     shape = 'X'
     colour = 'red'
