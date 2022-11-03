@@ -67,7 +67,7 @@ const diagonalWinner = () => {
 
 const winner = () => {
   let winnersSymbol;
-  if ((winnersSymbol = horizontalWinner()) || (winnersSymbol = verticalWinner()) || (winnersSymbol = diagonalWinner()))
+  if (horizontalWinner() || verticalWinner() ||  diagonalWinner())
     return winnersSymbol;
 }
 
