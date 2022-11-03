@@ -3,10 +3,10 @@ const countTens = (xs) => {
 }
 
 const sum = (xs) => {
-  return xs.reduce((x0,x1) => x0+x1, 0)
+  return xs.reduce((x0, x1) => x0 + x1, 0)
 }
 
-const evens =(xs) => {
+const evens = (xs) => {
   return xs.filter((x) => x % 2 === 0)
 }
 
@@ -17,5 +17,5 @@ function anyOverOneHundred(xs) {
 
 
 const pyramid = (n) => {
-  return Array(n).fill().map((x,i) => i + 1).flatMap( (x) => Array(x))
+  return Array(n).fill().map((x, i) => i++).flatMap((x) => Array(x))
 }
