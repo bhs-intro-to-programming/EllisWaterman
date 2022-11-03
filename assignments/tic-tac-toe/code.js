@@ -92,8 +92,7 @@ registerOnclick((x, y) => {
   xs[row][col] = shape;
   if (winner() != null)
     endGame(shape + ' WINS');
-  else
-    if (clickCount == 9)
+  else if (clickCount == 9)
       endGame('DRAW');
 });
 
