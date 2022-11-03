@@ -27,8 +27,7 @@ const drawWinnerLine = (lineType, pos) => {
     let linePosition = width / 3 * pos + (width / 6);
     drawLine(linePosition, 0, linePosition, height, colour, 10);
   }
-  else
-    if (pos == 0)
+  else if (pos == 0)
       drawLine(0, 0, width, height, colour, 10);
     else
       drawLine(width, 0, 0, height, colour, 10);
