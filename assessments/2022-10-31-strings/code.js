@@ -72,6 +72,9 @@ const lastName = (s) => {
 //the +1 is to get rid of the space before the last name
 
 const initials = (s) => {
-  return s.substring(0, 1).toUpperCase() + '.' + s.substring(s.indexOf(' ') + 1, s.indexOf(' ') + 2).toUpperCase()+'.'
+  // if want dots = return s.substring(0, 1).toUpperCase() + '.' + s.substring(s.indexOf(' ') + 1, s.indexOf(' ') + 2).toUpperCase()+'.'
+//no dots
+ return s.substring(0, 1).toUpperCase() + s.substring(s.indexOf(' ') + 1, s.indexOf(' ') + 2).toUpperCase()
 }
+
 
