@@ -45,8 +45,8 @@ const simplePigLatin = (s) => {
 }
 
 const randomCharacter = (s) => {
-  let random = rand(s.length)
-  return s.substring[random, random + 1]
+  let random = s[rand(s.length)]
+  return s.substring(random, random + 1)
 }
 
 const randomCharacterUpDown = (s) => {
