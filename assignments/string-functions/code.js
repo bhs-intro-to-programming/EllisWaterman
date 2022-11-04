@@ -1,0 +1,3 @@
+const findFnord = () => {
+  return s
+}
