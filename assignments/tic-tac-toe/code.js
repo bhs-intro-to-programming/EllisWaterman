@@ -48,6 +48,7 @@ const horizontalWinner = () => {
     }
   }
 }
+
 const verticalWinner = () => {
   for (let i = 0; i < 3; i++) {
     if (xs[0][i] !== null) {
