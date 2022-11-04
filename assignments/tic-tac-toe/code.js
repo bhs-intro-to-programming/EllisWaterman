@@ -27,10 +27,11 @@ const drawWinnerLine = (lineType, pos) => {
     let linePosition = width / 3 * pos + (width / 6);
     drawLine(linePosition, 0, linePosition, height, colour, 10);
   }
-  else if (pos == 0)
+  else if (pos == 0) {
       drawLine(0, 0, width, height, colour, 10);
-    else
+  } else {
       drawLine(width, 0, 0, height, colour, 10);
+  }
 }
 const horizontalWinner = () => {
   for (let i = 0; i < 3; i++) {
@@ -69,12 +70,14 @@ const winner = () => {
 }
 
 registerOnclick((x, y) => {
-  if (isGameOver)
+  if (isGameOver) {
     return;
+  }
   let col = Math.floor(x / width * 3);
   let row = Math.floor(y / height * 3);
-  if (xs[row][col] != null)
+  if (xs[row][col] != null) {
     return;
+  }
   clickCount++;
 
   if (clickCount % 2 === 0) {
@@ -87,10 +90,12 @@ registerOnclick((x, y) => {
   drawText(shape,
     col * (width / 3) + xoffset,(row + 1) * (height / 3) - yoffset,colour,size);
   xs[row][col] = shape;
-  if (winner() != null)
+  if (winner() != null) {
     endGame(shape + ' WINS');
-  else if (clickCount == 9)
+  }
+  else if (clickCount == 9) {
       endGame('DRAW');
+  }
 });
 
 const endGame = (message) => {
