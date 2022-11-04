@@ -18,21 +18,26 @@ let xs = [
   [null, null, null],
   [null, null, null]
 ]
-const drawWinnerLine = (lineType, pos) => {
-  if (lineType == 'h') {
-    let linePosition = height / 3 * pos + (height / 6);
-    drawLine(0, linePosition, width, linePosition, colour, 10);
-  }
-  else if (lineType == 'v') {
-    let linePosition = width / 3 * pos + (width / 6);
-    drawLine(linePosition, 0, linePosition, height, colour, 10);
-  }
-  else if (pos == 0) {
-      drawLine(0, 0, width, height, colour, 10);
+
+const drawHorizontalWinner = (pos) => {
+  let linePosition = height / 3 * pos + (height / 6);
+  drawLine(0, linePosition, width, linePosition, colour, 10);
+}
+
+const drawVerticalWinner = (pos) => {
+  let linePosition = width / 3 * pos + (width / 6);
+  drawLine(linePosition, 0, linePosition, height, colour, 10);
+}
+
+const drawDiagonalWinner = (pos) => {
+  if (pos == 0) {
+    drawLine(0, 0, width, height, colour, 10);
   } else {
-      drawLine(width, 0, 0, height, colour, 10);
+    drawLine(width, 0, 0, height, colour, 10);
   }
 }
+
+
 const horizontalWinner = () => {
   for (let i = 0; i < 3; i++) {
     if (xs[i][0] !== null) {
@@ -88,13 +93,13 @@ registerOnclick((x, y) => {
     colour = 'red'
   }
   drawText(shape,
-    col * (width / 3) + xoffset,(row + 1) * (height / 3) - yoffset,colour,size);
+    col * (width / 3) + xoffset, (row + 1) * (height / 3) - yoffset, colour, size);
   xs[row][col] = shape;
   if (winner() != null) {
     endGame(shape + ' WINS');
   }
   else if (clickCount == 9) {
-      endGame('DRAW');
+    endGame('DRAW');
   }
 });
 
