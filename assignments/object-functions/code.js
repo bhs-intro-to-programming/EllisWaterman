@@ -1,3 +1,3 @@
-const getX =(x) => {
-  return x['x']
+const getX =(object) => {
+  return object.x
 }
