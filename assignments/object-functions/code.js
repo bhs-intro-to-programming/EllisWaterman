@@ -11,7 +11,8 @@ const emptyObject = () => {
 }
 
 const distance = (x1, x2, y1, y2) => {
-  return Math.sqrt(Math.abs(x1.x1 - y1.y1)+Math.sqrt(Math.abs(x2.x2 - y2.y2)))
+  return Math.sqrt(Math.abs(x1.x - y1.y)+Math.sqrt
+  (Math.abs(x2.x - y2.y))
 }
 
 const midpoint = () => {
