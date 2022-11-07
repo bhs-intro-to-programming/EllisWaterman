@@ -1,3 +1,3 @@
 const getX =(x) => {
-  return x
+  return getX['x']
 }
