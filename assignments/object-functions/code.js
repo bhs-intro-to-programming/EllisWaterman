@@ -6,5 +6,5 @@ const point = (x) => {
   let object = {x: 0, y: 0}
   object.x = point[0]
   object.y = point[1]
-  return object
+  return point
 }
