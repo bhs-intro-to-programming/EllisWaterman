@@ -4,6 +4,6 @@ const getX =(object) => {
 
 const point = (x) => {
   let object = {x: 0, y: 0}
-  object['x'] = point(1)
+  object['x'] = point()
   return object
 }
