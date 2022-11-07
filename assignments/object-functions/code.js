@@ -14,4 +14,6 @@ const distance = ({}, {}) => {
   return Math.sqrt({}-{})**2
 }
 
-const midpoint = ()
+const midpoint = () => {
+  
+}
