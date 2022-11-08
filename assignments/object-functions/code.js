@@ -33,7 +33,7 @@ const newHighScore = (currentHighScore, scores) => {
   let scoreArray = []
   for (let i = 0; i < scores.length; i++) {
   scoreArray.unshift(scores[i].score)
-   current > scoreArray[i]
+   currentHighScore > scoreArray[i]
   }
   return currentHighScore
 }
