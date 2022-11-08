@@ -33,11 +33,11 @@ const newHighScore = (currentHighScore, scores) => {
   let scoreArray = []
   for (let i = 0; i < scores.length; i++) {
   scoreArray.unshift(scores[i].score)
-  return scoreArray
+  
   //currentHighScore = Math.max(scoreArray)
   }
   //return currentHighScore
-
+return scoreArray
 }
 
 const summarizeBooks = (books) => {
