@@ -36,7 +36,7 @@ const newHighScore = (currentHighScore, scores) => {
 
   //currentHighScore = Math.max(scoreArray)
   }
-  return Math.max(scoreArray)
+  return scoreArray
   //return currentHighScore
 }
 
