@@ -40,6 +40,6 @@ const newHighScore = (currentHighScore, scores) => {
 const summarizeBooks = (books) => {
   let result = []
   for(let i = 0; i < books.length; i++) {
-    return books[i].title
+    result.push(books[i].title)
   }
 }
