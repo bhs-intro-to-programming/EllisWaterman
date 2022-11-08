@@ -30,12 +30,11 @@ const sumSalaries = (array) => {
 }
 
 const newHighScore = (currentHighScore, scores) => {
-  let highScore = currentHighScore
   for (let i = 0; i < scores.length; i++) {
    if (highScore < scores[i].score)
-   highScore = scores[i].score
+   currentHighScore = scores[i].score
   }
-  return highScore
+  return currentHighScore
 }
 
 const summarizeBooks = (books) => {
