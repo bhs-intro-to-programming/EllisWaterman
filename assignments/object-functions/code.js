@@ -20,3 +20,7 @@ const midpoint = (ob1, ob2) => {
   result.y = (ob1.y + ob2.y) /2 
   return result
 }
+
+const sumSalaries = (array) => {
+  return array[1]
+}
