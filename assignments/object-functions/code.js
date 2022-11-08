@@ -24,7 +24,7 @@ const midpoint = (ob1, ob2) => {
 const sumSalaries = (array) => {
   let sum = 0
   for (let i = 0; i < array.length; i++) {
-    sum + array.salary[i+1]
+    sum + array.salary[0]
   }
   return sum
 }
