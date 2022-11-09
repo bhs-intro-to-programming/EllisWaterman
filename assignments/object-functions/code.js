@@ -41,7 +41,7 @@ const summarizeBooks = (books) => {
   let result = {'titles' : [], 'pages' : 0 }
   for(let i = 0; i < books.length; i++) {
     result.titles.push(books[i].title)
-    result.pages + books[i].pages
+    result.pages = result.pages + books[i].pages
   }
   return result
 }
