@@ -15,11 +15,10 @@ const distance = (p1, p2) => {
 }
 
 const midpoint = (p1, p2) => {
-  let result = {x : 0, y : 0}
-  x; (p1.x + p2.y) / 2
-  y; (p1.x + p2.y) / 2
-  return result
-}
+return  (x : p1.x + p2.x, y : p1.y + p2.y)
+};
+
+
 
 const sumSalaries = (array) => {
   let sum = 0
