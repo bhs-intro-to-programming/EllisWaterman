@@ -31,12 +31,11 @@ const sumSalaries = (array) => {
 const newHighScore = (currentHighScore, scores) => {
   let best = currentHighScore
   for (let i = 0; i < scores.length; i++) {
-   if (best < scores[i].score) {
-   best = scores[i].score
+      best = Math.max(best, scores[i].score)
    }
   }
   return best
-}
+
 
 const summarizeBooks = (books) => {
   let result = {'titles' : [], 'pages' : 0 }
