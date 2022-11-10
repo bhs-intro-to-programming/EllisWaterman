@@ -213,7 +213,7 @@ const drawPyramid = () => {
     for(let pos = 0; pos < i; pos++) {
       drawFilledRect(pos*20+width/2, pos*20, 25,25,'black');
       drawFilledRect(-pos*20+width/2, pos*20, 25,25,'black');
-      drawFilledRect(pos*20+10, 310, 25,25,'black');
+      drawFilledRect(pos*20+30, 310, 25,25,'black');
 
 
     }
