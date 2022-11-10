@@ -209,7 +209,7 @@ const drawPlatformerGameRandomGenLevel = () => {
 }
 
 const drawPyramid = () => {
-  for(let i = 5; i < 200; i++) {
+  for(let i = 25; i < 200; i++) {
     for(let pos = 0; pos < i; pos++) {
       drawFilledRect(pos*20, pos*20, 25,25,'black');
     }
