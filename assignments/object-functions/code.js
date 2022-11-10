@@ -30,8 +30,9 @@ const sumSalaries = (array) => {
 
 const newHighScore = (currentHighScore, scores) => {
   for (let i = 0; i < scores.length; i++) {
-   if (currentHighScore < scores[i].score)
+   if (currentHighScore < scores[i].score) {
    currentHighScore = scores[i].score
+   }
   }
   return currentHighScore
 }
