@@ -35,7 +35,7 @@ const newHighScore = (currentHighScore, scores) => {
    best = scores[i].score
    }
   }
-  return currentHighScore
+  return best
 }
 
 const summarizeBooks = (books) => {
