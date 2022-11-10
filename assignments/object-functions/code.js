@@ -33,8 +33,8 @@ const newHighScore = (currentHighScore, scores) => {
   for (let i = 0; i < scores.length; i++) {
       best = Math.max(best, scores[i].score)
    }
+   return best
   }
-  return best
 
 
 const summarizeBooks = (books) => {
