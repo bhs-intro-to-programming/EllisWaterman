@@ -207,7 +207,16 @@ const drawPlatformerGameRandomGenLevel = () => {
     }
   }
 }
-drawPlatformerGameRandomGenLevel();
+
+const drawPyramid = () => {
+  for(let i = 0; i < 200; i++) {
+    for(let pos = 0; pos < i; size++) {
+      drawFilledRect(pos, pos, 25,25,'black');.
+    }
+  }
+}
+
+//drawPlatformerGameRandomGenLevel();
 // colorfulCurve();
 // concentricCircle();
 // lineOfCirclesAlternatingColors();
