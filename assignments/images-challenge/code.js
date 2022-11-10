@@ -215,7 +215,7 @@ const drawPyramid = () => {
     }
   }
 }
-
+drawPyramid()
 //drawPlatformerGameRandomGenLevel();
 // colorfulCurve();
 // concentricCircle();
