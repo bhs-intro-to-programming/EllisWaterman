@@ -2,15 +2,15 @@
 // should save you some time.
 
 const area = (rect) => {
-  return rect.width*rect.height
+  return rect.width * rect.height
 };
 
 const higherPaid = (e1, e2) => {
-  let highest = {salary : 0}
+  let highest = { salary: 0 }
   if (e1.salary > e2.salary) {
-  highest.salary = e1.salary
-   } else {
-  highest.salary = e2.salary
+    highest.salary = e1.salary
+  } else {
+    highest.salary = e2.salary
   }
   return highest
 };
@@ -24,8 +24,8 @@ const isSamePoint = (p1, p2) => {
 };
 
 const totalWithTip = (bill, tipPercentage) => {
-  let finalBill = {subtotal : 0, tip : 0, total : 0}
- finalBill.subtotal === bill.subtotal
+  let finalBill = { subtotal: 0, tip: 0, total: 0 }
+  finalBill.subtotal === bill
   return finalBill
 };
 
