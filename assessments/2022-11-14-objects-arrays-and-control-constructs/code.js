@@ -45,7 +45,7 @@ const updateWins = (players) => {
       players[i].wins++
     }
   }
-  console.log(players[3].wins)
+  console.log(players[2].wins)
 };
 
 const bigWinners = (players) => {
