@@ -6,9 +6,9 @@ const area = (rect) => {
 };
 
 const higherPaid = (e1, e2) => {
-  let highest = {}
+  let highest = {salary}
   if (e1.salary > e2.salary) {
-  highest.push(e1.salary)
+  highest.salary(e1.salary)
    } else {
   highest.push (e2.salary)
   }
