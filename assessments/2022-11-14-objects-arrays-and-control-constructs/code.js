@@ -41,7 +41,7 @@ const isWinner = (player) => {
 
 const updateWins = (players) => {
   for (let i = 0; i < players.length; i++) {
-    if (player[i].score > 100) {
+    if (players[i].score > 100) {
       players['wins']++
     }
   }
@@ -49,6 +49,7 @@ const updateWins = (players) => {
 };
 
 const bigWinners = (players) => {
+
 };
 
 const fillTimesTable = (table) => {
