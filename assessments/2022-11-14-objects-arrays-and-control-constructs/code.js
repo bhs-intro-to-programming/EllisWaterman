@@ -40,6 +40,12 @@ const isWinner = (player) => {
 };
 
 const updateWins = (players) => {
+  for (let i = 0; i < players.length; i++) {
+    if (player[i].score > 100) {
+      players.wins++
+    }
+  }
+  console.log(players)
 };
 
 const bigWinners = (players) => {
