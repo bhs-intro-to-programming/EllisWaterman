@@ -6,7 +6,13 @@ const area = (rect) => {
 };
 
 const higherPaid = (e1, e2) => {
-  return e1.salary > e2.salary
+  let highest = {}
+  if (e1.salary > e2.salary) {
+  highest.push e1.salary
+   } else {
+  highest.push e2.salary
+  }
+  return highest
 };
 
 const isSamePoint = (p1, p2) => {
