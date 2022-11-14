@@ -10,7 +10,7 @@ const higherPaid = (e1, e2) => {
   if (e1.salary > e2.salary) {
   highest.salary = e1.salary
    } else {
-  highest.push = e2.salary
+  highest.salary = e2.salary
   }
   return highest
 };
