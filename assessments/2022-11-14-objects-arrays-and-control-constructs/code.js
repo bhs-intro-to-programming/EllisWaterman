@@ -6,7 +6,7 @@ const area = (rect) => {
 };
 
 const higherPaid = (e1, e2) => {
-  let highest = {salary}
+  let highest = {salary : 0}
   if (e1.salary > e2.salary) {
   highest.salary(e1.salary)
    } else {
