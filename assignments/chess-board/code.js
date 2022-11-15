@@ -29,14 +29,14 @@ const board = () => {
 board()
 
 const peiceArray = [
-  [(0, 35*1), (0,35*2), (0,35*3), (0,35*4), p5, p6, p7, p8],
-  [p1, p2, p3, p4, p5, p6, p7, p8],
-  [p1, p2, p3, p4, p5, p6, p7, p8],
-  [p1, p2, p3, p4, p5, p6, p7, p8],
-  [p1, p2, p3, p4, p5, p6, p7, p8],
-  [p1, p2, p3, p4, p5, p6, p7, p8],
-  [p1, p2, p3, p4, p5, p6, p7, p8],
-  [p1, p2, p3, p4, p5, p6, p7, p8]
+  [(0, 35*1), (0,35*2), (0,35*3), (0,35*4), 'p5', 'p6', 'p7', 'p8']
+  // [p1, p2, p3, p4, p5, p6, p7, p8],
+  // [p1, p2, p3, p4, p5, p6, p7, p8],
+  // [p1, p2, p3, p4, p5, p6, p7, p8],
+  // [p1, p2, p3, p4, p5, p6, p7, p8],
+  // [p1, p2, p3, p4, p5, p6, p7, p8],
+  // [p1, p2, p3, p4, p5, p6, p7, p8],
+  // [p1, p2, p3, p4, p5, p6, p7, p8]
 ]
 
 drawText(BLACK_QUEEN, peiceArray[0][0], 'black', 128);
