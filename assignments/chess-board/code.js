@@ -26,7 +26,7 @@ const pieceArray = [
 ]
 const stupidfuction = (pieceArray) => {
   for (let i = 0; i < 8; i++) {
-    drawText(BLACK_PAWN, pieceArray[1][i], pieceArray[0][i], 'black', 64);
+    drawText(BLACK_PAWN, pieceArray[0][i], pieceArray[0][i], 'black', 64);
   }
 }
 stupidfuction()
