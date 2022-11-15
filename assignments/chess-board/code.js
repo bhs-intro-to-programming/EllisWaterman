@@ -38,6 +38,6 @@ const peiceArray = [
   // [p1, p2, p3, p4, p5, p6, p7, p8],
   // [p1, p2, p3, p4, p5, p6, p7, p8]
 ]
-for(let i = 0; i<peiceArray.length; i++)
+for(let i = 0; i<peiceArray.length; i++) {
 drawText(BLACK_QUEEN, peiceArray[i][0], 'black', 128);
-
+}
