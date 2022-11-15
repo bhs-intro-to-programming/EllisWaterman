@@ -12,6 +12,22 @@ const BLACK_KNIGHT = '♞';
 const BLACK_PAWN = '♟';
 
 // Example of drawing one of the pieces
+
+
+const peiceArray = [
+  [[0, 35*1], (0,35*2), (0,35*3), (0,35*4), 'p5', 'p6', 'p7', 'p8']
+  // [p1, p2, p3, p4, p5, p6, p7, p8],
+  // [p1, p2, p3, p4, p5, p6, p7, p8],
+  // [p1, p2, p3, p4, p5, p6, p7, p8],
+  // [p1, p2, p3, p4, p5, p6, p7, p8],
+  // [p1, p2, p3, p4, p5, p6, p7, p8],
+  // [p1, p2, p3, p4, p5, p6, p7, p8],
+  // [p1, p2, p3, p4, p5, p6, p7, p8]
+]
+for(let i = 0; i<peiceArray.length; i++) {
+drawText(BLACK_QUEEN, peiceArray[0][0][i], peiceArray[0][0][i], 'black', 64);
+}
+
 const board = () => {
   let s = 35
   let colsize = Math.floor(9)
@@ -27,17 +43,3 @@ const board = () => {
   }
 }
 board()
-
-const peiceArray = [
-  [[0, 35*1], (0,35*2), (0,35*3), (0,35*4), 'p5', 'p6', 'p7', 'p8']
-  // [p1, p2, p3, p4, p5, p6, p7, p8],
-  // [p1, p2, p3, p4, p5, p6, p7, p8],
-  // [p1, p2, p3, p4, p5, p6, p7, p8],
-  // [p1, p2, p3, p4, p5, p6, p7, p8],
-  // [p1, p2, p3, p4, p5, p6, p7, p8],
-  // [p1, p2, p3, p4, p5, p6, p7, p8],
-  // [p1, p2, p3, p4, p5, p6, p7, p8]
-]
-for(let i = 0; i<peiceArray.length; i++) {
-drawText(BLACK_QUEEN, peiceArray[0][0][i], peiceArray[0][0][i], 'black', 64);
-}
