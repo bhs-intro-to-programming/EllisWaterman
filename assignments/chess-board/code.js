@@ -22,7 +22,7 @@ const board = () => {
       for (let cols = 0; cols < colsize; cols++) {
         let color = (cols % 2 === 0) ? 'black' : 'grey';
         if (rows % 2 === 0)
-          drawFilledRect(rows * s, cols * s, s, s, color)
+          drawFilledRect(rows * s, cols * s - s, s, s, color)
         else
           drawFilledRect(rows * s, cols * s - s, s, s, color)
       }
