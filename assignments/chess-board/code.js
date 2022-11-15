@@ -25,7 +25,7 @@ const peiceArray = [
   // [p1, p2, p3, p4, p5, p6, p7, p8]
 ]
 for (let i = 0; i < peiceArray.length; i++) {
-  drawText(BLACK_PAWN, peiceArray[0][i], peiceArray[i][i], 'black', 64);
+  drawText(BLACK_PAWN, peiceArray[0][i], peiceArray[0][i], 'black', 64);
 }
 
 const board = () => {
