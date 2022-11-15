@@ -15,7 +15,7 @@ const BLACK_PAWN = '♟';
 
 
 const peiceArray = [
-  [0, 35*1], [0,35*2], [0,35*3], [0,35*4], [0, 35*5], [0,35*6], [0,35*7], [0,35*8]
+  [0, 35 * 1], [0, 35 * 2], [0, 35 * 3], [0, 35 * 4], [0, 35 * 5], [0, 35 * 6], [0, 35 * 7], [0, 35 * 8]
   // [p1, p2, p3, p4, p5, p6, p7, p8],
   // [p1, p2, p3, p4, p5, p6, p7, p8],
   // [p1, p2, p3, p4, p5, p6, p7, p8],
@@ -24,8 +24,8 @@ const peiceArray = [
   // [p1, p2, p3, p4, p5, p6, p7, p8],
   // [p1, p2, p3, p4, p5, p6, p7, p8]
 ]
-for(let i = 0; i<peiceArray.length; i++) {
-drawText(BLACK_PAWN, peiceArray[0][0][i], peiceArray[0][0][i], 'black', 64);
+for (let i = 0; i < peiceArray.length; i++) {
+  drawText(BLACK_PAWN, peiceArray[0][0][i], peiceArray[0][0][i], 'black', 64);
 }
 
 const board = () => {
