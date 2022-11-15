@@ -41,4 +41,3 @@ const peiceArray = [
 for(let i = 0; i<peiceArray.length; i++) {
 drawText(BLACK_QUEEN, peiceArray[0][0][i], peiceArray[0][0][i], 'black', 128);
 }
-.
