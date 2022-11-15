@@ -25,7 +25,7 @@ const pieceArray = [
   // [p1, p2, p3, p4, p5, p6, p7, p8]
 ]
 const stupidfuction = (pieceArray) => {
-  for (let i = 0; i < pieceArray.length; i++) {
+  for (let i = 0; i < 8; i++) {
     drawText(BLACK_PAWN, pieceArray[0][i], pieceArray[0][i], 'black', 64);
   }
 }
