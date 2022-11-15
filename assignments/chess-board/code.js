@@ -34,7 +34,7 @@ const board = () => {
   let rowsize = Math.floor(8)
   for (let rows = 0; rows < rowsize; rows++) {
     for (let cols = 0; cols < colsize; cols++) {
-      let color = (cols % 2 === 0) ? 'grey' : 'white';
+      let color = (cols % 2 === 0) ? 'grey' : 'transparent';
       if (rows % 2 === 0)
         drawFilledRect(rows * s, cols * s, s, s, color)
       else
