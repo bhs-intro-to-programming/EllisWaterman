@@ -16,8 +16,8 @@ drawText(BLACK_QUEEN, width/2, height/2, 'black', 128);
 
 const board = () => {
     let s = 25
-    let colsize = Math.floor(8)
-    let rowsize = Math.floor(8)
+    let colsize = Math.floor(9)
+    let rowsize = Math.floor(9)
     for (let rows = 0; rows < rowsize; rows++) {
       for (let cols = 0; cols < colsize; cols++) {
         let color = (cols % 2 === 0) ? 'black' : 'grey';
