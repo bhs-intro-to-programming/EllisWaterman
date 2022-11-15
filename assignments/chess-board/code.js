@@ -15,7 +15,7 @@ const BLACK_PAWN   = '♟';
 drawText(BLACK_QUEEN, width/2, height/2, 'black', 128);
 
 const board = () => {
-    let s = 25
+    let s = 50
     let colsize = Math.floor(9)
     let rowsize = Math.floor(9)
     for (let rows = 0; rows < rowsize; rows++) {
