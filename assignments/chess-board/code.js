@@ -29,6 +29,7 @@ const stupidfuction = (pieceArray) => {
     drawText(BLACK_PAWN, pieceArray[0][i], pieceArray[0][i], 'black', 64);
   }
 }
+stupidfuction()
 
 const board = () => {
   let s = 35
