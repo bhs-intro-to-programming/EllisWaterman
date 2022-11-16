@@ -68,7 +68,7 @@ const board = () => {
   }
 }
 board()
-place
+
 for(let row = 0; row<280; row = row + 35) {
   for(let col = 0; col<280; col = col + 35)
  drawText(BLACK_PAWN, row, col, 'black', 64);
