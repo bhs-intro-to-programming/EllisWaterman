@@ -13,6 +13,8 @@ const BLACK_PAWN = '♟';
 
 // Example of drawing one of the pieces
 
+const playWhite = {  }
+
 
 const pieceArray = [
   [0, 35 * 1], [0, 35 * 2], [0, 35 * 3], [0, 35 * 4], [0, 35 * 5], [0, 35 * 6], [0, 35 * 7], [0, 35 * 8]
@@ -24,12 +26,10 @@ const pieceArray = [
   // [p1, p2, p3, p4, p5, p6, p7, p8],
   // [p1, p2, p3, p4, p5, p6, p7, p8]
 ]
-const stupidfuction = () => {
-  for (let i = 0; i < 8; i++) {
-    drawText(BLACK_PAWN, pieceArray[i][0], pieceArray[0][i], 'black', 64);
-  }
-}
-stupidfuction()
+
+    drawText(BLACK_PAWN, width/2, height/2, 'black', 64);
+  
+
 
 const board = () => {
   let s = 35
