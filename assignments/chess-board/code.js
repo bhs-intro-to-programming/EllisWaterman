@@ -13,9 +13,9 @@ const BLACK_PAWN = '♟';
 
 // Example of drawing one of the pieces
 
-const playerWhite = {playerName : 'bob',
-pieces: [ K: {row : 1, col : 5},
-          KN: {row : 1, col : 4} 
+const playerWhite = {
+pieces: [ {K: {row : 1, col : 5}},
+          {KN: {row : 1, col : 4}}, 
 ]
 }
 
