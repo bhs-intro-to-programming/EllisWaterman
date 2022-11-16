@@ -42,14 +42,15 @@ const playerBlack = {
   { QN: { row: 1, col: 1 } },
   { QB: { row: 1, col: 1 } },
   { QR: { row: 1, col: 1 } },
-  { P1: { row: 1, col: 1 } },
-  { P2: { row: 1, col: 2 } },
-  { P3: { row: 1, col: 3 } },
-  { P4: { row: 1, col: 4 } },
-  { P5: { row: 1, col: 5 } },
-  { P6: { row: 1, col: 6 } },
-  { P7: { row: 1, col: 7 } },
-  { P8: { row: 1, col: 8 } },
+  {pawnNumber : 1, position: { row: 1, col: 1 } },
+  {pawnNumber : 2, position: { row: 2, col: 1 } },
+  {pawnNumber : 3, position: { row: 3, col: 1 } },
+  {pawnNumber : 4, position: { row: 4, col: 1 } },
+  {pawnNumber : 5, position: { row: 5, col: 1 } },
+  {pawnNumber : 6, position: { row: 6, col: 1 } },
+  {pawnNumber : 7, position: { row: 7, col: 1 } },
+  {pawnNumber : 8, position: { row: 8, col: 1 } },
+ 
   ]
 }
 
@@ -70,6 +71,6 @@ const board = () => {
 board()
 
 for (let i = 0; i < 8; i++) {
-  drawText(BLACK_PAWN, playerWhite.pieces[i+8].P(i).row*35, playerWhite.pieces[i+8].P(i).col*35, 'black', 50);
+  drawText(BLACK_PAWN, playerWhite.pieces[i+8].pawnNumber.row*35, playerWhite.pieces[i+8].P1.col*35, 'black', 50);
 }
 drawText(BLACK_KING, playerWhite.pieces[0].K.row*35, playerWhite.pieces[0].K.col*35, 'black', 50);
