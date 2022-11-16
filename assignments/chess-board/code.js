@@ -71,6 +71,6 @@ const board = () => {
 board()
 
 for (let i = 0; i < 8; i++) {
-  drawText(BLACK_PAWN, playerWhite.pieces[i+8].pawnNumber.row*35, playerWhite.pieces[i+8].pawnNumber.col*35, 'black', 50);
+  drawText(BLACK_PAWN, playerWhite.pieces[i+8].pawnNumber.i.row*35, playerWhite.pieces[i+8].pawnNumber.i.col*35, 'black', 50);
 }
 drawText(BLACK_KING, playerWhite.pieces[0].K.row*35, playerWhite.pieces[0].K.col*35, 'black', 50);
