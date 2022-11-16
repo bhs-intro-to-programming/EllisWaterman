@@ -34,11 +34,11 @@ pieces: [ {K: {row : 1, col : 5}},
 }
 
 const playerBlack = {
-pieces: [ {K: {row : 1, col : 5}},
+pieces: [ { K: {row : 1, col : 5}},
           {KN: {row : 1, col : 4}},
           {KB: {row : 1, col : 1}},
           {KR: {row : 1, col : 1}},
-          {Q: {row : 1, col : 1}},
+           {Q: {row : 1, col : 1}},
           {QN: {row : 1, col : 1}},
           {QB: {row : 1, col : 1}},
           {QR: {row : 1, col : 1}},
@@ -69,7 +69,14 @@ const board = () => {
 }
 board()
 
+i like cheese
+
 for(let row = 0; row<280; row = row + 35) {
   for(let col = 0; col<280; col = col + 35)
  drawText(BLACK_PAWN, row, col, 'black', 64);
 }
+
+registerOnclick((x, y) => {
+  let col = Math.floor(x / width * 3);
+  let row = Math.floor(y / height * 3);
+})
