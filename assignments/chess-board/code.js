@@ -14,9 +14,10 @@ const BLACK_PAWN = '♟';
 // Example of drawing one of the pieces
 
 const playerWhite = {playerName : 'bob',
-pieces: new Map() };
-playerWhite.pieces.set('K',{row : 1, col : 5} );
-playerWhite.pieces.set('KN',{row : 1, col : 4} );
+pieces: [ K: {row : 1, col : 5},
+          KN: {row : 1, col : 4} 
+]
+}
 
 
 const pieceArray = [
