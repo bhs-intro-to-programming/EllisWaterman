@@ -71,7 +71,7 @@ const board = () => {
 board()
 const placePawns = () => {
   for (let i = 0; i < 8; i++) {
-    drawText(BLACK_PAWN, playerWhite.pieces[i + 8].pawnNumber.i*35, playerWhite.pieces[i + 8].pawnNumber.i.col * 35, 'black', 50);
+    drawText(BLACK_PAWN, playerWhite.pieces[i + 8].pawnNumber.i*35, playerWhite.pieces[i + 8].col * 35, 'black', 50);
   } 
 }
 //drawText(BLACK_KING, x, y, 'black', size);
