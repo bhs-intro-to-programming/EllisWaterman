@@ -69,6 +69,6 @@ const board = () => {
 }
 board()
 
-for(let row = 0; row<500; row = row + 35) {
+for(let row = 0; row<280; row = row + 35) {
  drawText(BLACK_PAWN, row, height/2, 'black', 64);
 }
