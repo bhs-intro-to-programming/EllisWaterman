@@ -22,14 +22,14 @@ const playerWhite = {
   { QN: { row: 1, col: 1 } },
   { QB: { row: 1, col: 1 } },
   { QR: { row: 1, col: 1 } },
-  { P1: { row: 1, col: 1 } },
-  { P2: { row: 1, col: 2 } },
-  { P3: { row: 1, col: 3 } },
-  { P4: { row: 1, col: 4 } },
-  { P5: { row: 1, col: 5 } },
-  { P6: { row: 1, col: 6 } },
-  { P7: { row: 1, col: 7 } },
-  { P8: { row: 1, col: 8 } },
+  {pawnNumber : 1, position: { row: 1, col: 1 } },
+  {pawnNumber : 2, position: { row: 2, col: 1 } },
+  {pawnNumber : 3, position: { row: 3, col: 1 } },
+  {pawnNumber : 4, position: { row: 4, col: 1 } },
+  {pawnNumber : 5, position: { row: 5, col: 1 } },
+  {pawnNumber : 6, position: { row: 6, col: 1 } },
+  {pawnNumber : 7, position: { row: 7, col: 1 } },
+  {pawnNumber : 8, position: { row: 8, col: 1 } },
   ]
 }
 
@@ -56,8 +56,8 @@ const playerBlack = {
 
 const board = () => {
   let s = 35
-  let colsize = Math.floor(9)
-  let rowsize = Math.floor(8)
+  let colsize = 9
+  let rowsize = 8
   for (let rows = 0; rows < rowsize; rows++) {
     for (let cols = 0; cols < colsize; cols++) {
       let color = (cols % 2 === 0) ? 'grey' : 'transparent';
