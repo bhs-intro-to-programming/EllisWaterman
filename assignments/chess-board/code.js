@@ -75,4 +75,3 @@ places++) {
   
 }
 drawText(BLACK_PAWN, playerWhite.pieces[0].K.row*35, playerWhite.pieces[0].K.row*35, 'black', 50);
-hgjgh
