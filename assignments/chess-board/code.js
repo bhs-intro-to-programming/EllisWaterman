@@ -52,7 +52,7 @@ pieces: [ {K: {row : 1, col : 5}},
           {P8: {row : 1, col : 8}},
 ]
 }
-for(let row = 0; row<; row = row + 35) {
+for(let row = 0; row<500; row = row + 35) {
  drawText(BLACK_KING, row, height/2, 'black', 64);
 }
 drawText(BLACK_KING, width/2, height/2, 'black', 64);  
