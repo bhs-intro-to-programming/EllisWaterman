@@ -27,7 +27,7 @@ const pieceArray = [
   // [p1, p2, p3, p4, p5, p6, p7, p8]
 ]
 
-    drawText(BLACK_PAWN, width/2, height/2, 'black', 64);
+    drawText(BLACK_KING, width/2, height/2, 'black', 64);
   
 
 
