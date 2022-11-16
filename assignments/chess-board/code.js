@@ -70,6 +70,5 @@ const board = () => {
 board()
 
 for(let row = 0; row<500; row = row + 35) {
- drawText(BLACK_KING, row, height/2, 'black', 64);
+ drawText(BLACK_PAWN, row, height/2, 'black', 64);
 }
-drawText(BLACK_KING, width/2, height/2, 'black', 64);  
