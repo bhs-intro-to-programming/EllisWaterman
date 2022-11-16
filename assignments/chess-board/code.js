@@ -22,14 +22,14 @@ const playerWhite = {
   { QN: { row: 1, col: 1 } },
   { QB: { row: 1, col: 1 } },
   { QR: { row: 1, col: 1 } },
-  {pawnNumber : 1, position: { row: 1, col: 1 } },
-  {pawnNumber : 2, position: { row: 2, col: 1 } },
-  {pawnNumber : 3, position: { row: 3, col: 1 } },
-  {pawnNumber : 4, position: { row: 4, col: 1 } },
-  {pawnNumber : 5, position: { row: 5, col: 1 } },
-  {pawnNumber : 6, position: { row: 6, col: 1 } },
-  {pawnNumber : 7, position: { row: 7, col: 1 } },
-  {pawnNumber : 8, position: { row: 8, col: 1 } },
+  { pawnNumber: 1, position: { row: 1, col: 1 } },
+  { pawnNumber: 2, position: { row: 2, col: 1 } },
+  { pawnNumber: 3, position: { row: 3, col: 1 } },
+  { pawnNumber: 4, position: { row: 4, col: 1 } },
+  { pawnNumber: 5, position: { row: 5, col: 1 } },
+  { pawnNumber: 6, position: { row: 6, col: 1 } },
+  { pawnNumber: 7, position: { row: 7, col: 1 } },
+  { pawnNumber: 8, position: { row: 8, col: 1 } },
   ]
 }
 
@@ -42,15 +42,15 @@ const playerBlack = {
   { QN: { row: 1, col: 1 } },
   { QB: { row: 1, col: 1 } },
   { QR: { row: 1, col: 1 } },
-  {pawnNumber : 1, position: { row: 1, col: 1 } },
-  {pawnNumber : 2, position: { row: 2, col: 1 } },
-  {pawnNumber : 3, position: { row: 3, col: 1 } },
-  {pawnNumber : 4, position: { row: 4, col: 1 } },
-  {pawnNumber : 5, position: { row: 5, col: 1 } },
-  {pawnNumber : 6, position: { row: 6, col: 1 } },
-  {pawnNumber : 7, position: { row: 7, col: 1 } },
-  {pawnNumber : 8, position: { row: 8, col: 1 } },
- 
+  { pawnNumber: 1, position: { row: 1, col: 1 } },
+  { pawnNumber: 2, position: { row: 2, col: 1 } },
+  { pawnNumber: 3, position: { row: 3, col: 1 } },
+  { pawnNumber: 4, position: { row: 4, col: 1 } },
+  { pawnNumber: 5, position: { row: 5, col: 1 } },
+  { pawnNumber: 6, position: { row: 6, col: 1 } },
+  { pawnNumber: 7, position: { row: 7, col: 1 } },
+  { pawnNumber: 8, position: { row: 8, col: 1 } },
+
   ]
 }
 
@@ -69,8 +69,9 @@ const board = () => {
   }
 }
 board()
-
-for (let i = 0; i < 8; i++) {
-  drawText(BLACK_PAWN, playerWhite.pieces[i+8].pawnNumber.i.row*35, playerWhite.pieces[i+8].pawnNumber.i.col*35, 'black', 50);
+const placePawns = () => {
+  for (let i = 0; i < 8; i++) {
+    drawText(BLACK_PAWN, playerWhite.pieces[i + 8].pawnNumber.i*35, playerWhite.pieces[i + 8].pawnNumber.i.col * 35, 'black', 50);
+  } 
 }
-drawText(BLACK_KING, playerWhite.pieces[0].K.row*35, playerWhite.pieces[0].K.col*35, 'black', 50);
+//drawText(BLACK_KING, x, y, 'black', size);
