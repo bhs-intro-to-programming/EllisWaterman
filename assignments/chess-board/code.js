@@ -70,7 +70,7 @@ const board = () => {
 board()
 
 for(let row = 0; row<280; row = row + 35) {
- drawText(BLACK_PAWN, row, col, 'black', 64);
+ drawText(BLACK_PAWN, row, 245, 'black', 64);
 }
 
 
