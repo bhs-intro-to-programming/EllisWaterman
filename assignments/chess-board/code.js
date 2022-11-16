@@ -15,8 +15,8 @@ const BLACK_PAWN = '♟';
 
 const playerWhite = {playerName : 'bob',
 pieces: new Map() };
-playerWhite.pieces.set(K,{row : 1, col : 5} );
-playerWhite.pieces.set(KN,{row : 1, col : 4} );
+playerWhite.pieces.set('K',{row : 1, col : 5} );
+playerWhite.pieces.set('KN',{row : 1, col : 4} );
 
 
 const pieceArray = [
