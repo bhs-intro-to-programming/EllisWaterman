@@ -14,43 +14,43 @@ const BLACK_PAWN = '♟';
 // Example of drawing one of the pieces
 
 const playerWhite = {
-pieces: [ {K: {row : 1, col : 5}},
-          {KN: {row : 1, col : 4}},
-          {KB: {row : 1, col : 1}},
-          {KR: {row : 1, col : 1}},
-          {Q: {row : 1, col : 1}},
-          {QN: {row : 1, col : 1}},
-          {QB: {row : 1, col : 1}},
-          {QR: {row : 1, col : 1}},
-          {P1: {row : 1, col : 1}},
-          {P2: {row : 1, col : 2}},
-          {P3: {row : 1, col : 3}},
-          {P4: {row : 1, col : 4}},
-          {P5: {row : 1, col : 5}},
-          {P6: {row : 1, col : 6}},
-          {P7: {row : 1, col : 7}},
-          {P8: {row : 1, col : 8}},
-]
+  pieces: [{ K: { row: 1, col: 5 } },
+  { KN: { row: 1, col: 4 } },
+  { KB: { row: 1, col: 1 } },
+  { KR: { row: 1, col: 1 } },
+  { Q: { row: 1, col: 1 } },
+  { QN: { row: 1, col: 1 } },
+  { QB: { row: 1, col: 1 } },
+  { QR: { row: 1, col: 1 } },
+  { P1: { row: 1, col: 1 } },
+  { P2: { row: 1, col: 2 } },
+  { P3: { row: 1, col: 3 } },
+  { P4: { row: 1, col: 4 } },
+  { P5: { row: 1, col: 5 } },
+  { P6: { row: 1, col: 6 } },
+  { P7: { row: 1, col: 7 } },
+  { P8: { row: 1, col: 8 } },
+  ]
 }
 
 const playerBlack = {
-pieces: [ { K: {row : 1, col : 5}},
-          {KN: {row : 1, col : 4}},
-          {KB: {row : 1, col : 1}},
-          {KR: {row : 1, col : 1}},
-           {Q: {row : 1, col : 1}},
-          {QN: {row : 1, col : 1}},
-          {QB: {row : 1, col : 1}},
-          {QR: {row : 1, col : 1}},
-          {P1: {row : 1, col : 1}},
-          {P2: {row : 1, col : 2}},
-          {P3: {row : 1, col : 3}},
-          {P4: {row : 1, col : 4}},
-          {P5: {row : 1, col : 5}},
-          {P6: {row : 1, col : 6}},
-          {P7: {row : 1, col : 7}},
-          {P8: {row : 1, col : 8}},
-]
+  pieces: [{ K: { row: 1, col: 5 } },
+  { KN: { row: 1, col: 4 } },
+  { KB: { row: 1, col: 1 } },
+  { KR: { row: 1, col: 1 } },
+  { Q: { row: 1, col: 1 } },
+  { QN: { row: 1, col: 1 } },
+  { QB: { row: 1, col: 1 } },
+  { QR: { row: 1, col: 1 } },
+  { P1: { row: 1, col: 1 } },
+  { P2: { row: 1, col: 2 } },
+  { P3: { row: 1, col: 3 } },
+  { P4: { row: 1, col: 4 } },
+  { P5: { row: 1, col: 5 } },
+  { P6: { row: 1, col: 6 } },
+  { P7: { row: 1, col: 7 } },
+  { P8: { row: 1, col: 8 } },
+  ]
 }
 
 const board = () => {
@@ -69,12 +69,10 @@ const board = () => {
 }
 board()
 
-for(let row = 0; row<280; row = row + 35) {
- drawText(BLACK_PAWN, row, 245, 'black', 50);
+for (let places = 0; 
+places < playerWhite.pieces.length + playerBlack.pieces.length; 
+places++) {
+  
 }
-
-
-registerOnclick((x, y) => {
-  let col = Math.floor(x / width * 3);
-  let row = Math.floor(y / height * 3);
-})
+drawText(BLACK_PAWN, playerWhite.pieces[0].K.row*35, playerWhite.pieces[0].K.row*35, 'black', 50);
+hgjgh
