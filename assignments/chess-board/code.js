@@ -54,7 +54,7 @@ pieces: [ {K: {row : 1, col : 5}},
 }
 for(let row = 0; row<; row = row + 35) {
  drawText(BLACK_KING, row, height/2, 'black', 64);
-}.
+}
 drawText(BLACK_KING, width/2, height/2, 'black', 64);  
 
 const board = () => {
