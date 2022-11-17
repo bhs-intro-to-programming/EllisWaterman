@@ -37,14 +37,14 @@ const playerBlack = {
   { piece: BLACK_BISHOP, row: 1, col: 1 },
   { piece: BLACK_ROOK, row: 1, col: 1 },
   { piece: BLACK_QUEEN, row: 1, col: 1 },
-  { piece: BLACK_PAWN, row: 1, col: 1 },
-  { piece: BLACK_PAWN, row: 1, col: 2 },
-  { piece: BLACK_PAWN, row: 1, col: 3 },
-  { piece: BLACK_PAWN, row: 1, col: 4 },
-  { piece: BLACK_PAWN, row: 1, col: 5 },
-  { piece: BLACK_PAWN, row: 1, col: 6 },
-  { piece: BLACK_PAWN, row: 1, col: 7 },
-  { piece: BLACK_PAWN, row: 1, col: 8 },
+  { piece: BLACK_PAWN, row: 7, col: 0 },
+  { piece: BLACK_PAWN, row: 7, col: 1 },
+  { piece: BLACK_PAWN, row: 7, col: 2 },
+  { piece: BLACK_PAWN, row: 7, col: 3 },
+  { piece: BLACK_PAWN, row: 7, col: 4 },
+  { piece: BLACK_PAWN, row: 7, col: 5 },
+  { piece: BLACK_PAWN, row: 7, col: 6 },
+  { piece: BLACK_PAWN, row: 7, col: 7 },
   ]
 }
 
