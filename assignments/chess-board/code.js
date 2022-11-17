@@ -44,7 +44,7 @@ const playerBLACK = {
 
 
 const board = () => {
-  let s = 2.7
+  let s = 3
   let colsize = 1000
   let rowsize = 1000
   for (let rows = 0; rows < rowsize; rows++) {
