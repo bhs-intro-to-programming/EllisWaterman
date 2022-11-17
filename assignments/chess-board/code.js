@@ -19,14 +19,14 @@ const playerWhite = {
   { piece: WHITE_BISHOP, row: 1, col: 1 },
   { piece: WHITE_ROOK, row: 1, col: 1 },
   { piece: WHITE_QUEEN, row: 1, col: 1 },
-  { piece: WHITE_PAWN, row: 1, col: 1 },
-  { piece: WHITE_PAWN, row: 1, col: 2 },
-  { piece: WHITE_PAWN, row: 1, col: 3 },
-  { piece: WHITE_PAWN, row: 1, col: 4 },
-  { piece: WHITE_PAWN, row: 1, col: 5 },
-  { piece: WHITE_PAWN, row: 1, col: 6 },
-  { piece: WHITE_PAWN, row: 1, col: 7 },
-  { piece: WHITE_PAWN, row: 1, col: 8 },
+  { piece: WHITE_PAWN, row: 2, col: 1 },
+  { piece: WHITE_PAWN, row: 2, col: 2 },
+  { piece: WHITE_PAWN, row: 2, col: 3 },
+  { piece: WHITE_PAWN, row: 2, col: 4 },
+  { piece: WHITE_PAWN, row: 2, col: 5 },
+  { piece: WHITE_PAWN, row: 2, col: 6 },
+  { piece: WHITE_PAWN, row: 2, col: 7 },
+  { piece: WHITE_PAWN, row: 2, col: 8 },
   ]
 }
 
@@ -68,7 +68,8 @@ const board = () => {
 board()
 const placePawns = () => {
   for (let i = 0; i < 8; i++) {
-    drawText(playerWhite.pieces[5].piece, playerWhite.pieces[i + 5].col * 35-35, playerWhite.pieces[i + 5].row * 35+35, 'black', 50);
+    drawText(playerWhite.pieces[5].piece, playerWhite.pieces[i + 5].col * 35, playerWhite.pieces[i + 5].row * 35, 'black', 50);
+    //drawText(playerBlack.pieces[5].piece, playerWhite.pieces[i + 5].col * 35-35, playerWhite.pieces[i + 5].row * 35+35, 'black', 50);
   }
 }
 //drawText(BLACK_KING, x, y, 'black', size);
