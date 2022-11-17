@@ -19,6 +19,7 @@ const playerWhite = {
   { piece: WHITE_BISHOP, row: 1, col: 1 },
   { piece: WHITE_ROOK, row: 1, col: 1 },
   { piece: WHITE_QUEEN, row: 1, col: 1 },
+  { piece: WHITE_PAWN, row: 2, col: 0 },
   { piece: WHITE_PAWN, row: 2, col: 1 },
   { piece: WHITE_PAWN, row: 2, col: 2 },
   { piece: WHITE_PAWN, row: 2, col: 3 },
@@ -26,7 +27,6 @@ const playerWhite = {
   { piece: WHITE_PAWN, row: 2, col: 5 },
   { piece: WHITE_PAWN, row: 2, col: 6 },
   { piece: WHITE_PAWN, row: 2, col: 7 },
-  { piece: WHITE_PAWN, row: 2, col: 8 },
   ]
 }
 
