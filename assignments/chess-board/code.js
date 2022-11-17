@@ -29,7 +29,14 @@ const playerBLACK = {
  {piece: BLACK_BISHOP, row: 1, col: 1 },
  {piece: BLACK_ROOK, row: 1, col: 1 },
  {piece: BLACK_QUEEN, row: 1, col: 1 },
- {piece: BLACK_PAWN, row: 1, col : 1}
+ {piece: BLACK_PAWN, row: 1, col : 1},
+ {piece: BLACK_PAWN, row: 1, col : 1},
+ {piece: BLACK_PAWN, row: 1, col : 1},
+ {piece: BLACK_PAWN, row: 1, col : 1},
+ {piece: BLACK_PAWN, row: 1, col : 1},
+ {piece: BLACK_PAWN, row: 1, col : 1},
+ {piece: BLACK_PAWN, row: 1, col : 1},
+ {piece: BLACK_PAWN, row: 1, col : 1},
  ]
 }
 
@@ -57,3 +64,6 @@ const placePawns = () => {
   }
 }
 //drawText(BLACK_KING, x, y, 'black', size);
+
+
+drawText('COLS', width/2, height/2, 'black', 64);
