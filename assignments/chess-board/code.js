@@ -45,8 +45,8 @@ const playerBLACK = {
 
 const board = () => {
   let s = 5
-  let colsize = 100
-  let rowsize = 100
+  let colsize = 1000
+  let rowsize = 1000
   for (let rows = 0; rows < rowsize; rows++) {
     for (let cols = 0; cols < colsize; cols++) {
       let color = (cols % 2 === 0) ? 'grey' : 'transparent';
