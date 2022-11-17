@@ -14,45 +14,27 @@ const BLACK_PAWN = '♟';
 // Example of drawing one of the pieces
 
 const playerWhite = {
-  pieces: [{ K: { row: 5, col: 8 } },
-  { KN: { row: 1, col: 4 } },
-  { KB: { row: 1, col: 1 } },
-  { KR: { row: 1, col: 1 } },
-  { Q: { row: 1, col: 1 } },
-  { QN: { row: 1, col: 1 } },
-  { QB: { row: 1, col: 1 } },
-  { QR: { row: 1, col: 1 } },
-  { pawnNumber: 1, position: { row: 1, col: 1 } },
-  { pawnNumber: 2, position: { row: 2, col: 1 } },
-  { pawnNumber: 3, position: { row: 3, col: 1 } },
-  { pawnNumber: 4, position: { row: 4, col: 1 } },
-  { pawnNumber: 5, position: { row: 5, col: 1 } },
-  { pawnNumber: 6, position: { row: 6, col: 1 } },
-  { pawnNumber: 7, position: { row: 7, col: 1 } },
-  { pawnNumber: 8, position: { row: 8, col: 1 } },
+  pieces: [{ piece: WHITE_KING, row: 5, col: 8 },
+  {piece: WHITE_KNIGHT, row: 1, col: 4 },
+  {piece: WHITE_BISHOP, row: 1, col: 1 }, 
+  {piece: WHITE_ROOK, row: 1, col: 1 },
+  {piece: WHITE_QUEEN, row: 1, col: 1 },
+  {piece: WHITE_PAWN, row: 1, col : 1}
   ]
 }
 
-const playerBlack = {
-  pieces: [{ K: { row: 1, col: 5 } },
-  { KN: { row: 1, col: 4 } },
-  { KB: { row: 1, col: 1 } },
-  { KR: { row: 1, col: 1 } },
-  { Q: { row: 1, col: 1 } },
-  { QN: { row: 1, col: 1 } },
-  { QB: { row: 1, col: 1 } },
-  { QR: { row: 1, col: 1 } },
-  { pawnNumber: 1, position: { row: 1, col: 1 } },
-  { pawnNumber: 2, position: { row: 2, col: 1 } },
-  { pawnNumber: 3, position: { row: 3, col: 1 } },
-  { pawnNumber: 4, position: { row: 4, col: 1 } },
-  { pawnNumber: 5, position: { row: 5, col: 1 } },
-  { pawnNumber: 6, position: { row: 6, col: 1 } },
-  { pawnNumber: 7, position: { row: 7, col: 1 } },
-  { pawnNumber: 8, position: { row: 8, col: 1 } },
-
-  ]
+const playerBLACK = {
+ pieces: [{ piece: BLACK_KING, row: 5, col: 8 },
+ {piece: BLACK_KNIGHT, row: 1, col: 4 },
+ {piece: BLACK_BISHOP, row: 1, col: 1 },
+ {piece: BLACK_ROOK, row: 1, col: 1 },
+ {piece: BLACK_QUEEN, row: 1, col: 1 },
+ {piece: BLACK_PAWN, row: 1, col : 1}
+ ]
 }
+
+
+
 
 const board = () => {
   let s = 35
@@ -71,7 +53,7 @@ const board = () => {
 board()
 const placePawns = () => {
   for (let i = 0; i < 8; i++) {
-    drawText(BLACK_PAWN, playerWhite.pieces[i + 8].pawnNumber.i*35, playerWhite.pieces[i + 8].pawnNumber * 35, 'black', 50);
-  } 
+    drawText(BLACK_PAWN, playerWhite.pieces[i + 8].pawnNumber.i * 35, playerWhite.pieces[i + 8].pawnNumber * 35, 'black', 50);
+  }
 }
 //drawText(BLACK_KING, x, y, 'black', size);
