@@ -67,4 +67,4 @@ const placePawns = () => {
 
 
 drawText('COLS', width/2, height/2, 'black', 20);
-drawText('ROWS', width/2, 20, 'black', 20);
+drawText('ROWS', 100, 20, 'black', 20);
