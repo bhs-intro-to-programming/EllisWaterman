@@ -30,13 +30,13 @@ const playerBLACK = {
  {piece: BLACK_ROOK, row: 1, col: 1 },
  {piece: BLACK_QUEEN, row: 1, col: 1 },
  {piece: BLACK_PAWN, row: 1, col : 1},
- {piece: BLACK_PAWN, row: 1, col : 1},
- {piece: BLACK_PAWN, row: 1, col : 1},
- {piece: BLACK_PAWN, row: 1, col : 1},
- {piece: BLACK_PAWN, row: 1, col : 1},
- {piece: BLACK_PAWN, row: 1, col : 1},
- {piece: BLACK_PAWN, row: 1, col : 1},
- {piece: BLACK_PAWN, row: 1, col : 1},
+ {piece: BLACK_PAWN, row: 1, col : 2},
+ {piece: BLACK_PAWN, row: 1, col : 3},
+ {piece: BLACK_PAWN, row: 1, col : 4},
+ {piece: BLACK_PAWN, row: 1, col : 5},
+ {piece: BLACK_PAWN, row: 1, col : 6},
+ {piece: BLACK_PAWN, row: 1, col : 7},
+ {piece: BLACK_PAWN, row: 1, col : 8},
  ]
 }
 
@@ -60,7 +60,7 @@ const board = () => {
 board()
 const placePawns = () => {
   for (let i = 0; i < 8; i++) {
-    drawText(playerWhite.pieces[5], playerWhite.pieces[i].row * 35, playerWhite.pieces[i].row, 'black', 50);
+    drawText(playerWhite.pieces[5], playerWhite.pieces[i].row * 35, playerWhite.pieces[i].col, 'black', 50);
   }
 }
 //drawText(BLACK_KING, x, y, 'black', size);
