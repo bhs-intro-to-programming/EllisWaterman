@@ -72,8 +72,8 @@ const placePawns = () => {
     drawText(playerBlack.pieces[5].piece, playerBlack.pieces[i + 5].col * 35, playerBlack.pieces[i + 5].row * 35, 'black', 50);
   }
 }
-//drawText(BLACK_KING, x, y, 'black', size);
 placePawns()
+//drawText(BLACK_KING, x, y, 'black', size);
 
 drawText('COLS', width / 2, height / 2, 'black', 20);
 drawText('ROWS', 100, 20, 'black', 20);
