@@ -22,7 +22,7 @@ const playerWhite = {
  { piece: WHITE_ROOK, row: 1, col: 1 },
  { piece: WHITE_ROOK, row: 1, col: 1 },
  { piece: WHITE_QUEEN, row: 8, col: 3 },
- { piece: WHITE_PAWN, row: 1, col: 0 },
+ { piece: WHITE_PAWN, row: 2, col: 0 },
  { piece: WHITE_PAWN, row: 1, col: 1 },
  { piece: WHITE_PAWN, row: 1, col: 2 },
  { piece: WHITE_PAWN, row: 1, col: 3 },
