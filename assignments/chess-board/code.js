@@ -18,7 +18,7 @@ const playerWhite = {
   { piece: WHITE_KNIGHT, row: 1, col: 4 },
   { piece: WHITE_BISHOP, row: 1, col: 1 },
   { piece: WHITE_ROOK, row: 1, col: 1 },
-  { piece: WHITE_QUEEN, row: 1, col: 1 },
+  { piece: WHITE_QUEEN, row: 1, col: 3 },
   { piece: WHITE_PAWN, row: 2, col: 0 },
   { piece: WHITE_PAWN, row: 2, col: 1 },
   { piece: WHITE_PAWN, row: 2, col: 2 },
@@ -69,7 +69,7 @@ board()
 const placePiecesWhite = () => {
   for (let i = 0; i < 8; i++) {
     drawText(playerWhite.pieces[0].piece, playerWhite.pieces[0].col * 35, playerWhite.pieces[0].row * 35, 'black', 50);
-        drawText(playerWhite.pieces[4].piece, playerWhite.pieces[0].col * 35, playerWhite.pieces[0].row * 35, 'black', 50);
+        drawText(playerWhite.pieces[4].piece, playerWhite.pieces[4].col * 35, playerWhite.pieces[4].row * 35, 'black', 50);
     drawText(playerWhite.pieces[5].piece, playerWhite.pieces[i + 5].col * 35, playerWhite.pieces[i + 5].row * 35, 'black', 50);
   }
 }
