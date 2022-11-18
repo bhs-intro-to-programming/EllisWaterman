@@ -14,7 +14,7 @@ const BLACK_PAWN = '♟';
 // Example of drawing one of the pieces
 
 const playerWhite = {
-  pieces: [{ piece: WHITE_KING, row: 5, col: 8 },
+  pieces: [{ piece: WHITE_KING, row: 1, col: 3 },
   { piece: WHITE_KNIGHT, row: 1, col: 4 },
   { piece: WHITE_BISHOP, row: 1, col: 1 },
   { piece: WHITE_ROOK, row: 1, col: 1 },
