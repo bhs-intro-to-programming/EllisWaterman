@@ -23,13 +23,13 @@ const playerWhite = {
  { piece: WHITE_ROOK, row: 1, col: 1 },
  { piece: WHITE_QUEEN, row: 8, col: 3 },
  { piece: WHITE_PAWN, row: 2, col: 0 },
- { piece: WHITE_PAWN, row: 1, col: 1 },
- { piece: WHITE_PAWN, row: 1, col: 2 },
- { piece: WHITE_PAWN, row: 1, col: 3 },
- { piece: WHITE_PAWN, row: 1, col: 4 },
- { piece: WHITE_PAWN, row: 1, col: 5 },
- { piece: WHITE_PAWN, row: 1, col: 6 },
- { piece: WHITE_PAWN, row: 1, col: 7 },
+ { piece: WHITE_PAWN, row: 2, col: 1 },
+ { piece: WHITE_PAWN, row: 2, col: 2 },
+ { piece: WHITE_PAWN, row: 2, col: 3 },
+ { piece: WHITE_PAWN, row: 2, col: 4 },
+ { piece: WHITE_PAWN, row: 2, col: 5 },
+ { piece: WHITE_PAWN, row: 2, col: 6 },
+ { piece: WHITE_PAWN, row: 2, col: 7 },
  ]
 }
 
