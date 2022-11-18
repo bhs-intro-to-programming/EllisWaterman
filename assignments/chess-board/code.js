@@ -68,6 +68,7 @@ const board = () => {
 board()
 const placePieces = () => {
   for (let i = 0; i < 8; i++) {
+    drawText(playerWhite.pieces[0].piece, playerWhite.pieces[i].col * 35, playerWhite.pieces[i + 5].row * 35, 'black', 50);
     drawText(playerWhite.pieces[5].piece, playerWhite.pieces[i + 5].col * 35, playerWhite.pieces[i + 5].row * 35, 'black', 50);
     drawText(playerBlack.pieces[5].piece, playerBlack.pieces[i + 5].col * 35, playerBlack.pieces[i + 5].row * 35, 'black', 50);
   }
