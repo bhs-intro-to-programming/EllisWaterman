@@ -36,7 +36,7 @@ const playerBlack = {
   { piece: BLACK_KNIGHT, row: 1, col: 4 },
   { piece: BLACK_BISHOP, row: 1, col: 1 },
   { piece: BLACK_ROOK, row: 1, col: 1 },
-  { piece: BLACK_QUEEN, row: 1, col: 1 },
+  { piece: BLACK_QUEEN, row: 8, col: 3 },
   { piece: BLACK_PAWN, row: 7, col: 0 },
   { piece: BLACK_PAWN, row: 7, col: 1 },
   { piece: BLACK_PAWN, row: 7, col: 2 },
@@ -69,13 +69,14 @@ board()
 const placePiecesWhite = () => {
   for (let i = 0; i < 8; i++) {
     drawText(playerWhite.pieces[0].piece, playerWhite.pieces[0].col * 35, playerWhite.pieces[0].row * 35, 'black', 50);
-        drawText(playerWhite.pieces[4].piece, playerWhite.pieces[4].col * 35, playerWhite.pieces[4].row * 35, 'black', 50);
+    drawText(playerWhite.pieces[4].piece, playerWhite.pieces[4].col * 35, playerWhite.pieces[4].row * 35, 'black', 50);
     drawText(playerWhite.pieces[5].piece, playerWhite.pieces[i + 5].col * 35, playerWhite.pieces[i + 5].row * 35, 'black', 50);
   }
 }
 
 const placePiecesBlack = () => {
   for (let i = 0; i < 8; i++) {
+     drawText(playerBlack.pieces[4].piece, playerBlack.pieces[4].col * 35, playerBlack.pieces[4].row * 35, 'black', 50);
     drawText(playerBlack.pieces[0].piece, playerBlack.pieces[0].col * 35, playerBlack.pieces[0].row * 35, 'black', 50);
     drawText(playerBlack.pieces[5].piece, playerBlack.pieces[i + 5].col * 35, playerBlack.pieces[i + 5].row * 35, 'black', 50);
   }
