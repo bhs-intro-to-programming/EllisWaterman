@@ -79,7 +79,8 @@ const placePiecesBlack = () => {
     drawText(playerBlack.pieces[5].piece, playerBlack.pieces[i + 5].col * 35, playerBlack.pieces[i + 5].row * 35, 'black', 50);
   }
 }
-placePieces()
+placePiecesWhite()
+placePiecesBlack()
 //drawText(BLACK_KING, x, y, 'black', size);
 
 drawText('COLS', width / 2, height / 2, 'black', 20);
