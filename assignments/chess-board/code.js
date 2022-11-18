@@ -39,7 +39,7 @@ const playerBlack = {
   { piece: BLACK_QUEEN, row: 1, col: 1 },
   { piece: BLACK_PAWN, row: 8, col: 0 },
   { piece: BLACK_PAWN, row: 8, col: 1 },
-  { piece: BLACK_PAWN, row: 8, col: 3 },
+  { piece: BLACK_PAWN, row: 6, col: 2 },
   { piece: BLACK_PAWN, row: 8, col: 3 },
   { piece: BLACK_PAWN, row: 8, col: 4 },
   { piece: BLACK_PAWN, row: 8, col: 5 },
