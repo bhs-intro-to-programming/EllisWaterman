@@ -79,7 +79,6 @@ const placePiecesWhite = () => {
   }
   for(let j = 0; j < 2; j++) {
     drawText(playerWhite.pieces[2].piece, playerWhite.pieces[j+2].col * 35, playerWhite.pieces[j+2].row * 35, 'black', 50);
-
   }
 }
 
@@ -89,6 +88,9 @@ const placePiecesBlack = () => {
     drawText(playerBlack.pieces[0].piece, playerBlack.pieces[0].col * 35, playerBlack.pieces[0].row * 35, 'black', 50);
     drawText(playerBlack.pieces[8].piece, playerBlack.pieces[i + 8].col * 35, playerBlack.pieces[i + 8].row * 35, 'black', 50);
   }
+   for(let j = 0; j < 2; j++) {
+    drawText(playerWhite.pieces[2].piece, playerWhite.pieces[j+2].col * 35, playerWhite.pieces[j+2].row * 35, 'black', 50);
+   }
 }
 placePiecesWhite()
 placePiecesBlack()
