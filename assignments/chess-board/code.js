@@ -14,27 +14,32 @@ const BLACK_PAWN = '♟';
 // Example of drawing one of the pieces
 
 const playerWhite = {
-  pieces: [{ piece: WHITE_KING, row: 1, col: 4 },
-  { piece: WHITE_KNIGHT, row: 1, col: 4 },
-  { piece: WHITE_BISHOP, row: 1, col: 1 },
-  { piece: WHITE_ROOK, row: 1, col: 1 },
-  { piece: WHITE_QUEEN, row: 1, col: 3 },
-  { piece: WHITE_PAWN, row: 2, col: 0 },
-  { piece: WHITE_PAWN, row: 2, col: 1 },
-  { piece: WHITE_PAWN, row: 2, col: 2 },
-  { piece: WHITE_PAWN, row: 2, col: 3 },
-  { piece: WHITE_PAWN, row: 2, col: 4 },
-  { piece: WHITE_PAWN, row: 2, col: 5 },
-  { piece: WHITE_PAWN, row: 2, col: 6 },
-  { piece: WHITE_PAWN, row: 2, col: 7 },
-  ]
+ pieces: [{ piece: WHITE_KING, row: 8, col: 4 },
+ { piece: WHITE_KNIGHT, row: 1, col: 4 },
+ { piece: WHITE_KNIGHT, row: 1, col: 4 },
+ { piece: WHITE_BISHOP, row: 1, col: 1 },
+ { piece: WHITE_BISHOP, row: 1, col: 1 },
+ { piece: WHITE_ROOK, row: 1, col: 1 },
+ { piece: WHITE_ROOK, row: 1, col: 1 },
+ { piece: WHITE_QUEEN, row: 8, col: 3 },
+ { piece: WHITE_PAWN, row: 7, col: 0 },
+ { piece: WHITE_PAWN, row: 7, col: 1 },
+ { piece: WHITE_PAWN, row: 7, col: 2 },
+ { piece: WHITE_PAWN, row: 7, col: 3 },
+ { piece: WHITE_PAWN, row: 7, col: 4 },
+ { piece: WHITE_PAWN, row: 7, col: 5 },
+ { piece: WHITE_PAWN, row: 7, col: 6 },
+ { piece: WHITE_PAWN, row: 7, col: 7 },
+ ]
 }
-
 
 const playerBlack = {
   pieces: [{ piece: BLACK_KING, row: 8, col: 4 },
   { piece: BLACK_KNIGHT, row: 1, col: 4 },
+  { piece: BLACK_KNIGHT, row: 1, col: 4 },
   { piece: BLACK_BISHOP, row: 1, col: 1 },
+  { piece: BLACK_BISHOP, row: 1, col: 1 },
+  { piece: BLACK_ROOK, row: 1, col: 1 },
   { piece: BLACK_ROOK, row: 1, col: 1 },
   { piece: BLACK_QUEEN, row: 8, col: 3 },
   { piece: BLACK_PAWN, row: 7, col: 0 },
