@@ -32,7 +32,7 @@ const playerWhite = {
 
 
 const playerBlack = {
-  pieces: [{ piece: BLACK_KING, row: 7, col: 3 },
+  pieces: [{ piece: BLACK_KING, row: 8, col: 3 },
   { piece: BLACK_KNIGHT, row: 1, col: 4 },
   { piece: BLACK_BISHOP, row: 1, col: 1 },
   { piece: BLACK_ROOK, row: 1, col: 1 },
