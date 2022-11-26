@@ -43,14 +43,14 @@ const playerBlack = {
   { icon: BLACK_ROOK, row: 1, col: 1 },
   { icon: BLACK_ROOK, row: 1, col: 1 },
   { icon: BLACK_QUEEN, row: 8, col: 3 },
-  { icon: BLACK_PAWN, row: 8, col: 0 },
-  { icon: BLACK_PAWN, row: 7, col: 1 },
-  { icon: BLACK_PAWN, row: 7, col: 2 },
-  { icon: BLACK_PAWN, row: 7, col: 3 },
-  { icon: BLACK_PAWN, row: 7, col: 4 },
-  { icon: BLACK_PAWN, row: 7, col: 5 },
-  { icon: BLACK_PAWN, row: 7, col: 6 },
-  { icon: BLACK_PAWN, row: 7, col: 7 },
+  { icon: BLACK_PAWN, row: 6, col: 0 },
+  { icon: BLACK_PAWN, row: 6, col: 1 },
+  { icon: BLACK_PAWN, row: 6, col: 2 },
+  { icon: BLACK_PAWN, row: 6, col: 3 },
+  { icon: BLACK_PAWN, row: 6, col: 4 },
+  { icon: BLACK_PAWN, row: 6, col: 5 },
+  { icon: BLACK_PAWN, row: 6, col: 6 },
+  { icon: BLACK_PAWN, row: 6, col: 7 },
   ]
 }
 
