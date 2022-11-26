@@ -10,6 +10,7 @@ const BLACK_ROOK = '♜';
 const BLACK_BISHOP = '♝';
 const BLACK_KNIGHT = '♞';
 const BLACK_PAWN = '♟';
+const SQUARE_SIZE = 35;
 
 // Example of drawing one of the pieces
 
@@ -57,16 +58,15 @@ const playerBlack = {
 
 
 const board = () => {
-  let s = 35;
   let colsize = 8;
   let rowsize = 8;
   for (let rows = 0; rows < rowsize; rows++) {
     for (let cols = 0; cols < colsize; cols++) {
       let color = (cols % 2 === 0) ? 'grey' : 'transparent';
       if (rows % 2 === 0)
-        drawFilledRect(rows * s, cols * s, s, s, color)
+        drawFilledRect(rows * SQUARE_SIZE, cols * SQUARE_SIZE, SQUARE_SIZE, SQUARE_SIZE, color)
       else
-        drawFilledRect(rows * s, cols * s - s, s, s, color)
+        drawFilledRect(rows * SQUARE_SIZE, cols * SQUARE_SIZE - SQUARE_SIZE, SQUARE_SIZE, SQUARE_SIZE, color)
     }
   }
 };
