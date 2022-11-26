@@ -79,7 +79,7 @@ const placePiece = (piece) => {
 
 
 const placePieces = () => {
-  (playerBlack.pieces + playerWhite.pieces).forEach(piece => {
+  (playerBlack.pieces.push(playerWhite.pieces).forEach(piece => {
     placePiece(piece);
   });
 };
