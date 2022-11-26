@@ -88,6 +88,9 @@ const placePieces = () => {
   playerBlack.pieces.forEach(piece => {
     placePiece(piece);
   });
+  playerWhite.pieces.forEach(piece => {
+    placePiece(piece);
+  });
 };
 
 placePieces();
