@@ -65,7 +65,7 @@ const playerWhite = {
 
 
 const board = () => {
-  drawFilledRect(0,360,450,45, 'grey')
+  drawFilledRect(0,360,450,45, 'background')
   let colsize = 8;
   let rowsize = 8;
   for (let rows = 0; rows < rowsize; rows++) {
