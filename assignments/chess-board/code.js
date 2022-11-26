@@ -43,7 +43,7 @@ const playerBlack = {
   { icon: BLACK_ROOK, row: 1, col: 1 },
   { icon: BLACK_ROOK, row: 1, col: 1 },
   { icon: BLACK_QUEEN, row: 8, col: 3 },
-  { icon: BLACK_PAWN, row: 7, col: 0 },
+  { icon: BLACK_PAWN, row: 8, col: 0 },
   { icon: BLACK_PAWN, row: 7, col: 1 },
   { icon: BLACK_PAWN, row: 7, col: 2 },
   { icon: BLACK_PAWN, row: 7, col: 3 },
