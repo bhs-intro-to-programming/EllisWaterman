@@ -74,7 +74,7 @@ const board = () => {
 board();
 
 const placePiece = (piece) => {
-  drawText(piece.icon, piece.col * SQUARE_SIZE, piece.row * SQUARE_SIZE, 'black', 50);
+  drawText(piece.icon, piece.col * SQUARE_SIZE, piece.row * SQUARE_SIZE, 'black', SQUARE_SIZE);
 }
 
 
