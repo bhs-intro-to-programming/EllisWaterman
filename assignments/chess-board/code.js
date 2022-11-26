@@ -14,45 +14,52 @@ const SQUARE_SIZE = 45;
 
 // Example of drawing one of the pieces
 
-const playerWhite = {
-  pieces: [{ piece: WHITE_KING, row: 1, col: 4 },
-  { icon: WHITE_KNIGHT, row: 1, col: 4 },
-  { icon: WHITE_KNIGHT, row: 1, col: 4 },
-  { icon: WHITE_BISHOP, row: 1, col: 1 },
-  { icon: WHITE_BISHOP, row: 1, col: 1 },
-  { icon: WHITE_ROOK, row: 1, col: 1 },
-  { icon: WHITE_ROOK, row: 1, col: 1 },
-  { icon: WHITE_QUEEN, row: 1, col: 3 },
-  { icon: WHITE_PAWN, row: 2, col: 0 },
-  { icon: WHITE_PAWN, row: 2, col: 1 },
-  { icon: WHITE_PAWN, row: 2, col: 2 },
-  { icon: WHITE_PAWN, row: 2, col: 3 },
-  { icon: WHITE_PAWN, row: 2, col: 4 },
-  { icon: WHITE_PAWN, row: 2, col: 5 },
-  { icon: WHITE_PAWN, row: 2, col: 6 },
-  { icon: WHITE_PAWN, row: 2, col: 7 },
-  ]
+const playerBlack = {
+ pieces: [{ piece: BLACK_KING, row: 1, col: 4 },
+ { icon: BLACK_KNIGHT, row: 1, col: 4 },
+ { icon: BLACK_KNIGHT, row: 1, col: 4 },
+ { icon: BLACK_BISHOP, row: 1, col: 1 },
+ { icon: BLACK_BISHOP, row: 1, col: 1 },
+ { icon: BLACK_ROOK, row: 1, col: 1 },
+ { icon: BLACK_ROOK, row: 1, col: 1 },
+ { icon: BLACK_QUEEN, row: 1, col: 3 },
+ { icon: BLACK_PAWN, row: 2, col: 0 },
+ { icon: BLACK_PAWN, row: 2, col: 1 },
+ { icon: BLACK_PAWN, row: 2, col: 2 },
+ { icon: BLACK_PAWN, row: 2, col: 3 },
+ { icon: BLACK_PAWN, row: 2, col: 4 },
+ { icon: BLACK_PAWN, row: 2, col: 5 },
+ { icon: BLACK_PAWN, row: 2, col: 6 },
+ { icon: BLACK_PAWN, row: 2, col: 7 },
+ ]
 }
+ 
+ 
+ 
+ 
+
+
 
 const playerBlack = {
-  pieces: [{ piece: BLACK_KING, row: 7, col: 4 },
-  { icon: BLACK_KNIGHT, row: 7, col: 6 },
-  { icon: BLACK_KNIGHT, row: 7, col: 1 },
-  { icon: BLACK_BISHOP, row: 7, col: 2 },
-  { icon: BLACK_BISHOP, row: 7, col: 5 },
-  { icon: BLACK_ROOK, row: 7, col: 0 },
-  { icon: BLACK_ROOK, row: 7, col: 7 },
-  { icon: BLACK_QUEEN, row: 7, col: 3 },
-  { icon: BLACK_PAWN, row: 6, col: 0 },
-  { icon: BLACK_PAWN, row: 6, col: 1 },
-  { icon: BLACK_PAWN, row: 6, col: 2 },
-  { icon: BLACK_PAWN, row: 6, col: 3 },
-  { icon: BLACK_PAWN, row: 6, col: 4 },
-  { icon: BLACK_PAWN, row: 6, col: 5 },
-  { icon: BLACK_PAWN, row: 6, col: 6 },
-  { icon: BLACK_PAWN, row: 6, col: 7 },
-  ]
+ pieces: [{ piece: WHITE_KING, row: 7, col: 4 },
+ { icon: WHITE_KNIGHT, row: 7, col: 6 },
+ { icon: WHITE_KNIGHT, row: 7, col: 1 },
+ { icon: WHITE_BISHOP, row: 7, col: 2 },
+ { icon: WHITE_BISHOP, row: 7, col: 5 },
+ { icon: WHITE_ROOK, row: 7, col: 0 },
+ { icon: WHITE_ROOK, row: 7, col: 7 },
+ { icon: WHITE_QUEEN, row: 7, col: 3 },
+ { icon: WHITE_PAWN, row: 6, col: 0 },
+ { icon: WHITE_PAWN, row: 6, col: 1 },
+ { icon: WHITE_PAWN, row: 6, col: 2 },
+ { icon: WHITE_PAWN, row: 6, col: 3 },
+ { icon: WHITE_PAWN, row: 6, col: 4 },
+ { icon: WHITE_PAWN, row: 6, col: 5 },
+ { icon: WHITE_PAWN, row: 6, col: 6 },
+ { icon: WHITE_PAWN, row: 6, col: 7 },
+ ]
 }
+
 
 
 
