@@ -71,11 +71,9 @@ const board = () => {
   for (let rows = 0; rows < rowsize; rows++) {
     for (let cols = 0; cols < colsize + 1; cols++) {
       let color = (cols % 2 === 0) ? 'transparent' : 'grey';
-      if (rows % 2 === 0)
-        drawFilledRect(rows * SQUARE_SIZE, cols * SQUARE_SIZE, SQUARE_SIZE, SQUARE_SIZE, color)
-      else
-        drawFilledRect(rows * SQUARE_SIZE, cols * SQUARE_SIZE - SQUARE_SIZE, SQUARE_SIZE, SQUARE_SIZE, color)
-    }
+        drawFilledRect(rows * SQUARE_SIZE, 
+                       cols * SQUARE_SIZE - (SQUARE_SIZE * rows % 2 === 0),
+        SQUARE_SIZE, SQUARE_SIZE, color)
   }
   drawFilledRect(0, 360, 450, 45, '#f8f2f8')
 };
