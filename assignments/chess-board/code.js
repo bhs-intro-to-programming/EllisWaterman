@@ -15,41 +15,41 @@ const BLACK_PAWN = '♟';
 
 const playerWhite = {
  pieces: [{ piece: WHITE_KING, row: 1, col: 4 },
- { piece: WHITE_KNIGHT, row: 1, col: 4 },
- { piece: WHITE_KNIGHT, row: 1, col: 4 },
- { piece: WHITE_BISHOP, row: 1, col: 1 },
- { piece: WHITE_BISHOP, row: 1, col: 1 },
- { piece: WHITE_ROOK, row: 1, col: 1 },
- { piece: WHITE_ROOK, row: 1, col: 1 },
- { piece: WHITE_QUEEN, row: 1, col: 3 },
- { piece: WHITE_PAWN, row: 2, col: 0 },
- { piece: WHITE_PAWN, row: 2, col: 1 },
- { piece: WHITE_PAWN, row: 2, col: 2 },
- { piece: WHITE_PAWN, row: 2, col: 3 },
- { piece: WHITE_PAWN, row: 2, col: 4 },
- { piece: WHITE_PAWN, row: 2, col: 5 },
- { piece: WHITE_PAWN, row: 2, col: 6 },
- { piece: WHITE_PAWN, row: 2, col: 7 },
+ { icon: WHITE_KNIGHT, row: 1, col: 4 },
+ { icon: WHITE_KNIGHT, row: 1, col: 4 },
+ { icon: WHITE_BISHOP, row: 1, col: 1 },
+ { icon: WHITE_BISHOP, row: 1, col: 1 },
+ { icon: WHITE_ROOK, row: 1, col: 1 },
+ { icon: WHITE_ROOK, row: 1, col: 1 },
+ { icon: WHITE_QUEEN, row: 1, col: 3 },
+ { icon: WHITE_PAWN, row: 2, col: 0 },
+ { icon: WHITE_PAWN, row: 2, col: 1 },
+ { icon: WHITE_PAWN, row: 2, col: 2 },
+ { icon: WHITE_PAWN, row: 2, col: 3 },
+ { icon: WHITE_PAWN, row: 2, col: 4 },
+ { icon: WHITE_PAWN, row: 2, col: 5 },
+ { icon: WHITE_PAWN, row: 2, col: 6 },
+ { icon: WHITE_PAWN, row: 2, col: 7 },
  ]
 }
 
 const playerBlack = {
   pieces: [{ piece: BLACK_KING, row: 8, col: 4 },
-  { piece: BLACK_KNIGHT, row: 8, col: 6 },
-  { piece: BLACK_KNIGHT, row: 8, col: 6 },
-  { piece: BLACK_BISHOP, row: 1, col: 1 },
-  { piece: BLACK_BISHOP, row: 1, col: 1 },
-  { piece: BLACK_ROOK, row: 1, col: 1 },
-  { piece: BLACK_ROOK, row: 1, col: 1 },
-  { piece: BLACK_QUEEN, row: 8, col: 3 },
-  { piece: BLACK_PAWN, row: 7, col: 0 },
-  { piece: BLACK_PAWN, row: 7, col: 1 },
-  { piece: BLACK_PAWN, row: 7, col: 2 },
-  { piece: BLACK_PAWN, row: 7, col: 3 },
-  { piece: BLACK_PAWN, row: 7, col: 4 },
-  { piece: BLACK_PAWN, row: 7, col: 5 },
-  { piece: BLACK_PAWN, row: 7, col: 6 },
-  { piece: BLACK_PAWN, row: 7, col: 7 },
+  { icon: BLACK_KNIGHT, row: 8, col: 6 },
+  { icon: BLACK_KNIGHT, row: 8, col: 6 },
+  { icon: BLACK_BISHOP, row: 1, col: 1 },
+  { icon: BLACK_BISHOP, row: 1, col: 1 },
+  { icon: BLACK_ROOK, row: 1, col: 1 },
+  { icon: BLACK_ROOK, row: 1, col: 1 },
+  { icon: BLACK_QUEEN, row: 8, col: 3 },
+  { icon: BLACK_PAWN, row: 7, col: 0 },
+  { icon: BLACK_PAWN, row: 7, col: 1 },
+  { icon: BLACK_PAWN, row: 7, col: 2 },
+  { icon: BLACK_PAWN, row: 7, col: 3 },
+  { icon: BLACK_PAWN, row: 7, col: 4 },
+  { icon: BLACK_PAWN, row: 7, col: 5 },
+  { icon: BLACK_PAWN, row: 7, col: 6 },
+  { icon: BLACK_PAWN, row: 7, col: 7 },
   ]
 }
 
@@ -82,17 +82,12 @@ const placePiecesWhite = () => {
   }
 }
 
-const placePiecesBlack = () => {
-  for (let i = 0; i < 8; i++) {
-     drawText(playerBlack.pieces[7].piece, playerBlack.pieces[7].col * 35, playerBlack.pieces[7].row * 35, 'black', 50);
-    drawText(playerBlack.pieces[0].piece, playerBlack.pieces[0].col * 35, playerBlack.pieces[0].row * 35, 'black', 50);
-    drawText(playerBlack.pieces[8].piece, playerBlack.pieces[i + 8].col * 35, playerBlack.pieces[i + 8].row * 35, 'black', 50);
-  }
-    drawText(playerBlack.pieces[2].piece, playerBlack.pieces[j+2].col * 35, playerBlack.pieces[j+2].row * 35, 'black', 50);
-    drawText(playerBlack.pieces[2].piece, playerBlack.pieces[j+2].col * 35, playerBlack.pieces[j+2].row * 35, 'black', 50);
-   }
+const placePiece = (piece) => {
+     drawText(piece.icon, piece.col * 35, piece.row * 35, 'black', 50);
 }
-placePiecesWhite()
-placePiecesBlack()
-//drawText(BLACK_KING, x, y, 'black', size);
 
+
+const placePieces = () => {
+  playerBlack.pieces.forEach( piece => {
+  placePiece(piece);
+});
