@@ -65,7 +65,7 @@ const playerWhite = {
 
 
 const board = () => {
-  drawFilledRect(0,360,450,45, '#fff4fc')
+
   let colsize = 8;
   let rowsize = 8;
   for (let rows = 0; rows < rowsize; rows++) {
@@ -77,7 +77,7 @@ const board = () => {
         drawFilledRect(rows * SQUARE_SIZE, cols * SQUARE_SIZE - SQUARE_SIZE, SQUARE_SIZE, SQUARE_SIZE, color)
     }
   }
-  
+    drawFilledRect(0,360,450,45, '#fff4fc')
 };
 
 board();
