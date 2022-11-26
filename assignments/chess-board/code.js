@@ -14,23 +14,23 @@ const BLACK_PAWN = '♟';
 // Example of drawing one of the pieces
 
 const playerWhite = {
- pieces: [{ piece: WHITE_KING, row: 1, col: 4 },
- { icon: WHITE_KNIGHT, row: 1, col: 4 },
- { icon: WHITE_KNIGHT, row: 1, col: 4 },
- { icon: WHITE_BISHOP, row: 1, col: 1 },
- { icon: WHITE_BISHOP, row: 1, col: 1 },
- { icon: WHITE_ROOK, row: 1, col: 1 },
- { icon: WHITE_ROOK, row: 1, col: 1 },
- { icon: WHITE_QUEEN, row: 1, col: 3 },
- { icon: WHITE_PAWN, row: 2, col: 0 },
- { icon: WHITE_PAWN, row: 2, col: 1 },
- { icon: WHITE_PAWN, row: 2, col: 2 },
- { icon: WHITE_PAWN, row: 2, col: 3 },
- { icon: WHITE_PAWN, row: 2, col: 4 },
- { icon: WHITE_PAWN, row: 2, col: 5 },
- { icon: WHITE_PAWN, row: 2, col: 6 },
- { icon: WHITE_PAWN, row: 2, col: 7 },
- ]
+  pieces: [{ piece: WHITE_KING, row: 1, col: 4 },
+  { icon: WHITE_KNIGHT, row: 1, col: 4 },
+  { icon: WHITE_KNIGHT, row: 1, col: 4 },
+  { icon: WHITE_BISHOP, row: 1, col: 1 },
+  { icon: WHITE_BISHOP, row: 1, col: 1 },
+  { icon: WHITE_ROOK, row: 1, col: 1 },
+  { icon: WHITE_ROOK, row: 1, col: 1 },
+  { icon: WHITE_QUEEN, row: 1, col: 3 },
+  { icon: WHITE_PAWN, row: 2, col: 0 },
+  { icon: WHITE_PAWN, row: 2, col: 1 },
+  { icon: WHITE_PAWN, row: 2, col: 2 },
+  { icon: WHITE_PAWN, row: 2, col: 3 },
+  { icon: WHITE_PAWN, row: 2, col: 4 },
+  { icon: WHITE_PAWN, row: 2, col: 5 },
+  { icon: WHITE_PAWN, row: 2, col: 6 },
+  { icon: WHITE_PAWN, row: 2, col: 7 },
+  ]
 }
 
 const playerBlack = {
@@ -77,17 +77,18 @@ const placePiecesWhite = () => {
     drawText(playerWhite.pieces[7].piece, playerWhite.pieces[7].col * 35, playerWhite.pieces[7].row * 35, 'black', 50);
     drawText(playerWhite.pieces[8].piece, playerWhite.pieces[i + 8].col * 35, playerWhite.pieces[i + 8].row * 35, 'black', 50);
   }
-  for(let j = 0; j < 2; j++) {
-    drawText(playerWhite.pieces[2].piece, playerWhite.pieces[j+2].col * 35, playerWhite.pieces[j+2].row * 35, 'black', 50);
+  for (let j = 0; j < 2; j++) {
+    drawText(playerWhite.pieces[2].piece, playerWhite.pieces[j + 2].col * 35, playerWhite.pieces[j + 2].row * 35, 'black', 50);
   }
 }
 
 const placePiece = (piece) => {
-     drawText(piece.icon, piece.col * 35, piece.row * 35, 'black', 50);
+  drawText(piece.icon, piece.col * 35, piece.row * 35, 'black', 50);
 }
 
 
 const placePieces = () => {
-  playerBlack.pieces.forEach( piece => {
-  placePiece(piece);
-});
+  playerBlack.pieces.forEach(piece => {
+    placePiece(piece);
+  });
+};
