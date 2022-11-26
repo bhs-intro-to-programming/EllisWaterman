@@ -66,7 +66,7 @@ const board = () => {
       if (rows % 2 === 0)
         drawFilledRect(rows * SQUARE_SIZE, cols * SQUARE_SIZE, SQUARE_SIZE, SQUARE_SIZE, color)
       else
-        drawFilledRect(rows * SQUARE_SIZE, cols * SQUARE_SIZE + SQUARE_SIZE, SQUARE_SIZE, SQUARE_SIZE, color)
+        drawFilledRect(rows * SQUARE_SIZE, cols * SQUARE_SIZE - SQUARE_SIZE, SQUARE_SIZE, SQUARE_SIZE, color)
     }
   }
 };
