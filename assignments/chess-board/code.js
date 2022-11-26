@@ -60,7 +60,7 @@ const playerBlack = {
 const board = () => {
   let colsize = 8;
   let rowsize = 8;
-  for (let rows = 0; rows < rowsize+1; rows++) {
+  for (let rows = 0; rows < rowsize-1; rows++) {
     for (let cols = 0; cols < colsize; cols++) {
       let color = (cols % 2 === 0) ? 'grey' : 'transparent';
       if (rows % 2 === 0)
