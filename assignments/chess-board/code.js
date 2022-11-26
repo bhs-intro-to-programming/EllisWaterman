@@ -60,8 +60,8 @@ const playerBlack = {
 const board = () => {
   let colsize = 8;
   let rowsize = 8;
-  for (let rows = 1; rows < rowsize; rows++) {
-    for (let cols = 1; cols < colsize; cols++) {
+  for (let rows = 0; rows < rowsize; rows++) {
+    for (let cols = 0; cols < colsize; cols++) {
       let color = (cols % 2 === 0) ? 'grey' : 'transparent';
       if (rows % 2 === 0)
         drawFilledRect(rows * SQUARE_SIZE, cols * SQUARE_SIZE, SQUARE_SIZE, SQUARE_SIZE, color)
