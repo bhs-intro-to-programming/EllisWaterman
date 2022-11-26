@@ -71,26 +71,26 @@ const board = () => {
   for (let rows = 0; rows < rowsize; rows++) {
     for (let cols = 0; cols < colsize + 1; cols++) {
       let color = (cols % 2 === 0) ? 'transparent' : 'grey';
-        drawFilledRect(rows * SQUARE_SIZE, 
-                       cols * SQUARE_SIZE - (SQUARE_SIZE * rows % 2 === 0),
-        SQUARE_SIZE, SQUARE_SIZE, color)
+      drawFilledRect(rows * SQUARE_SIZE,
+        cols * SQUARE_SIZE - (SQUARE_SIZE * rows % 2 === 0),
+        SQUARE_SIZE, SQUARE_SIZE, color);
+    }
+    drawFilledRect(0, 360, 450, 45, '#f8f2f8')
+  };
+
+  board();
+
+  const placePiece = (piece) => {
+    drawText(piece.icon, piece.col * SQUARE_SIZE, piece.row * SQUARE_SIZE, 'black', SQUARE_SIZE);
   }
-  drawFilledRect(0, 360, 450, 45, '#f8f2f8')
-};
 
-board();
+  const placePieces = () => {
+    playerBlack.pieces.forEach(piece => {
+      placePiece(piece);
+    });
+    playerWhite.pieces.forEach(piece => {
+      placePiece(piece);
+    });
+  };
 
-const placePiece = (piece) => {
-  drawText(piece.icon, piece.col * SQUARE_SIZE, piece.row * SQUARE_SIZE, 'black', SQUARE_SIZE);
-}
-
-const placePieces = () => {
-  playerBlack.pieces.forEach(piece => {
-    placePiece(piece);
-  });
-  playerWhite.pieces.forEach(piece => {
-    placePiece(piece);
-  });
-};
-
-placePieces();
+  placePieces();
