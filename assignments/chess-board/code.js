@@ -57,9 +57,9 @@ const playerBlack = {
 
 
 const board = () => {
-  let s = 35
-  let colsize = 9
-  let rowsize = 8
+  let s = 35;
+  let colsize = 8;
+  let rowsize = 8;
   for (let rows = 0; rows < rowsize; rows++) {
     for (let cols = 0; cols < colsize; cols++) {
       let color = (cols % 2 === 0) ? 'grey' : 'transparent';
@@ -69,18 +69,9 @@ const board = () => {
         drawFilledRect(rows * s, cols * s - s, s, s, color)
     }
   }
-}
-board()
-const placePiecesWhite = () => {
-  for (let i = 0; i < 8; i++) {
-    drawText(playerWhite.pieces[0].piece, playerWhite.pieces[0].col * 35, playerWhite.pieces[0].row * 35, 'black', 50);
-    drawText(playerWhite.pieces[7].piece, playerWhite.pieces[7].col * 35, playerWhite.pieces[7].row * 35, 'black', 50);
-    drawText(playerWhite.pieces[8].piece, playerWhite.pieces[i + 8].col * 35, playerWhite.pieces[i + 8].row * 35, 'black', 50);
-  }
-  for (let j = 0; j < 2; j++) {
-    drawText(playerWhite.pieces[2].piece, playerWhite.pieces[j + 2].col * 35, playerWhite.pieces[j + 2].row * 35, 'black', 50);
-  }
-}
+};
+
+board();
 
 const placePiece = (piece) => {
   drawText(piece.icon, piece.col * 35, piece.row * 35, 'black', 50);
@@ -92,3 +83,5 @@ const placePieces = () => {
     placePiece(piece);
   });
 };
+
+placePieces();
