@@ -76,7 +76,7 @@ const board = () => {
         drawFilledRect(rows * SQUARE_SIZE, cols * SQUARE_SIZE - SQUARE_SIZE, SQUARE_SIZE, SQUARE_SIZE, color)
     }
   }
-  drawFilledRect(0,300,50,100, 'black')
+  drawFilledRect(0,300,100,50, 'black')
 };
 
 board();
