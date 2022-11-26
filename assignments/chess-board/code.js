@@ -70,7 +70,7 @@ const board = () => {
   let rowsize = 8;
   for (let rows = 0; rows < rowsize; rows++) {
     for (let cols = 0; cols < colsize + 1; cols++) {
-      let color = (cols % 2 === 0) ? 'grey' : 'transparent';
+      let color = (cols % 2 === 0) ? 'transparent' : 'grey';
       if (rows % 2 === 0)
         drawFilledRect(rows * SQUARE_SIZE, cols * SQUARE_SIZE, SQUARE_SIZE, SQUARE_SIZE, color)
       else
