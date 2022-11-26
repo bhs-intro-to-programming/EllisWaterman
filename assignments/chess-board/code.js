@@ -65,7 +65,6 @@ const playerWhite = {
 
 
 const board = () => {
-
   let colsize = 8;
   let rowsize = 8;
   for (let rows = 0; rows < rowsize; rows++) {
@@ -75,22 +74,22 @@ const board = () => {
         cols * SQUARE_SIZE - (SQUARE_SIZE * rows % 2 === 0),
         SQUARE_SIZE, SQUARE_SIZE, color);
     }
-    drawFilledRect(0, 360, 450, 45, '#f8f2f8')
-  };
-
-  board();
-
-  const placePiece = (piece) => {
-    drawText(piece.icon, piece.col * SQUARE_SIZE, piece.row * SQUARE_SIZE, 'black', SQUARE_SIZE);
   }
+};
 
-  const placePieces = () => {
-    playerBlack.pieces.forEach(piece => {
-      placePiece(piece);
-    });
-    playerWhite.pieces.forEach(piece => {
-      placePiece(piece);
-    });
-  };
+board();
 
-  placePieces();
+const placePiece = (piece) => {
+  drawText(piece.icon, piece.col * SQUARE_SIZE, piece.row * SQUARE_SIZE, 'black', SQUARE_SIZE);
+}
+
+const placePieces = () => {
+  playerBlack.pieces.forEach(piece => {
+    placePiece(piece);
+  });
+  playerWhite.pieces.forEach(piece => {
+    placePiece(piece);
+  });
+};
+
+placePieces();
