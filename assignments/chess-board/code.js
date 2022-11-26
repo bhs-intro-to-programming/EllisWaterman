@@ -34,12 +34,6 @@ const playerBlack = {
   ]
 }
 
-
-
-
-
-
-
 const playerWhite = {
   pieces: [{ icon: WHITE_KING, row: 8, col: 4 },
   { icon: WHITE_KNIGHT, row: 8, col: 6 },
@@ -60,10 +54,6 @@ const playerWhite = {
   ]
 }
 
-
-
-
-
 const board = () => {
   let colsize = 8;
   let rowsize = 8;
@@ -76,8 +66,6 @@ const board = () => {
     }
   }
 };
-
-board();
 
 const placePiece = (piece) => {
   drawText(piece.icon, piece.col * SQUARE_SIZE, piece.row * SQUARE_SIZE, 'black', SQUARE_SIZE);
@@ -92,4 +80,5 @@ const placePieces = () => {
   });
 };
 
+board();
 placePieces();
