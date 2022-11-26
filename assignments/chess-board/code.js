@@ -19,7 +19,7 @@ const playerBlack = {
  { icon: BLACK_KNIGHT, row: 1, col: 4 },
  { icon: BLACK_KNIGHT, row: 1, col: 4 },
  { icon: BLACK_BISHOP, row: 1, col: 2 },
- { icon: BLACK_BISHOP, row: 1, col: 1 },
+ { icon: BLACK_BISHOP, row: 1, col: 5 },
  { icon: BLACK_ROOK, row: 1, col: 0 },
  { icon: BLACK_ROOK, row: 1, col: 7 },
  { icon: BLACK_QUEEN, row: 1, col: 3 },
