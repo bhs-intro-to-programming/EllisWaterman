@@ -59,7 +59,7 @@ const drawBoard = () => {
   let rowsize = 8;
   for (let rows = 0; rows < rowsize; rows++) {
     for (let cols = 0; cols < colsize + 1; cols++) {
-      let color = (cols % 2 === 0) ? 'transparent' : 'grey';
+      let color = (cols % 2 === 0) ? 'white' : 'grey';
       drawFilledRect(rows * SQUARE_SIZE,
         cols * SQUARE_SIZE - (SQUARE_SIZE * (rows % 2 === 0 ? 0 : 1)),
         SQUARE_SIZE, SQUARE_SIZE, color);
