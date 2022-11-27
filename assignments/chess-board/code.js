@@ -71,7 +71,7 @@ const placePiece = (piece) => {
   drawPiece(piece.icon, piece.col, piece.row)
 }
 const drawPiece = (icon, col,row) => {
-  drawText(icon, col * SQUARE_SIZE + SQUARE_SIZE,
+  drawText(icon, col * SQUARE_SIZE,
    row * SQUARE_SIZE + SQUARE_SIZE,
     'black', SQUARE_SIZE);
 }
