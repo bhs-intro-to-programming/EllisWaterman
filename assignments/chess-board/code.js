@@ -82,3 +82,7 @@ const placePieces = () => {
 
 board();
 placePieces();
+
+registerOnclick((x, y) => {
+ drawText('WHITE_PAWN', x*SQUARESIZE, y*SQUARESIZE, SQUARESIZE, 'BLACK')
+});
