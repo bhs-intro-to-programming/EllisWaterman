@@ -91,7 +91,7 @@ const emptySpace = (col, row) => {
   let color = ( (col + row * 7 ) % 2 === 0) ? 'green' : 'red';
   console.log(color,col,row)
   drawFilledRect(col * SQUARE_SIZE,
-    row * SQUARE_SIZE - (SQUARE_SIZE * (row % 2 === 0 ? 0 : 1)),
+    row * SQUARE_SIZE,
     SQUARE_SIZE, SQUARE_SIZE, color);
 }
 drawBoard();
