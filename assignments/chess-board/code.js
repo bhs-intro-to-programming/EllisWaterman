@@ -86,9 +86,9 @@ const placePieces = () => {
 
 board();
 placePieces();
-let clickCount = 0
+let pieceSelected = false
 registerOnclick((x, y) => {
-  clickCount++
+  
   let col = Math.floor(x/SQUARE_SIZE)
   let row = Math.floor(y/SQUARE_SIZE)
  drawPiece(WHITE_PAWN, col, row);
