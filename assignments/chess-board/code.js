@@ -84,5 +84,6 @@ board();
 placePieces();
 
 registerOnclick((x, y) => {
- drawText('WHITE_PAWN', x*SQUARE_SIZE, y*SQUARE_SIZE, SQUARE_SIZE, 'BLACK')
+ drawText('WHITE_PAWN', x, y, SQUARE_SIZE, 'BLACK')
+ console.log(x,y)
 });
