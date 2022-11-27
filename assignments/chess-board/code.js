@@ -99,6 +99,9 @@ registerOnclick((x, y) => {
   pieceSelected = {col: col, row: row, icon: board[col][row]}
  } else if (pieceSelected && board[col][row] === 0) {
    drawPiece(pieceSelected.icon, col, row)
+   board[col][row] === pieceSelected.icon
+   board[pieceSelected.col][pieceSelected.row] = 0
+   
    pieceSelected = null
  }
  console.log(pieceSelected.icon)
