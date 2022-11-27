@@ -87,11 +87,11 @@ const placePieces = () => {
     placePiece(piece);
   });
 };
-const emptySpace = (row, col) => {
+const emptySpace = (col, row) => {
   let color = (col % 2 === 0) ? 'red' : 'red';
   console.log(color,col,row)
-  drawFilledRect(row * SQUARE_SIZE,
-    col * SQUARE_SIZE - (SQUARE_SIZE * (row % 2 === 0 ? 0 : 1)),
+  drawFilledRect(col * SQUARE_SIZE,
+    row * SQUARE_SIZE - (SQUARE_SIZE * (row % 2 === 0 ? 0 : 1)),
     SQUARE_SIZE, SQUARE_SIZE, color);
 }
 drawBoard();
