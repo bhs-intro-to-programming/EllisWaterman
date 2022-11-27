@@ -77,7 +77,7 @@ const drawPiece = (icon, col,row) => {
   drawText(icon, col * SQUARE_SIZE,
    row * SQUARE_SIZE + SQUARE_SIZE,
     'black', SQUARE_SIZE);
-  board[col][row] = piece
+  board[col][row] = icon
 }
 const placePieces = () => {
   playerBlack.pieces.forEach(piece => {
