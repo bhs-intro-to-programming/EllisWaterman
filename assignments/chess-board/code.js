@@ -73,9 +73,9 @@ const placePiece = (piece) => {
 
 const board = new Array(8).fill(0).map(() => new Array(8).fill(0));
 
-const drawPiece = (icon, col,row) => {
+const drawPiece = (icon, col, row) => {
   drawText(icon, col * SQUARE_SIZE,
-   row * SQUARE_SIZE + SQUARE_SIZE,
+    row * SQUARE_SIZE + SQUARE_SIZE,
     'black', SQUARE_SIZE);
   board[col][row] = icon
 }
@@ -88,28 +88,26 @@ const placePieces = () => {
   });
 };
 const emptySpace = (col, row) => {
-      let color = (col % 2 === 0) ? 'transparent' : 'grey';
-      drawFilledRect(row * SQUARE_SIZE,
-        col * SQUARE_SIZE - (SQUARE_SIZE * (row % 2 === 0 ? 0 : 1)),
-        SQUARE_SIZE, SQUARE_SIZE, color);
-    }
-  }
+  let color = (col % 2 === 0) ? 'transparent' : 'grey';
+  drawFilledRect(row * SQUARE_SIZE,
+    col * SQUARE_SIZE - (SQUARE_SIZE * (row % 2 === 0 ? 0 : 1)),
+    SQUARE_SIZE, SQUARE_SIZE, color);
 }
 drawBoard();
 placePieces();
 let pieceSelected = null;
 
 registerOnclick((x, y) => {
-  let col = Math.floor(x/SQUARE_SIZE)
-  let row = Math.floor(y/SQUARE_SIZE)
- if (board[col][row] !== 0 && pieceSelected === null) {
-  pieceSelected = {col: col, row: row, icon: board[col][row]}
- } else if (pieceSelected && board[col][row] === 0) {
-   drawPiece(pieceSelected.icon, col, row)
-   board[col][row] === pieceSelected.icon
-   board[pieceSelected.col][pieceSelected.row] = 0
-  emptySpace(pieceSelected.col,pieceSelected.row)
-   pieceSelected = null
- }
- console.log(pieceSelected.icon)
+  let col = Math.floor(x / SQUARE_SIZE)
+  let row = Math.floor(y / SQUARE_SIZE)
+  if (board[col][row] !== 0 && pieceSelected === null) {
+    pieceSelected = { col: col, row: row, icon: board[col][row] }
+  } else if (pieceSelected && board[col][row] === 0) {
+    drawPiece(pieceSelected.icon, col, row)
+    board[col][row] === pieceSelected.icon
+    board[pieceSelected.col][pieceSelected.row] = 0
+    emptySpace(pieceSelected.col, pieceSelected.row)
+    pieceSelected = null
+  }
+  console.log(pieceSelected.icon)
 });
