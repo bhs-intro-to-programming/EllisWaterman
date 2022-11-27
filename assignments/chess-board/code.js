@@ -15,7 +15,7 @@ const SQUARE_SIZE = 45;
 // Example of drawing one of the pieces
 
 const playerBlack = {
-  pieces: [{ icon: BLACK_KING, row: 1, col: 4 },
+  pieces: [{ icon: BLACK_KING, row: 0, col: 4 },
   { icon: BLACK_KNIGHT, row: 0, col: 6 },
   { icon: BLACK_KNIGHT, row: 0, col: 1 },
   { icon: BLACK_BISHOP, row: 0, col: 2 },
@@ -35,7 +35,7 @@ const playerBlack = {
 }
 
 const playerWhite = {
-  pieces: [{ icon: WHITE_KING, row: 8, col: 4 },
+  pieces: [{ icon: WHITE_KING, row: 7, col: 4 },
   { icon: WHITE_KNIGHT, row: 7, col: 6 },
   { icon: WHITE_KNIGHT, row: 7, col: 1 },
   { icon: WHITE_BISHOP, row: 7, col: 2 },
