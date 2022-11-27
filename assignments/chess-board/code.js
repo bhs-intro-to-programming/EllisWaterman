@@ -54,7 +54,7 @@ const playerWhite = {
   ]
 }
 
-const board = () => {
+const drawBoard = () => {
   let colsize = 8;
   let rowsize = 8;
   for (let rows = 0; rows < rowsize; rows++) {
@@ -70,10 +70,14 @@ const board = () => {
 const placePiece = (piece) => {
   drawPiece(piece.icon, piece.col, piece.row)
 }
+
+const board = new Array(8).map(() => new Array(4))
+
 const drawPiece = (icon, col,row) => {
   drawText(icon, col * SQUARE_SIZE,
    row * SQUARE_SIZE + SQUARE_SIZE,
     'black', SQUARE_SIZE);
+  board[col][row] = piece
 }
 const placePieces = () => {
   playerBlack.pieces.forEach(piece => {
