@@ -88,7 +88,7 @@ const placePieces = () => {
   });
 };
 
-board();
+drawBoard();
 placePieces();
 let pieceSelected = false
 registerOnclick((x, y) => {
