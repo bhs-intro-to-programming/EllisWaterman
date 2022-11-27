@@ -85,5 +85,5 @@ placePieces();
 
 registerOnclick((x, y) => {
  drawText(WHITE_PAWN, x, y, SQUARE_SIZE, 'BLACK')
- console.log(x,y)
+ console.log(x/SQUARE_SIZE,y/SQUARE_SIZE)
 });
