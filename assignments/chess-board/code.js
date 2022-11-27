@@ -92,5 +92,5 @@ registerOnclick((x, y) => {
   let col = Math.floor(x/SQUARE_SIZE)
   let row = Math.floor(y/SQUARE_SIZE)
  drawPiece(WHITE_PAWN, col, row);
- console.log(col,row)
+ console.log(clickCount)
 });
