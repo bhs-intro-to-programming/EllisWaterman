@@ -87,7 +87,7 @@ placePieces();
 
 registerOnclick((x, y) => {
   let col = Math.floor(x/SQUARE_SIZE)+1
-  let row = Math.floor(y/SQUARE_SIZE)
+  let row = Math.floor(y/SQUARE_SIZE)-1
  drawPiece(WHITE_PAWN, col, row);
  console.log(Math.floor(x/SQUARE_SIZE),Math.floor(y/SQUARE_SIZE))
 });
