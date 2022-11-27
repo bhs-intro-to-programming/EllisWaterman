@@ -84,6 +84,6 @@ board();
 placePieces();
 
 registerOnclick((x, y) => {
- drawText(WHITE_PAWN, x, y, SQUARE_SIZE, 'BLACK')
+ drawText(WHITE_PAWN, Math.floor(x/SQUARE_SIZE), Math.floor(y/SQUARE_SIZE), SQUARE_SIZE, 'BLACK')
  console.log(Math.floor(x/SQUARE_SIZE),Math.floor(y/SQUARE_SIZE))
 });
