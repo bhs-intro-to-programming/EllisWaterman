@@ -109,5 +109,4 @@ registerOnclick((x, y) => {
     emptySpace(pieceSelected.col, pieceSelected.row)
     pieceSelected = null
   }
-  console.log(pieceSelected.icon)
 });
