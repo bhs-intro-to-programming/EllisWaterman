@@ -88,7 +88,7 @@ const placePieces = () => {
   });
 };
 const emptySpace = (col, row) => {
-  let color = ( (col + row * 7 ) % 2 === 0) ? 'green' : 'red';
+  let color = ( (col + row * 7 ) % 2 === 0) ? 'green' : 'white';
   console.log(color,col,row)
   drawFilledRect(col * SQUARE_SIZE,
     row * SQUARE_SIZE,
