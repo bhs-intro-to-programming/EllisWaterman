@@ -86,6 +86,8 @@ board();
 placePieces();
 
 registerOnclick((x, y) => {
- drawText(WHITE_PAWN, Math.floor(x/SQUARE_SIZE), Math.floor(y/SQUARE_SIZE), SQUARE_SIZE, 'BLACK')
+  let col = Math.floor(x/SQUARE_SIZE)
+  let row = Math.floor(y/SQUARE_SIZE)
+ drawPiece(WHITE_PAWN, col, row);
  console.log(Math.floor(x/SQUARE_SIZE),Math.floor(y/SQUARE_SIZE))
 });
