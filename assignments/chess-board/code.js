@@ -101,5 +101,5 @@ registerOnclick((x, y) => {
  } else if (pieceSelected && board[col][row] === 0) {
    drawPiece(pieceSelected.icon, col, row)
  }
- console.log(pieceSelected)
+ console.log(pieceSelected.icon)
 });
