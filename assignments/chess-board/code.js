@@ -68,9 +68,11 @@ const board = () => {
 };
 
 const placePiece = (piece) => {
-  drawText(piece.icon, piece.col * SQUARE_SIZE, piece.row * SQUARE_SIZE, 'black', SQUARE_SIZE);
+  drawPiece(piece.icon, piece.col, piece.row)
 }
-
+const drawPiece = (icon, col,row) => {
+  drawText(icon, col * SQUARE_SIZE, row * SQUARE_SIZE, 'black', SQUARE_SIZE);
+}
 const placePieces = () => {
   playerBlack.pieces.forEach(piece => {
     placePiece(piece);
