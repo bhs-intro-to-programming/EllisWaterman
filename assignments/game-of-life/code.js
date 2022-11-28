@@ -1,3 +1,5 @@
+const board = new Array(width).fill(0).map(() => new Array(height).fill(0));
+
 const cells = () => {
   let cellsize = 25;
   let xsize = width/cellsize
@@ -6,7 +8,7 @@ const cells = () => {
     for (let xposition = 0; xposition < xsize; xposition++) {
       if (Math.random() > (1 - .01))
       drawFilledRect(xposition * cellsize, yposition * cellsize, cellsize, cellsize, 'black')
-      
+      cellarray[xposition][yposition]
     }
   }
 }
