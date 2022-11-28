@@ -4,7 +4,7 @@ const cells = () => {
   let ysize = height/cellsize
   for (let yposition = 0; yposition < ysize; yposition++) {
     for (let xposition = 0; xposition < xsize; xposition++) {
-      if (Math.random() > (1 - .003))
+      if (Math.random() > (1 - .01))
       drawFilledRect(xposition * cellsize, yposition * cellsize, cellsize, cellsize, 'black')
       
     }
