@@ -1,4 +1,4 @@
-const WHITE_KING = '♔';
+const WHITE_KING = 'HEHE';
 const WHITE_QUEEN = '♕';
 const WHITE_ROOK = '♖';
 const WHITE_BISHOP = '♗';
@@ -8,7 +8,7 @@ const BLACK_KING = '♚';
 const BLACK_QUEEN = '♛';
 const BLACK_ROOK = '♜';
 const BLACK_BISHOP = '♝';
-const BLACK_KNIGHT = 'd♞';
+const BLACK_KNIGHT = '♞';
 const BLACK_PAWN = '♟';
 const SQUARE_SIZE = 34;
 
