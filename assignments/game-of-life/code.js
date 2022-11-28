@@ -1,7 +1,7 @@
 const cellArray = new Array(width).fill(0).map(() => new Array(height).fill(0));
 
 const cells = () => {
-  let cellsize = 3;
+  let cellsize = 30;
   let xsize = width/cellsize
   let ysize = height/cellsize
   for (let yposition = 0; yposition < ysize; yposition++) {
@@ -10,7 +10,8 @@ const cells = () => {
       drawFilledRect(xposition * cellsize, yposition * cellsize, cellsize, cellsize, 'black')
       console.log(xposition,yposition)
     }
+    clear()
   }
 }
-//animate(cells)
-cells()
+animate(cells)
+//cells()
