@@ -12,5 +12,5 @@ const cells = () => {
     }
   }
 }
-animate(cells)
+//animate(cells)
 //cells()
