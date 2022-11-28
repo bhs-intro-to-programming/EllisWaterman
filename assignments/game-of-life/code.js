@@ -8,7 +8,7 @@ const cells = () => {
     for (let xposition = 0; xposition < xsize; xposition++) {
       if (Math.random() > (1 - .01))
       drawFilledRect(xposition * cellsize, yposition * cellsize, cellsize, cellsize, 'black')
-      cellArray[xposition][yposition] = filled
+      cellArray[xposition][yposition] = 'filled'
     }
   }
 }
