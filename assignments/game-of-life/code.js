@@ -9,3 +9,4 @@ const cells = () => {
     }
   }
 }
+cells()
