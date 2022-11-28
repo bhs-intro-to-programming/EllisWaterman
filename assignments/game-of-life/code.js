@@ -1,7 +1,7 @@
 const cellArray = new Array(width).fill(0).map(() => new Array(height).fill(0));
 
 const cells = () => {
-  let cellsize = 25;
+  let cellsize = 3;
   let xsize = width/cellsize
   let ysize = height/cellsize
   for (let yposition = 0; yposition < ysize; yposition++) {
