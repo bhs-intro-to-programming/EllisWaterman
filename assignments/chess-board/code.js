@@ -10,7 +10,7 @@ const BLACK_ROOK = '♜';
 const BLACK_BISHOP = '♝';
 const BLACK_KNIGHT = '♞';
 const BLACK_PAWN = '♟';
-const SQUARE_SIZE = 30;
+const SQUARE_SIZE = 35;
 
 // Example of drawing one of the pieces
 
