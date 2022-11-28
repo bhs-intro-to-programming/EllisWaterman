@@ -13,5 +13,5 @@ const cells = () => {
   }
   clear()
 }
-animate(cells)
+//animate(cells)
 //cells()
