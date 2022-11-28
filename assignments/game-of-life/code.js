@@ -10,8 +10,8 @@ const cells = () => {
       drawFilledRect(xposition * cellsize, yposition * cellsize, cellsize, cellsize, 'black')
       console.log(xposition,yposition)
     }
-    clear()
   }
+  clear()
 }
 animate(cells)
 //cells()
