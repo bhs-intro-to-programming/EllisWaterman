@@ -106,6 +106,7 @@ registerOnclick((x, y) => {
     drawPiece(pieceSelected.icon, col, row)
     board[col][row] === pieceSelected.icon
     board[pieceSelected.col][pieceSelected.row] = 0
+    console.log(pieceSelected)
     emptySpace(pieceSelected.col, pieceSelected.row)
     pieceSelected = null
   }
