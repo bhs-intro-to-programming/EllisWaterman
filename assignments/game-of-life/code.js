@@ -6,7 +6,7 @@ const cells = () => {
   let ysize = height/cellsize
   for (let yposition = 0; yposition < ysize; yposition++) {
     for (let xposition = 0; xposition < xsize; xposition++) {
-      if (Math.random() > (1 - .01))
+      if (Math.random() > (1 - .23))
       drawFilledRect(xposition * cellsize, yposition * cellsize, cellsize, cellsize, 'black')
       console.log(xposition,yposition)
     }
