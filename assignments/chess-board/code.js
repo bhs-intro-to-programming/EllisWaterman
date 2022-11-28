@@ -1,4 +1,4 @@
-const WHITE_KING = 'HEHE';
+const WHITE_KING = '♔';
 const WHITE_QUEEN = '♕';
 const WHITE_ROOK = '♖';
 const WHITE_BISHOP = '♗';
