@@ -110,5 +110,5 @@ registerOnclick((x, y) => {
     emptySpace(pieceSelected.col, pieceSelected.row)
     pieceSelected = null
   
-  } else drawText('dont click here again. If everything just broke, restart', 300, 300, 'red', 100)
+  }
 });
