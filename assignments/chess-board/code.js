@@ -78,10 +78,7 @@ const drawPiece = (icon, col, row) => {
   board[col][row] = icon
 }
 const placePieces = () => {
-  playerBlack.pieces.forEach(piece => {
-    placePiece(piece);
-  });
-  playerWhite.pieces.forEach(piece => {
+  pieces.forEach(piece => {
     placePiece(piece);
   });
 };
