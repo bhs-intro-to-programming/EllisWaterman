@@ -14,46 +14,43 @@ const SQUARE_SIZE = 34;
 
 // Example of drawing one of the pieces
 
-const playerBlack = {
-  pieces: [
-    { team : 'black', icon: BLACK_KING, row: 0, col: 4 },
-    { team : 'black', icon: BLACK_KNIGHT, row: 0, col: 6 },
-    { team : 'black', icon: BLACK_KNIGHT, row: 0, col: 1 },
-    { team : 'black', icon: BLACK_BISHOP, row: 0, col: 2 },
-    { team : 'black', icon: BLACK_BISHOP, row: 0, col: 5 },
-    { team : 'black', icon: BLACK_ROOK, row: 0, col: 0 },
-    { team : 'black', icon: BLACK_ROOK, row: 0, col: 7 },
-    { team : 'black', icon: BLACK_QUEEN, row: 0, col: 3 },
-    { team : 'black', icon: BLACK_PAWN, row: 1, col: 0 },
-    { team : 'black', icon: BLACK_PAWN, row: 1, col: 1 },
-    { team : 'black', icon: BLACK_PAWN, row: 1, col: 2 },
-    { team : 'black', icon: BLACK_PAWN, row: 1, col: 3 },
-    { team : 'black', icon: BLACK_PAWN, row: 1, col: 4 },
-    { team : 'black', icon: BLACK_PAWN, row: 1, col: 5 },
-    { team : 'black', icon: BLACK_PAWN, row: 1, col: 6 },
-    { team : 'black', icon: BLACK_PAWN, row: 1, col: 7 },
-  ]
-}
 
-const playerWhite = {
-  pieces: [{team: 'white', icon: WHITE_KING, row: 7, col: 4 },
-  {team: 'white', icon: WHITE_KNIGHT, row: 7, col: 6 },
-  {team: 'white', icon: WHITE_KNIGHT, row: 7, col: 1 },
-  {team: 'white', icon: WHITE_BISHOP, row: 7, col: 2 },
-  {team: 'white', icon: WHITE_BISHOP, row: 7, col: 5 },
-  {team: 'white', icon: WHITE_ROOK, row: 7, col: 0 },
-  {team: 'white', icon: WHITE_ROOK, row: 7, col: 7 },
-  {team: 'white', icon: WHITE_QUEEN, row: 7, col: 3 },
-  {team: 'white', icon: WHITE_PAWN, row: 6, col: 0 },
-  {team: 'white', icon: WHITE_PAWN, row: 6, col: 1 },
-  {team: 'white', icon: WHITE_PAWN, row: 6, col: 2 },
-  {team: 'white', icon: WHITE_PAWN, row: 6, col: 3 },
-  {team: 'white', icon: WHITE_PAWN, row: 6, col: 4 },
-  {team: 'white', icon: WHITE_PAWN, row: 6, col: 5 },
-  {team: 'white', icon: WHITE_PAWN, row: 6, col: 6 },
-  {team: 'white', icon: WHITE_PAWN, row: 6, col: 7 },
+
+const pieces = [
+    { team: 'white', icon: WHITE_KING, row: 7, col: 4 },
+    { team: 'white', icon: WHITE_KNIGHT, row: 7, col: 6 },
+    { team: 'white', icon: WHITE_KNIGHT, row: 7, col: 1 },
+    { team: 'white', icon: WHITE_BISHOP, row: 7, col: 2 },
+    { team: 'white', icon: WHITE_BISHOP, row: 7, col: 5 },
+    { team: 'white', icon: WHITE_ROOK, row: 7, col: 0 },
+    { team: 'white', icon: WHITE_ROOK, row: 7, col: 7 },
+    { team: 'white', icon: WHITE_QUEEN, row: 7, col: 3 },
+    { team: 'white', icon: WHITE_PAWN, row: 6, col: 0 },
+    { team: 'white', icon: WHITE_PAWN, row: 6, col: 1 },
+    { team: 'white', icon: WHITE_PAWN, row: 6, col: 2 },
+    { team: 'white', icon: WHITE_PAWN, row: 6, col: 3 },
+    { team: 'white', icon: WHITE_PAWN, row: 6, col: 4 },
+    { team: 'white', icon: WHITE_PAWN, row: 6, col: 5 },
+    { team: 'white', icon: WHITE_PAWN, row: 6, col: 6 },
+    { team: 'white', icon: WHITE_PAWN, row: 6, col: 7 },
+    { team: 'black', icon: BLACK_KING, row: 0, col: 4 },
+    { team: 'black', icon: BLACK_KNIGHT, row: 0, col: 6 },
+    { team: 'black', icon: BLACK_KNIGHT, row: 0, col: 1 },
+    { team: 'black', icon: BLACK_BISHOP, row: 0, col: 2 },
+    { team: 'black', icon: BLACK_BISHOP, row: 0, col: 5 },
+    { team: 'black', icon: BLACK_ROOK, row: 0, col: 0 },
+    { team: 'black', icon: BLACK_ROOK, row: 0, col: 7 },
+    { team: 'black', icon: BLACK_QUEEN, row: 0, col: 3 },
+    { team: 'black', icon: BLACK_PAWN, row: 1, col: 0 },
+    { team: 'black', icon: BLACK_PAWN, row: 1, col: 1 },
+    { team: 'black', icon: BLACK_PAWN, row: 1, col: 2 },
+    { team: 'black', icon: BLACK_PAWN, row: 1, col: 3 },
+    { team: 'black', icon: BLACK_PAWN, row: 1, col: 4 },
+    { team: 'black', icon: BLACK_PAWN, row: 1, col: 5 },
+    { team: 'black', icon: BLACK_PAWN, row: 1, col: 6 },
+    { team: 'black', icon: BLACK_PAWN, row: 1, col: 7 },
   ]
-}
+
 
 const drawBoard = () => {
   let colsize = 8;
@@ -102,7 +99,7 @@ registerOnclick((x, y) => {
   let col = Math.floor(x / SQUARE_SIZE)
   let row = Math.floor(y / SQUARE_SIZE)
   if (board[col][row] !== 0 && pieceSelected === null) {
-    pieceSelected = {team: playerBlack.team, col: col, row: row, icon: board[col][row] }
+    pieceSelected = { team: playerBlack.team, col: col, row: row, icon: board[col][row] }
     console.log(pieceSelected.team)
   } else if (pieceSelected && board[col][row] === 0) {
     drawPiece(pieceSelected.icon, col, row)
