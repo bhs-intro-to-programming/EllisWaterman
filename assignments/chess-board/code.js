@@ -96,10 +96,11 @@ const emptySpace = (col, row) => {
 drawBoard();
 placePieces();
 let pieceSelected = null;
-
+let clickCount = 0
 registerOnclick((x, y) => {
   let col = Math.floor(x / SQUARE_SIZE)
   let row = Math.floor(y / SQUARE_SIZE)
+  let team = piece.icon
   if (board[col][row] !== 0 && pieceSelected === null) {
     pieceSelected = { col: col, row: row, icon: board[col][row] }
   } else if (pieceSelected && board[col][row] === 0) {
