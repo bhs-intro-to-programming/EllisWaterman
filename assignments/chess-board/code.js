@@ -103,7 +103,7 @@ registerOnclick((x, y) => {
   let row = Math.floor(y / SQUARE_SIZE)
   if (board[col][row] !== 0 && pieceSelected === null) {
     pieceSelected = {team: playerBlack.team, col: col, row: row, icon: board[col][row] }
-    console.log(peiceSelected.team)
+    console.log(pieceSelected.team)
   } else if (pieceSelected && board[col][row] === 0) {
     drawPiece(pieceSelected.icon, col, row)
     board[col][row] === pieceSelected.icon
