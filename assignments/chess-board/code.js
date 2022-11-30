@@ -67,7 +67,7 @@ const drawBoard = () => {
 
 const placePiece = (piece) => {
   drawPiece(piece.icon, piece.col, piece.row);
-    board[piece.col][piece.row] = pieces.team, pieces.icon
+    board[piece.col][piece.row] = pieces[col].team, pieces.icon
 }
 
 const board = new Array(8).fill(0).map(() => new Array(8).fill(0));
