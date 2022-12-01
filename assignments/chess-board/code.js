@@ -82,10 +82,10 @@ const placePieces = () => {
     placePiece(piece);
   });
 };
-const emptySpace = (col, row) => {
-  let color = ((col + row * 7) % 2 === 0) ? 'white' : 'grey';
-  drawFilledRect(col * SQUARE_SIZE,
-    row * SQUARE_SIZE,
+const emptySpace = (piece) => {
+  let color = ((picece.col + piece.row * 7) % 2 === 0) ? 'white' : 'grey';
+  drawFilledRect(piece.col * SQUARE_SIZE,
+    piece.row * SQUARE_SIZE,
     SQUARE_SIZE, SQUARE_SIZE, color);
 }
 drawBoard();
@@ -103,7 +103,7 @@ registerOnclick((x, y) => {
     drawPiece(pieceSelected.icon, col, row)
     board[col][row] = pieceSelected
     board[pieceSelected.col][pieceSelected.row] = 0
-    emptySpace(pieceSelected.col, pieceSelected.row)
+    emptySpace(pieceSelected)
     pieceSelected = null
 
   }
