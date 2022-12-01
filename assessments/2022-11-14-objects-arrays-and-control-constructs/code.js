@@ -6,13 +6,12 @@ const area = (rect) => {
 };
 
 const higherPaid = (e1, e2) => {
-  let highest = { salary: 0 }
   if (e1.salary > e2.salary) {
-    highest.salary = e1.salary
+    return e1
   } else {
-    highest.salary = e2.salary
+    return e2
   }
-  return highest
+
 };
 
 const isSamePoint = (p1, p2) => {
@@ -49,7 +48,7 @@ const updateWins = (players) => {
 };
 
 const bigWinners = (players) => {
-  for(let i = 0; i < players.length; i++) {
+  for (let i = 0; i < players.length; i++) {
     if (players[i].wins > 10) {
       return players[i]
     }
