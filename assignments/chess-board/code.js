@@ -102,7 +102,7 @@ registerOnclick((x, y) => {
     console.log(pieceSelected.team)
   } else if (pieceSelected && board[col][row] === 0) {
     drawPiece(pieceSelected.icon, col, row)
-    board[col][row] = pieceSelected.icon
+    board[col][row] = pieceSelected
     board[pieceSelected.col][pieceSelected.row] = 0
     emptySpace(pieceSelected.col, pieceSelected.row)
     pieceSelected = null
