@@ -52,7 +52,7 @@ const fillTimesTable = (table) => {
 };
 
 const sums = (n) => {
-  Array(n+1)
+ return Array(n+1)
 };
 
 const rule110 = (cells) => {
