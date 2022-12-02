@@ -49,6 +49,7 @@ const pieces = [
   { team: 'black', icon: BLACK_PAWN, row: 1, col: 5 },
   { team: 'black', icon: BLACK_PAWN, row: 1, col: 6 },
   { team: 'black', icon: BLACK_PAWN, row: 1, col: 7 },
+
 ]
 
 
@@ -109,3 +110,4 @@ registerOnclick((x, y) => {
 
   }
 });
+
