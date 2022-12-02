@@ -55,7 +55,7 @@ const sums = (n) => {
  let sumArray = []
  for(let i = 0; i < n; i++) {
    let j = i
-   sumArray.push(i+j)
+   sumArray.push(i+j-1)
  }
  return sumArray
 };
