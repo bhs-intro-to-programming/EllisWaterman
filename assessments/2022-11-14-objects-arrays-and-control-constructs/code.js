@@ -52,7 +52,11 @@ const fillTimesTable = (table) => {
 };
 
 const sums = (n) => {
- return Array(n+1).fill(0,1,3,6,10,15)
+ let sumArray = Array(n+1)
+ for(let i = 0; i < n; n++) {
+   let i = j
+   sumArray.push(i+j)
+ }
 };
 
 const rule110 = (cells) => {
