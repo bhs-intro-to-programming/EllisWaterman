@@ -57,6 +57,7 @@ const sums = (n) => {
    let j = i
    sumArray.push(i+j)
  }
+ return sumArray
 };
 
 const rule110 = (cells) => {
