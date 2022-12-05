@@ -48,24 +48,29 @@ const bigWinners = (players) => {
 };
 
 const fillTimesTable = (table) => {
- for(let i = 0; i < table.length; i++) {
-   for(let j = 0; j < table.length; j++) {
-     table[i][j] = (i+1)*(j+1);
-   }
- }
+  for (let i = 0; i < table.length; i++) {
+    for (let j = 0; j < table.length; j++) {
+      table[i][j] = (i + 1) * (j + 1);
+    }
+  }
 };
 
 const sums = (n) => {
- let sumArray = [0]
- for(let i = 1; i < n+1; i++) {
-   let previus = sumArray[i-1]
-   sumArray.push(i+previus)
- }
- return sumArray
+  let sumArray = [0]
+  for (let i = 1; i < n + 1; i++) {
+    let previus = sumArray[i - 1]
+    sumArray.push(i + previus)
+  }
+  return sumArray
 };
 
 const rule110 = (cells) => {
-  for(let i = 1; i < cells.length+1; i++) {
-    cells[i] = cells[i-1]+cells[i]+cells[i+1]
+  let newCellArray = []
+  for (let i = 1; i < cells.length + 1; i++) {
+    if (cells[i + 1] = undefined) {
+      cells[i + 1] = 0
+    } else {
+      newCellArray[i] = cells[i - 1] + cells[i] + cells[i + 1]
+    }
   }
 };
