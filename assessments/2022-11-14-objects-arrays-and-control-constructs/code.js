@@ -58,6 +58,7 @@ const fillTimesTable = (table) => {
 const sums = (n) => {
  let sumArray = []
  for(let i = 0; i < n; i++) {
+   let previus = sumArray[i-1]
    sumArray.push(i+previus)
  }
  return sumArray
