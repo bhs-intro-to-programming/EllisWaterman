@@ -12,9 +12,8 @@ const cells = () => {
       console.log(i,j)
     }
   }
-  clear()
 }
 //animate(cells)
-//cells()
+cells()
 //make a delay possibly
 //find a way to cellArray[x of block][y of block]
