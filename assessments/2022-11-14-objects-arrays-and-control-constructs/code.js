@@ -65,7 +65,7 @@ const sums = (n) => {
 };
 
 const rule110 = (cells) => {
-  for(let i = 0; i < cells.length; i++) {
+  for(let i = 1; i < cells.length+1; i++) {
     cells[i] = cells[i-1]+cells[i]+cells[i-1]
   }
 };
