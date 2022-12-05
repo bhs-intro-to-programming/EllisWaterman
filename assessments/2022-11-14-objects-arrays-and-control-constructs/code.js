@@ -60,6 +60,7 @@ const sums = (n) => {
  for(let i = 0; i < n; i++) {
    let previus = sumArray[i-1]
    sumArray.push(i+previus)
+   console.log(sumArray[i-1])
  }
  return sumArray
 };
