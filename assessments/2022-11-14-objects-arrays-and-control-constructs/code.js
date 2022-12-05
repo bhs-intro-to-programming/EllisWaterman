@@ -68,6 +68,8 @@ const rule110 = (cells) => {
   let newCellArray = []
   for (let i = 0; i < cells.length; i++) {
       newCellArray[i] = cells[i - 1] + cells[i] + cells[i + 1]
+      newCellArray[0] = cells[0]+cells[1]
+      newCellArray[newCellArray.length-1] = cells[cells.length-1]+cells[cells.length-2]
     }
     return newCellArray
 };
