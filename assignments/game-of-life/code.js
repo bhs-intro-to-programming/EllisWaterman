@@ -11,7 +11,6 @@ const cells = () => {
       console.log(xposition,yposition)
     }
   }
-  clear()
 }
 //animate(cells)
 cells()
