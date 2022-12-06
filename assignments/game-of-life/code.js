@@ -1,8 +1,7 @@
 
 
 let cellsize = 30;
-const cellArray = new Array(Math.floor(width/cellsize)).fill(0).map(() 
-=> 
+const cellArray = new Array(Math.floor(width/cellsize)).fill(0).map(() => 
 new Array(Math.floor(height/cellsize)).fill(0));
 
 
