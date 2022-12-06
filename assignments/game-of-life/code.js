@@ -1,17 +1,17 @@
 const cellArray = new Array(width).fill(0).map(() => new Array(height).fill(0));
 
 const cells = () => {
-  let cellsize = 1;
-  let xsize = width
-  let ysize = height
-  for (let i = 0; i < width;i++) {
-    for (let j = 0; j < height; j++) {
+  let cellsize = 30;
+  let xsize = width/cellsize
+  let ysize = height/cellsize
+  for (let yposition = 0; yposition < ysize; yposition++) {
+    for (let xposition = 0; xposition < xsize; xposition++) {
       if (Math.random() > (1 - .23))
-      drawFilledRect(i * cellsize,
-       j * cellsize, cellsize, cellsize, 'black')
-      console.log(i,j)
+      drawFilledRect(xposition * cellsize, yposition * cellsize, cellsize, cellsize, 'black')
+      console.log(xposition,yposition)
     }
   }
+  clear()
 }
 //animate(cells)
 //cells()
