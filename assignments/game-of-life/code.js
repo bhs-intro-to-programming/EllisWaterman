@@ -24,5 +24,5 @@ cells()
 
 //drawText('START', 0 ,0,'black', 20)
 registerOnclick((x, y) => {
-drawFilledRect(yposition, xposition, cellsize, cellsize, 'black');
+drawFilledRect(x/xposition, y/yposition, cellsize, cellsize, 'black');
 });
