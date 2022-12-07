@@ -20,4 +20,4 @@ const cells = () => {
 cells()
 //make a delay possibly
 //find a way to cellArray[x of block][y of block]
-drawFilledRect(width/100, height/100, 25, 25, 'blue')
+drawFilledRect(width/1000, height/1000, 25, 25, 'blue')
