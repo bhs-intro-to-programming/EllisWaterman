@@ -20,5 +20,5 @@ const cells = () => {
 cells()
 //make a delay possibly
 //find a way to cellArray[x of block][y of block]
-drawFilledRect(0, 0, 100, 100, 'blue')
-drawText('START', 0, 0, 'black', 10)
+drawFilledRect(0, 0, 100, 100, 'blue');
+drawText('START', 0 ,0,'black', 20)
