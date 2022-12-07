@@ -1,7 +1,7 @@
 
 
 let cellsize = 10;
-const cellArray = new Array(Math.floor(width/cellsize)).fill().map(() => new Array(Math.floor(height/cellsize)).fill());
+const cellArray = new Array(Math.floor(width/cellsize)).fill().map(() => new Array(Math.floor(height/cellsize)).fill(0));
 
 
 const cells = () => {
