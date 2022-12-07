@@ -1,7 +1,7 @@
 
 
 let cellsize = 10;
-const cellArray = new Array(Math.floor(width/cellsize)).fill().map(() => 
+const cellArray = new Array(Math.floor(width/cellsize)).fill({health}).map(() => 
 new Array(Math.floor(height/cellsize)).fill(0));
 
 
@@ -12,7 +12,7 @@ const cells = () => {
     for (let xposition = 0; xposition < xsize; xposition++) {
       if (Math.random() > (1 - .23))
       drawFilledRect(xposition * cellsize, yposition * cellsize, cellsize, cellsize, 'black')
-       cellArray[yposition][xposition] = 1
+       cellArray[yposition][xposition].health = 'alive'
       console.log(xposition,yposition)
     }
   }
