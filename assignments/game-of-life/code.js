@@ -2,7 +2,7 @@
 
 let cellsize = 10;
 const cellArray = new Array(Math.floor(width/cellsize)).fill({health : 0}).map(() => 
-new Array(Math.floor(height/cellsize)).fill(health : 0));
+new Array(Math.floor(height/cellsize)).fill({health : 0}));
 
 
 const cells = () => {
