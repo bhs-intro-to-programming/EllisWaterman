@@ -12,7 +12,7 @@ const cells = () => {
     for (let xposition = 0; xposition < xsize; xposition++) {
       if (Math.random() > (1 - .23)) {
       drawFilledRect(xposition * CELLSIZE, yposition * CELLSIZE, CELLSIZE, CELLSIZE, 'black')
-      cellArray[yposition][xposition] = {health : 'alive'}
+     
       }
     }
   }
@@ -27,4 +27,5 @@ registerOnclick((x, y) => {
 let col = Math.floor(x / CELLSIZE)
 let row = Math.floor(y / CELLSIZE)
 drawFilledRect(row, col, CELLSIZE, CELLSIZE, 'black');
+ cellArray[col][row] = {health : 'alive'}
 });
