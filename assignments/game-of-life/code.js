@@ -1,6 +1,6 @@
 
 
-let cellsize = 20;
+let cellsize = 15;
 const cellArray = new Array(Math.floor(width/cellsize)).fill().map(() => 
 new Array(Math.floor(height/cellsize)).fill({health : 'dead'}));
 
