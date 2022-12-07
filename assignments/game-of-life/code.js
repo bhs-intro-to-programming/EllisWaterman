@@ -1,7 +1,8 @@
 
 
 let cellsize = 10;
-const cellArray = new Array(Math.floor(width/cellsize)).fill().map(() => new Array(Math.floor(height/cellsize)).fill(0));
+const cellArray = new Array(Math.floor(width/cellsize)).fill().map(() => 
+new Array(Math.floor(height/cellsize)).fill(0));
 
 
 const cells = () => {
@@ -11,7 +12,7 @@ const cells = () => {
     for (let xposition = 0; xposition < xsize; xposition++) {
       if (Math.random() > (1 - .23))
       drawFilledRect(xposition * cellsize, yposition * cellsize, cellsize, cellsize, 'black')
-       cellArray[xposition][yposition] = 1
+       cellArray[yposition][xposition] = 1
       console.log(xposition,yposition)
     }
   }
