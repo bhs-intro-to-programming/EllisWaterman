@@ -26,5 +26,5 @@ cells()
 registerOnclick((x, y) => {
 let col = Math.floor(x / CELLSIZE)
 let row = Math.floor(y / CELLSIZE)
-drawFilledRect(x/xposition, y/yposition, CELLSIZE, CELLSIZE, 'black');
+drawFilledRect(row, col, CELLSIZE, CELLSIZE, 'black');
 });
