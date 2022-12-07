@@ -1,17 +1,17 @@
 
 
-let cellsize = 13;
-const cellArray = new Array(Math.floor(width / cellsize)).fill().map(() =>
-  new Array(Math.floor(height / cellsize)).fill({ health: 'dead' }));
+const CELLSIZE = 13;
+const cellArray = new Array(Math.floor(width / CELLSIZE)).fill().map(() =>
+  new Array(Math.floor(height / CELLSIZE)).fill({ health: 'dead' }));
 
 
 const cells = () => {
-  let xsize = width / cellsize
-  let ysize = height / cellsize
+  let xsize = width / CELLSIZE
+  let ysize = height / CELLSIZE
   for (let yposition = 0; yposition < ysize; yposition++) {
     for (let xposition = 0; xposition < xsize; xposition++) {
       if (Math.random() > (1 - .23)) {
-      drawFilledRect(xposition * cellsize, yposition * cellsize, cellsize, cellsize, 'black')
+      drawFilledRect(xposition * CELLSIZE, yposition * CELLSIZE, CELLSIZE, CELLSIZE, 'black')
       cellArray[yposition][xposition] = {health : 'alive'}
       }
     }
@@ -24,5 +24,7 @@ cells()
 
 //drawText('START', 0 ,0,'black', 20)
 registerOnclick((x, y) => {
-drawFilledRect(x/xposition, y/yposition, cellsize, cellsize, 'black');
+let col = Math.floor(x / CELLSIZE)
+let row = Math.floor(y / CELLSIZE)
+drawFilledRect(x/xposition, y/yposition, CELLSIZE, CELLSIZE, 'black');
 });
