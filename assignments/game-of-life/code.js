@@ -10,9 +10,10 @@ const cells = () => {
   let ysize = height / cellsize
   for (let yposition = 0; yposition < ysize; yposition++) {
     for (let xposition = 0; xposition < xsize; xposition++) {
-      if (Math.random() > (1 - .23))
-        drawFilledRect(xposition * cellsize, yposition * cellsize, cellsize, cellsize, 'black')
+      if (Math.random() > (1 - .23)) {
+      drawFilledRect(xposition * cellsize, yposition * cellsize, cellsize, cellsize, 'black')
       cellArray[yposition][xposition] = {health : 'alive'}
+      }
     }
   }
 }
