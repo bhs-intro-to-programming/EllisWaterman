@@ -12,7 +12,7 @@ const cells = () => {
     for (let xposition = 0; xposition < xsize; xposition++) {
       if (Math.random() > (1 - .23)) {
         drawFilledRect(xposition * CELLSIZE, yposition * CELLSIZE, CELLSIZE, CELLSIZE, 'black')
-        
+
         drawFilledRect(0, 0, 150, 50, 'lightBlue')
         drawText('+1 Generation', 10, 30, 'black', 20)
       }
@@ -28,7 +28,7 @@ registerOnclick((x, y) => {
   if (x < 100 && y < 50) {
     animate(cells)
   } else {
-    drawFilledRect(Math.floor(x), Math.floor(y), CELLSIZE, CELLSIZE, 'black');
-    cellArray[Math.floor(y / CELLSIZE)][Math.floor(x / CELLSIZE)] = { health: 'alive' }
+    //drawFilledRect(Math.floor(x), Math.floor(y), CELLSIZE, CELLSIZE, 'black');
+    //cellArray[Math.floor(y / CELLSIZE)][Math.floor(x / CELLSIZE)] = { health: 'alive' }
   }
 });
