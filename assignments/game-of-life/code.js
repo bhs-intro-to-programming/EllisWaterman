@@ -21,7 +21,7 @@ const cells = () => {
 cells()
 //make a delay possibly
 
-//drawFilledRect(0,0, 100, 100, 'blue')
+drawFilledRect(0,0, 100, 100, 'blue')
 //drawText('START', 0 ,0,'black', 20)
 registerOnclick((x, y) => {
 drawFilledRect(Math.floor(x), Math.floor(y), CELLSIZE, CELLSIZE, 'black');
