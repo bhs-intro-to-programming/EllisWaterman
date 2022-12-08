@@ -21,7 +21,7 @@ const cells = () => {
 cells()
 //make a delay possibly
 
-drawFilledRect(0, 0, 100, 75, 'lightBlue')
+drawFilledRect(0, 0, 120, 50, 'lightBlue')
 drawText('+1 Generation', 10, 30, 'black', 20)
 registerOnclick((x, y) => {
   if (x < 100 && y < 50) {
