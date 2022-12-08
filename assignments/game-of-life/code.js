@@ -1,9 +1,9 @@
 
 
 const CELLSIZE = 13;
-const cellArray = 
-Array(Math.floor(height / CELLSIZE)).fill().map(() =>
-  Array(Math.floor(width / CELLSIZE)).fill().map(() => ({health: 'dead' })));
+const cellArray =
+  Array(Math.floor(height / CELLSIZE)).fill().map(() =>
+    Array(Math.floor(width / CELLSIZE)).fill().map(() => ({ health: 'dead' })));
 
 
 const originalCells = () => {
@@ -12,15 +12,17 @@ const originalCells = () => {
   for (let yposition = 0; yposition < ysize; yposition++) {
     for (let xposition = 0; xposition < xsize; xposition++) {
       if (Math.random() > (1 - .23)) {
-        drawFilledRect(xposition * CELLSIZE, yposition * CELLSIZE, CELLSIZE, CELLSIZE, 'black')
-        cellArray[yposition][xposition] = {health : 'alive'};
+        drawFilledRect(xposition * CELLSIZE, yposition * CELLSIZE, CELLSIZE, CELLSIZE, 'green')
+        cellArray[yposition][xposition] = { health: 'alive' };
       }
     }
   }
 };
 
 const doTheyLive = () => {
-
+  for (let i = 0; i < cellArray.length; i++) {
+    if (cellArray[i][0])
+  }
 }
 //animate(cells)
 originalCells()
