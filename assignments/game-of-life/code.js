@@ -9,11 +9,11 @@ const cellArray =
 const originalCells = () => {
   let xsize = width / CELLSIZE
   let ysize = height / CELLSIZE
-  for (let yposition = 0; yposition < ysize; yposition++) {
-    for (let xposition = 0; xposition < xsize; xposition++) {
+  for (let y = 0; y < ysize; y++) {
+    for (let x = 0; x < xsize; x++) {
       if (Math.random() > (1 - .23)) {
-        drawFilledRect(xposition * CELLSIZE, yposition * CELLSIZE, CELLSIZE, CELLSIZE, 'green')
-        cellArray[yposition][xposition] = { health: 'alive' };
+        drawFilledRect(x * CELLSIZE, y * CELLSIZE, CELLSIZE, CELLSIZE, 'green');
+        cellArray[y][x] = { health: 'alive' };
       }
     }
   }
@@ -22,7 +22,7 @@ const originalCells = () => {
 const doTheyLive = () => {
   for (let i = 0; i < cellArray.length; i++) {
     for(let j = 0; j < 10; j++) {
-      
+
     }
     if (cellArray[i][0]) {}
   }
