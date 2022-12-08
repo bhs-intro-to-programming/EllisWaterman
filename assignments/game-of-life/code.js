@@ -11,8 +11,8 @@ const cells = () => {
   for (let yposition = 0; yposition < ysize; yposition++) {
     for (let xposition = 0; xposition < xsize; xposition++) {
       if (Math.random() > (1 - .23)) {
-      drawFilledRect(xposition * CELLSIZE, yposition * CELLSIZE, CELLSIZE, CELLSIZE, 'black')
-     
+        drawFilledRect(xposition * CELLSIZE, yposition * CELLSIZE, CELLSIZE, CELLSIZE, 'black')
+
       }
     }
   }
@@ -21,9 +21,13 @@ const cells = () => {
 cells()
 //make a delay possibly
 
-drawFilledRect(0,0, 100, 50, 'lightBlue')
-drawText('START', 10,30,'black', 20)
+drawFilledRect(0, 0, 100, 50, 'lightBlue')
+drawText('START', 10, 30, 'black', 20)
 registerOnclick((x, y) => {
-drawFilledRect(Math.floor(x), Math.floor(y), CELLSIZE, CELLSIZE, 'black');
- cellArray[Math.floor(y/CELLSIZE)][Math.floor(x/CELLSIZE)] = {health : 'alive'}
+  if (x < 100 && y < 50) {
+    animate(cells)
+  } else {
+    drawFilledRect(Math.floor(x), Math.floor(y), CELLSIZE, CELLSIZE, 'black');
+    cellArray[Math.floor(y / CELLSIZE)][Math.floor(x / CELLSIZE)] = { health: 'alive' }
+  }
 });
