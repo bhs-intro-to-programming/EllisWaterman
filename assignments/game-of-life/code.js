@@ -1,7 +1,7 @@
 
 
 const CELLSIZE = 13;
-const cellArray = new Array(Math.floor(width / CELLSIZE)).fill().map(() =>
+const cellArray = Array(Math.floor(width / CELLSIZE)).fill().map(() =>
   Array(Math.floor(height / CELLSIZE)).fill().map(() => { health: 'dead' }));
 
 
