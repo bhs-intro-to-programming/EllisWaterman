@@ -15,6 +15,7 @@ const cells = () => {
 
         drawFilledRect(0, 0, 150, 50, 'lightBlue')
         drawText('+1 Generation', 10, 30, 'black', 20)
+
       }
     }
   }
@@ -25,7 +26,7 @@ cells()
 
 
 registerOnclick((x, y) => {
-  if (x < 100 && y < 50) {
+  if (x < 150 && y < 50) {
     animate(cells)
   } else {
     //drawFilledRect(Math.floor(x), Math.floor(y), CELLSIZE, CELLSIZE, 'black');
