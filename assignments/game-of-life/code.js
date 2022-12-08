@@ -21,6 +21,9 @@ const originalCells = () => {
 
 const doTheyLive = () => {
   for (let i = 0; i < cellArray.length; i++) {
+    for(let j = 0; j < 10; j++) {
+      
+    }
     if (cellArray[i][0]) {}
   }
 }
