@@ -5,7 +5,7 @@ const cellArray = new Array(Math.floor(width / CELLSIZE)).fill().map(() =>
   new Array(Math.floor(height / CELLSIZE)).fill({ health: 'dead' }));
 
 
-const cells = () => {
+const originalCells = () => {
   let xsize = width / CELLSIZE
   let ysize = height / CELLSIZE
   for (let yposition = 0; yposition < ysize; yposition++) {
@@ -15,13 +15,12 @@ const cells = () => {
 
         drawFilledRect(0, 0, 150, 50, 'lightBlue')
         drawText('+1 Generation', 10, 30, 'black', 20)
-
       }
     }
   }
 }
 //animate(cells)
-cells()
+originalCells()
 //make a delay possibly
 
 
