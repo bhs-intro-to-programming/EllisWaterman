@@ -25,7 +25,7 @@ const doTheyLive = () => {
     for(let j = 0; j < cols; j++) {
 
     }
-    if (cellArray[i+1][j+1].health) {}
+    if (cellArray[i+1][j+1].health === 'alive' && cellArray[i-1][j-1].health === 'alive' ) {}
   }
 }
 //animate(cells)
