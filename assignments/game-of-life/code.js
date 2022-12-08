@@ -2,7 +2,7 @@
 
 const CELLSIZE = 13;
 const cellArray = new Array(Math.floor(width / CELLSIZE)).fill().map(() =>
-  new Array(Math.floor(height / CELLSIZE)).fill({ health: 'dead' }));
+  Array(Math.floor(height / CELLSIZE)).fill().map(() => { health: 'dead' }));
 
 
 const originalCells = () => {
