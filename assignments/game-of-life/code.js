@@ -1,16 +1,17 @@
 
 
 const CELLSIZE = 13;
+const rows = Math.floor(height/CELLSIZE)
+const cols = Math.floor(width/CELLSIZE)
+
 const cellArray =
-  Array(Math.floor(height / CELLSIZE)).fill().map(() =>
-    Array(Math.floor(width / CELLSIZE)).fill().map(() => ({ health: 'dead' })));
+  Array(rows).fill().map(() =>
+    Array(cols).fill().map(() => ({ health: 'dead' })));
 
 
 const originalCells = () => {
-  let xsize = width / CELLSIZE
-  let ysize = height / CELLSIZE
-  for (let y = 0; y < ysize; y++) {
-    for (let x = 0; x < xsize; x++) {
+  for (let y = 0; y < rows; y++) {
+    for (let x = 0; x < cols; x++) {
       if (Math.random() > (1 - .23)) {
         drawFilledRect(x * CELLSIZE, y * CELLSIZE, CELLSIZE, CELLSIZE, 'green');
         cellArray[y][x] = { health: 'alive' };
