@@ -27,5 +27,5 @@ registerOnclick((x, y) => {
 let col = Math.floor(x)
 let row = Math.floor(y)
 drawFilledRect(row, col, CELLSIZE, CELLSIZE, 'black');
- cellArray[col][row] = {health : 'alive'}
+ cellArray[col/CELLSIZE][row/CELLSIZE] = {health : 'alive'}
 });
