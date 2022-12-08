@@ -24,6 +24,6 @@ cells()
 
 //drawText('START', 0 ,0,'black', 20)
 registerOnclick((x, y) => {
-drawFilledRect(y, x, CELLSIZE, CELLSIZE, 'black');
+drawFilledRect(x, y, CELLSIZE, CELLSIZE, 'black');
  cellArray[Math.floor(y/CELLSIZE)][Math.floor(x/CELLSIZE)] = {health : 'alive'}
 });
