@@ -13,7 +13,6 @@ const originalCells = () => {
     for (let xposition = 0; xposition < xsize; xposition++) {
       if (Math.random() > (1 - .23)) {
         drawFilledRect(xposition * CELLSIZE, yposition * CELLSIZE, CELLSIZE, CELLSIZE, 'black')
-        
         cellArray[yposition][xposition] = {health : 'alive'};
       }
     }
