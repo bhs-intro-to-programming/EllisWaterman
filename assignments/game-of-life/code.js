@@ -22,7 +22,7 @@ cells()
 //make a delay possibly
 
 drawFilledRect(0, 0, 100, 50, 'lightBlue')
-drawText('START', 10, 30, 'black', 20)
+drawText('+1 Generation', 10, 30, 'black', 20)
 registerOnclick((x, y) => {
   if (x < 100 && y < 50) {
     animate(cells)
