@@ -12,7 +12,8 @@ const cells = () => {
     for (let xposition = 0; xposition < xsize; xposition++) {
       if (Math.random() > (1 - .23)) {
         drawFilledRect(xposition * CELLSIZE, yposition * CELLSIZE, CELLSIZE, CELLSIZE, 'black')
-
+drawFilledRect(0, 0, 150, 50, 'lightBlue')
+drawText('+1 Generation', 10, 30, 'black', 20)
       }
     }
   }
@@ -21,8 +22,7 @@ const cells = () => {
 cells()
 //make a delay possibly
 
-drawFilledRect(0, 0, 150, 50, 'lightBlue')
-drawText('+1 Generation', 10, 30, 'black', 20)
+
 registerOnclick((x, y) => {
   if (x < 100 && y < 50) {
     animate(cells)
