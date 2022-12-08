@@ -21,8 +21,8 @@ const cells = () => {
 cells()
 //make a delay possibly
 
-drawFilledRect(0,0, 100, 50, 'blue')
-drawText('START', 50,0,'black', 20)
+drawFilledRect(50,0, 100, 50, 'blue')
+drawText('START', 0,0,'black', 20)
 registerOnclick((x, y) => {
 drawFilledRect(Math.floor(x), Math.floor(y), CELLSIZE, CELLSIZE, 'black');
  cellArray[Math.floor(y/CELLSIZE)][Math.floor(x/CELLSIZE)] = {health : 'alive'}
