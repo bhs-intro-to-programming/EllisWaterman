@@ -12,12 +12,14 @@ const originalCells = () => {
     for (let xposition = 0; xposition < xsize; xposition++) {
       if (Math.random() > (1 - .23)) {
         drawFilledRect(xposition * CELLSIZE, yposition * CELLSIZE, CELLSIZE, CELLSIZE, 'black')
-
-        drawFilledRect(0, 0, 150, 50, 'lightBlue')
-        drawText('+1 Generation', 10, 30, 'black', 20)
+        cellArray[yposition][xposition] = {health : 'alive'}
       }
     }
   }
+};
+
+const doTheyLive = () => {
+
 }
 //animate(cells)
 originalCells()
@@ -26,7 +28,7 @@ originalCells()
 
 registerOnclick((x, y) => {
   if (x < 150 && y < 50) {
-    animate(cells)
+    animate(doTheyLive)
   } else {
     //drawFilledRect(Math.floor(x), Math.floor(y), CELLSIZE, CELLSIZE, 'black');
     //cellArray[Math.floor(y / CELLSIZE)][Math.floor(x / CELLSIZE)] = { health: 'alive' }
