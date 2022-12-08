@@ -21,11 +21,11 @@ const originalCells = () => {
 };
 
 const doTheyLive = () => {
-  for (let i = 0; i < cellArray.length; i++) {
-    for(let j = 0; j < 10; j++) {
+  for (let i = 0; i < rows; i++) {
+    for(let j = 0; j < cols; j++) {
 
     }
-    if (cellArray[i][0]) {}
+    if (cellArray[i+1][j+1].health) {}
   }
 }
 //animate(cells)
