@@ -21,7 +21,7 @@ const originalCells = () => {
 
 const doTheyLive = () => {
   for (let i = 0; i < cellArray.length; i++) {
-    if (cellArray[i][0])
+    if (cellArray[i][0]) {}
   }
 }
 //animate(cells)
