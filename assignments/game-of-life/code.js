@@ -24,8 +24,6 @@ cells()
 
 //drawText('START', 0 ,0,'black', 20)
 registerOnclick((x, y) => {
-let col = x
-let row = y
-drawFilledRect(row, col, CELLSIZE, CELLSIZE, 'black');
- cellArray[Math.floor(col/CELLSIZE)][Math.floor(row/CELLSIZE)] = {health : 'alive'}
+drawFilledRect(y, x, CELLSIZE, CELLSIZE, 'black');
+ cellArray[Math.floor(y/CELLSIZE)][Math.floor(x/CELLSIZE)] = {health : 'alive'}
 });
