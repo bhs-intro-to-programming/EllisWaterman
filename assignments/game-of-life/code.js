@@ -14,7 +14,7 @@ const originalCells = () => {
     for (let x = 0; x < cols; x++) {
       if (Math.random() > (1 - .23)) {
         drawFilledRect(x * CELLSIZE, y * CELLSIZE, CELLSIZE, CELLSIZE, 'green');
-        cellArray[y][x] = { health: 'alive' };
+        cellArray[y][x].health = 'alive'
       }
     }
   }
