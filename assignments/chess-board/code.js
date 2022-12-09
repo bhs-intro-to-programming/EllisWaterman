@@ -100,9 +100,9 @@ registerOnclick((x, y) => {
   if (board[col][row] !== 0 && pieceSelected === null) {
     pieceSelected = board[col][row]
   } else if (pieceSelected && board[col][row] === 0) {
-    if(pieceSelected.team !== board[col][row].team) {
+    if(pieceSelected.team !== board[col][row].team) 
     drawPiece(pieceSelected.icon, col, row)
-    }
+    
     emptySpace(pieceSelected)
     board[pieceSelected.col][pieceSelected.row] = 0
     pieceSelected.row = row
