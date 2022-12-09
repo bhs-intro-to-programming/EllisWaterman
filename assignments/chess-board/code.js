@@ -113,6 +113,5 @@ registerOnclick((x, y) => {
         pieceSelected = null
       }
     }
-  }
 });
 
