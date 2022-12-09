@@ -97,19 +97,18 @@ let clickCount = 0
 registerOnclick((x, y) => {
   let col = Math.floor(x / SQUARE_SIZE)
   let row = Math.floor(y / SQUARE_SIZE)
+      if(pieceSelected.team !== board[col][row].team) {
   if (board[col][row] !== 0 && pieceSelected === null) {
     pieceSelected = board[col][row]
   } else if (pieceSelected && board[col][row] === 0) {
-    if(pieceSelected.team !== board[col][row].team) 
     drawPiece(pieceSelected.icon, col, row)
-    
     emptySpace(pieceSelected)
     board[pieceSelected.col][pieceSelected.row] = 0
     pieceSelected.row = row
     pieceSelected.col = col
     board[col][row] = pieceSelected
     pieceSelected = null
-
+  }
   }
 });
 
