@@ -1,5 +1,3 @@
-
-
 const CELLSIZE = 13;
 const rows = Math.floor(height/CELLSIZE)
 const cols = Math.floor(width/CELLSIZE)
@@ -25,7 +23,10 @@ const doTheyLive = () => {
     for(let j = 0; j < cols; j++) {
 
     }
-    if (cellArray[i+1][j+1].health === 'alive' && cellArray[i-1][j-1].health === 'alive' ) {}
+    if ((cellArray[i+1][j].health === 'alive' && 
+        cellArray[i-1][j].health === 'alive' && cellArray[i-1][j-1])) {
+          cellArray[i][j] = 'alive'
+        }
   }
 }
 //animate(cells)
