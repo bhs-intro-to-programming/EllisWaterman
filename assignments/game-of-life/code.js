@@ -1,6 +1,6 @@
 const CELLSIZE = 13;
-const rows = Math.floor(height/CELLSIZE)
-const cols = Math.floor(width/CELLSIZE)
+const rows = Math.floor(height / CELLSIZE)
+const cols = Math.floor(width / CELLSIZE)
 
 const cellArray =
   Array(rows).fill().map(() =>
@@ -20,13 +20,12 @@ const originalCells = () => {
 
 const doTheyLive = () => {
   for (let i = 0; i < rows; i++) {
-    for(let j = 0; j < cols; j++) {
-
+    for (let j = 0; j < cols; j++) {
+      if ((cellArray[i + 1][j].health === 'alive' &&
+        cellArray[i - 1][j].health === 'alive' && cellArray[i - 1][j - 1])) {
+        cellArray[i][j] = 'alive'
+      }
     }
-    if ((cellArray[i+1][j].health === 'alive' && 
-        cellArray[i-1][j].health === 'alive' && cellArray[i-1][j-1])) {
-          cellArray[i][j] = 'alive'
-        }
   }
 }
 //animate(cells)
