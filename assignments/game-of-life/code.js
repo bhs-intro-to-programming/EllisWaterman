@@ -14,7 +14,6 @@ const originalCells = () => {
         drawFilledRect(x * CELLSIZE, y * CELLSIZE, CELLSIZE, CELLSIZE, 'green');
         cellArray[y][x].health = 'alive'
          drawFilledRect(Math.floor(x), Math.floor(y), CELLSIZE, CELLSIZE, 'blue');
-    cellArray[Math.floor(y / CELLSIZE)][Math.floor(x / CELLSIZE)] = { health: 'alive' }
       }
     }
   }
