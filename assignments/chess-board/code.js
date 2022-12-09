@@ -97,9 +97,10 @@ let clickCount = 0
 registerOnclick((x, y) => {
   let col = Math.floor(x / SQUARE_SIZE)
   let row = Math.floor(y / SQUARE_SIZE)
-      if(pieceSelected.team !== board[col][row].team) {
+     
   if (board[col][row] !== 0 && pieceSelected === null) {
     pieceSelected = board[col][row]
+     if(pieceSelected.team !== board[col][row].team) {
   } else if (pieceSelected && board[col][row] === 0) {
     drawPiece(pieceSelected.icon, col, row)
     emptySpace(pieceSelected)
