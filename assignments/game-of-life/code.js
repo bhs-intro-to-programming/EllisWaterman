@@ -15,8 +15,8 @@ const originalCells = () => {
         cellArray[y][x].health = 'alive'
       }
     }
-     drawText('START', 0 ,0,'black', 20)
-        drawFilledRect(0,0, 100, 50, 'lightBlue')
+     drawText('+1 Generation', 30 ,0,'black', 20)
+     drawFilledRect(0,0, 100, 50, 'lightBlue')
   }
 };
 
