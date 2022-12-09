@@ -32,7 +32,6 @@ const doTheyLive = () => {
     }
   }
 }
-//animate(cells)
 originalCells()
 //make a delay possibly
 
