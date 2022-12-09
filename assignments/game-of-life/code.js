@@ -13,10 +13,10 @@ const originalCells = () => {
       if (Math.random() > (1 - .23)) {
         drawFilledRect(x * CELLSIZE, y * CELLSIZE, CELLSIZE, CELLSIZE, 'green');
         cellArray[y][x].health = 'alive'
-        drawText('START', 0 ,0,'black', 20)
-        drawFilledRect(0,0, 100, 50, 'lightBlue')
       }
     }
+     drawText('START', 0 ,0,'black', 20)
+        drawFilledRect(0,0, 100, 50, 'lightBlue')
   }
 };
 
