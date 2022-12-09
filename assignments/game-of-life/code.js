@@ -24,8 +24,8 @@ const doTheyLive = () => {
   for (let i = 0; i < rows; i++) {
     for (let j = 0; j < cols; j++) {
       if (i === 0 || j === 0) {
-        
-      } else if ((cellArray[i + 1][j].health === 'alive' &&
+      }else if (i === rows || j === cols) {
+      }else if ((cellArray[i + 1][j].health === 'alive' &&
         cellArray[i - 1][j].health === 'alive' && cellArray[i - 1][j - 1])) {
         cellArray[i][j] = 'alive'
       }
