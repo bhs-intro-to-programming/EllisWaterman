@@ -16,7 +16,7 @@ const originalCells = () => {
       }
     }
      drawFilledRect(0,0, 100, 50, 'lightBlue')
-     drawText('+1 Generation', 10 ,30,'black', 15)
+     drawText('+1 Generation', 0 ,30,'black', 15)
   }
 };
 
