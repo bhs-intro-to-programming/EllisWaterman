@@ -106,9 +106,9 @@ registerOnclick((x, y) => {
   if (board[col][row] !== 0 && pieceSelected === null) {
     pieceSelected = board[col][row]
     highlightPeice(pieceSelected.icon,col,row,'blue')
-    let unSelected = board[col][row]
-    if (unSelected === pieceSelected) {
-      pieceSelected = null
+   // let unSelected = board[col][row]
+    //if (unSelected === pieceSelected) {
+      //pieceSelected = null
     } if (board[col][row] !== 0) {
   } else if ((pieceSelected && board[col][row] === 0) || (pieceSelected.team !== board[col][row].team)) {
     emptySpace(pieceSelected)
