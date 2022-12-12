@@ -103,10 +103,10 @@ registerOnclick((x, y) => {
     emptySpace(pieceSelected)
     drawPiece(pieceSelected.icon, col, row)
     board[pieceSelected.col][pieceSelected.row] = 0
+    emptySpace(pieceSelected)
     pieceSelected.row = row
     pieceSelected.col = col
     board[col][row] = pieceSelected
-    emptySpace(pieceSelected)
     pieceSelected = null
 
   }
