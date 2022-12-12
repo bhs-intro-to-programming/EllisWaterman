@@ -99,6 +99,7 @@ registerOnclick((x, y) => {
   let row = Math.floor(y / SQUARE_SIZE)
   if (board[col][row] !== 0 && pieceSelected === null) {
     pieceSelected = board[col][row]
+    emptySpace(pieceSelected)
   } else if ((pieceSelected && board[col][row] === 0) || (pieceSelected.team !== board[col][row].team)) {
     emptySpace(pieceSelected)
     drawPiece(pieceSelected.icon, col, row)
