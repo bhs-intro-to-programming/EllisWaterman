@@ -110,6 +110,7 @@ registerOnclick((x, y) => {
   let unSelected = board[col][row]
    if (unSelected === pieceSelected) {
     pieceSelected = null
+    emptySpace(pieceSelected)
   }
      else if ((pieceSelected.team !== board[col][row].team)) {
     emptySpace(pieceSelected)
