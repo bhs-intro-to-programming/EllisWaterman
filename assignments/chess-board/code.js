@@ -102,12 +102,11 @@ registerOnclick((x, y) => {
   } else if ((pieceSelected && board[col][row] === 0) || (pieceSelected.team !== board[col][row].team)) {
     emptySpace(pieceSelected)
     drawPiece(pieceSelected.icon, col, row)
-    emptySpace(pieceSelected)
     board[pieceSelected.col][pieceSelected.row] = 0
-    emptySpace(pieceSelected)
     pieceSelected.row = row
     pieceSelected.col = col
     board[col][row] = pieceSelected
+    emptySpace(pieceSelected)
     pieceSelected = null
 
   }
