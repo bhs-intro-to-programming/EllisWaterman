@@ -109,11 +109,11 @@ registerOnclick((x, y) => {
 
   } 
   let unSelected = board[col][row]
-  if (unSelected === pieceSelected) {
+  else if (unSelected === pieceSelected) {
     pieceSelected = null
   }
   pieceSelected = board[col][row]
-     if ((pieceSelected.team !== board[col][row].team)) {
+     else if ((pieceSelected.team !== board[col][row].team)) {
     emptySpace(pieceSelected)
     drawPiece(pieceSelected.icon, col, row)
     board[pieceSelected.col][pieceSelected.row] = 0
