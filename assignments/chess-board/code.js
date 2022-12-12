@@ -103,23 +103,24 @@ let clickCount = 0
 registerOnclick((x, y) => {
   let col = Math.floor(x / SQUARE_SIZE)
   let row = Math.floor(y / SQUARE_SIZE)
-  if (board[col][row] !== 0 && pieceSelected === null) {
-    pieceSelected = board[col][row]
-    highlightPeice(pieceSelected.icon, col, row, 'blue')
-  }
-  let unSelected = board[col][row]
-  if (unSelected === pieceSelected) {
-    pieceSelected = null
-    emptySpace(pieceSelected)
-  }
+  if (board[col][row] !== 0) {
+    if (pieceSelected === null) {
+      pieceSelected = board[col][row]
+      highlightPeice(pieceSelected.icon, col, row, 'blue')
+    } else {
+      
+        pieceSelected = null
+        emptySpace(pieceSelected)
+      }
+    }
   else if ((pieceSelected.team !== board[col][row].team)) {
-    emptySpace(pieceSelected)
-    drawPiece(pieceSelected.icon, col, row)
-    board[pieceSelected.col][pieceSelected.row] = 0
-    pieceSelected.row = row
-    pieceSelected.col = col
-    board[col][row] = pieceSelected
-    pieceSelected = null
-  }
-});
+      emptySpace(pieceSelected)
+      drawPiece(pieceSelected.icon, col, row)
+      board[pieceSelected.col][pieceSelected.row] = 0
+      pieceSelected.row = row
+      pieceSelected.col = col
+      board[col][row] = pieceSelected
+      pieceSelected = null
+    }
+  });
 
