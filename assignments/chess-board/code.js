@@ -78,6 +78,12 @@ const drawPiece = (icon, col, row) => {
     row * SQUARE_SIZE + SQUARE_SIZE,
     'black', SQUARE_SIZE);
 }
+
+const highlightPeice = (icon, col, row, color) => {
+  drawText(icon, col * SQUARE_SIZE,
+    row * SQUARE_SIZE + SQUARE_SIZE,
+    color, SQUARE_SIZE);
+}
 const placePieces = () => {
   pieces.forEach(piece => {
     placePiece(piece);
@@ -99,7 +105,7 @@ registerOnclick((x, y) => {
   let row = Math.floor(y / SQUARE_SIZE)
   if (board[col][row] !== 0 && pieceSelected === null) {
     pieceSelected = board[col][row]
-    drawPiece(pieceSelected.icon,col,row,'green')
+    highlightPeice(pieceSelected.icon,col,row,'green')
   } else if ((pieceSelected && board[col][row] === 0) || (pieceSelected.team !== board[col][row].team)) {
     emptySpace(pieceSelected)
     drawPiece(pieceSelected.icon, col, row)
