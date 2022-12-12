@@ -109,7 +109,7 @@ registerOnclick((x, y) => {
 
   } 
   let unSelected = board[col][row]
-  else if (unSelected === pieceSelected) {
+   if (unSelected === pieceSelected) {
     pieceSelected = null
   }
   pieceSelected = board[col][row]
