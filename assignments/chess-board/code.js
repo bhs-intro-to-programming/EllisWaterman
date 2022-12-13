@@ -108,9 +108,10 @@ registerOnclick((x, y) => {
       pieceSelected = board[col][row]
       highlightPeice(pieceSelected.icon, col, row, 'blue')
     } else {
+              highlightPeice(pieceSelected.icon, col, row, 'black')
+
         pieceSelected = null
         emptySpace(pieceSelected)
-        highlightPeice(pieceSelected.icon, col, row, 'black')
       }
     }
   else if ((pieceSelected.team !== board[col][row].team)) {
