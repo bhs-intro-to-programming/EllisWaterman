@@ -39,6 +39,7 @@ const doTheyLive = () => {
       }
       else if(up || upleft || upright || down || downleft || downright || right || left) {
         cellArray[i][j] = true
+    }
   }
 }
 originalCells()
