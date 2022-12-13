@@ -23,19 +23,20 @@ const originalCells = () => {
 const doTheyLive = () => {
   for (let i = 0; i < rows; i++) {
     for (let j = 0; j < cols; j++) {
+      if (i === 0 || j === 0) {
+        cellArray = true
+      }
       let up = cellArray[i-1][j]
       let upleft = cellArray[i-1][j-1]
       let upright = cellArray[i-1][j+1]
       let down = cellArray[i+1][j]
-      let downleft = cellArray
-      
-      if (i === 0 || j === 0) {
-      }else if (i === rows || j === cols) {
-      }else if ((cellArray[i + 1][j].health === 'alive' &&
-        cellArray[i - 1][j].health === 'alive' && cellArray[i - 1][j - 1])) {
-        cellArray[i][j] = 'alive'
+      let downleft = cellArray[i+1][j+1]
+      let downright = cellArray[i+1][j-1]
+      let right = cellArray[i][j+1]
+      let left = cellArray[i][j-1]
+      if(up || upleft || upright || down || downleft || downright || right || left) {
+        cellArray[i][j] = true
       }
-    }
   }
 }
 originalCells()
