@@ -71,7 +71,7 @@ const placePiece = (piece) => {
   board[piece.col][piece.row] = piece
 }
 
-const board = new Array(8).fill({team : 0}).map(() => new Array(8).fill({team : 0}));
+const board = new Array(8).fill({team : 'none'}).map(() => new Array(8).fill({team : 'none'}));
 
 const drawPiece = (icon, col, row) => {
   drawText(icon, col * SQUARE_SIZE,
