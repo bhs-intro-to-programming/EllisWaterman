@@ -108,20 +108,18 @@ registerOnclick((x, y) => {
       pieceSelected = board[col][row]
       highlightPeice(pieceSelected.icon, col, row, 'blue')
     } else {
-              highlightPeice(pieceSelected.icon, col, row, 'black')
-
-        pieceSelected = null
-        emptySpace(pieceSelected)
-      }
-    }
-  else if ((pieceSelected.team !== board[col][row].team)) {
-      emptySpace(pieceSelected)
-      drawPiece(pieceSelected.icon, col, row)
-      board[pieceSelected.col][pieceSelected.row] = 0
-      pieceSelected.row = row
-      pieceSelected.col = col
-      board[col][row] = pieceSelected
+      highlightPeice(pieceSelected.icon, col, row, 'black')
       pieceSelected = null
     }
-  });
+  }
+  else if ((pieceSelected.team !== board[col][row].team)) {
+    emptySpace(pieceSelected)
+    drawPiece(pieceSelected.icon, col, row)
+    board[pieceSelected.col][pieceSelected.row] = 0
+    pieceSelected.row = row
+    pieceSelected.col = col
+    board[col][row] = pieceSelected
+    pieceSelected = null
+  }
+});
 
