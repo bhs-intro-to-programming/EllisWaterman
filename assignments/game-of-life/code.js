@@ -31,12 +31,13 @@ const doTheyLive = () => {
       let downright = cellArray[i + 1][j - 1]
       let right = cellArray[i][j + 1]
       let left = cellArray[i][j - 1]
-      if (i === 0 || j === 0) {
+      if ((i === 0) || (j === 0)) {
         cellArray = true
       }
-      else if (i === rows || j === cols) {
+      else if ((i === rows) || (j === cols)) {
         cellArray = true
       }
+      else if (i === )
       else if (up || upleft || upright || down || downleft || downright || right || left) {
         cellArray[i][j] = true
       }
