@@ -15,30 +15,31 @@ const originalCells = () => {
         cellArray[y][x] = true
       }
     }
-     drawFilledRect(0,0, 100, 50, 'lightBlue')
-     drawText('+1 Generation', 0 ,30,'black', 15)
+    drawFilledRect(0, 0, 100, 50, 'lightBlue')
+    drawText('+1 Generation', 0, 30, 'black', 15)
   }
 };
 
 const doTheyLive = () => {
   for (let i = 0; i < rows; i++) {
     for (let j = 0; j < cols; j++) {
-      let up = cellArray[i-1][j]
-      let upleft = cellArray[i-1][j-1]
-      let upright = cellArray[i-1][j+1]
-      let down = cellArray[i+1][j]
-      let downleft = cellArray[i+1][j+1]
-      let downright = cellArray[i+1][j-1]
-      let right = cellArray[i][j+1]
-      let left = cellArray[i][j-1] 
+      let up = cellArray[i - 1][j]
+      let upleft = cellArray[i - 1][j - 1]
+      let upright = cellArray[i - 1][j + 1]
+      let down = cellArray[i + 1][j]
+      let downleft = cellArray[i + 1][j + 1]
+      let downright = cellArray[i + 1][j - 1]
+      let right = cellArray[i][j + 1]
+      let left = cellArray[i][j - 1]
       if (i === 0 || j === 0) {
         cellArray = true
       }
       else if (i === rows || j === cols) {
         cellArray = true
       }
-      else if(up || upleft || upright || down || downleft || downright || right || left) {
+      else if (up || upleft || upright || down || downleft || downright || right || left) {
         cellArray[i][j] = true
+      }
     }
   }
 }
@@ -49,5 +50,5 @@ originalCells()
 registerOnclick((x, y) => {
   if (x < 150 && y < 50) {
     animate(doTheyLive)
-  } 
+  }
 });
