@@ -110,6 +110,7 @@ registerOnclick((x, y) => {
     } else {
         pieceSelected = null
         emptySpace(pieceSelected)
+        highlightPeice(pieceSelected.icon, col, row, 'black')
       }
     }
   else if ((pieceSelected.team !== board[col][row].team)) {
