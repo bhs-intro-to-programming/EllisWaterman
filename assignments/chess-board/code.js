@@ -100,7 +100,7 @@ placePieces();
 let pieceSelected = null;
 let clickCount = 0
 let turn = 'white'
-let previus;
+let previousSelection;
 
 registerOnclick((x, y) => {
   let col = Math.floor(x / SQUARE_SIZE);
@@ -109,13 +109,13 @@ registerOnclick((x, y) => {
     if (pieceSelected === null) {
       pieceSelected = board[col][row]
       highlightPeice(pieceSelected.icon, col, row, 'blue')
-      previus = pieceSelected
+      previousSelection = pieceSelected
      } else {
+      highlightPeice(previousSelection.icon, col, row, 'black')
       pieceSelected = board[col][row]
       highlightPeice(pieceSelected.icon, col, row, 'blue')
     }
   }
-        highlightPeice(previus.icon, col, row, 'black')
 
    if ((pieceSelected && board[col][row] === 0) || (pieceSelected.team !== board[col][row].team)) {
     emptySpace(pieceSelected)
