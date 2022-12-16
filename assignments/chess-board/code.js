@@ -108,7 +108,7 @@ registerOnclick((x, y) => {
     if (pieceSelected === null) {
       pieceSelected = board[col][row]
       highlightPeice(pieceSelected.icon, col, row, 'blue')
-    }else if (turn === 'white' && pieceSlected.team === 'white') {
+    }else if (turn === 'white' && pieceSelected.team === 'white') {
      } else {
       highlightPeice(pieceSelected.icon, col, row, 'black')
       pieceSelected = board[col][row]
