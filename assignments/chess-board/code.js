@@ -109,12 +109,6 @@ registerOnclick((x, y) => {
       pieceSelected = board[col][row]
       highlightPeice(pieceSelected.icon, col, row, 'blue')
      } else {
-      highlightPeice(pieceSelected.icon, col, row, 'black')
-            highlightPeice(pieceSelected.icon, col, row, 'black')
-      highlightPeice(pieceSelected.icon, col, row, 'black')
-      highlightPeice(pieceSelected.icon, col, row, 'black')
-      highlightPeice(pieceSelected.icon, col, row, 'black')
-
       pieceSelected = board[col][row]
       highlightPeice(pieceSelected.icon, col, row, 'blue')
     }
