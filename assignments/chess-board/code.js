@@ -109,7 +109,7 @@ registerOnclick((x, y) => {
       pieceSelected = board[col][row]
       highlightPeice(pieceSelected.icon, col, row, 'blue')
      } else {
-       pieceSelected = previus
+      let previus = pieceSelected
       highlightPeice(previus.icon, col, row, 'black')
       pieceSelected = board[col][row]
       highlightPeice(pieceSelected.icon, col, row, 'blue')
