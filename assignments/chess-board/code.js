@@ -125,6 +125,15 @@ registerOnclick((x, y) => {
     board[col][row] = pieceSelected
     pieceSelected = null
   }
+  else {
+     emptySpace(pieceSelected)
+    drawPiece(pieceSelected.icon, col, row)
+    board[pieceSelected.col][pieceSelected.row] = 0
+    pieceSelected.row = row
+    pieceSelected.col = col
+    board[col][row] = pieceSelected
+    pieceSelected = null
+  }
   }
   
 });
