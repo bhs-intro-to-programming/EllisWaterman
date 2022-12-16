@@ -117,7 +117,7 @@ registerOnclick((x, y) => {
     }
   }
 
-   if ((pieceSelected && board[col][row] === 0) || (pieceSelected.team !== board[col][row].team)) {
+   if ((pieceSelected && board[col][row] === 0)) {
     emptySpace(pieceSelected)
     drawPiece(pieceSelected.icon, col, row)
     board[pieceSelected.col][pieceSelected.row] = 0
@@ -128,3 +128,5 @@ registerOnclick((x, y) => {
   }
 });
 
+//|| (pieceSelected.team !== board[col][row].team)) 
+//taking brocken for now
