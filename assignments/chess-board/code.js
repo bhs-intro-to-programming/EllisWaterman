@@ -100,10 +100,11 @@ placePieces();
 let pieceSelected = null;
 let clickCount = 0
 let turn = 'white'
+let previus;
+
 registerOnclick((x, y) => {
   let col = Math.floor(x / SQUARE_SIZE);
   let row = Math.floor(y / SQUARE_SIZE);
-  let previus;
   if (board[col][row] !== 0) {
     if (pieceSelected === null) {
       pieceSelected = board[col][row]
