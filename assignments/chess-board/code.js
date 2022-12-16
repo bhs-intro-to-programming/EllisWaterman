@@ -99,15 +99,17 @@ drawBoard();
 placePieces();
 let pieceSelected = null;
 let clickCount = 0
-
+let turn = 'white'
 registerOnclick((x, y) => {
   let col = Math.floor(x / SQUARE_SIZE)
   let row = Math.floor(y / SQUARE_SIZE)
+
   if (board[col][row] !== 0) {
     if (pieceSelected === null) {
       pieceSelected = board[col][row]
+      else if (turn = 'white' && pieceSlected.team = 'white') {
       highlightPeice(pieceSelected.icon, col, row, 'blue')
-    } else {
+    }} else {
       highlightPeice(pieceSelected.icon, col, row, 'black')
       pieceSelected = board[col][row]
       highlightPeice(pieceSelected.icon, col, row, 'blue')
