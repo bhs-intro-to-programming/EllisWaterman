@@ -111,9 +111,9 @@ registerOnclick((x, y) => {
       highlightPeice(pieceSelected.icon, col, row, 'blue')
       previus = pieceSelected
      } else {
-      highlightPeice(previus.icon, col, row, 'black')
       pieceSelected = board[col][row]
       highlightPeice(pieceSelected.icon, col, row, 'blue')
+      highlightPeice(previus.icon, col, row, 'black')
     }
   }
    if ((pieceSelected && board[col][row] === 0) || (pieceSelected.team !== board[col][row].team)) {
