@@ -116,8 +116,7 @@ registerOnclick((x, y) => {
       highlightPeice(pieceSelected.icon, col, row, 'blue')
     }
   }
-
-   if ((pieceSelected && board[col][row] === 0)) {
+  else if ((pieceSelected && board[col][row] === 0)) {
     emptySpace(pieceSelected)
     drawPiece(pieceSelected.icon, col, row)
     board[pieceSelected.col][pieceSelected.row] = 0
