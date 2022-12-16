@@ -116,9 +116,7 @@ registerOnclick((x, y) => {
        pieceSelected = board[col][row]
       highlightPeice(pieceSelected.icon, col, row, 'blue')
        }
-    }
-  }
-  else if ((pieceSelected.team !== board[col][row].team)) {
+    } else if ((pieceSelected.team !== board[col][row].team)) {
     emptySpace(pieceSelected)
     drawPiece(pieceSelected.icon, col, row)
     board[pieceSelected.col][pieceSelected.row] = 0
@@ -127,4 +125,6 @@ registerOnclick((x, y) => {
     board[col][row] = pieceSelected
     pieceSelected = null
   }
+  }
+  
 });
