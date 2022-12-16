@@ -112,8 +112,10 @@ registerOnclick((x, y) => {
       previousSelection = pieceSelected
      } else {
       highlightPeice(previousSelection.icon, col, row, 'black')
-      pieceSelected = board[col][row]
+       if (pieceSelected.team === board[col][row]) {
+       pieceSelected = board[col][row]
       highlightPeice(pieceSelected.icon, col, row, 'blue')
+       }
     }
   }
   else if ((pieceSelected.team !== board[col][row].team)) {
@@ -126,6 +128,3 @@ registerOnclick((x, y) => {
     pieceSelected = null
   }
 });
-
-//|| (pieceSelected.team !== board[col][row].team)) 
-//taking brocken for now
