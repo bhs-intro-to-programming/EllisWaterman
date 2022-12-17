@@ -28,30 +28,31 @@ const doTheyLive = () => {
     for (let j = 0; j < cols; j++) {
       let locations = [0, 45, 90, 135, 180, 225, 270, 315];
       let idx;
-      if (i = 0) {
+      if (i === 0) {
         locations.splice(locations.indexOf(315), 1)
         locations.splice(locations.indexOf(0), 1)
         locations.splice(locations.indexOf(45), 1)
       }
-      if (i = rows) {
+      if (i === rows) {
         locations.splice(locations.indexOf(225), 1)
         locations.splice(locations.indexOf(180), 1)
         locations.splice(locations.indexOf(135), 1)
       }
-      if (i = cols) {
+      if (i === cols) {
         if (idx = locations.indexOf(45) > 0)
           locations.splice(idx, 1)
         locations.splice(locations.indexOf(90), 1)
         if (idx = locations.indexOf(135) > 0)
           locations.splice(locations.indexOf(135), 1)
       }
-      if (j = 0) {
+      if (j === 0) {
         if (idx = locations.indexOf(315) > 0)
           locations.splice(locations.indexOf(315), 1)//
         locations.splice(locations.indexOf(270), 1)
         if (idx = locations.indexOf(225) > 0)
           locations.splice(locations.indexOf(225), 1) //
       }
+      console.log("foo")
       console.log(locations)
       return;
     }
