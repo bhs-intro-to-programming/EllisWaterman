@@ -26,6 +26,10 @@ const originalCells = () => {
 const doTheyLive = () => {
   for (let i = 0; i < rows; i++) {
     for (let j = 0; j < cols; j++) {
+      // let locations = getLocationsForCell(i,j)
+      // let livingCells = countLiving(locations)
+      // newGrid[i][j] = livingCells > 2;
+      
       let locations = [0, 45, 90, 135, 180, 225, 270, 315];
       let idx;
       if (i === 0) {
@@ -52,8 +56,6 @@ const doTheyLive = () => {
         if (idx = locations.indexOf(225) > 0)
           locations.splice(locations.indexOf(225), 1) //
       }
-      console.log("foo")
-      console.log(locations)
     }
   }
 }
