@@ -53,7 +53,7 @@ const doTheyLive = () => {
           locations.splice(locations.indexOf(225), 1) //
       }
       console.log(locations)
-      return();
+      return;
     }
   }
 }
