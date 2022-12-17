@@ -1,4 +1,4 @@
-const CELLSIZE = 15;
+const CELLSIZE = 50;
 const rows = Math.floor(height / CELLSIZE)
 const cols = Math.floor(width / CELLSIZE)
 
@@ -54,7 +54,6 @@ const doTheyLive = () => {
       }
       console.log("foo")
       console.log(locations)
-      return;
     }
   }
 }
