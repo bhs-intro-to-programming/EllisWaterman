@@ -55,14 +55,16 @@ const doTheyLive = () => {
         if (idx = locations.indexOf(225) > 0)
           locations.splice(locations.indexOf(225), 1) //
       }
-console.log(locations)
-  }
-  originalCells()
-  //make a delay possibly
-
-
-  registerOnclick((x, y) => {
-    if (x < 150 && y < 50) {
-      animate(doTheyLive)
+      console.log(locations)
     }
-  });
+  }
+}
+    originalCells()
+    //make a delay possibly
+
+
+    registerOnclick((x, y) => {
+      if (x < 150 && y < 50) {
+        animate(doTheyLive)
+      }
+    });
