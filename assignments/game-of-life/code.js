@@ -152,9 +152,11 @@ const go = () => {
         Array(cols).fill().map(() => (false)));
 }
 
-animate(go,1)
+
 
 registerOnclick((x, y) => {
   if (x < 150 && y < 50) {
+    animate(go,1)
   }
+  console.log('hi')
 });
