@@ -156,7 +156,7 @@ const go = () => {
 
 registerOnclick((x, y) => {
   if (x < 150 && y < 50) {
+      console.log('in box')
     animate(go)
   }
-  console.log('hi')
 });
