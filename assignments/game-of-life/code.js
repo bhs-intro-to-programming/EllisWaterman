@@ -54,6 +54,7 @@ const countLivingNeighbors = (locations,i,j) => {
   console.log(locations)
   let livingthings = 0
   locations.forEach(function (location) {
+    console.log(location)
     switch (location) {
       case 0:
         if (current[i - 1][j])
