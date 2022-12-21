@@ -16,6 +16,8 @@ const originalCells = () => {
       if (Math.random() > (1 - .23)) {
         drawFilledRect(x * CELLSIZE, y * CELLSIZE, CELLSIZE, CELLSIZE, 'green');
         current[y][x] = true
+      }else {
+        drawFilledRect(x * CELLSIZE, y * CELLSIZE, CELLSIZE, CELLSIZE, 'black');
       }
     }
     drawFilledRect(0, 0, 100, 50, 'lightBlue')
