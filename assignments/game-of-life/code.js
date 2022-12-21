@@ -1,4 +1,4 @@
-const CELLSIZE = 25;
+const CELLSIZE = 10;
 const rows = Math.floor(height / CELLSIZE)
 const cols = Math.floor(width / CELLSIZE)
 
