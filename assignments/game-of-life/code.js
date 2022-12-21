@@ -67,7 +67,7 @@ const countLivingNeighbors = (locations,i,j) => {
           livingthings++
         break;
       case 135:
-      console.log(cols,rows,i,j)
+      console.log(rows, cols, i,j)
         if (current[i + 1][j + 1])
           livingthings++
         break;
