@@ -153,6 +153,6 @@ const go = () => {
 }
 registerOnclick((x, y) => {
   if (x < 150 && y < 50) {
-    animate(go)
+    animate(go,1)
   }
 });
