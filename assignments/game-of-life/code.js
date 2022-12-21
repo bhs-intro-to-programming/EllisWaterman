@@ -1,4 +1,4 @@
-const CELLSIZE = 25 ;
+const CELLSIZE = 25;
 const rows = Math.floor(height / CELLSIZE)
 const cols = Math.floor(width / CELLSIZE)
 
@@ -16,7 +16,7 @@ const originalCells = () => {
       if (Math.random() > (1 - .23)) {
         drawFilledRect(x * CELLSIZE, y * CELLSIZE, CELLSIZE, CELLSIZE, 'green');
         current[y][x] = true
-      }else {
+      } else {
         drawFilledRect(x * CELLSIZE, y * CELLSIZE, CELLSIZE, CELLSIZE, 'black');
       }
     }
@@ -143,13 +143,12 @@ const getLocationsForCell = (i, j) => {
 originalCells()
 
 const go = () => {
+  doTheyLive()
+  drawNext()
+  current = next
+  next = Array(rows).fill().map(() =>
+    Array(cols).fill().map(() => (false)));
   setTimeout(go, 100);
-    doTheyLive()
-    drawNext()
-    current = next
-    next =
-      Array(rows).fill().map(() =>
-        Array(cols).fill().map(() => (false)));
 }
 
-animate(go)
+go();
