@@ -143,16 +143,16 @@ const getLocationsForCell = (i, j) => {
 originalCells()
 //make a delay possibly
 
-
-registerOnclick((x, y) => {
-  if (x < 150 && y < 50) {
-    //animate(doTheyLive)
-    animate(doTheyLive)
-    animate(drawNext)
+const go = () => {
+    doTheyLive()
+    drawNext()
     current = next
     next =
       Array(rows).fill().map(() =>
         Array(cols).fill().map(() => (false)));
-
+}
+registerOnclick((x, y) => {
+  if (x < 150 && y < 50) {
+    animate(go)
   }
 });
