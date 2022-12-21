@@ -148,7 +148,7 @@ const go = () => {
   current = next
   next = Array(rows).fill().map(() =>
     Array(cols).fill().map(() => (false)));
-  setTimeout(go, 50);
+  setTimeout(go, 100);
 }
 
 go();
