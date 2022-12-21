@@ -51,10 +51,8 @@ const doTheyLive = () => {
 }
 
 const countLivingNeighbors = (locations,i,j) => {
-  console.log(locations)
   let livingthings = 0
   locations.forEach(function (location) {
-    console.log(location)
     switch (location) {
       case 0:
         if (current[i - 1][j])
@@ -69,7 +67,7 @@ const countLivingNeighbors = (locations,i,j) => {
           livingthings++
         break;
       case 135:
-      console.log(i,j)
+      console.log(cols,rows,i,j)
         if (current[i + 1][j + 1])
           livingthings++
         break;
