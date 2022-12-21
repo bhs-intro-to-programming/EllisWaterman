@@ -30,7 +30,7 @@ const drawNext = () => {
       if (next[y][x]) {
         drawFilledRect(x * CELLSIZE, y * CELLSIZE, CELLSIZE, CELLSIZE, 'green');
       } else {
-        drawFilledRect(x * CELLSIZE, y * CELLSIZE, CELLSIZE, CELLSIZE, 'transparent');
+        drawFilledRect(x * CELLSIZE, y * CELLSIZE, CELLSIZE, CELLSIZE, 'black');
       }
     }
     drawFilledRect(0, 0, 100, 50, 'lightBlue')
