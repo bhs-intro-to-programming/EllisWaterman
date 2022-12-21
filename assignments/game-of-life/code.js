@@ -143,6 +143,7 @@ const getLocationsForCell = (i, j) => {
 originalCells()
 
 const go = () => {
+  setTimeout(go, 100);
     doTheyLive()
     drawNext()
     current = next
