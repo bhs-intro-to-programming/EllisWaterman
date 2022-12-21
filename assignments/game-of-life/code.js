@@ -28,7 +28,7 @@ const doTheyLive = () => {
     for (let j = 0; j < cols; j++) {
       let currentCellState = current[i][j]
       let locations = getLocationsForCell(i, j)
-      let livingNeighborCount = countLivingNeighbors(locations)
+      let livingNeighborCount = countLivingNeighbors(locations,i,j)
 
       if (currentCellState) {
         // populated
