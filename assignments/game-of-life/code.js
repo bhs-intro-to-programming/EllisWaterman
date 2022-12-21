@@ -103,12 +103,12 @@ const getLocationsForCell = (i, j) => {
     locations.splice(locations.indexOf(0), 1)
     locations.splice(locations.indexOf(45), 1)
   }
-  if (i === rows) {
+  if (i === rows-1) {
     locations.splice(locations.indexOf(225), 1)
     locations.splice(locations.indexOf(180), 1)
     locations.splice(locations.indexOf(135), 1)
   }
-  if (i === cols) {
+  if (i === cols-1) {
     if (idx = locations.indexOf(45) > 0)
       locations.splice(idx, 1)
     locations.splice(locations.indexOf(90), 1)
