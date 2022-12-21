@@ -55,8 +55,9 @@ const doTheyLive = () => {
         locations.splice(locations.indexOf(270), 1)
         if (idx = locations.indexOf(225) > 0)
           locations.splice(locations.indexOf(225), 1) //
-          console.log(locations)
       }
+                console.log(locations)
+
     }
   }
 }
