@@ -50,7 +50,7 @@ const doTheyLive = () => {
   }
 }
 
-const countLivingNeighbors = (locations) => {
+const countLivingNeighbors = (locations,i,j) => {
   let livingthings = 0
   locations.forEach(function (location) {
     switch (location) {
