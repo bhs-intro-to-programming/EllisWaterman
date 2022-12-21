@@ -141,7 +141,6 @@ const getLocationsForCell = (i, j) => {
 }
 
 originalCells()
-//make a delay possibly
 
 const go = () => {
     doTheyLive()
@@ -151,8 +150,6 @@ const go = () => {
       Array(rows).fill().map(() =>
         Array(cols).fill().map(() => (false)));
 }
-
-
 
 registerOnclick((x, y) => {
   if (x < 150 && y < 50) {
