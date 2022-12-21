@@ -151,8 +151,4 @@ const go = () => {
         Array(cols).fill().map(() => (false)));
 }
 
-registerOnclick((x, y) => {
-  if (x < 150 && y < 50) {
-    go()
-  }
-});
+animate(go)
