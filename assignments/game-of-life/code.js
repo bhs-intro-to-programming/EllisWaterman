@@ -51,6 +51,7 @@ const doTheyLive = () => {
 }
 
 const countLivingNeighbors = (locations,i,j) => {
+  console.log(locations)
   let livingthings = 0
   locations.forEach(function (location) {
     switch (location) {
