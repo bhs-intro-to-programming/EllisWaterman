@@ -29,6 +29,8 @@ const drawNext = () => {
     for (let x = 0; x < cols; x++) {
       if (next[y][x]) {
         drawFilledRect(x * CELLSIZE, y * CELLSIZE, CELLSIZE, CELLSIZE, 'green');
+      } else {
+        drawFilledRect(x * CELLSIZE, y * CELLSIZE, CELLSIZE, CELLSIZE, 'transparent');
       }
     }
     drawFilledRect(0, 0, 100, 50, 'lightBlue')
