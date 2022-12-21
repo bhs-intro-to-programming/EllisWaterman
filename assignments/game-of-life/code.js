@@ -20,8 +20,6 @@ const originalCells = () => {
         drawFilledRect(x * CELLSIZE, y * CELLSIZE, CELLSIZE, CELLSIZE, 'black');
       }
     }
-    drawFilledRect(0, 0, 100, 50, 'lightBlue')
-    drawText('+1 Generation', 0, 30, 'black', 15)
   }
 };
 
@@ -140,8 +138,6 @@ const getLocationsForCell = (i, j) => {
   return locations;
 }
 
-originalCells()
-
 const go = () => {
   doTheyLive()
   drawNext()
@@ -151,4 +147,5 @@ const go = () => {
   setTimeout(go, 100);
 }
 
+originalCells()
 go();
