@@ -78,6 +78,12 @@ const drawPiece = (icon, col, row) => {
     row * SQUARE_SIZE + SQUARE_SIZE,
     'black', SQUARE_SIZE);
 }
+
+const highlightPeice = (icon, col, row, color) => {
+  drawText(icon, col * SQUARE_SIZE,
+    row * SQUARE_SIZE + SQUARE_SIZE,
+    color, SQUARE_SIZE);
+}
 const placePieces = () => {
   pieces.forEach(piece => {
     placePiece(piece);
@@ -93,21 +99,32 @@ drawBoard();
 placePieces();
 let pieceSelected = null;
 let clickCount = 0
+let turn = 'white'
+let previousSelection;
 
 registerOnclick((x, y) => {
-  let col = Math.floor(x / SQUARE_SIZE)
-  let row = Math.floor(y / SQUARE_SIZE)
-  if (board[col][row] !== 0 && pieceSelected === null) {
-    pieceSelected = board[col][row]
-  } else if (pieceSelected && board[col][row] === 0) {
-    drawPiece(pieceSelected.icon, col, row)
+  let col = Math.floor(x / SQUARE_SIZE);
+  let row = Math.floor(y / SQUARE_SIZE);
+  if (board[col][row] !== 0) {
+    if (pieceSelected === null) {
+      pieceSelected = board[col][row]
+      highlightPeice(pieceSelected.icon, col, row, 'blue')
+      previousSelection = pieceSelected
+     } else {
+      highlightPeice(previousSelection.icon, col, row, 'black')
+       if (pieceSelected.team === board[col][row].team) {
+       pieceSelected = board[col][row]
+      highlightPeice(pieceSelected.icon, col, row, 'blue')
+       }
+    }
+  }
+  else if ((pieceSelected.team !== board[col][row].team)) {
     emptySpace(pieceSelected)
+    drawPiece(pieceSelected.icon, col, row)
     board[pieceSelected.col][pieceSelected.row] = 0
     pieceSelected.row = row
     pieceSelected.col = col
     board[col][row] = pieceSelected
     pieceSelected = null
-
   }
 });
-
