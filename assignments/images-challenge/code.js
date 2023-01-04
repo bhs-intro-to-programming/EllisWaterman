@@ -197,7 +197,7 @@ const fillWithRandomlyColoredFilledCircles = () => {
   }
 
 const drawPlatformerGameRandomGenLevel = () => {
-  let blockSize = 25;
+  let blockSize = 3;
   let xsize = width/blockSize
   let ysize = height/blockSize
   for (let yposition = 0; yposition < ysize; yposition++) {
@@ -207,6 +207,19 @@ const drawPlatformerGameRandomGenLevel = () => {
     }
   }
 }
+
+const drawPyramid = () => {
+  for(let i = 0; i < 200; i++) {
+    for(let pos = 0; pos < i; pos++) {
+      drawFilledRect(pos*20+width/2, pos*20, 25,25,'black');
+      drawFilledRect(-pos*20+width/2, pos*20, 25,25,'black');
+      drawFilledRect(pos*20+15, 310, 25,25,'black');
+
+
+    }
+  }
+}
+//drawPyramid()
 drawPlatformerGameRandomGenLevel();
 // colorfulCurve();
 // concentricCircle();
