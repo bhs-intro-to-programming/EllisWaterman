@@ -33,14 +33,30 @@
  *  width - the width of the drawing area.
  *  height - the height of the drawing area.
  *
- */
+//  */
+// drawFilledRect(0, height - 0, 10000, -10000, '1');
 
-drawLine(0, 0, width, height, 'red')
 
-drawCircle(width/2, height/2, 10, 'blue');
 
-drawRect(50, 50, 60, 40, 'black');
+// //drawFilledCircle(width - 400, height - 500, 50, 'green');
+// drawFilledCircle(width - 100, height - 500, 50, 'green');
 
-drawFilledCircle(width - 50, height - 50, 50, 'red');
+// ////drawFilledRect(100, height - 100, 300, 15, 'purple');
+// drawFilledRect(100, height - 100, 10, -100, 'purple');
+// drawFilledRect(390, height - 100, 10, -100, 'purple');
+// //drawLine( 200, 250, 150, 200, 'red');
+// drawLine( 100, 250, 150, 200, 'red');
+// drawLine( 100, 250, 5000, 200, 'red');
+// drawFilledCircle(width - 250, height - 200, 75, 'white');
+// drawFilledCircle(width - 250, height - 300, 50, 'white');
+// drawFilledCircle(width - 250, height - 375, 40, 'white');
+// drawFilledCircle(width - 270, height - 375, 5, 'black');
+// drawFilledCircle(width - 220, height - 375, 5, 'black');
+// drawLine( 210, 300, 150, 200, 'brown');
+// drawLine( 210+90, 300, 150+90, 200, 'brown');
 
-drawFilledRect(5, height - 20, 45, 15, 'purple');
+
+
+
+
+drawTriangle  = (50, 50, 50, 50, 50, 50, 'red');
